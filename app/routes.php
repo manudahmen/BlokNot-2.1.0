@@ -21,11 +21,11 @@ Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
-get('/note/view/{id}', function($id) { 
+get('note/view/{id}', function($id) { 
     view('note')->with('id', $id); 
 })->where('n', '[0-9]+');
 
-get("/about", function()
+get("about", function()
 {
     view("about");
 });
