@@ -15,37 +15,37 @@ Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
-get('note/view/{id}', function($id) { 
+Route::get('note/view/{id}', function($id) { 
     return View::make('note')->with('id', $id); 
 })->where('id', '[0-9]+');
 
-get('note/edit/{id}', function($id) { 
+Route::get('note/edit/{id}', function($id) { 
     return View::make('note')->with('id', $id); 
 })->where('id', '[0-9]+');
 
-get('note/edit/{id}', function($id) { 
+Route::get('note/edit/{id}', function($id) { 
     return view('note-edit')->with('id', $id); 
 })->where('id', '[0-9]+');
 
-get("about", function()
+Route::get("about", function()
 {
     return View::make("about");
 });
 
 
-get("home", function ()
+Route::get("home", function ()
 {
 
     return View::make("home");
 	
 });
 
-get("freezer", function ()
+Route::get("freezer", function ()
 {
     return View::make("freezer");
 });
 
-get("blocnotes", function ()
+Route::get("blocnotes", function ()
 {
     return View::make("blocnotes");
 });
