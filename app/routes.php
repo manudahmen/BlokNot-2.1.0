@@ -29,3 +29,11 @@ get("about", function()
 {
     view("about");
 });
+
+
+get("home", function ()
+{
+
+    view("home");
+	
+});
