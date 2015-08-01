@@ -4,12 +4,6 @@ Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-// Using A Route Closure...
-
-Route::get('profile', ['middleware' => 'auth', function() {
-    // Only authenticated users may enter...
-}]);
-
 // Using A Controller...
 
 Route::get('profile', [
@@ -22,32 +16,36 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 get('note/view/{id}', function($id) { 
-    view('note')->with('id', $id); 
+    return View::make('note')->with('id', $id); 
 })->where('id', '[0-9]+');
 
 get('note/edit/{id}', function($id) { 
-    view('note-edit')->with('id', $id); 
+    return View::make('note')->with('id', $id); 
+})->where('id', '[0-9]+');
+
+get('note/edit/{id}', function($id) { 
+    return view('note-edit')->with('id', $id); 
 })->where('id', '[0-9]+');
 
 get("about", function()
 {
-    view("about");
+    return View::make("about");
 });
 
 
 get("home", function ()
 {
 
-    view("home");
+    return View::make("home");
 	
 });
 
 get("freezer", function ()
 {
-    view("freezer");
+    return View::make("freezer");
 });
 
 get("blocnotes", function ()
 {
-    view("blocnotes");
+    return View::make("blocnotes");
 });
