@@ -61,5 +61,16 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    } /**
+     * Handle an authentication attempt.
+     *
+     * @return Response
+     */
+    public function authenticate()
+    {
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            // Authentication passed...
+            return redirect()->intended('dashboard');
+        }
     }
 }
