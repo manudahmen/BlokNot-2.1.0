@@ -23,7 +23,11 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 get('note/view/{id}', function($id) { 
     view('note')->with('id', $id); 
-})->where('n', '[0-9]+');
+})->where('id', '[0-9]+');
+
+get('note/edit/{id}', function($id) { 
+    view('note-edit')->with('id', $id); 
+})->where('id', '[0-9]+');
 
 get("about", function()
 {
@@ -36,4 +40,14 @@ get("home", function ()
 
     view("home");
 	
+});
+
+get("freezer", function ()
+{
+    view("freezer");
+});
+
+get("blocnotes", function ()
+{
+    view("blocnotes");
 });
