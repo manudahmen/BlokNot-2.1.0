@@ -24,6 +24,9 @@ Route::get('note/edit/{id}', function($id) {
     return view('note/edit')->with('id', $id); 
 })->where('id', '[0-9]+');
 */
+Artisan::call('up');
+
+
 Route::get("/", function()
 {
     return view("blocnotes");
@@ -33,7 +36,6 @@ Route::get("about", function()
     return view("about");
 });
 
-/*
 Route::get("home", function ()
 {
 
@@ -50,7 +52,4 @@ Route::get("blocnotes", function ()
 {
     return View::make("blocnotes");
 });
- * 
- * */
 ?>
- */
