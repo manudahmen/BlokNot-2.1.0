@@ -1,10 +1,13 @@
 <html>
     <body>
         <div class="container">
-		<p>{{id}}</p>
-		
-		
-		@yield('note/noteContent', $id)
+		<p><?php
+                    $id
+                   ?></p>
+		<?php
+                require_once("../../../app/Libs/all-configured-and-secured-included.php");
+                displayNote($id);
+		?>
         </div>
     </body>
 </html>

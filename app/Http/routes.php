@@ -17,7 +17,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 Route::get('note/view/{id}', function($id) { 
-    return view('note')->with('id', $id); 
+    return view('note/view')->with('id', $id); 
 })->where('id', '[0-9]+');
 
 Route::get('note/edit/{id}', function($id) { 
