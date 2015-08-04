@@ -13,7 +13,7 @@ class User extends Migration
     public function up()
     {
         
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('bn2_'.'user', function (Blueprint $table) {
             $table->increments('id');
             $table->string("name");
             $table->string("email");
@@ -33,6 +33,6 @@ class User extends Migration
      */
     public function down()
     {
-        Schema::drop('user');
+        Schema::drop('bn2_'.'user');
     }
 }

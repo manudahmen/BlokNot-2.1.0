@@ -19,5 +19,12 @@ class NoteController extends Controller {
     public function index() {
         return view('actionOnNote');
     }
-
+    public function newnote()
+    {
+        return view("note/edit")->with("note", 0);
+    }
+    public function save($noteId)
+    {
+        
+    }
 }
