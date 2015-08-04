@@ -28,3 +28,4 @@ class NoteController extends Controller {
         
     }
 }
+?>

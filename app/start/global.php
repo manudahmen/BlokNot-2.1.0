@@ -9,10 +9,7 @@ App::error(function(Exception $exception)
     Log::error($exception);
 });
 
-App::abort(404);
-//ptionally, you may provide a response:
-
-App::abort(403, 'Unauthorized action.');
+App::abort(403, 'Not found url -- Abort');
 
 App::missing(function($exception)
 {

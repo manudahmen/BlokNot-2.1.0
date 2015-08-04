@@ -12,7 +12,7 @@ Route::get('profile', [
     'uses' => 'ProfileController@show'
 ]);
 // Registration routes...
-Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::get('auth/register', ["as" => "register", "uses", 'Auth\AuthController@getRegister']);
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
@@ -22,15 +22,17 @@ Route::get("note/view/{id}", [
     ]
         )->where('id', '[0-9]+');
 
-Route::get('note/edit/{id}', function($id) { 
+Route::get('note/edit/{id}', ['middleware' => "auth", "uses" =>function($id) { 
     return view('note/edit')->with('id', $id); 
-})->where('id', '[0-9]+');
+}])->where('id', '[0-9]+');
 
 
-Route::get("/", function()
+Route::get("/", ["as" => "root", "uses" => function()
 {
     return view("home");
-});
+}
+]
+);
 Route::get("about", function()
 {
     return view("about");
