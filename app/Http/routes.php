@@ -6,11 +6,11 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Using A Controller...
-
+/*
 Route::get('profile', [
     'middleware' => 'auth',
     'uses' => 'ProfileController@show'
-]);
+]);*/
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
