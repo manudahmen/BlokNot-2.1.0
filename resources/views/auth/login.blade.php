@@ -20,4 +20,7 @@
     <div>
         <button type="submit">Login</button>
     </div>
+    <div>
+        {{ //route("auth/register") }}
+    </div>
 </form>
