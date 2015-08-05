@@ -21,6 +21,6 @@
         <button type="submit">Login</button>
     </div>
     <div>
-        {{ //route("auth/register") }}
+        <a href="{{ route("register") }}">Register</a>
     </div>
 </form>

@@ -310,7 +310,7 @@ function getDBDocument($id) {
     global $mysqli;
     connect();
     $q = "SELECT * FROM blocnotes_data " .
-            "WHERE isDeleted=0 and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' and id =" . mysqli_real_escape_string($mysqli, (int) $id);
+            "WHERE isDeleted=0 and id =" . mysqli_real_escape_string($mysqli, (int) $id);//;//and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' 
 
     $result = simpleQ($q, $mysqli);
     return $result;

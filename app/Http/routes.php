@@ -17,41 +17,51 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 Route::get("note/view/{id}", [
-       'middleware' => "auth",
+    'middleware' => "auth",
     'uses' => "NoteController@display"
-    ]
-        )->where('id', '[0-9]+');
+        ]
+)->where('id', '[0-9]+');
 
-Route::get('note/edit/{id}', ['middleware' => "auth", "uses" =>function($id) { 
-    return view('note/edit')->with('id', $id); 
-}])->where('id', '[0-9]+');
+Route::get('note/edit/{id}', ['middleware' => "auth", "uses" => function($id) {
+        return view('note/edit')->with('id', $id);
+    }])->where('id', '[0-9]+');
 
-
-Route::get("/", ["as" => "root", "uses" => function()
-{
-    return view("home");
-}
-]
+Route::post("note/save", [
+    'middleware' => "auth",
+    'uses' => "NoteController@save"
+        ]
 );
-Route::get("about", function()
-{
+Route::post("note/media", [
+    'middleware' => "auth",
+    'uses' => "NoteController@addMedia"
+        ]
+);
+
+Route::post("note/addData", [
+    'middleware' => "auth",
+    'uses' => "NoteController@addData"
+        ]
+);
+
+Route::get("/", ["as" => "root", "uses" => function() {
+        return view("home");
+    }
+        ]
+);
+Route::get("about", function() {
     return view("about");
 });
 
-Route::get("home", function ()
-{
+Route::get("home", function () {
 
     return view("home");
-	
 });
 
-Route::get("freezer", function ()
-{
+Route::get("freezer", function () {
     return View::make("freezer");
 });
 
-Route::get("notes", ["as" => "notes", "uses" => function ()
-{
-    return View::make("notes");
-}
+Route::get("notes", ["as" => "notes", "uses" => function () {
+        return View::make("notes");
+    }
 ]);

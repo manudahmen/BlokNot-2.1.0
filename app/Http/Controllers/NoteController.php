@@ -23,7 +23,23 @@ class NoteController extends Controller {
     {
         return view("note/edit")->with("note", 0);
     }
+
     public function save($noteId)
+    {
+        
+    }
+    public function linkFile($noteId)
+    {
+        
+    }
+    /**
+     * Envoie un fichier morceau par morceau pour éviter les 
+     * limitations mémoire php ou mysql.
+     * 
+     * @param type $fileId 
+     * @param type $dataChunk morceau du fichier
+     */
+    public function addData($fileId, $dataChunk)
     {
         
     }

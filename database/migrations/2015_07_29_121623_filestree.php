@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Filestree extends Migration
+class MigrationFilestree extends Migration
 {
     /**
      * Run the migrations.
