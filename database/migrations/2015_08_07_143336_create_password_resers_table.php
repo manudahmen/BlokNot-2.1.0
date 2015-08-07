@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class MigrationCreatePasswordResetsTable extends Migration
+class CreatePasswordResersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -26,6 +26,6 @@ class MigrationCreatePasswordResetsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bn2_password_resets');
+        Schema::drop('password_resets');
     }
 }
