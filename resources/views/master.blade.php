@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="style.css">
+  <title>@yield('title')</title>
+     <link href="//fonts.googleapis.com/css?family=Times New Roman:100" rel="stylesheet" type="text/css"/>
+     <link href="{{ asset('style/main.css')}}" rel="stylesheet" type="text/css"/>
   <script src="script.js"></script>
 </head>
 <body>
-    <h1>Page title</h1>
-    <div id="page_content">
-        
+    @section('sidebar')
+    <div id="sidebar">
+        <p>This is the master sidebar.</p>
+        @show
     </div>
+        <h1>@yield('title')</h1>
+    <div class="container">
+            @section('content')
+            @show
+        </div>
 </body>
 </html>

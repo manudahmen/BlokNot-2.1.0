@@ -1,9 +1,17 @@
-<?php
-?>
-<div>
-   <h1>Applications</h1>
+@extends('master')
+@section('title', 'Accueil -- Welcome to my apps')
+
+@section('sidebar')
+    @parent
+
+    <p>This is appended to the master sidebar.</p>
+@stop
+
+@section('content')
+<h1>Applications</h1>
    <ul>
        <li><a href="{{route("notes")}}">Bloc-notes, gestionnaire de fichiers en ligne</a></li>
        <li>Freezer</li>
    </ul>
+@stop<div>
 </div>

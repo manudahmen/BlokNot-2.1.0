@@ -3,16 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/public/index.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/app/Http/Controllers/NoteController.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/app/Http/Controllers/NoteBrowserController.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/migrations/2015_07_29_122336_user.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/migrations/2014_10_12_000000_create_users_table.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/factories/ModelFactory.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/superadmin/ad_migrate.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/migrations/2015_07_29_121623_filestree.php</file>
-            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/database/migrations/.gitkeep</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/app/Http/Controllers/Auth/AuthController.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/auth/register.blade.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/notes.blade.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/app/Http/routes.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/auth/login.blade.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/master.blade.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/public/style/main.css</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/resources/views/home.blade.php</file>
+            <file>file:/C:/Users/manue_001/Documents/GitHub/blocnote2/config/app.php</file>
         </group>
     </open-files>
 </project-private>

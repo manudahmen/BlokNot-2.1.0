@@ -1,6 +1,9 @@
 <!-- resources/views/auth/login.blade.php -->
+@extends('master')
+@section('content')
 
-<form method="POST" action="/auth/login">
+<div id="login_form">
+    <form method="POST" action="/auth/login">
     {!! csrf_field() !!}
 
     <div>
@@ -24,3 +27,5 @@
         <a href="{{ route("register") }}">Register</a>
     </div>
 </form>
+</div>
+@stop
