@@ -1,4 +1,5 @@
 <?php
+$db_prefix ="bl2" ;
 
 /**
  * Laravel - A PHP Framework For Web Artisans

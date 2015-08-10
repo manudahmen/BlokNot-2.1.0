@@ -13,7 +13,7 @@ Route::get('profile', [
 ]);
 // Registration routes...
 Route::get('auth/register', ["as" => "register", "uses" => 'Auth\AuthController@getRegister']);
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+Route::post('auth/register', ['as' => 'register_submit', 'uses' => 'Auth\AuthController@postRegister']);
 
 
 Route::get("note/view/{id}", [

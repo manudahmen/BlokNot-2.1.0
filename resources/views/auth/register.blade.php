@@ -1,7 +1,7 @@
 <!-- resources/views/auth/register.blade.php -->
 @extends('master')
 @section('content')
-<form method="POST" action="/auth/register">
+<form method="POST" action="{{ route("register_submit") }}" >
     {!! csrf_field() !!}
 
     <div>
