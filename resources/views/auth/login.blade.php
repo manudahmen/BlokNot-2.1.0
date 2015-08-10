@@ -3,7 +3,7 @@
 @section('content')
 
 <div id="login_form">
-    <form method="POST" action="/auth/login">
+    <form method="POST" action="{{ route("login_form") }}">
     {!! csrf_field() !!}
 
     <div>
