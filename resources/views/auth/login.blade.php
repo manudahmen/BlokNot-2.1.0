@@ -23,9 +23,13 @@
     <div>
         <button type="submit">Login</button>
     </div>
-    <div>
+        <div id="errors"><?php
+            ?>
+        </div>
+        <div>
         <a href="{{ route("register") }}">Register</a>
     </div>
+
 </form>
 </div>
 @stop

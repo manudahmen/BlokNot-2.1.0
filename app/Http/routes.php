@@ -65,3 +65,7 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
         return View::make("notes");
     }
 ]);
+Route::get("notes", function()
+{
+    return View:;make("note/list");
+});
