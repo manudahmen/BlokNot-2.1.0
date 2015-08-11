@@ -8,8 +8,7 @@
 require_once(asset("Libs/event/main.php"));
 
 $rootDoc = getRootForUser();
-$root = mysqli_fetch_assoc($rootDoc);
-$docs = getDocumentsFiltered("", false, $root["id"]);
+$docs = getDocumentsFiltered("", false, $rootDoc);
 
        while(($doc=mysqli_fetch_assoc($docs))!=NULL)
            {
