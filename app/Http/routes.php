@@ -51,6 +51,9 @@ Route::get("/", ["as" => "root", "uses" => function () {
 Route::get("about", function () {
     return view("about");
 });
+Route::get("à-propos", function () {
+    return view("about");
+});
 
 Route::get("home", function () {
 
@@ -65,6 +68,6 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
     return View::make("notes");
 }
 ]);
-Route::get("notes/list", function ($folderId=NULL) {
-    return View::make("notes/list/$folderId");
+Route::get("note/list/{folderId}", function ($folderId=NULL) {
+    return View::make("note/list/$folderId");
 });

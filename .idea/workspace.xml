@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blocnote2.iml" afterPath="$PROJECT_DIR$/.idea/blocnote2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blocnote2.iws" />
@@ -16,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>C:\wamp\composer.phar</pharPath>
+    <phpPath>C:\wamp\bin\php\php5.5.12\php.exe</phpPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -45,12 +53,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3655914">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.5">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Libs/event/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.5">
+              <caret line="513" column="0" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+              <folding>
+                <marker date="1438809247704" expanded="true" signature="209:266" placeholder="select serid..." />
+                <marker date="1438809247704" expanded="true" signature="515:702" placeholder="select serid..." />
+                <marker date="1438809247704" expanded="true" signature="1733:2174" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="2579:2966" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="3242:3565" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="3897:4285" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="4548:4709" placeholder="select user,..blocnotes_items..." />
+                <marker date="1438809247704" expanded="true" signature="5187:5317" placeholder="select momen..blocnotes_items..." />
+                <marker date="1438809247704" expanded="true" signature="5631:5752" placeholder="select momen..blocnotes_items..." />
+                <marker date="1438809247704" expanded="true" signature="5932:6060" placeholder="select momen..blocnotes_items..." />
+                <marker date="1438809247704" expanded="true" signature="7438:7577" placeholder="SELECT * FRO..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="7840:8279" placeholder="SELECT * FRO..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="8487:8625" placeholder="SELECT * FRO..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="9407:9479" placeholder="SELECT * FRO..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="9779:9917" placeholder="SELECT * FRO..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="10194:10325" placeholder="SELECT * FRO..blocnotes_items..." />
+                <marker date="1438809247704" expanded="true" signature="10772:10961" placeholder="update blocn..." />
+                <marker date="1438809247704" expanded="true" signature="10974:11167" placeholder="update blocn..." />
+                <marker date="1438809247704" expanded="true" signature="11362:11622" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="12562:12621" placeholder="select isDir..." />
+                <marker date="1438809247704" expanded="true" signature="13019:13130" placeholder="select * fro..." />
+                <marker date="1438809247704" expanded="true" signature="13495:13593" placeholder="select * fro..." />
+                <marker date="1438809247704" expanded="true" signature="14842:15155" placeholder="select d2.* ..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="15337:15623" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="15907:16027" placeholder="delete from ..." />
+                <marker date="1438809247704" expanded="true" signature="16185:16333" placeholder="select id fr..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="16702:16799" placeholder="insert into ..." />
+                <marker date="1438809247704" expanded="true" signature="16977:17149" placeholder="update blocn..." />
+                <marker date="1438809247704" expanded="true" signature="18787:18867" placeholder="select id_el..blocnotes_link..." />
+                <marker date="1438809247704" expanded="true" signature="19172:19252" placeholder="select id_el..blocnotes_link..." />
+                <marker date="1438809247704" expanded="true" signature="20472:20517" placeholder="select * fro..blocnotes_data..." />
+                <marker date="1438809247704" expanded="true" signature="23168:23226" placeholder="update blocn..." />
+                <marker date="1438809247704" expanded="true" signature="23254:23312" placeholder="update blocn..." />
+                <marker date="1438809247704" expanded="true" signature="24386:24446" placeholder="update blocn..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,21 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.423077">
-              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Libs/js/ePub/src/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49731183">
+              <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -110,10 +153,11 @@
       <list>
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/loggedin.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/loggedin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/noteContent.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/list.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/notes/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -132,12 +176,90 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/phpspec" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Control FlowPHP</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpUnreachableStatementInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -326,6 +448,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\resources\views\note" />
+      <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\resources\views\notes" />
       <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\public" />
     </key>
   </component>
@@ -398,7 +522,37 @@
       <option name="project" value="LOCAL" />
       <updated>1439295368312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Uses old libs">
+      <created>1439295750832</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1439295750832</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Uses old libs">
+      <created>1439296938921</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1439296938921</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correction">
+      <created>1439296982285</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1439296982285</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Typo">
+      <created>1439299105451</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1439299105452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Typo">
+      <created>1439299477437</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1439299477437</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -409,6 +563,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.49707174" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -416,7 +571,8 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -424,7 +580,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -442,7 +597,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Minor Changes." />
     <MESSAGE value="Moves old libs to &quot;public/&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moves old libs to &quot;public/&quot;" />
+    <MESSAGE value="Uses old libs" />
+    <MESSAGE value="Correction" />
+    <MESSAGE value="Typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -487,22 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.423077">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Libs/js/ePub/src/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/loggedin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
@@ -527,10 +669,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/Libs/js/ePub/src/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3655914">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.5">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Libs/event/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5">
+          <caret line="513" column="0" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding>
+            <marker date="1438809247704" expanded="true" signature="209:266" placeholder="select serid..." />
+            <marker date="1438809247704" expanded="true" signature="515:702" placeholder="select serid..." />
+            <marker date="1438809247704" expanded="true" signature="1733:2174" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="2579:2966" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="3242:3565" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="3897:4285" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="4548:4709" placeholder="select user,..blocnotes_items..." />
+            <marker date="1438809247704" expanded="true" signature="5187:5317" placeholder="select momen..blocnotes_items..." />
+            <marker date="1438809247704" expanded="true" signature="5631:5752" placeholder="select momen..blocnotes_items..." />
+            <marker date="1438809247704" expanded="true" signature="5932:6060" placeholder="select momen..blocnotes_items..." />
+            <marker date="1438809247704" expanded="true" signature="7438:7577" placeholder="SELECT * FRO..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="7840:8279" placeholder="SELECT * FRO..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="8487:8625" placeholder="SELECT * FRO..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="9407:9479" placeholder="SELECT * FRO..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="9779:9917" placeholder="SELECT * FRO..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="10194:10325" placeholder="SELECT * FRO..blocnotes_items..." />
+            <marker date="1438809247704" expanded="true" signature="10772:10961" placeholder="update blocn..." />
+            <marker date="1438809247704" expanded="true" signature="10974:11167" placeholder="update blocn..." />
+            <marker date="1438809247704" expanded="true" signature="11362:11622" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="12562:12621" placeholder="select isDir..." />
+            <marker date="1438809247704" expanded="true" signature="13019:13130" placeholder="select * fro..." />
+            <marker date="1438809247704" expanded="true" signature="13495:13593" placeholder="select * fro..." />
+            <marker date="1438809247704" expanded="true" signature="14842:15155" placeholder="select d2.* ..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="15337:15623" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="15907:16027" placeholder="delete from ..." />
+            <marker date="1438809247704" expanded="true" signature="16185:16333" placeholder="select id fr..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="16702:16799" placeholder="insert into ..." />
+            <marker date="1438809247704" expanded="true" signature="16977:17149" placeholder="update blocn..." />
+            <marker date="1438809247704" expanded="true" signature="18787:18867" placeholder="select id_el..blocnotes_link..." />
+            <marker date="1438809247704" expanded="true" signature="19172:19252" placeholder="select id_el..blocnotes_link..." />
+            <marker date="1438809247704" expanded="true" signature="20472:20517" placeholder="select * fro..blocnotes_data..." />
+            <marker date="1438809247704" expanded="true" signature="23168:23226" placeholder="update blocn..." />
+            <marker date="1438809247704" expanded="true" signature="23254:23312" placeholder="update blocn..." />
+            <marker date="1438809247704" expanded="true" signature="24386:24446" placeholder="update blocn..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49731183">
+          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
           <folding />
         </state>
       </provider>
