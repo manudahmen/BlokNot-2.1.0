@@ -10,7 +10,7 @@
 <body>
     @section('sidebar')
     <div id="sidebar">
-        <p>This is the master sidebar.</p>
+        <p>Applications web de Manuel Dahmen. Formations personnelle.</p>
         @show
     </div>
         <h1>@yield('title')</h1>

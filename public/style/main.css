@@ -8,35 +8,35 @@ and open the template in the editor.
     Author     : manue_001
 */
 
-           html, body {
-                height: 100%;
-            }
+html, body {
+    height: 100%;
+}
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato', "Courier New", Courier, monospace;
+}
 
-            .container {
-                margin-left: 30%;
-                text-align: justify;
-                display: table-cell;
-                
-            }
+.container {
+    margin-left: 30%;
+    text-align: justify;
+    display: table-cell;
 
-            .content {
-            }
+}
 
-            .title {
-                font-size: 96px;
-            }
- #sidebar
- {
-     float: left;
-     width: 30%;
-     border: 1px solid red;
- }
+.content {
+}
+
+.title {
+    font-size: 96px;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+}

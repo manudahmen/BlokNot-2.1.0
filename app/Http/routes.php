@@ -1,6 +1,5 @@
 <?php
 
-// Authentication routes...
 Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
@@ -51,7 +50,7 @@ Route::get("/", ["as" => "root", "uses" => function () {
 Route::get("about", function () {
     return view("about");
 });
-Route::get("à-propos", function () {
+Route::get("apropos", function () {
     return view("about");
 });
 
@@ -60,9 +59,9 @@ Route::get("home", function () {
     return view("home");
 });
 
-Route::get("freezer", function () {
+Route::get("freezer", ["as" => "freezer", "uses" =>function () {
     return View::make("freezer");
-});
+}]);
 
 Route::get("notes", ["as" => "notes", "uses" => function () {
     return View::make("notes");

@@ -3,4 +3,11 @@
 
 @section("content")
 <h2>Freezer - Search on Gracenote!</h2>
+
+<?php
+
+        //require_once("")
+
+?>
 @stop
+

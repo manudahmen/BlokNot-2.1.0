@@ -3,6 +3,11 @@
 @section('content')
 
 <div id="login_form">
+    <?php if(Auth::check())
+    {
+        echo "L'utilisateur/l'utilisatrice ".(Auth::user()->email) . " est connecté(e).";
+    }
+    ?>
     <form method="POST" action="{{ route("login_form") }}">
     {!! csrf_field() !!}
 
