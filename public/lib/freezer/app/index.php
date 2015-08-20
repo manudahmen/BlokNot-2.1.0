@@ -1,24 +1,17 @@
-<html>
-    <head>
-        <title>Freez It !</title>
-        <link href="css/page.css" type="text/css" rel="stylesheet" />
+        <link href="css/freezer.css" type="text/css" rel="stylesheet" />
         <script src="scripts/jquery-1.11.2.js"></script>
         <script src="scripts/layoutActions.js"></script>
         <script type="text/javascript" src="scripts/play.js">
-            
+
           </script>
         <script src="scripts/auth.js"></script>
         <script src="scripts/playlist.js"></script>
-     </head>    
-    <body>
-        <!--<iframe id="frameyt" src="" height="200px" width="600px">
-        </iframe>-->
         <div id="search-form-container">
              <form method="GET" action="index.php">
                  <fieldset>
-                     
+
                 <table>
-                         
+
                     <tr><td><label>Artiste(s)</label></td>
                         <td><input type="text" name="artist" value="<?php echo filter_input(INPUT_GET, "artist") ?>"/>
                         </td>
@@ -42,13 +35,13 @@
                      <td><label>Envoyer:</label></td><td><input type="submit" name="submit-button" value="Clic moi"/></td>
                  </tr>
                 </table>
-                 
+
                  </fieldset>
             </form>
         </div>
         <div id="text_view">
             <?php
-            include("php-gracenote/Gracenote.class.php");
+            require_once("php-gracenote/Gracenote.class.php");
             require_once("private.php");
             $api = new Gracenote\WebAPI\GracenoteWebAPI($clientID, $clientTag);
 
@@ -75,7 +68,7 @@
                     <?php echo file_get_contents($results[0]["artist_bio_url"]);  ?>
                 </div>
                 <?php
-            
+
             }
 
 
@@ -87,7 +80,7 @@
                 $result0 = $api->fetchAlbum($results[$i]["album_gnid"]);
                 ?>
                 <p class="album_title"><a href="#album<?= $i ?>" onclick='montrerAlbum("album<?= $i ?>");'>
-                <?= $result0[0]["album_artist_name"] ?>, 
+                <?= $result0[0]["album_artist_name"] ?>,
                 <?= $result0[0]["album_title"] ?>-- date : <?= $results[$i]["album_year"] ?>
                 </a></p>
                 <div class='album_view' id="album<?= $i ?>">
@@ -102,7 +95,7 @@
                     // again echo anything here you would like.
                     ?>
                     <li><?php echo $track["track_title"] ?>
-                        <input type='text' class='musicSpan' id='musicSpan<?php echo $j; ?>' 
+                        <input type='text' class='musicSpan' id='musicSpan<?php echo $j; ?>'
                                value="<?php echo $result0[0]["album_artist_name"]; ?> , <?php echo $result0[0]["album_title"]; ?> , <?php echo $track["track_title"]; ?>" />
                         <input type='button' value='Lire chanson sur Youtube' onclick="playsong('<?php echo rawurlencode($result0[0]["album_artist_name"]." ". $result0[0]["album_title"] ." ".$track["track_title"]); ?>');" />
                     </li>
@@ -130,9 +123,9 @@
 endwhile;
 ?>
             <div id="#player"></div>
-          
+
           </div>
-                
+
                 <div id="media_view">
                     <div id="search-container">Player here</div>
                     <br/><span id='query'></span>
