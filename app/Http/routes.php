@@ -17,12 +17,13 @@ Route::post('auth/register', ['as' => 'register_submit', 'uses' => 'Auth\AuthCon
 
 Route::get("note/view/{id}", [
         'middleware' => "auth",
-        'uses' => "NoteController@display"
-    ]
-)->where('id', '[0-9]+');
+        "uses" => function ($id) {
+    return view('note/view', ["id" => $id]);
+}])->where('id', '[0-9]+');
+
 
 Route::get('note/edit/{id}', ['middleware' => "auth", "uses" => function ($id) {
-    return view('note/edit')->with('id', $id);
+    return view('note/edit', ["id" => $id]);
 }])->where('id', '[0-9]+');
 
 Route::post("note/save", [
