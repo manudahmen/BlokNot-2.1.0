@@ -1,8 +1,9 @@
 <?php
 
-require_once("../../Libs/all-configured-and-secured-included.php");
 
 namespace App\Http\Controllers;
+
+require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
 
 class NoteController extends Controller {
 
