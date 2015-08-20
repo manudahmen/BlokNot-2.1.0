@@ -1,13 +1,13 @@
 <?php
-$appDir = '/customers/3/5/2/manudahmen.be/httpd.www/blocnotes/app';
+$appDir = 'customers/c/d/8/ibiteria.com/httpd.www/';
 Class Config
 {
-    public $hostname = 'manudahmen.be.mysql';
-    public $username = 'manudahmen_be';
+    public $hostname = 'ibiteria.com.mysql';
+    public $username = 'ibiteria_com';
     public $password = "fRO985yQ";
-    public $name = 'manudahmen_be';
-    public $tableUsers = 'blocnotes_users';
-    public $tableItem = 'blocnotes_items';
-    public $tablePrefix = "blocnotes";
+    public $name = 'ibiteria_com';
+    public $tableUsers = 'bn2_users';
+    public $tableItem = 'bn2_items';
+    public $tablePrefix = "bn2";
 }
 $config = new Config();

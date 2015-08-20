@@ -10,7 +10,11 @@
 
 @section('content')<h2>Notes sur l'état de l'application</h2>
 <tt>
+
     TODO Itérer sur les éléments de getDocuments();
     TODO0) Authentification des utilisateurs.
 </tt>
+    <?php
+    require_once(realpath(base_path(("public/lib/bloc-notes/all"))))
+    ?>
 @stop

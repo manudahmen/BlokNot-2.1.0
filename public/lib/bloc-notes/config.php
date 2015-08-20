@@ -41,19 +41,19 @@ $allUserDataDir = $appDir."/data";
 $allUserPublicDir = $appDir."/public";
 
 
-require_once(__DIR__."/include/membersite_config.php");
+//require_once(__DIR__."/include/membersite_config.php");
 
-
+/*
 if(!$fgmembersite->CheckLogin())
 {
     $fgmembersite->RedirectToURL("login.php");
     exit;
 }
+*/
+$monutilisateur = Auth::user()->email;//$fgmembersite->UserFullName();
 
-$monutilisateur = $fgmembersite->UserFullName();
-
-$dataDir = $allUserDataDir . "/" . $fgmembersite->UserFullName();
-$publicDir = $allUserPublicDir . "/" . $fgmembersite->UserFullName();
+$dataDir = $allUserDataDir . "/" . $monutilisateur;
+$publicDir = $allUserPublicDir . "/" . $monutilisateur;
 $appDirScript = $appDir = $appDir."/"."app";
 
 
@@ -64,8 +64,8 @@ $urlbase = "http://manudahmen.be/blocnotes";
 $urlApp = $urlbase.$pathSep."app";
 $urldir = "$urlApp/app/page.xhtml.php";
 
-$userdataurl= $urlbase.'/data/'.$fgmembersite->UserFullName();
-$userpublicurl= $urlbase.'/public/'.$fgmembersite->UserFullName();
+$userdataurl= $urlbase.'/data/'.$monutilisateur;
+$userpublicurl= $urlbase.'/public/'.$monutilisateur;
 
 $trad = array(
 	"CMD" => array(

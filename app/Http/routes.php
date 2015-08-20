@@ -1,6 +1,6 @@
 <?php
 
-Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
+Route::get('/auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
@@ -67,6 +67,6 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
     return View::make("notes");
 }
 ]);
-Route::get("note/list/{folderId}", function ($folderId=NULL) {
-    return View::make("note/list/$folderId");
+Route::get("notes/list/{folderId}/{page}", function ($folderId=NULL, $page=1) {
+    return View::make("notes/list/$folderId/$page");
 });

@@ -1,9 +1,16 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+namespace App\Http\Controllers;
+
+require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
+
+class NoteBrowserController extends Controller {
+
+    public function display($noteId, $page) {
+        $doc = mysqli_fetch_assoc(getDocuments());
+        return view("notes/list")->with(["page" => $page]);
+    }
+
+}
 ?>
