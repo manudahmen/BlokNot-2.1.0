@@ -14,7 +14,7 @@
             if (Auth::check())
             {?>L'utilisateur est connect&eacute; <?php echo Auth::user()->email;
             }
-            ?>.</p>
+            ?>....</p>
         <p>Applications web de Manuel Dahmen. Formations personnelle.</p>
         @show
     </div>
