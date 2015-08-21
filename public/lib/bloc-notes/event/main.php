@@ -34,7 +34,7 @@ function getSeridFromFilename($filename, $utilisateur) {
 
 function connect() {
     global $mysqli;
-    global $config;
+    $config = new Config();
     global $date;
     if ($date == "") {
         $date = date("Y-m-d-H-i-s");
@@ -677,7 +677,11 @@ function folder_field($folder_id, $field_name = "folder") {
         // Master COde goes here.
         global $urlApp;
         $id = $dbdoc;
-        $doc = mysqli_fetch_assoc(getDBDocument($dbdoc));
+        if(!($doc_row=getDBDocument($dbdoc)))
+        {
+            return array();
+        }
+        $doc = mysqli_fetch_assoc($doc_row);
         $filename = $doc['filename'];
         $mime = $doc['mime'];
         if ($doc) {

@@ -4,7 +4,7 @@ Class Config
 {
     public $hostname = 'ibiteria.com.mysql';
     public $username = 'ibiteria_com';
-    public $password = "fRO985yQ";
+    public $password = "Qvxd86bq";
     public $name = 'ibiteria_com';
     public $tableUsers = 'bn2_users';
     public $tableItem = 'bn2_items';

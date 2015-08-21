@@ -50,7 +50,13 @@ if(!$fgmembersite->CheckLogin())
     exit;
 }
 */
-$monutilisateur = Auth::user()->email;//$fgmembersite->UserFullName();
+if(Auth::check()) {
+	$monutilisateur = Auth::user()->email;//$fgmembersite->UserFullName();
+}
+else
+{
+	$monutilisateur = "Anonymous";
+}
 
 $dataDir = $allUserDataDir . "/" . $monutilisateur;
 $publicDir = $allUserPublicDir . "/" . $monutilisateur;
