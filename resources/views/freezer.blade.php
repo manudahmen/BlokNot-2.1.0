@@ -2,7 +2,8 @@
 @yield("title", "Freezer")
 
 @section("header")
-<link href="{{asset("css/freezer.css")}}" type="text/css" rel="stylesheet"/>
+    @parent
+    <link href="{{asset("css/freezer.css")}}" type="text/css" rel="stylesheet"/>
     <script type="text/javascript" src="{{asset("scripts/jquery-1.11.2.js")}}"></script>
     <!--<script type="text/javascript" src="{{asset("scripts/layoutActions.js")}}"></script>-->
     <script type="text/javascript" src="{{asset("scripts/play.js")}}"/>
@@ -14,7 +15,7 @@
 @section("content")
     <h2>Freezer - Search on Gracenote!</h2>
     <p><a target="_blank" href="https://fr.wikipedia.org/wiki/Compact_Disc_Data_Base">CDDB on Wikipedia</a></p>
-    <blockquote>CDDB est un nom de marque d&eacute;pos&eacute; par la soci&eacute;t&eacute; Gracenote qui fournit un service d'acc&egrave; s &agrave; sa base de donn&eacute;&eacute;es &agrave; diff&eacute;rents partenaires :</blockquote>
+    <blockquote>CDDB est un nom de marque d&eacute;pos&eacute; par la soci&eacute;t&eacute; Gracenote qui fournit un service d'acc&egrave;s &agrave; sa base de donn&eacute;&eacute;es &agrave; diff&eacute;rents partenaires :</blockquote>
     <div id="search-form-container">
         <form method="GET" action="{{ URL::to('freezer') }}">
             <fieldset>
@@ -77,8 +78,10 @@
         <a id='authorBioNOLinkHide' onclick='cacherBioArtist("authorBioNO");'>Cacher Bio artiste</a>
 
         <div id='authorBioNO'/>
+            <?php if (isset($results[0]["artist_image_url"])&& (strlen($results[0]["artist_image_url"])>0)) { ?>
         <img src='<?php echo $results[0]["artist_image_url"]; ?>'>
-        <?php if (isset($results[0]["artist_bio_url"])) {
+        <?php }
+            if (isset($results[0]["artist_bio_url"])&& (strlen($results[0]["artist_bio_url"])>0)) {
             echo file_get_contents($results[0]["artist_bio_url"]);
         } ?>
     </div>

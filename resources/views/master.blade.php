@@ -16,11 +16,21 @@
     <div id="sidebar">
         <?php
         if (Auth::check())
-        {?><p id="connected_user" class="btn btn-large btn-primary openbutton">L'utilisateur est connect&eacute; ....</p><p id="logout" class="btn btn-large btn-primary openbutton"><a href="{{URL::to("auth/logout")}}">Logout</a></p><?php echo Auth::user()->email;
+        {?><p id="connected_user" class="btn btn-large btn-primary openbutton" >L'utilisateur est connect&eacute; ....
+    </p>
+    <p id="logout">
+        <a class="btn btn-large btn-primary openbutton"
+           href="{{URL::to("auth/logout")}}">Logout</a></p>
+
+    <p><a href="#"
+          class="btn-large btn-primary openbutton">
+            <?php echo Auth::user()->email; ?></a>
+    </p><?php
         }
         else
         {
-        ?><p id="login" class="btn btn-large btn-primary openbutton">Non connect&eacute;</p><p><a href="{{URL::to("auth/login")}}">Login</a></p><?php
+        ?><p id="login" class="">Non connect&eacute;</p>
+            <p><a href="{{URL::to("auth/login")}}" class="btn btn-large btn-primary openbutton">Login</a></p><?php
 
         }
         ?>

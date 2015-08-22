@@ -2,7 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\README.rst" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\SPEC.rst" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\lib\videos\demo.mp4" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\adapters\html.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\adapters\jwplayer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\adapters\mock.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\adapters\sublime.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\adapters\video.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\intro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\keeper.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\outro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\player.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\src\receiver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\html.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\jwplayer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\lib\qunit-1.12.0.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\lib\qunit-1.12.0.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\mock.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\player_test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\sublime.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\test\video.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\viewerjs-0.5.7\AGPL-3.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\asp\binsave.asp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\asp\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\asp\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\asp\save.asp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\aspx\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\aspx\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\aspx\save.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\jsp\base64.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\jsp\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\jsp\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\lib\painter\jsp\save.jsp" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\dist\player-0.0.10.js" afterPath="$PROJECT_DIR$/public/lib/bloc-notes/js/player-0.0.10.js" />
+      <change type="MOVED" beforePath="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js\playerJS\dist\player-0.0.10.min.js" afterPath="$PROJECT_DIR$/public/lib/bloc-notes/js/player-0.0.10.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artisan" afterPath="$PROJECT_DIR$/artisan" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/freezer.blade.php" afterPath="$PROJECT_DIR$/resources/views/freezer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,126 +75,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="80" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freezer.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="freezer.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/freezer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.8461537">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6611111">
+              <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layoutActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scripts/layoutActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18732782">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listesItem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/event/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="20" />
-              <folding>
-                <marker date="1440192609896" expanded="true" signature="209:266" placeholder="select serid..." />
-                <marker date="1440192609896" expanded="true" signature="515:702" placeholder="select serid..." />
-                <marker date="1440192609896" expanded="true" signature="1741:2182" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="2587:2974" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="3250:3573" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="3905:4293" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="4556:4717" placeholder="select user,..blocnotes_items..." />
-                <marker date="1440192609896" expanded="true" signature="5195:5325" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440192609896" expanded="true" signature="5639:5760" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440192609896" expanded="true" signature="5940:6068" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440192609896" expanded="true" signature="7446:7585" placeholder="SELECT * FRO..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="7848:8287" placeholder="SELECT * FRO..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="8495:8633" placeholder="SELECT * FRO..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="9415:9487" placeholder="SELECT * FRO..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="9787:9925" placeholder="SELECT * FRO..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="10202:10333" placeholder="SELECT * FRO..blocnotes_items..." />
-                <marker date="1440192609896" expanded="true" signature="10780:10969" placeholder="update blocn..." />
-                <marker date="1440192609896" expanded="true" signature="10982:11175" placeholder="update blocn..." />
-                <marker date="1440192609896" expanded="true" signature="11370:11630" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="12570:12629" placeholder="select isDir..." />
-                <marker date="1440192609896" expanded="true" signature="13027:13138" placeholder="select * fro..." />
-                <marker date="1440192609896" expanded="true" signature="13503:13601" placeholder="select * fro..." />
-                <marker date="1440192609896" expanded="true" signature="14850:15163" placeholder="select d2.* ..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="15345:15631" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="15915:16035" placeholder="delete from ..." />
-                <marker date="1440192609896" expanded="true" signature="16193:16341" placeholder="select id fr..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="16710:16807" placeholder="insert into ..." />
-                <marker date="1440192609896" expanded="true" signature="16985:17157" placeholder="update blocn..." />
-                <marker date="1440192609896" expanded="true" signature="18795:18875" placeholder="select id_el..blocnotes_link..." />
-                <marker date="1440192609896" expanded="true" signature="19180:19260" placeholder="select id_el..blocnotes_link..." />
-                <marker date="1440192609896" expanded="true" signature="20480:20525" placeholder="select * fro..blocnotes_data..." />
-                <marker date="1440192609896" expanded="true" signature="23257:23315" placeholder="update blocn..." />
-                <marker date="1440192609896" expanded="true" signature="23343:23401" placeholder="update blocn..." />
-                <marker date="1440192609896" expanded="true" signature="24475:24535" placeholder="update blocn..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all-configured-and-secured-included.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/all-configured-and-secured-included.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noteContent.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/note/noteContent.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.4615383">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -190,8 +139,11 @@
         <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php" />
         <option value="$PROJECT_DIR$/public/lib/bloc-notes/config.php" />
-        <option value="$PROJECT_DIR$/resources/views/freezer.blade.php" />
+        <option value="$PROJECT_DIR$/artisan" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
+        <option value="&lt;5f278f35-0db7-4d6f-bcd0-3fa4e23b8ea6&gt;/storage/framework/views/022221c7ad7749a97b1669c6a96b348b" />
+        <option value="$PROJECT_DIR$/resources/views/freezer.blade.php" />
       </list>
     </option>
   </component>
@@ -317,6 +269,18 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,12 +299,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,6 +414,7 @@
       <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\public\lib\bloc-notes\js" />
       <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\public\lib\freezer\app\php-gracenote" />
       <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\public" />
       <recent name="C:\Users\manue_001\Documents\GitHub\blocnote2\resources\views\note" />
@@ -501,7 +554,19 @@
       <option name="project" value="LOCAL" />
       <updated>1440194415110</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Code upgrade">
+      <created>1440208945722</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1440208945722</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Problem">
+      <created>1440233364731</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1440233364731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -510,13 +575,13 @@
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24298376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24298376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33386582" sideWeight="0.53249633" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33865815" sideWeight="0.5384047" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33386582" sideWeight="0.4675037" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33865815" sideWeight="0.46159527" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4911374" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -552,27 +617,14 @@
     <MESSAGE value="Freezer ne trouve qu'un album." />
     <MESSAGE value="Ajout de google client , lib 1.0beta" />
     <MESSAGE value="Code upgrade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code upgrade" />
+    <MESSAGE value="Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/noteContent.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -713,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21794872">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/loggedin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -738,20 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -857,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,42 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="20" />
-          <folding>
-            <marker date="1440192609896" expanded="true" signature="209:266" placeholder="select serid..." />
-            <marker date="1440192609896" expanded="true" signature="515:702" placeholder="select serid..." />
-            <marker date="1440192609896" expanded="true" signature="1741:2182" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="2587:2974" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="3250:3573" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="3905:4293" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="4556:4717" placeholder="select user,..blocnotes_items..." />
-            <marker date="1440192609896" expanded="true" signature="5195:5325" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440192609896" expanded="true" signature="5639:5760" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440192609896" expanded="true" signature="5940:6068" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440192609896" expanded="true" signature="7446:7585" placeholder="SELECT * FRO..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="7848:8287" placeholder="SELECT * FRO..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="8495:8633" placeholder="SELECT * FRO..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="9415:9487" placeholder="SELECT * FRO..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="9787:9925" placeholder="SELECT * FRO..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="10202:10333" placeholder="SELECT * FRO..blocnotes_items..." />
-            <marker date="1440192609896" expanded="true" signature="10780:10969" placeholder="update blocn..." />
-            <marker date="1440192609896" expanded="true" signature="10982:11175" placeholder="update blocn..." />
-            <marker date="1440192609896" expanded="true" signature="11370:11630" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="12570:12629" placeholder="select isDir..." />
-            <marker date="1440192609896" expanded="true" signature="13027:13138" placeholder="select * fro..." />
-            <marker date="1440192609896" expanded="true" signature="13503:13601" placeholder="select * fro..." />
-            <marker date="1440192609896" expanded="true" signature="14850:15163" placeholder="select d2.* ..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="15345:15631" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="15915:16035" placeholder="delete from ..." />
-            <marker date="1440192609896" expanded="true" signature="16193:16341" placeholder="select id fr..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="16710:16807" placeholder="insert into ..." />
-            <marker date="1440192609896" expanded="true" signature="16985:17157" placeholder="update blocn..." />
-            <marker date="1440192609896" expanded="true" signature="18795:18875" placeholder="select id_el..blocnotes_link..." />
-            <marker date="1440192609896" expanded="true" signature="19180:19260" placeholder="select id_el..blocnotes_link..." />
-            <marker date="1440192609896" expanded="true" signature="20480:20525" placeholder="select * fro..blocnotes_data..." />
-            <marker date="1440192609896" expanded="true" signature="23257:23315" placeholder="update blocn..." />
-            <marker date="1440192609896" expanded="true" signature="23343:23401" placeholder="update blocn..." />
-            <marker date="1440192609896" expanded="true" signature="24475:24535" placeholder="update blocn..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="80" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,22 +930,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/freezer.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.8461537">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.3251366">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artisan">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48907104">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69945353">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18732782">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state vertical-scroll-proportion="-5.4615383">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/freezer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6611111">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
           <folding />
         </state>
       </provider>
