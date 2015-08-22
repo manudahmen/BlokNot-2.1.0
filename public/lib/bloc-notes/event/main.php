@@ -801,3 +801,15 @@ function deplacerDocumentSecurized(/**WHAT*/$IDfolderA, /** DANS IN */ $IDfolder
     }
     error_log("Erreur DB dans deplacerDossierSecurized");return FALSE;
 }
+
+function getParentNoteId($path)
+{
+global $mysqli;
+
+    $sql = "select folder_id where id=".$path;
+    if (($result=simpleQ($sql, $mysqli))!=NULL) {
+
+        return mysqli_fetch_assoc($result)["folder_id"];
+    }
+
+}

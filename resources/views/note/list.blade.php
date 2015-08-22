@@ -8,6 +8,9 @@
 @stop
 
 @section('content')
+
+    $()->
+
 <?php
 /**
  * Created by PhpStorm.
@@ -16,39 +19,10 @@
  * Time: 13:42
  */
 
+
 require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 
-?>
-<div class="container">
-    <label for="noteView">Note</label>
-            <!--<textarea id="noteView">-->
-<?php
-                $res  = getDBDocument($noteId);
-                    if($res)
-                    {
-                        $doc = mysqli_fetch_assoc($res);
+   listerNotesFromDB("%%", FALSE, $noteId, Auth::user()->email);
+    ?>
 
-
-
-
-                    }
-
-                ?>
-     <img src="{{ URL::to("note/view/$noteId") }}"/>
-</div>
-{{ isset($noteId) ? "<p>NoteId: " .$noteId."</p>" : 'Variable NoteId non définie' }}
-{{ isset($noteId) ? "<p>Page: " .$page ."</p>": 'Variable page non définie' }}
-<?php
-echo "#".$monutilisateur."#";
-
-listerNotesFromDB("*%", FALSE, 0, $monutilisateur);
-
-$root = getRootForUser($monutilisateur);
-
-        echo "<p>Root Id : ";
-print_r($root);
-        echo "</p>"
-?>
-
-@stop
-
+    @stop

@@ -22,11 +22,13 @@ function listerTout($classeur) {
 }
 function listerNotesFromDB($filtre, $composed, $path, $user){
     $results = getDocumentsFiltered($filtre, $composed, $path, $user);
+    ?><div class="miniImgContainer"><strong><a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>"><p>Répertoire parent</p><p>..</p></a></strong></div><?php
     if($results) {
     while (($row=  mysqli_fetch_assoc($results))) {
         $filename = $row['filename'];
         $content = $row['content_file'];
         $id = $row['id'];
+        $folder_id =  $row["folder_id"];
         typeDB($filename, $content, $id, $row);
     }
     }
@@ -95,11 +97,11 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
             $mime = $rowdoc["mime"];
             if(isImage(getExtension($filename), $mime))
             {?>
-            <img src ="<?php echo URL::to("note/view/$id"); ?> alt="<?= $filename ?>"/>
+            <img src ="<?php echo URL::to("file/view/$id"); ?> alt="<?= $filename ?>"/>
             <?php } else if(isTexte(getExtension($filename), $mime)) {
      echo "<span class='typeTextBlock'>". htmlspecialchars(substr($content, 0, 500))."</span>"; } else 
          if($rowdoc['isDirectory']==1 || $mime=="directory") {
-?><img src='images/dossier-gris.png' class="miniImg" alt="Icône dossier par défaut"><?php
+?><img src='{{ asset("lib/bloc-notes/images/dossier-gris.png") }} class="miniImg" alt="Icône dossier par défaut"><?php
 } else {
     echo "<img src='http://www.stdicon.com/crystal/".$mime."'/>";
 }
