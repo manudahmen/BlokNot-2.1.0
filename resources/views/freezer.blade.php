@@ -1,17 +1,20 @@
 @extends("master")
 @yield("title", "Freezer")
 
+@section("header")
+<link href="{{asset("css/freezer.css")}}" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="{{asset("scripts/jquery-1.11.2.js")}}"></script>
+    <!--<script type="text/javascript" src="{{asset("scripts/layoutActions.js")}}"></script>-->
+    <script type="text/javascript" src="{{asset("scripts/play.js")}}"/>
+    <script type="text/javascript" src="{{asset("scripts/auth.js")}}"></script>
+    <script type="text/javascript" src="scripts/playlist.js"></script>
+
+@stop
+
 @section("content")
     <h2>Freezer - Search on Gracenote!</h2>
-
-    <link href="css/freezer.css" type="text/css" rel="stylesheet"/>
-    <script src="scripts/jquery-1.11.2.js"></script>
-    <script src="scripts/layoutActions.js"></script>
-    <script type="text/javascript" src="scripts/play.js">
-
-    </script>
-    <script src="scripts/auth.js"></script>
-    <script src="scripts/playlist.js"></script>
+    <p><a target="_blank" href="https://fr.wikipedia.org/wiki/Compact_Disc_Data_Base">CDDB on Wikipedia</a></p>
+    <blockquote>CDDB est un nom de marque d&eacute;pos&eacute; par la soci&eacute;t&eacute; Gracenote qui fournit un service d'acc&egrave; s &agrave; sa base de donn&eacute;&eacute;es &agrave; diff&eacute;rents partenaires :</blockquote>
     <div id="search-form-container">
         <form method="GET" action="{{ URL::to('freezer') }}">
             <fieldset>
@@ -75,7 +78,7 @@
 
         <div id='authorBioNO'/>
         <img src='<?php echo $results[0]["artist_image_url"]; ?>'>
-        <?php if ($results[0]["artist_bio_url"] != NULL) {
+        <?php if (isset($results[0]["artist_bio_url"])) {
             echo file_get_contents($results[0]["artist_bio_url"]);
         } ?>
     </div>
@@ -92,7 +95,7 @@
         $result0 = $api->fetchAlbum($results[$i]["album_gnid"]);
     }
     else{
-    ?>L'album est introuvable, erreur de script ou de base de données'<?php
+    ?>L'album est introuvable, erreur de script ou de base de donn&eacute;es'<?php
     continue 1;
     }
     if(isset($result0[0]))
@@ -161,7 +164,6 @@
     <script type="text/javascript">
         mettreEnPageInitiale();
     </script>
-    <script src="https://apis.google.com/js/client.js?onload=init"></script>
     </div>
 @stop
 
