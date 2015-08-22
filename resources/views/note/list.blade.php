@@ -1,3 +1,13 @@
+@extends('master')
+@section('title', 'Note browser')
+
+@section('sidebar')
+    @parent
+
+
+@stop
+
+@section('content')
 <?php
 /**
  * Created by PhpStorm.
@@ -6,15 +16,28 @@
  * Time: 13:42
  */
 
-//require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
+require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 
 ?>
-        <div class="container">
-            <label for="noteView"></label>
+<div class="container">
+    <label for="noteView">Note</label>
             <textarea id="noteView">
-            @yield('note/noteContent', $noteId)
+
             </textarea>
-        </div>
+</div>
+{{ isset($noteId) ? "<p>NoteId: " .$noteId."</p>" : 'Variable NoteId non définie' }}
+{{ isset($noteId) ? "<p>Page: " .$page ."</p>": 'Variable page non définie' }}
 <?php
-listerNotesFromDB("", FALSE, $noteId);
+echo "#".$monutilisateur."#";
+
+listerNotesFromDB("*", FALSE, $noteId);
+
+$root = getRootForUser();
+
+        echo "<p>Root Id : ";
+print_r($root);
+        echo "</p>"
 ?>
+
+@stop
+

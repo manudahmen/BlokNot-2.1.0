@@ -517,11 +517,11 @@ function getRootForUser() {
     global $monutilisateur;
     $sql = "select id from blocnotes_data where username like '" .
             mysqli_real_escape_string($mysqli, $monutilisateur)
-            . "' and isRoot=1";
+            . "' and folder_id=id";
 
     $result = simpleQ($sql, $mysqli);
     if ($result) {
-        if ($arr = $result->fetch_assoc()) {
+        if (($arr = $result->fetch_assoc())!=NULL) {
             $id = $arr['id'];
         } else {
             $id = 0;
