@@ -23,22 +23,22 @@
                 <table>
 
                     <tr>
-                        <td><label>Artiste(s)</label></td>
+                        <td><label for="artist">Artiste(s)</label></td>
                         <td><input type="text" name="artist" value="<?php echo filter_input(INPUT_GET, "artist") ?>"/>
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Album</label></td>
+                        <td><label for="album">Album</label></td>
                         <td><input type="text" name="album" value="<?php echo filter_input(INPUT_GET, "album") ?>"/>
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Link to Youtube search</label></td>
+                        <td><label for="yt">Link to Youtube search</label></td>
                         <td><input type="checkbox" name="yt" value="<?php echo filter_input(INPUT_GET, "yt") ?>"/>
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Search for Lyrics</label></td>
+                        <td><label for="lyrics">Search for Lyrics</label></td>
                         <td><input type="checkbox" name="lyrics"
                                    value="{{ Input::get("lyrics") }}"/>
                         </td>
@@ -77,14 +77,14 @@
         <a id='authorBioNOLinkShow' onclick='montrerBioArtist("authorBioNO")'>Monter Bio artiste</a>
         <a id='authorBioNOLinkHide' onclick='cacherBioArtist("authorBioNO");'>Cacher Bio artiste</a>
 
-        <div id='authorBioNO'/>
+        <div id='authorBioNO'>
             <?php if (isset($results[0]["artist_image_url"])&& (strlen($results[0]["artist_image_url"])>0)) { ?>
         <img src='<?php echo $results[0]["artist_image_url"]; ?>'>
         <?php }
             if (isset($results[0]["artist_bio_url"])&& (strlen($results[0]["artist_bio_url"])>0)) {
             echo file_get_contents($results[0]["artist_bio_url"]);
         } ?>
-    </div>
+        </div>
     <?php
 
     }
@@ -119,9 +119,8 @@
         <ul>
             <?php
             foreach ($result0[0]['tracks'] as $track) {
-            // again echo anything here you would like.
             ?>
-            <li><?php echo $track["track_title"] ?>
+            <li><label for='musicSpan<?php echo $j; ?>' ><?php echo $track["track_title"] ?></label>
                 <input type='text' class='musicSpan' id='musicSpan<?php echo $j; ?>'
                        value="<?php echo $result0[0]["album_artist_name"]; ?> , <?php echo $result0[0]["album_title"]; ?> , <?php echo $track["track_title"]; ?>"/>
                 <input type='button' value='Lire chanson sur Youtube'
@@ -136,7 +135,6 @@
         <ul>
             <?php
             foreach ($result0[0]['genre'] as $genre) {
-                // again echo anything here you would like.
                 echo "<li>" . $genre['text'] . "</li>";
             }?>
         </ul>
@@ -147,26 +145,29 @@
             <?php if ($results[$i]["review_url"] != NULL) {
                 echo file_get_contents($results[$i]["review_url"]);
             } ?></div>
-    </div>
+         </div>
     <?php
     }
     }
     $i++;
     }
     ?>
+
+
+
     <div id="#player"></div>
 
-    </div>
 
     <div id="media_view">
         <div id="search-container">Player here</div>
         <br/><span id='query'></span>
-
-        <div id="results"/>
-    </div>
+        </div>
+        <div id="results">
+        </div>
     <script type="text/javascript">
-        mettreEnPageInitiale();
+        $("a").addClass("btn btn-large btn-primary openbutton")
+//        mettreEnPageInitiale();
     </script>
-    </div>
+
 @stop
 
