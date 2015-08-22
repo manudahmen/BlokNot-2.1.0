@@ -24,28 +24,28 @@
 
                     <tr>
                         <td><label for="artist">Artiste(s)</label></td>
-                        <td><input type="text" name="artist" value="<?php echo filter_input(INPUT_GET, "artist") ?>"/>
+                        <td><input type="text" name="artist" id="artist" value="<?php echo filter_input(INPUT_GET, "artist") ?>"/>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="album">Album</label></td>
-                        <td><input type="text" name="album" value="<?php echo filter_input(INPUT_GET, "album") ?>"/>
+                        <td><input type="text" name="album" id="album" value="<?php echo filter_input(INPUT_GET, "album") ?>"/>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="yt">Link to Youtube search</label></td>
-                        <td><input type="checkbox" name="yt" value="<?php echo filter_input(INPUT_GET, "yt") ?>"/>
+                        <td><input type="checkbox" name="yt" id="yt" value="<?php echo filter_input(INPUT_GET, "yt") ?>"/>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="lyrics">Search for Lyrics</label></td>
-                        <td><input type="checkbox" name="lyrics"
+                        <td><input type="checkbox" id="lyrics" name="lyrics"
                                    value="{{ Input::get("lyrics") }}"/>
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Envoyer:</label></td>
-                        <td><input type="submit" name="submit-button" value="Clic moi"/></td>
+                        <td><label for="submit">Envoyer:</label></td>
+                        <td><input type="submit" id="submit" name="submit-button" value="Clic moi"/></td>
                     </tr>
                 </table>
 
