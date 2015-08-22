@@ -24,7 +24,15 @@ function listerNotesFromDB($filtre, $composed, $path, $user){
     $results = getDocumentsFiltered($filtre, $composed, $path, $user);
     ?>
     <div class="browserContainer">
-    <a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>" class="miniImg"><div class="miniImgContainerTop">..</div><div class="miniImgContainer"><p><strong>Répertoire parent</strong></p><p>..</p></div><div class="miniImgContainerBottom">&minus;&gt;</div></a>
+    <div  class="miniImgExternalBox">
+    <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
+    <div class="miniImgContainer">
+    <a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>">
+        <img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>'
+        class="miniImg" alt="Icône dossier par défaut" /></a>
+    </div>
+    <div class="miniImgContainerBottom">&minus;&gt;</div>
+    </div>
     <?php
     if($results) {
     while (($row=  mysqli_fetch_assoc($results))) {
@@ -97,7 +105,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
     $urlaction = URL::to("note/list/$id/1");
     $mime = $rowdoc["mime"];
     ?>
-<a class='miniImg' href="<?= $urlaction ?>">
+<div class='miniImgExternalBox' >
     <div class="miniImgContainerTop">
         <span class="filename"><em><?php
                 echo $rowdoc["filename"]."|".$rowdoc["id"];
@@ -114,7 +122,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
                 if(isTexte(getExtension($filename), $mime)) {
      ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if($rowdoc['isDirectory']==1 || $mime=="directory") {
-?><img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>' class="miniImg" alt="Icône dossier par défaut"><?php
+?><a href="<?= $urlaction ?>"><img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>' class="miniImg" alt="Icône dossier par défaut"></a><?php
 } else {
 ?>
     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
@@ -129,7 +137,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
         <li>Supprimer</li>
         <li>Déplacer</li>
     </ul>
-</div></a>
+</div>
+</div>
     <?php }
 function echoImgBase64($content, $filename)
 {
