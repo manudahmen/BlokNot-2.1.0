@@ -27,12 +27,14 @@ require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesI
                     if($res)
                     {
                         $doc = mysqli_fetch_assoc($res);
-                        displayNote($doc["id"]);
+
+
+
 
                     }
 
                 ?>
-     <!--       </textarea>-->
+     <img src="{{ URL::to("note/view/$noteId") }}"/>
 </div>
 {{ isset($noteId) ? "<p>NoteId: " .$noteId."</p>" : 'Variable NoteId non définie' }}
 {{ isset($noteId) ? "<p>Page: " .$page ."</p>": 'Variable page non définie' }}
