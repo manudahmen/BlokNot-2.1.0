@@ -21,9 +21,18 @@ require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesI
 ?>
 <div class="container">
     <label for="noteView">Note</label>
-            <textarea id="noteView">
+            <!--<textarea id="noteView">-->
+<?php
+                $res  = getDBDocument($noteId);
+                    if($res)
+                    {
+                        $doc = mysqli_fetch_assoc($res);
+                        displayNote($doc["id"]);
 
-            </textarea>
+                    }
+
+                ?>
+     <!--       </textarea>-->
 </div>
 {{ isset($noteId) ? "<p>NoteId: " .$noteId."</p>" : 'Variable NoteId non définie' }}
 {{ isset($noteId) ? "<p>Page: " .$page ."</p>": 'Variable page non définie' }}

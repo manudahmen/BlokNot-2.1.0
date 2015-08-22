@@ -1,6 +1,7 @@
 <?php
 require_once(__DIR__ . "/../all-configured-and-secured-included.php");
-
+use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\URL;
 
 connect();
 
@@ -690,11 +691,10 @@ function folder_field($folder_id, $field_name = "folder") {
         $mime = $doc['mime'];
         if ($doc) {
             ?><div id="document"><?php if (isImage(getExtension($filename), $mime)) { ?>
-                <img src="<?php echo $urlApp . "/composant/display/contents.php?id=$id"; ?>"/><?php } else if (isTexte(getExtension($filename), $mime)) {
+                <img src="<?php echo URL::to("note/view/$id"); ?>"/><?php } else if (isTexte(getExtension($filename), $mime)) {
                 ?>
                 <script type="text/javascript">
-                    var urlAppJS = "<?php echo $urlApp; ?>";
-                    $("#document").load(url = urlAppJS + "/composant/display/contents.php?id=<?php echo $id; ?>", function (response, status, xhr) {
+                    $("#document").load(url = "<?php echo URL::to("note/view/$id"); ?>", function (response, status, xhr) {
                         if (status == "error") {
                             var msg = "Sorry but there was an error: ";
                             $("#error").html(msg + xhr.status + " " + xhr.statusText + url);
