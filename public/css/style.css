@@ -1,16 +1,19 @@
-﻿title {
+﻿/**
+Detailed styles for _bloc-note2_ app
+*/
+title {
     display: block;
 }
 body
 {
-    font-family: Comics Sans, 24pt;
+    font-family: Comics Sans, serif;
+    font-size: 12pt;
     z-index: 0;
 }
 
 
 .mainmenu
 {
-    font-size: 24pt;
     background-color: pink;
 }
 img.mainmenu
@@ -25,10 +28,8 @@ div#userid a
 
 /*    float: right;*/
 }
-ul#fg_membersite_content, ul#fg_membersite_content li
-{
+ul#fg_membersite_content, ul#fg_membersite_content li {
     display: inline;
-    font-size: 12pt;
 }
 .icon-32
 {
@@ -37,14 +38,14 @@ ul#fg_membersite_content, ul#fg_membersite_content li
 } 
 
 a.button_appdoc, .button_appdoc{
-    display: float;
+    display: block;
     float:left;
 }
 .button_appdoc a, .button_help, .button_help a
 
 {
-    padding: 5pt;
-    margin : 5pt;
+    padding: 5px;
+    margin : 5px;
     color: whitesmoke;
     background-color: blueviolet;
     text-decoration: none;
@@ -115,29 +116,39 @@ div#fg_membersite {
 #error{
 
 }
-.miniImgContainer img, .miniImg div, typeTextBlock
-{
-    width: 200px; 
-    height: 200px; 
-    overflow: hidden;
-    border: 3px inset black;
-}
-div.miniImgContainer
-{
-    width: 240px;
-    height: 260px;
-    float: left;
-}
-
-
 a.miniImg
 {
+    width:  300px;
+    height: 200px;
+    display: block;
     display: block;
     float: left;
-    width: 220px;
-    height: 240px;
+}
+div.miniImgContainerTop
+{
+    width: 120px;
+    height: 40px;
+    overflow: hidden;
+}
+div.miniImgContainerBottom
+{
+    width: 300px;
+    height: 40px;
+}
+
+
+div.miniImgContainer
+{
+    width: 300px;
+    height: 300px;
     overflow-x: hidden;
 }
+
+div.browserContainer
+{
+    width: 900px;
+}
+
 a.miniImg span.filename
 
 {
@@ -157,10 +168,24 @@ span.miniImg
 {
     overflow-x: hidden;
 }
+.miniImg img
+{
+    height: 120px;
+    width: 120px;
+}
+.onfile_actions
+{
+    list-style-type: none;
+
+}
+.onfile_actions li
+{
+    display: inline;
+
+}
 /*#document pre
 {
     display: block;
-    font-size: 18pt;
     font-family: serif Whitney, Comics Sans;
     margin: 2px solid green;
 }*/
@@ -168,7 +193,6 @@ div#document
 {
     width: 100%;
     display: block;
-    font-size: 18pt;
     font-family: serif Whitney, Comics Sans;
     border: 2px solid orange;
     overflow: auto;
@@ -193,7 +217,7 @@ a.miniImg
     text-decoration: none;
     border: none;
 }
-cadre_media, #document
+.cadre_media, #document
 {
     /*margin-left: 33%;
     width: 50%;
@@ -211,16 +235,14 @@ a.nav_buttons
 {
     float: left;
     display: block;
-    font-size: 18pt;
-    background-color: #0000ff; 
+     background-color: #0000ff;
     color: white;
     text-decoration: none;
-    margin: 2pt;
+    margin: 2px;
     border: 3px solid gray;
 }
 textarea,input
 {
-    font-size: 24pt;
 }
 input.filecheckbox
 {
@@ -262,7 +284,7 @@ span.path_array
         background-color: gray;
 	color: white;
 }
-doc_container
+.doc_container
 {
     width: 700px;
 }

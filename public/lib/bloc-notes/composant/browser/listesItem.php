@@ -22,7 +22,10 @@ function listerTout($classeur) {
 }
 function listerNotesFromDB($filtre, $composed, $path, $user){
     $results = getDocumentsFiltered($filtre, $composed, $path, $user);
-    ?><div class="miniImgContainer"><strong><a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>"><p>Répertoire parent</p><p>..</p></a></strong></div><?php
+    ?>
+    <div class="browserContainer">
+    <a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>" class="miniImg"><div class="miniImgContainerTop">..</div><div class="miniImgContainer"><p><strong>Répertoire parent</strong></p><p>..</p></div><div class="miniImgContainerBottom">&minus;&gt;</div></a>
+    <?php
     if($results) {
     while (($row=  mysqli_fetch_assoc($results))) {
         $filename = $row['filename'];
@@ -36,6 +39,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user){
     { 
         echo "Pas de résultat";
     }
+    ?></div><?php
 }
 function typeTxt($cf, $filePath) {
     global $FILE_THUMB_MAXLEN;
@@ -91,24 +95,41 @@ function typeImg($cf) {
 }
 function typeDB($filename, $content, $id, &$rowdoc = NULL) {
     $urlaction = URL::to("note/list/$id/1");
-    ?><div class="miniImgContainer">
-        <a class='miniImg' href="<?= $urlaction ?>"><span class="filename"><em><?php echo $rowdoc["filename"]."|".$rowdoc["id"]; ?></em></span><br/>
-            <?php 
-            $mime = $rowdoc["mime"];
+    $mime = $rowdoc["mime"];
+    ?>
+<a class='miniImg' href="<?= $urlaction ?>">
+    <div class="miniImgContainerTop">
+        <span class="filename"><em><?php
+                echo $rowdoc["filename"]."|".$rowdoc["id"];
+                ?></em></span>
+    </div>
+    <div class="miniImgContainer" >
+    <?php
             if(isImage(getExtension($filename), $mime))
-            {?>
-            <img src ="<?php echo URL::to("file/view/$id"); ?> alt="<?= $filename ?>"/>
-            <?php } else if(isTexte(getExtension($filename), $mime)) {
-     echo "<span class='typeTextBlock'>". htmlspecialchars(substr($content, 0, 500))."</span>"; } else 
-         if($rowdoc['isDirectory']==1 || $mime=="directory") {
-?><img src='{{ asset("lib/bloc-notes/images/dossier-gris.png") }} class="miniImg" alt="Icône dossier par défaut"><?php
+            { ?>
+            <img src ="<?php echo URL::to("file/view/$id"); ?>
+            alt="<?= $filename ?>"/>
+            <?php
+            } else
+                if(isTexte(getExtension($filename), $mime)) {
+     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
+                } else if($rowdoc['isDirectory']==1 || $mime=="directory") {
+?><img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>' class="miniImg" alt="Icône dossier par défaut"><?php
 } else {
-    echo "<img src='http://www.stdicon.com/crystal/".$mime."'/>";
+?>
+    <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
+<?php
 }
-?></a><div id="<?php echo "data-$id"; ?>" class="miniImgContainer" ondrop="drop(event, <?php echo $id ?>)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" ><select onchange="doNoteAction(<?= $id ?>, this.selectedIndex);" name="file_menu" id="menu<?php echo $id; ?>"><option value="Rien">---</option><option value="Voir">Voir</option><option value="Modifier">Modifier</option><option value="Move">Déplacer</option><option value="Copier">Copier</option><option value="Coller">Coller</option><option value="Corbeille">Corbeille</option><option value="Faire-suite">Faire suivre</option><option name="copy" onclick="copyId(<?= $id ?>)">Copy:{{<?= $id ?>}}</option></select>
- <input class="filecheckbox" type="checkbox" name="files[]" value="<?php echo "TXT_".substr($id, 0, -4); ?>" /></div>
-
+?>
 </div>
+<div id="<?php echo "data-$id"; ?>" class="miniImgContainerBottom">
+<a href="<?php echo asset("file/view/".$id) ?>">Voir</a>
+    <label>Actions</label><ul class="onfile_actions">
+        <li>Modifier</li>
+        <li>Supprimer</li>
+        <li>Déplacer</li>
+    </ul>
+</div></a>
     <?php }
 function echoImgBase64($content, $filename)
 {

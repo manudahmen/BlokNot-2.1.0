@@ -18,7 +18,7 @@
 
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 
-$mime = getMimeType($id);
+$mime = getMimeType($noteId);
     if(strchr($mime, "image")>=0)
     {
         ?><img src="{{ asset("file/view/".$noteId) }}" /><?php
@@ -26,7 +26,8 @@ $mime = getMimeType($id);
     else if(strchr($mime, "text")>=0)
     {
         ?>{{ file_get_contents(asset("file/view/".$noteId)) }}<?php
-    } else if{$mime=="directory")
+    } else if($mime=="directory")
+        {
         echo "Répertoire";
 
     }

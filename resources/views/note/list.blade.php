@@ -8,9 +8,6 @@
 @stop
 
 @section('content')
-
-    $()->
-
 <?php
 /**
  * Created by PhpStorm.
