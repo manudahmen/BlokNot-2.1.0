@@ -155,10 +155,12 @@ if ($result != NULL) {
 
 }]);
 
-Route::get("file/download", function ($noteId)
+Route::get("file/download/{noteId}",[
+    "middleware" =>"auth",
+    "uses" => function ($noteId)
 {
     return View::make("file/download/$noteId");
-});
+}]);
 
 
 function echoImgSelf($content, $filename)
