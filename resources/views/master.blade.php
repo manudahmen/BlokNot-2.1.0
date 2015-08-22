@@ -14,6 +14,7 @@
 <body>
 @section('sidebar')
     <div id="sidebar">
+        <p ><a href="{{ URL::to("/") }}" id="HOME_LINK" class="btn btn-large btn-primary openbutton">Accueil - Home</a></p>
         <?php
         if (Auth::check())
         {?><p id="connected_user" class="btn btn-large btn-primary openbutton" >L'utilisateur est connect&eacute; ....
@@ -37,7 +38,6 @@
 
         @show
     </div>
-    <h1>@yield('title')</h1>
     <div class="container">
         @section('content')
             <p>Applications web de Manuel Dahmen. Formation personnelle.</p>
