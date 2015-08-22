@@ -3,9 +3,6 @@
 
 @section('sidebar')
     @parent
-
-    <p><a href="{{ url("auth/login") }}">Page de login</a>
-</p>
 @stop
 
 @section('content')<h2>Notes sur l'état de l'application</h2>
