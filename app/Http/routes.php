@@ -22,7 +22,7 @@ Route::get("note/view/{noteId}", [
     }])->where('noteId', '[0-9]+');
 
 
-Route::get('note/edit/{id}', ['middleware' => "auth", "uses" => function ($id) {
+Route::get('note/edit/{noteId}', ['middleware' => "auth", "uses" => function ($noteId) {
     return view('note/edit', ["noteId" => $noteId]);
 }])->where('id', '[0-9]+');
 

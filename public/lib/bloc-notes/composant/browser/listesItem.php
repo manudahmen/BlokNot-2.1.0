@@ -25,13 +25,16 @@ function listerNotesFromDB($filtre, $composed, $path, $user){
     ?>
     <div class="browserContainer">
     <div  class="miniImgExternalBox">
-    <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
-    <div class="miniImgContainer">
-    <a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>">
-        <img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>'
-        class="miniImg" alt="Icône dossier par défaut" /></a>
+        <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
+        <div class="miniImgContainer">
+            <a href="<?php echo asset("note/list/".(int)(getParentNoteId($path))."/1"); ?>">
+                <img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>'
+                    class="miniImg" alt="Icône dossier par défaut" />
+            </a>
+        </div>
+    <div class="miniImgContainerBottom">
+        &minus;&gt;
     </div>
-    <div class="miniImgContainerBottom">&minus;&gt;</div>
     </div>
     <?php
     if($results) {
@@ -133,7 +136,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
 <div id="<?php echo "data-$id"; ?>" class="miniImgContainerBottom">
 <a href="<?php echo asset("file/view/".$id) ?>">Voir</a>
     <label>Actions</label><ul class="onfile_actions">
-        <li>Modifier</li>
+        <li><a href="<?php echo asset("note/edit/".$id) ; ?>">Modifier</a></li>
         <li>Supprimer</li>
         <li>Déplacer</li>
     </ul>
