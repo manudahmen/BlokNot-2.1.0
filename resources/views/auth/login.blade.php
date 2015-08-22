@@ -9,8 +9,8 @@
         ?>
         <form method="POST" action="{{ route("login_form") }}">
             {!! csrf_field() !!}
-
-            <td>
+<table>
+            <tr>
             <td>Email</td>
             <td><input type="email" name="email" value="{{ old('email') }}"></td>
             </tr>
@@ -32,10 +32,10 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
                 <td><a href="{{ route("register") }}">Register</a></td>
+                <td></td>
             </tr>
-
+</table>
         </form>
         <div id="errors"><?php
             if (isset($errors)) {
