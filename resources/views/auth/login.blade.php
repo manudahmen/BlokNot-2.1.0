@@ -2,39 +2,46 @@
 @extends('master')
 @section('content')
 
-<div id="login_form">
-    <?php if(Auth::check())
-    {
-        echo "L'utilisateur/l'utilisatrice ".(Auth::user()->email) . " est connecté(e).";
-    }
-    ?>
-    <form method="POST" action="{{ route("login_form") }}">
-    {!! csrf_field() !!}
+    <div id="login_form">
+        <?php if (Auth::check()) {
+            echo "L'utilisateur/l'utilisatrice " . (Auth::user()->email) . " est connecté(e).";
+        }
+        ?>
+        <form method="POST" action="{{ route("login_form") }}">
+            {!! csrf_field() !!}
 
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
-    </div>
+            <td>
+            <td>Email</td>
+            <td><input type="email" name="email" value="{{ old('email') }}"></td>
+            </tr>
 
-    <div>
-        Password
-        <input type="password" name="password" id="password">
-    </div>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
 
-    <div>
-        <input type="checkbox" name="remember"> Remember Me
-    </div>
+            <tr>
+                <td>Remember Me</td>
+                <td><input type="checkbox" name="remember"></td>
+            </tr>
 
-    <div>
-        <button type="submit">Login</button>
-    </div>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Login</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="{{ route("register") }}">Register</a></td>
+            </tr>
+
+        </form>
         <div id="errors"><?php
+            if (isset($errors)) {
+                print_r($errors);
+            }
             ?>
         </div>
-        <div>
-        <a href="{{ route("register") }}">Register</a>
     </div>
-
-</form>
-</div>
 @stop
