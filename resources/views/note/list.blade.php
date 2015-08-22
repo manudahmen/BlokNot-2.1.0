@@ -30,9 +30,9 @@ require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesI
 <?php
 echo "#".$monutilisateur."#";
 
-listerNotesFromDB("*", FALSE, 0);
+listerNotesFromDB("*%", FALSE, 0, $monutilisateur);
 
-$root = getRootForUser();
+$root = getRootForUser($monutilisateur);
 
         echo "<p>Root Id : ";
 print_r($root);

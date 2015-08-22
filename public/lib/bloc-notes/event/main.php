@@ -242,16 +242,16 @@ function getDocumentsParClasseur($folder_id = "") {
     return $result;
 }
 
-function getDocumentsFiltered($filtre, $composedOnly, $pathId) {
+function getDocumentsFiltered($filtre, $composedOnly, $pathId, $user) {
     global $monutilisateur;
     global $mysqli;
 
     if ($pathId == 0) {
-        $pathId = getRootForUser();
+        $pathId = getRootForUser($user);
     }
 
     $q = "SELECT * FROM blocnotes_data " .
-            "WHERE username='" . mysqli_real_escape_string($mysqli, $monutilisateur) .
+            "WHERE username='" . mysqli_real_escape_string($mysqli, $user) .
             "' and ((filename like '%" . mysqli_real_escape_string($mysqli, $filtre) .
             "%') or (content_file like'%" . mysqli_real_escape_string($mysqli, $filtre) .
             "%') and (content_file like '%" .
@@ -512,11 +512,15 @@ function deleteImageOuNoteDependant($id, $idDependant) {
     return $res;
 }
 
-function getRootForUser() {
+function getRootForUser($user=NULL) {
     global $mysqli;
+    if($user==NULL)
+    {
     global $monutilisateur;
+
+    }
     $sql = "select id from blocnotes_data where username like '" .
-            mysqli_real_escape_string($mysqli, $monutilisateur)
+            mysqli_real_escape_string($mysqli, $user)
             . "' and isRoot=1";
 
     $result = simpleQ($sql, $mysqli);
