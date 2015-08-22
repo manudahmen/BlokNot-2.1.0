@@ -7,8 +7,11 @@
      */
 
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
-
-    $result = getDBDocument((int)filter_input(INPUT_GET, "id"));
+    if(Auth::check())
+        {
+            $user = Auth::user()->email;
+        }
+    $result = getDBDocument((int)filter_input(INPUT_GET, "id"), $user);
     if ($result != NULL) {
     if (($doc = mysqli_fetch_assoc($result)) != NULL) {
     $filename = $doc['filename'];
@@ -18,7 +21,7 @@
 
 
     if (isImage($ext, $doc['mime'])) {
-    echoImgSelf($content, $filename);
+    return new response($content)->header('Content-Type', imgSelf($content, $filename));
     } else if (isTexte($ext, $doc["mime"])) {
     //preg_match ( string $pattern , string $subject [, array &$matches [, int $flags = 0 [, int $offset = 0 ]]] )
     //$content =  htmlspecialchars($content);
@@ -45,6 +48,12 @@
 
     function echoImgSelf($content, $filename) {
     header('Content-type:image/' . getExtension($filename));
+
+
+    echo $content;
+    }
+    function ImgSelf($content, $filename) {
+    return 'image/' . getExtension($filename);
 
 
     echo $content;
