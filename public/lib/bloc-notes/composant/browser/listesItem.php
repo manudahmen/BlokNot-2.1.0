@@ -90,7 +90,7 @@ function typeImg($cf) {
 function typeDB($filename, $content, $id, &$rowdoc = NULL) {
     $urlaction = URL::to("note/list/$id/1");
     ?><div class="miniImgContainer">
-        <a class='miniImg' href="<?= $urlaction ?>"><span class="filename"><em><?php echo $rowdoc["filename"]."|".$rowdoc["folder_id"]; ?></em></span><br/>
+        <a class='miniImg' href="<?= $urlaction ?>"><span class="filename"><em><?php echo $rowdoc["filename"]."|".$rowdoc["id"]; ?></em></span><br/>
             <?php 
             $mime = $rowdoc["mime"];
             if(isImage(getExtension($filename), $mime))
