@@ -18,24 +18,13 @@
      * Date: 20-08-15
      * Time: 13:42
      */
+    use \Illuminate\Database\Eloquent\ModelNotFoundException;
+
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
     $note = \App\Note::findOrFail($noteId);
-    if($note==NULL)
-        {
-            $note = new Note;
-            $note->mime = "text/plain";
-        }
 
     $attributes = $note->getAttributes();
 
-/*
-    $filename = $note->filename;
-    $content_file = $note->content_file;
-    $folder_id = $note->folder_id;
-    $user = Auth::user()->email;
-    $ext = getExtension($filename);
-    echo $mime = $note->mime;
-*/
     $filename = $attributes["filename"];
     $folder_id = $attributes["folder_id"];
     $content_file = $attributes["content_file"];
@@ -44,7 +33,17 @@
     $ext = getExtension($filename);
 
 
-if(isTexte($ext, $mime))
+    /*
+        $filename = $note->filename;
+        $content_file = $note->content_file;
+        $folder_id = $note->folder_id;
+        $user = Auth::user()->email;
+        $ext = getExtension($filename);
+        echo $mime = $note->mime;
+    */
+
+
+    if(isTexte($ext, $mime))
     {
 
     ?>

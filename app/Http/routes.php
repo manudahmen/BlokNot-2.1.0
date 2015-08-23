@@ -27,6 +27,10 @@ Route::get("note/view/{noteId}", [
 Route::get('note/edit/{noteId}', ['middleware' => "auth", "uses" => function ($noteId) {
     return view('note/edit', ["noteId" => $noteId]);
 }])->where('id', '[0-9]+');
+Route::get('note/new/{folderId}', ['middleware' => "auth",
+    "uses" => function ($folderId) {
+    return view('note/new', ["folderId" => $folderId]);
+}])->where('id', '[0-9]+');
 
 Route::post("note/save", [
         'middleware' => "auth",
