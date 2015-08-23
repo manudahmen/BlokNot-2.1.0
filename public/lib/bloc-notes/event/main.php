@@ -424,12 +424,10 @@ function getDirectoryInfo($dbdoc) {
     return "";
 }
 
-function getFolderList() {
+function getFolderList($user) {
     global $config;
-    global $monutilisateur;
     global $mysqli;
-    $tablePrefix = $config->tablePrefix;
-    $sql = "select * from " . $tablePrefix . "_data where isDirectory=1 and username='" . $monutilisateur . "'";
+    $sql = "select * from blocnotes_data where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
     $res = simpleQ($sql, $mysqli);
     return $res;
 }
@@ -588,11 +586,11 @@ function displayPath($id) {
     echo "</div>";
 }
 
-function folder_field($folder_id, $field_name = "folder") {
+function folder_field($folder_id, $field_name, $user) {
     ?>
 <fieldset> <select name="<?php echo $field_name; ?>" class="user-control">
     <?php
-    $res = getFolderList();
+    $res = getFolderList($user);
     while (($row = mysqli_fetch_assoc($res)) != NULL) {
         if ($row["id"] == $folder_id) {
             $optionSel = "selected='selected'";

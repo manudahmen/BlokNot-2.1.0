@@ -193,3 +193,18 @@ function ImgSelf($content, $filename)
 
 }
 
+Route::get("note/save/txt/{noteId}", ["middleware" => "auth",
+    "uses" => function($noteId)
+    {
+        return "Save note txt(TODO)";
+    }] );
+Route::get("note/save/img/{noteId}", ["middleware" => "auth",
+    "uses" => function($noteId)
+    {
+        return "Save note img(TODO)";
+    }] );
+Route::get("note/save/other/{noteId}", ["middleware" => "auth",
+    "uses" => function($noteId)
+    {
+        return "Save note else types (no txt, no img) (TODO)";
+    }] );

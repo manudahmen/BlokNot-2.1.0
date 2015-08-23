@@ -13,7 +13,7 @@ $folderDoc = mysqli_fetch_assoc($folderRes);
 
 $folder_id = $folderDoc["id"];
 ?>
-<h1><?php echo $folderDoc["filename"]; ?></h2>
+<h1><?php echo $folderDoc["filename"]; ?></h1>
 <?php
 
 // OLD CODE
@@ -32,7 +32,7 @@ if(isset($_GET["CREATE_FROM"]))
     <fieldset>
         <label for="folder">Choisissez où mettre la note</label>
        <?php
- folder_field($folder_id);  ?>
+ folder_field($folder_id, "folder_id", $user);  ?>
    </fieldset>
         
     <fieldset>
@@ -64,8 +64,8 @@ if(($id = createFile("Ma note", "text/plain", "--\nWho?".$monutilisateur.", \nTh
     <input type="hidden" name="dbdoc"  value="0"/><br/>
     <fieldset>
         <label for="folder2">Choisissez où mettre la note-fichier</label>
-     <?php
- folder_field($folder_id);  ?>
+        <?php
+        folder_field($folder_id, "folder_id", $user);  ?>
     <fieldset>
         <label for="file[]">Choisissez des fichiers</label>
         <input type="file" name="files[]" multiple="multiple" class="user-control"/><br/>
