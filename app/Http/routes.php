@@ -159,6 +159,18 @@ Route::get("file/download/{noteId}",[
     "middleware" =>"auth",
     "uses" => function ($noteId)
 {
+    $result = getDBDocument($noteId);
+    if($result!=NULL)
+    {
+        $doc = mysqli_fetch_assoc($result);
+        $doc_content = getField($doc, "file_content");
+        $response = Response::make($doc_content, 200);
+        $response->header('Content-Type', $doc["mime"]);
+             $response->header("Content-Disposition", "attachment; filename=\"".$doc["filename"]."\"");
+            $response->header("Content-length", strlen($doc_content));
+            $response->header("Cache-control", "private");
+       return $response;
+        }
     return View::make("file/download/$noteId");
 }]);
 
