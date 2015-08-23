@@ -19,42 +19,81 @@
      * Time: 13:42
      */
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+    $note = \App\Note::findOrFail($noteId);
+    if($note==NULL)
+        {
+            $note = new Note;
+            $note->mime = "text/plain";
+        }
 
-    $result = getDBDocument($noteId);
-    if(($doc = mysqli_fetch_assoc($result)) != NULL)
-    {
-    $filename = $doc['filename'];
-    $folder_id = $doc['folder_id'];
+    $attributes = $note->getAttributes();
+
+/*
+    $filename = $note->filename;
+    $content_file = $note->content_file;
+    $folder_id = $note->folder_id;
     $user = Auth::user()->email;
-    $mime = $doc["mime"];
     $ext = getExtension($filename);
-    if(isTexte($ext, $doc["mime"]))
+    echo $mime = $note->mime;
+*/
+    $filename = $attributes["filename"];
+    $folder_id = $attributes["folder_id"];
+    $content_file = $attributes["content_file"];
+    $user = Auth::user()->email;
+    $mime = $attributes["mime"];
+    $ext = getExtension($filename);
+
+
+if(isTexte($ext, $mime))
     {
 
     ?>
     <form action="{{asset("note/save/txt/".$noteId) }}" method="GET">
         <table>
-        <tr><td></td><td><input type="hidden" name="option" value="edit.db"/></td></tr>
-        <tr><td></td><td><input type="hidden" name="composant" value="save.db"/></td></tr>
-        <tr><td></td><td><input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
-            <tr><td></td><td><input type="hidden" name="mime" value="<?php echo $mime; ?>"/>
-        <tr><td><label for="folder_id">Dossier</label></td><td>
-        <?php
-        folder_field($folder_id, "folder_id", $user);  ?></td></tr>
-        <tr><td><label for="filename">Nom de fichier</label> </td><td><input id="filename" type="text" name="filename" value="<?php echo $doc['filename']; ?>"/></td></tr>
-        <tr><td><label for="text_editor">Editer la note</label> </td><td><textarea rows="12" cols="40" name="content_file" id="text_editor"><?php echo $doc["content_file"]; ?></textarea></td></tr>
-        <tr><td></td><td><input type="submit" name="sauvegarder" value="Sauvergarder"/></td></tr>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="option" value="edit.db"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="composant" value="save.db"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="mime" value="<?php echo $mime; ?>"/>
+            <tr>
+                <td><label for="folder_id">Dossier</label></td>
+                <td>
+                    <?php
+                    folder_field($folder_id, "folder_id", $user);  ?></td>
+            </tr>
+            <tr>
+                <td><label for="filename">Nom de fichier</label></td>
+                <td><input id="filename" type="text" name="filename" value="<?php echo $filename; ?>"/></td>
+            </tr>
+            <tr>
+                <td><label for="text_editor">Editer la note</label></td>
+                <td><textarea rows="12" cols="40" name="content_file"
+                              id="text_editor"><?php echo $content_file; ?></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="sauvegarder" value="Sauvergarder"/></td>
+            </tr>
         </table>
     </form>
     <?php
     }
-    else if(isImage($ext, $doc["mime"])) {?>
+    else if(isImage($ext, $mime)) {?>
     <form action="{{asset("note/save/img/".$noteId) }}" method="GET">
         <input type="hidden" name="composant" value="save.db"/>
         <input type="hidden" name="dbdoc" value="<?php echo $noteId; ?>"/>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
-        <input type="text" name="filename" value="<?php echo $doc['filename']; ?>"/>
+        <input type="text" name="filename" value="<?php echo $filename; ?>"/>
         <input type="submit" name="sauvegarder" value="Sauvergarder"/>
     </form><?php
     }
@@ -64,13 +103,12 @@
         <input type="hidden" name="dbdoc" value="<?php echo $noteId; ?>"/>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
-        <input type="text" name="filename" value="<?php echo $doc['filename']; ?>"/>
+        <input type="text" name="filename" value="<?php echo $filename; ?>"/>
         <input type="submit" name="sauvegarder" value="Sauvergarder"/>
     </form>
     <?php
-
     }
-    }    ?>
+    ?>
     <a href="?composant=browser&file=all&type=selection&mode=multiple&dbdoc=<?php echo $noteId; ?>" target="NEW">Ajouter
         un fichier</a>
     <!-- place in header of your html document -->

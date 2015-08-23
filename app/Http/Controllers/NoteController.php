@@ -61,11 +61,29 @@ class NoteController extends Controller
 
     function saveImg()
     {
+        $note = Note::findOrNew($request->get("noteId"));
+
+        $note->setAttribute("id", $request->get("noteId"));
+        $note->setAttribute("folder_id", $request->get("folder_id"));
+        $note->setAttribute("filename", $request->get("filename"));
+        $note->setAttribute("username", Auth::user()->email);
+
+        $note->save();
+
         return "Save note img(TODO)";
     }
 
     function saveOther()
     {
+        $note = Note::findOrNew($request->get("noteId"));
+
+        $note->setAttribute("id", $request->get("noteId"));
+        $note->setAttribute("folder_id", $request->get("folder_id"));
+        $note->setAttribute("filename", $request->get("filename"));
+        $note->setAttribute("username", Auth::user()->email);
+
+        $note->save();
+
         return "Save note else types (no txt, no img) (TODO)";
     }
 
