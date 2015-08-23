@@ -137,6 +137,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
 <a href="<?php echo asset("file/view/".$id) ?>">Voir</a>
     <label>Actions</label><ul class="onfile_actions">
         <li><a href="<?php echo asset("note/edit/".$id) ; ?>">Modifier</a></li>
+        <li><a href="<?php echo asset("file/download/".$id) ; ?>">T&eacute;l&eacute;charger</a></li>
         <li>Supprimer</li>
         <li>Déplacer</li>
     </ul>

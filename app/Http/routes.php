@@ -1,5 +1,7 @@
 <?php
 
+require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+
 Route::get('/auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
@@ -108,7 +110,6 @@ Route::get("file/mime-type/{id}", ['middleware' => "auth",
 Route::get("file/view/{id}", ['middleware' => "auth",
 'uses' => function ($id)
 {
-require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 $user = Auth::user()->email;
 $result = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
 if ($result != NULL) {
@@ -163,7 +164,7 @@ Route::get("file/download/{noteId}",[
     if($result!=NULL)
     {
         $doc = mysqli_fetch_assoc($result);
-        $doc_content = getField($doc, "file_content");
+        $doc_content = getField($doc, "content_file");
         $response = Response::make($doc_content, 200);
         $response->header('Content-Type', $doc["mime"]);
              $response->header("Content-Disposition", "attachment; filename=\"".$doc["filename"]."\"");
@@ -171,7 +172,7 @@ Route::get("file/download/{noteId}",[
             $response->header("Cache-control", "private");
        return $response;
         }
-    return View::make("file/download/$noteId");
+
 }]);
 
 
