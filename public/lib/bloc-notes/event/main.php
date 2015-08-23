@@ -67,7 +67,7 @@ function createFile($filename, $mime, $data = "", $isDirectory = FALSE, $folder_
     if ($folder_id == -1) {
         $folder_id = getRootForUser();
     }
-    $q = "insert into blocnotes_data (username, filename, mime, content_file, isDirectory, folder_id) values('" .
+    $q = "insert into bn2_filesdata (username, filename, mime, content_file, isDirectory, folder_id) values('" .
             mysqli_real_escape_string($mysqli, $monutilisateur) . "', '" .
             mysqli_real_escape_string($mysqli, $filename) . "', '" . mysqli_real_escape_string($mysqli, $mime) .
             "', '" . mysqli_real_escape_string($mysqli, $data) . "', " .
@@ -236,7 +236,7 @@ function getDocumentsParClasseur($folder_id = "") {
     }
 
     global $monutilisateur;
-    $q = "SELECT * FROM blocnotes_data " .
+    $q = "SELECT * FROM bn2_filesdata " .
             "WHERE  isDeleted=0 and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' ";
     "'";
     $result = simpleQ($q, $mysqli);
@@ -251,7 +251,7 @@ function getDocumentsFiltered($filtre, $composedOnly, $pathId, $user) {
         $pathId = getRootForUser($user);
     }
 
-    $q = "SELECT * FROM blocnotes_data " .
+    $q = "SELECT * FROM bn2_filesdata " .
             "WHERE username='" . mysqli_real_escape_string($mysqli, $user) .
             "' and ((filename like '%" . mysqli_real_escape_string($mysqli, $filtre) .
             "%') or (content_file like'%" . mysqli_real_escape_string($mysqli, $filtre) .
@@ -271,7 +271,7 @@ function getAllDocuments() {
 
     $docs = array();
 
-    $q = "SELECT * FROM blocnotes_data " .
+    $q = "SELECT * FROM bn2_filesdata " .
             "WHERE isDeleted=0 and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
 
     $result = simpleQ($q, $mysqli);
@@ -310,7 +310,7 @@ function getDBDocument($id) {
     global $monutilisateur;
     global $mysqli;
     connect();
-    $q = "SELECT * FROM blocnotes_data " .
+    $q = "SELECT * FROM bn2_filesdata " .
             "WHERE isDeleted=0 and id =" . mysqli_real_escape_string($mysqli, (int) $id);//;//and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' 
 
     $result = simpleQ($q, $mysqli);
@@ -321,7 +321,7 @@ function getDeletedDocuments($id) {
     global $monutilisateur;
     global $mysqli;
     connect();
-    $q = "SELECT * FROM blocnotes_data " .
+    $q = "SELECT * FROM bn2_filesdata " .
             "WHERE isDeleted=1 and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
 
     $result = simpleQ($q, $mysqli);
@@ -389,7 +389,7 @@ function insertDB($basePath, $classeurOrNote) {
   function selectDBFolders($needle) {
   global $monutilisateur;
   global $mysqli;
-  echo $sql = "select distint folder_name, username from blocnotes_data where username ='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' and folder_name like '%" . $needle . "%'";
+  echo $sql = "select distint folder_name, username from bn2_filesdata where username ='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "' and folder_name like '%" . $needle . "%'";
   return mysql_query($sql);
   }
  */
@@ -427,7 +427,7 @@ function getDirectoryInfo($dbdoc) {
 function getFolderList($user) {
     global $config;
     global $mysqli;
-    $sql = "select * from blocnotes_data where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
+    $sql = "select * from bn2_filesdata where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
     $res = simpleQ($sql, $mysqli);
     return $res;
 }
@@ -459,7 +459,7 @@ function getDBDocumentAvecImagesEtTextes($id) {
         $myArray["id"] = $doc;
 
         $sql = "select l.nom_element_porteur as masterId, d.* ". "from blocnotes_link as l"
-                . " inner join blocnotes_data as d ". " on l.nom_element_porteur=d.nom_element_dependant ". "where l.nom_element_porteur=$id";
+                . " inner join bn2_filesdata as d ". " on l.nom_element_porteur=d.nom_element_dependant ". "where l.nom_element_porteur=$id";
         $res = simpleQ($sql, $mysqli);
         if ($res != NULL) {
             $myArray["data"] = array();
@@ -476,11 +476,11 @@ function getDBDocumentAvecImagesEtTextes($id) {
 
 function getFollowings($id) {
     global $mysqli;
-    $sql = "select d2.* from blocnotes_data as d1 inner join blocnotes_link as l1 on " .
-            " blocnotes_data.id=blocnotes_link.id_element_porteur and "
+    $sql = "select d2.* from bn2_filesdata as d1 inner join blocnotes_link as l1 on " .
+            " bn2_filesdata.id=blocnotes_link.id_element_porteur and "
             . "blocnotes_link.id_element_porteur=" . ((int) ($id))
             . " inner join "
-            . "blocnotes_data as d2 on l1.id_element_dependant=d2.id";
+            . "bn2_filesdata as d2 on l1.id_element_dependant=d2.id";
 
     simpleQ($sql, $mysqli);
 }
@@ -489,7 +489,7 @@ function insereImageOuNote($id, $idDependant, $filename, $data, $mime, $ordre) {
     global $mysqli;
     if ($idDependant <= 0) {
 
-        $sql = "insert into blocnotes_data ( filename, content_file, mime )"
+        $sql = "insert into bn2_filesdata ( filename, content_file, mime )"
                 . " values ( '" . mysqli_real_escape_string($mysqli, $filename) .
                 "' , '" . mysqli_real_escape_string($mysqli, $data) . "' , '" .
                 mysqli_real_escape_string($mysqli, $mime) . "')";
@@ -518,7 +518,7 @@ function getRootForUser($user=NULL) {
     global $monutilisateur;
 
     }
-    $sql = "select id from blocnotes_data where username like '" .
+    $sql = "select id from bn2_filesdata where username like '" .
             mysqli_real_escape_string($mysqli, $user)
             . "' and isRoot=1";
 
@@ -539,7 +539,7 @@ function getRootForUser($user=NULL) {
 function createRootForUser() {
     global $mysqli;
     connect();
-    $sql = "insert into blocnotes_data (filename, folder_id, isDirectory) values ('Dossier racine', -1, TRUE)";
+    $sql = "insert into bn2_filesdata (filename, folder_id, isDirectory) values ('Dossier racine', -1, TRUE)";
     if (mysqli_query($mysqli, $sql)) {
         echo "Fichier racine créé";
     }
@@ -548,7 +548,7 @@ function createRootForUser() {
 function deleteDBDoc($dbdoc) {
     global $mysqli;
     global $monutilisateur;
-    $sql = "update blocnotes_data set isDeleted=1 where id=" . mysqli_real_escape_string($mysqli, $dbdoc) . " and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
+    $sql = "update bn2_filesdata set isDeleted=1 where id=" . mysqli_real_escape_string($mysqli, $dbdoc) . " and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
     return simpleQ($sql, $mysqli);
 }
 
@@ -673,7 +673,7 @@ function folder_field($folder_id, $field_name, $user) {
 
     function getFolder($dbdoc) {
         global $mysqli;
-        return mysqli_fetch_assoc(simpleQ("select * from blocnotes_data where folder_id=" . ((int) $dbdoc), $mysqli));
+        return mysqli_fetch_assoc(simpleQ("select * from bn2_filesdata where folder_id=" . ((int) $dbdoc), $mysqli));
     }
 
     function displayNote($dbdoc) {
@@ -751,8 +751,8 @@ function intervertirDossierSecurized($IDfolderA, $IDfolderB)
     if($docB==NULL){error_log("Dossier B n'existe pas dans deplacerDossierSecurized");return FALSE;}
     $folderA = getFolder($docA);
     $folderB = getFolder($docB);
-    $sql1 = "update blocnotes_data set folder_id=".$folderB." where id=".$docA["id"];
-    $sql2 = "update blocnotes_data set folder_id=".$folderA." where id=".$docB["id"];
+    $sql1 = "update bn2_filesdata set folder_id=".$folderB." where id=".$docA["id"];
+    $sql2 = "update bn2_filesdata set folder_id=".$folderA." where id=".$docB["id"];
     if (simpleQ($sql1, $mysqli) && simpleQ($sql2, $mysqli)) {
     
         return TRUE;
@@ -787,10 +787,10 @@ function deplacerDocumentSecurized(/**WHAT*/$IDfolderA, /** DANS IN */ $IDfolder
         return FALSE;
     }
     
-    $sql1 = "update blocnotes_data set folder_id=".$IDfolderB." where id=".$docA["id"];
+    $sql1 = "update bn2_filesdata set folder_id=".$IDfolderB." where id=".$docA["id"];
     /*if($docB["folder_id"]==$docA)
     {
-        $sql2 = "update blocnotes_data set folder_id=".$folderA." where id=".$docB["id"];
+        $sql2 = "update bn2_filesdata set folder_id=".$folderA." where id=".$docB["id"];
     }
 /   */
     if (simpleQ($sql1, $mysqli) && simpleQ($sql1, $mysqli)) {

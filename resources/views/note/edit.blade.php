@@ -26,6 +26,7 @@
     $filename = $doc['filename'];
     $folder_id = $doc['folder_id'];
     $user = Auth::user()->email;
+    $mime = $doc["mime"];
     $ext = getExtension($filename);
     if(isTexte($ext, $doc["mime"]))
     {
@@ -35,12 +36,13 @@
         <table>
         <tr><td></td><td><input type="hidden" name="option" value="edit.db"/></td></tr>
         <tr><td></td><td><input type="hidden" name="composant" value="save.db"/></td></tr>
-        <tr><td></td><td><input type="hidden" name="dbdoc" value="<?php echo $noteId; ?>"/>
+        <tr><td></td><td><input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
+            <tr><td></td><td><input type="hidden" name="mime" value="<?php echo $mime; ?>"/>
         <tr><td><label for="folder_id">Dossier</label></td><td>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?></td></tr>
         <tr><td><label for="filename">Nom de fichier</label> </td><td><input id="filename" type="text" name="filename" value="<?php echo $doc['filename']; ?>"/></td></tr>
-        <tr><td><label for="text_editor">Editer la note</label> </td><td><textarea rows="12" cols="40" name="contenu" id="text_editor"><?php echo $doc["content_file"]; ?></textarea></td></tr>
+        <tr><td><label for="text_editor">Editer la note</label> </td><td><textarea rows="12" cols="40" name="content_file" id="text_editor"><?php echo $doc["content_file"]; ?></textarea></td></tr>
         <tr><td></td><td><input type="submit" name="sauvegarder" value="Sauvergarder"/></td></tr>
         </table>
     </form>

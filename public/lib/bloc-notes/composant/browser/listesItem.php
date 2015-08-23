@@ -36,6 +36,20 @@ function listerNotesFromDB($filtre, $composed, $path, $user){
         &minus;&gt;
     </div>
     </div>
+    <div  class="miniImgExternalBox">
+        <div class="miniImgContainerTop"><p><strong>Nouveaux</p></div>
+        <div class="miniImgContainer">
+            <ul>
+            <li><a href="<?php echo asset("file/uploadform/".(int)($path)); ?>">Uploader un fichier ici
+            </a></li>
+                <li><a href="<?php echo asset("note/new/".(int)($path)); ?>">Créer une note ici
+            </a></li>
+            </ul>
+        </div>
+        <div class="miniImgContainerBottom">
+            &minus;&gt;
+        </div>
+    </div>
     <?php
     if($results) {
     while (($row=  mysqli_fetch_assoc($results))) {
