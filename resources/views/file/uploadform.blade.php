@@ -21,6 +21,7 @@
         <input type="hidden" name="_method" value="POST">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input id="file" name="file[]" type="file" multiple="multiple" value="Choisir le(s) fichier(s)">
+        <input id="file" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" name="submitButton" value="Envoyer les fichiers"/>
 
     <ul id="file-list">

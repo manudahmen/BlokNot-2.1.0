@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Note;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
@@ -40,6 +41,7 @@ class NoteController extends Controller
         $note->setAttribute("id", $request->get("noteId"));
         $note->setAttribute("folder_id", $request->get("folder_id"));
         $note->setAttribute("filename", $request->get("filename"));
+        $note->setAttribute("username", Auth::user()->email);
         $note->setAttribute("content_file", $request->get("content_file"));
         $note->setAttribute("mime", $request->get("mime"));
         $note->fillable(["id" => $note->noteId,
@@ -88,16 +90,32 @@ class NoteController extends Controller
     {
         $files = $request->file('file');
         foreach ($files as $file) {
-            $mime = $file->getMimeType();
-            $content_file = file_get_contents($file->getPath() . "/" . $file->getBasename());
-            $filename = $file->getBasename();
+            if ($file->isValid()) {
+            }
+            $mime = $file->getClientMimeType();
+            $filename = $file->getClientOriginalName();
+
+            $dstName ="FICHIER.DAT".rawurlencode(Auth::user()->email);
+
+            $fullPath = __DIR__."datafiles/";
+
+            $totalName  = $fullPath . "/" . $dstName;
+
+            $file->move($fullPath, $dstName);
+
+            $content_file = file_get_contents($totalName);
+
 
             $note = Note::findOrNew(0);
             $note->setAttribute("mime", $mime);
+            $note->setAttribute("username", Auth::user()->email);
             $note->setAttribute("content_file", $content_file);
             $note->setAttribute("filename", $filename);
+            $note->setAttribute("folder_id", $request->get("folder_id"));
 
             $note->save();
+
+            print_r($note);
 
 
             return "Note saved and uploaded";
