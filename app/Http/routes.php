@@ -162,7 +162,7 @@ Route::get("file/download/{noteId}", [
             $doc_content = getField($doc, "content_file");
             $response = Response::make($doc_content, 200);
             $response->header('Content-Type', $doc["mime"]);
-            $response->header("Content-Disposition", "attachment; filename=\"" . $doc["filename"] . "\"");
+            $response->header("Content-Disposition", "attachment; filename=" . $doc["filename"] . "");
             $response->header("Content-length", strlen($doc_content));
             $response->header("Cache-control", "private");
             return $response;
