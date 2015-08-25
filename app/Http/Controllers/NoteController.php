@@ -6,6 +6,7 @@ use App\Note;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
 
@@ -51,11 +52,13 @@ class NoteController extends Controller
             "mime" => $note->mime
         ]);
 
-        print_r($note);
+        //print_r($note);
 
         $note->save();
+        echo "<p> Note saved</p>";
 
-        return "Save note txt(TODO)";
+
+        return view('note/edit', ["noteId" => $note->id]);
 
     }
 
