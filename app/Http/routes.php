@@ -20,7 +20,7 @@ Route::post('auth/register', ['as' => 'register_submit', 'uses' => 'Auth\AuthCon
 Route::get("note/view/{noteId}", [
     'middleware' => "auth",
     "uses" => function ($noteId) {
-        return view('note/view', ["noteId" => $noteId]);
+        return View::make('note/view', ["noteId" => $noteId]);
     }])->where('noteId', '[0-9]+');
 
 
