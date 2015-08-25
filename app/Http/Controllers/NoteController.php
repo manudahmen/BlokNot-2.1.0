@@ -6,6 +6,7 @@ use App\Note;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
 require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
@@ -58,8 +59,7 @@ class NoteController extends Controller
         echo "<p> Note saved</p>";
 
 
-        return view('note/edit', ["noteId" => $note->id]);
-
+        return Redirect::to('note/edit/'.$note->id)->with(["Message" => "Sauvegardé"]);
     }
 
     function saveImg()

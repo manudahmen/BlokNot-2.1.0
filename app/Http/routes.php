@@ -27,6 +27,9 @@ Route::get("note/view/{noteId}", [
 Route::get('note/edit/{noteId}', ['middleware' => "auth", "uses" => function ($noteId) {
     return view('note/edit', ["noteId" => $noteId]);
 }])->where('id', '[0-9]+');
+Route::get('note/joint/new/{noteId}', ['middleware' => "auth", "uses" => function ($noteId) {
+    return view('note/joint/new', ["noteId" => $noteId]);
+}])->where('id', '[0-9]+');
 Route::get('note/new/{folderId}', ['middleware' => "auth",
     "uses" => function ($folderId) {
     return view('note/new', ["folderId" => $folderId]);

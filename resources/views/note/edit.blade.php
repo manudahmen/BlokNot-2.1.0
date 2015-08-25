@@ -108,7 +108,7 @@
     <?php
     }
     ?>
-    <a href="?composant=browser&file=all&type=selection&mode=multiple&dbdoc=<?php echo $noteId; ?>" target="NEW">Ajouter
+    <a href="{{asset("note/joint/new/$noteId")}}" target="NEW">Ajouter
         un fichier</a>
     <!-- place in header of your html document -->
     <script>
