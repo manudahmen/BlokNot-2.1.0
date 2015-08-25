@@ -42,7 +42,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user){
             <ul>
             <li><a href="<?php echo asset("file/uploadform/".(int)($path)); ?>">Uploader un fichier ici
             </a></li>
-                <li><a href="<?php echo asset("note/edit/-1"); ?>">Créer une note ici
+                <li><a href="<?php echo asset("note/new/".$path); ?>">Créer une note ici
             </a></li>
             </ul>
         </div>
