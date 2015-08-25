@@ -173,10 +173,10 @@ span.miniImg
 {
     overflow-x: hidden;
 }
-.miniImg img
+div.miniImgContainer img
 {
-    height: 120px;
-    width: 120px;
+    height: 280px;
+    width: 280px;
 }
 .onfile_actions
 {
@@ -228,7 +228,6 @@ a.miniImg
     width: 50%;
     height: 50%;*/
     border: 3px inset black;
-    overflow-style: scrollbar;
     overflow: scroll;
 }
 #document img
@@ -277,11 +276,11 @@ input.filecheckbox
 
 .ui-state-highlight
 {
-    background-color: yelllow;
+    background-color: #a09c1a;
 }
 span.path_array
 {
-	display: float;
+	display: block;
 	float: right;
 	border : 5px dotted gray;
 	padding: 5px;
