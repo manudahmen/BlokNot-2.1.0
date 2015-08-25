@@ -8,7 +8,9 @@
     <link href="{{ asset('style/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css"/>
-    <script src="script.js"></script>
+    <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     @section('header')
     @show
 
