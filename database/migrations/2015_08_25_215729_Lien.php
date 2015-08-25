@@ -12,7 +12,18 @@ class Lien extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('lien', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->integer('user_id');
+            $table->integer('note_id');
+            $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('note_id')->references('id')->on('filesdata');
+
+        });
+        Schema::table('lien', function ($table) {
+        });
     }
 
     /**
@@ -22,6 +33,6 @@ class Lien extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('lien');
     }
 }

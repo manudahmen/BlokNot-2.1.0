@@ -31,4 +31,19 @@
 
     }
     ?>
+<div id="lien_liste" onclick="updateJoint();" style="padding: 20px; border: 3px groove #206ea1">
+
+</div>
+    <script type="application/javascript">
+    function updateJoint()
+    {
+        $.ajax({url:"{{asset("note/joint/list/$noteId")}}}",
+
+            context: document.body
+        }).done(function(server_response) {
+            $("#lien_liste").html(server_response);
+        });
+    }
+    </script>
+
 @stop
