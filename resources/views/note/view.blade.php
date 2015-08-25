@@ -19,7 +19,7 @@
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 
     $mime = getMimeType($noteId);
-    if(strchr($mime, "image") >= 0)
+    if(strpos($mime, "image") === 0)
     {
     ?><img src="{{ asset("file/view/".$noteId) }}"/><?php
     }
