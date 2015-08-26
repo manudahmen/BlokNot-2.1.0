@@ -67,8 +67,8 @@
       <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0921409">
-              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.401084">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="e#128#231#0#PHP" expanded="true" />
                 <element signature="e#751#800#0#HTML" expanded="true" />
@@ -609,12 +609,6 @@
       <option name="number" value="Default" />
       <updated>1440271732656</updated>
     </task>
-    <task id="LOCAL-00011" summary="Code upgrade">
-      <created>1440194415110</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1440194415110</updated>
-    </task>
     <task id="LOCAL-00012" summary="Code upgrade">
       <created>1440208945722</created>
       <option name="number" value="00012" />
@@ -905,7 +899,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440545935456</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Ajax Problem">
+      <created>1440547260694</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1440547260694</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers>
       <GitHub shared="true" url="https://github.com">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -1412,8 +1412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0921409">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.401084">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding>
             <element signature="e#128#231#0#PHP" expanded="true" />
             <element signature="e#751#800#0#HTML" expanded="true" />

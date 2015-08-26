@@ -53,35 +53,29 @@
         var type_viewed = "unknown";
         function updateNote() {
 
-            $.ajax({
-                url: "{{asset("file/mime-type/$noteId")}}",
-                context: document.body
-            }).done(function (server_response) {
-                if (server_response.search("image") > -1) {
-                    type_html_start = "<img src='{{ asset("file/view/".$noteId) }}''/>";
-                }
-                else if (server_response.search("text") > -1) {
-                    type_html_start = "{{ asset("file/view/".$noteId) }}";
-                    type_viewed = "text";
-                } else if (server_response == "directory") {
-                    type_html_start = "Repertoire";
+            $.get("{{asset("file/mime-type/$noteId")}}",
 
-                }
-                $("#note_viewer_container").html(type_html_start);
+                    function (server_response) {
+                        if (server_response.search("image") > -1) {
+                            type_html_start = "<img src='{{ asset("file/view/".$noteId) }}''/>";
+                        }
+                        else if (server_response.search("text") > -1) {
+                            type_html_start = "{{ asset("file/view/".$noteId) }}";
+                            type_viewed = "text";
+                        } else if (server_response.equals("directory")) {
+                            type_html_start = "Repertoire";
 
-            });
+                        }
+                        $("#note_viewer_container").html(type_html_start);
 
-            if (type_viewed == "text") {
+                    });
+            document.write("<h1>" + type_viewed + "</h1>");
+            if (type_viewed.equals("text")) {
                 $("#note_viewer_container").html("Load text ...");
-                $.ajax({
-                    url: type_html_start,
-                    context: document.body
-                }).done(function (server_response) {
-                    $("#note_viewer_container").html(server_response);
-                });
-            }
-            else {
-                $("#note_viewer_container").html(type_html_start);
+                $.get(type_html_start,
+                        function (server_response) {
+                            $("#note_viewer_container").html(server_response);
+                        });
             }
         }
 
