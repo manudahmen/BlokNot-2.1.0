@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateDataTable extends Migration
 {
@@ -13,7 +13,7 @@ class CreateDataTable extends Migration
     
     public function up()
     {
-        Schema::create('bn2_'.'data', function (Blueprint $table) {
+        Schema::create('' . 'data', function (Blueprint $table) {
             $table->increments('id');
             $table->bigInteger("filename_id");
             $table->string("hashset_filename");
@@ -39,6 +39,6 @@ class CreateDataTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bn2_'.'data');
+        Schema::drop('' . 'data');
     }
 }
