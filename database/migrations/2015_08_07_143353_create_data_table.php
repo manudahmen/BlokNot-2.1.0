@@ -13,7 +13,7 @@ class CreateDataTable extends Migration
     
     public function up()
     {
-        Schema::create('' . 'data', function (Blueprint $table) {
+        Schema::create('' . 'filesdata', function (Blueprint $table) {
             $table->increments('id');
             $table->bigInteger("filename_id");
             $table->string("hashset_filename");
@@ -39,6 +39,6 @@ class CreateDataTable extends Migration
      */
     public function down()
     {
-        Schema::drop('' . 'data');
+        Schema::drop('' . 'filesdata');
     }
 }
