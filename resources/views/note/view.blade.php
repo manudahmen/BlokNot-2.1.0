@@ -41,7 +41,7 @@
     <script type="application/javascript">
         function updateJoint() {
             $.ajax({
-                url: "{{asset("note/joint/list/$noteId") }}}",
+                url: "{{asset("note/joint/list/$noteId") }}",
 
                 context: document.body
             }).done(function (server_response) {
@@ -50,33 +50,38 @@
         }
         var type_html_start = "errors";
         var text_to_load = "";
+        var type_viewed = "unknown";
         function updateNote() {
 
             $.ajax({
                 url: "{{asset("file/mime-type/$noteId")}}",
                 context: document.body
             }).done(function (server_response) {
-                if (server_response.search("image") >= 0) {
+                if (server_response.search("image") > -1) {
                     type_html_start = "<img src='{{ asset("file/view/".$noteId) }}''/>";
                 }
-                else if (server_response.search("text") >= 0) {
-                    text_to_load = type_html_start = "{{ asset("file/view/".$noteId) }}";
-                } else if ($mime == "directory") {
+                else if (server_response.search("text") > -1) {
+                    type_html_start = "{{ asset("file/view/".$noteId) }}";
+                    type_viewed = "text";
+                } else if (server_response == "directory") {
                     type_html_start = "Repertoire";
 
                 }
-
                 $("#note_viewer_container").html(type_html_start);
 
             });
 
-            if (text_to_load.size() > 0) {
+            if (type_viewed == "text") {
+                $("#note_viewer_container").html("Load text ...");
                 $.ajax({
-                    url: text_to_load,
+                    url: type_html_start,
                     context: document.body
                 }).done(function (server_response) {
                     $("#note_viewer_container").html(server_response);
                 });
+            }
+            else {
+                $("#note_viewer_container").html(type_html_start);
             }
         }
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Remove private">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-1.11.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php" afterPath="$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
+    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Ajax Problem">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/view.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/view.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -70,8 +67,8 @@
       <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5392954">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            <state vertical-scroll-proportion="1.0921409">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
               <folding>
                 <element signature="e#128#231#0#PHP" expanded="true" />
                 <element signature="e#751#800#0#HTML" expanded="true" />
@@ -612,12 +609,6 @@
       <option name="number" value="Default" />
       <updated>1440271732656</updated>
     </task>
-    <task id="LOCAL-00010" summary="Ajout de google client , lib 1.0beta">
-      <created>1440188568072</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1440188568072</updated>
-    </task>
     <task id="LOCAL-00011" summary="Code upgrade">
       <created>1440194415110</created>
       <option name="number" value="00011" />
@@ -908,7 +899,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440543149317</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Ajax Problem">
+      <created>1440545935456</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1440545935456</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers>
       <GitHub shared="true" url="https://github.com">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -967,7 +964,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reformat&#10;Notes= delete unuseful tag" />
     <MESSAGE value="Reformat&#10;+Login Form layout" />
     <MESSAGE value="Activate Accordian" />
     <MESSAGE value="Changes" />
@@ -992,7 +988,8 @@
     <MESSAGE value="FIchiers joints : start" />
     <MESSAGE value="Begin migration Lien (link)" />
     <MESSAGE value="Remove private" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove private" />
+    <MESSAGE value="Ajax Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajax Problem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1415,8 +1412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5392954">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        <state vertical-scroll-proportion="1.0921409">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
           <folding>
             <element signature="e#128#231#0#PHP" expanded="true" />
             <element signature="e#751#800#0#HTML" expanded="true" />
