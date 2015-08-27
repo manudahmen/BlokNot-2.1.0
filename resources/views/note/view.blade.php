@@ -40,11 +40,8 @@
     </div>
     <script type="application/javascript">
         function updateJoint() {
-            $.ajax({
-                url: "{{asset("note/joint/list/$noteId") }}",
-
-                context: document.body
-            }).done(function (server_response) {
+            $.get("{{asset("note/joint/list/$noteId") }}",
+                    function (server_response) {
                 $("#lien_liste").html(server_response);
             });
         }
@@ -81,6 +78,7 @@
 
         updateNote();
         updateJoint();
+
     </script>
     <a href="{{asset("note/joint/list/$noteId")}}">Liens </a>
 @stop

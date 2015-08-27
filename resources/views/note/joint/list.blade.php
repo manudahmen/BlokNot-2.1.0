@@ -4,21 +4,24 @@
     <ul>
 
         <?php
-/**
- * Created by PhpStorm.
- * User: manue
- * Date: 25-08-15
- * Time: 23:33
- */
+        /**
+         * Created by PhpStorm.
+         * User: manue
+         * Date: 25-08-15
+         * Time: 23:33
+         */
 
-        $liens = \App\Lien::where("note_id", $noteId);
-    foreach($liens as $lien)
-    {
-        var_dump($lien);
-    ?>
-    <li>{{ $lien->id }} lie note {{$lien->note_id}} à note dépendante {{$lien->linked_note_id}}</li><?php
-    }
-    ?>
-</ul>
-<a href="{{asset("note/joint/new/$noteId")}}">Ajouter un lien</a>
+        $liens = \App\Lien::where("note_id", "=", $noteId)->get();
+        foreach($liens as $lien)
+        {
+        ?>
+        <li>{{ $lien->getAttribute("id") }} lie note {{$lien->getAttribute("note_id")}} à <a
+                    href="{{asset("note/view/".$lien->getAttribute("linked_note_id"))}}">note
+                dépendante<?php echo $lien->getAttribute("linked_note_id"); ?></a><a
+                    href="{{asset("note/joint/edit/".$lien->getAttribute("id"))}}">Modifier le lien</a></li><?php
+        }
+        ?>
+        <li></li>
+        <a href="{{asset("note/joint/new/$noteId")}}">Ajouter un lien</a></li>
+    </ul>
 @stop

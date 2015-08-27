@@ -113,7 +113,7 @@ class LienController extends Controller
         echo "<p> Lien saved</p>";
 
 
-        return Redirect::to('note/joint/edit/' . $lien->id)->with(["Message" => "Sauvegardé"]);
+        return Redirect::to('note/joint/edit/' . $request->get("id"))->with(["Message" => "Sauvegardé"]);
     }
 
 }

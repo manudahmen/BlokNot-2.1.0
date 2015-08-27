@@ -8,17 +8,16 @@
  * Date: 25-08-15
  * Time: 23:01
  */
-$joint = new \App\Lien($jointId);
+$joint = \App\Lien::findOrNew($jointId);
 
 $user = Auth::user()->email;
 $directoryList = getFolderList(Auth::user()->email);
 
 $notesList = getDocumentsFiltered("", FALSE, 0, $user);
-print_r($directoryList);
 ?>
 <form action="{{asset("note/joint/save/0")}}" method="POST">
-    <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
-    <input type="hidden" id="note_id" name="note_id" value="{{$noteId}}">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+    <input type="hidden" id="note_id" name="note_id" value="{{$joint->note_id}}">
     <label for="directory">Choisir un répertoire</label>
     <select id="directory" name="folder_id" id="folder_id" onchange="populateNotes()">
         <?php
@@ -32,14 +31,14 @@ print_r($directoryList);
     <select id="file" name="linked_note_id">
         <?php
         foreach ($notesList as $note) {
-            echo "<option value='" . $note["id"] . "'>" . $note["filename"] . "</option>";
+            echo "<option value='" . $note["id"] . "' " . (($note["id"] == $joint->getAttribute("linked_note_id")) ? "selected='selected'" : "") . ">" . $note["filename"] . "</option>";
         }
 
         ?>
 
     </select>
-    <textarea name="text">Entrer une description</textarea>
-    <input type="text" name="name" value=""/>
+    <label for="name">Entrer un nom pour ce lien (facultatif)</label>
+    <input type="text" id="name" name="name" value=""/>
     <input type="hidden" name="user_id" value="{{$user}}"/>
     <input type="submit" name="submit" value="Enregistrer"/>
 </form>
@@ -50,4 +49,5 @@ print_r($directoryList);
 
     }
 </script>
+
 @stop
