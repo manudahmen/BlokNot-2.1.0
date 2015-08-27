@@ -8,7 +8,12 @@
 
 
 @stop
+@section('sidebar')
+    @parent
 
+    @include("note/menu", ["noteId", $noteId])
+
+@stop
 @section('content')
 
     <?php
@@ -18,7 +23,6 @@
      * Date: 20-08-15
      * Time: 13:42
      */
-    use \Illuminate\Database\Eloquent\ModelNotFoundException;
 
     require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
     $note = \App\Note::findOrFail($noteId);

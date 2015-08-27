@@ -1,3 +1,21 @@
+@extends('master')
+@section('title', 'Note editor')
+
+@section('header')
+    @parent
+    <script type="text/javascript" src="{{asset("js/tinymce/jquery.tinymce.min.js")}}"></script>
+    <script type="text/javascript" src="{{asset("js/tinymce/tinymce.min.js") }}"></script>
+
+
+@stop
+
+@@section('sidebar')
+    @parent
+
+    @include("note/menu", ["noteId", $noteId])
+
+@stop
+@section('content')
     <?php
     /**
      * Created by PhpStorm.
@@ -12,6 +30,7 @@
         $folderId = getRootForUser($user);
     }
     ?>
+    @include("note/menu", ["noteId", $noteId])
     <form action="{{asset("note/save/txt/0") }}" method="GET">
         <table>
             <tr>
@@ -44,3 +63,4 @@
             </tr>
         </table>
     </form>
+@stop

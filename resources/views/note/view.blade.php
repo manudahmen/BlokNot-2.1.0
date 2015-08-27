@@ -4,6 +4,7 @@
 @section('sidebar')
     @parent
 
+    @include("note/menu", ["noteId", $noteId])
 
 @stop
 
