@@ -16,7 +16,6 @@
 
 </head>
 <body>
-@section('sidebar')
     <div id="sidebar">
         <p><a href="{{ URL::to("/") }}" id="HOME_LINK" class="btn btn-large btn-primary openbutton">Accueil - Home</a>
         </p>
@@ -42,10 +41,20 @@
 
         }
         ?>
+        @section('sidebar')
 
         @show
     </div>
+
     <div class="container">
+        <div id="top_container">
+            <p><a href="http://github.com/mdahmen/mdahmen/blocnote2">Les sources sont disponibles sur
+                    http://github.com/mdahmen/blocnote2</a></p>
+
+            <h1>Applications et Gestion de fichiers</h1>
+            @section("top")
+            @show
+        </div>
         @section('content')
             <p>Applications web de Manuel Dahmen. Formation personnelle.</p>
         @show

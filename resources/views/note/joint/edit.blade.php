@@ -1,5 +1,5 @@
 @extends("master")
-
+@section("title", "Edition de joints")
 @section("content")
 <?php
 /**

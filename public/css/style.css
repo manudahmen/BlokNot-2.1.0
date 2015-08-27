@@ -4,198 +4,193 @@ Detailed styles for _bloc-note2_ app
 title {
     display: block;
 }
-body
-{
+
+body {
     font-family: Comics Sans, serif;
     font-size: 12pt;
     z-index: 0;
 }
 
-
-.mainmenu
-{
+.mainmenu {
     background-color: pink;
 }
-img.mainmenu
-{
+
+img.mainmenu {
     width: 24px;
     height: 24px;
 
 }
-div#userid a
-{
+
+div#userid a {
     display: block;
 
-/*    float: right;*/
+    /*    float: right;*/
 }
+
 ul#fg_membersite_content, ul#fg_membersite_content li {
     display: inline;
 }
-.icon-32
-{
+
+.icon-32 {
     width: 20px;
     height: 20px;
-} 
-
-a.button_appdoc, .button_appdoc{
-    display: block;
-    float:left;
 }
-.button_appdoc a, .button_help, .button_help a
 
-{
+a.button_appdoc, .button_appdoc {
+    display: block;
+    float: left;
+}
+
+.button_appdoc a, .button_help, .button_help a {
     padding: 5px;
-    margin : 5px;
+    margin: 5px;
     color: whitesmoke;
     background-color: blueviolet;
     text-decoration: none;
     border: 1px solid chocolate;
 }
+
 div#fg_membersite {
-    height:110px;
-    line-height:110px;
-    text-align:center; /* centrage horizontal */
+    height: 110px;
+    line-height: 110px;
+    text-align: center; /* centrage horizontal */
     z-index: 1;
 
 }
 
 #fg_membersite fieldset {
     width: 100px;
-    border:1px solid #fff;
-    vertical-align:middle;
-    display:inline-block;
-    line-height:normal; /* on rétablit le line-height */
-    text-align:left; /* ... et l'alignement du texte */
+    border: 1px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal; /* on rétablit le line-height */
+    text-align: left; /* ... et l'alignement du texte */
 }
-#user_frame
-{
+
+#user_frame {
     float: right;
-    width : 300px;
-    background-color: #00ffff; 
-    color: #ff0000;  
+    width: 300px;
+    background-color: #00ffff;
+    color: #ff0000;
     border: 3px solid #009;
 }
-#user_frame p 
-{
-    background-color: #00ffff; 
+
+#user_frame p {
+    background-color: #00ffff;
 
 }
 
-#context_menu_bar
-{
+#context_menu_bar {
     float: left;
-    background-color: #ffff00; 
-    color: #0000ff;  
+    background-color: #ffff00;
+    color: #0000ff;
     border: 3px solid #009;
 }
-#context_menu_bar a:hover
-{
+
+#context_menu_bar a:hover {
     color: #FFFFFF;
 }
-#context_menu_bar a
-{
+
+#context_menu_bar a {
     color: #DDD;
 }
-#context_menu_bar a:visited
-{
+
+#context_menu_bar a:visited {
     color: #999;
 }
 
-#appdoc_menu{ 
-    float: left; 
-    width: 30%; 
-    background-color: #C0C0C0; 
-    color: #0C0C0C; 
+#appdoc_menu {
+    float: left;
+    width: 30%;
+    background-color: #C0C0C0;
+    color: #0C0C0C;
     border: 3px #009;
 }
 
-#contents{
-    background-color: #FFFDDD; 
-    color: #000444;  
-    border: 3px #009;}
-#error{
+#contents {
+    background-color: #FFFDDD;
+    color: #000444;
+    border: 3px #009;
+}
+
+#error {
 
 }
-div.miniImg
-{
-    width:  300px;
+
+div.miniImg {
+    width: 300px;
     height: 200px;
     display: block;
 }
-div.miniImgContainerTop
-{
+
+div.miniImgContainerTop {
     width: 290px;
     height: 40px;
     overflow: hidden;
 }
-div.miniImgContainerBottom
-{
+
+div.miniImgContainerBottom {
     width: 290px;
     height: 40px;
 }
 
-
-div.miniImgContainer
-{
+div.miniImgContainer {
     width: 290px;
     height: 300px;
     overflow-x: hidden;
 }
 
-div.browserContainer
-{
+div.browserContainer {
     width: 940px;
 }
-div.miniImgExternalBox
 
-{
+div.miniImgExternalBox {
     width: 310px;
     border: 2px solid #6298a0;
     display: block;
     float: left;
 }
-a.miniImg span.filename
 
-{
+a.miniImg span.filename {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
     text-decoration-style: dashed;
-    
+
 }
-a.miniImg .typeTextBlock
-{
+
+a.miniImg .typeTextBlock {
     text-decoration: none;
     color: black;
-    
+
 }
-span.miniImg
-{
+
+span.miniImg {
     overflow-x: hidden;
 }
-div.miniImgContainer img
-{
+
+div.miniImgContainer img {
     height: 280px;
     width: 280px;
 }
-.onfile_actions
-{
+
+.onfile_actions {
     list-style-type: none;
 
 }
-.onfile_actions li
-{
+
+.onfile_actions li {
     display: inline;
 
 }
+
 /*#document pre
 {
     display: block;
     font-family: serif Whitney, Comics Sans;
     margin: 2px solid green;
 }*/
-div#document
-{
+div#document {
     width: 100%;
     display: block;
     font-family: serif Whitney, Comics Sans;
@@ -205,90 +200,94 @@ div#document
     hyphens: auto;
 
 }
-.miniature_txt
-{
+
+.miniature_txt {
     width: 161px;
     height: 141px;
     border: 3px inset black;
     overflow: hidden;
 }
-.filename
 
-{
+.filename {
     overflow-x: hidden;
 }
-a.miniImg 
-{
+
+a.miniImg {
     text-decoration: none;
     border: none;
 }
-.cadre_media, #document
-{
+
+.cadre_media, #document {
     /*margin-left: 33%;
     width: 50%;
     height: 50%;*/
     border: 3px inset black;
     overflow: scroll;
 }
-#document img
-{
+
+#document img {
     /*width:  100%;
     height:  100%;*/
 }
-a.nav_buttons
-{
+
+a.nav_buttons {
     float: left;
     display: block;
-     background-color: #0000ff;
+    background-color: #0000ff;
     color: white;
     text-decoration: none;
     margin: 2px;
     border: 3px solid gray;
 }
-textarea,input
-{
+
+textarea, input {
 }
-input.filecheckbox
-{
+
+input.filecheckbox {
     display: inline;
     /*float: right;*/
     z-index: 10;
 }
-.clearBoth
-{
+
+.clearBoth {
     display: block;
     clear: both;
 }
-.contents
-{
+
+.contents {
     display: block;
 }
 
-#disclisting
-{
+#disclisting {
     display: none;
 }
 
-.button_help, .button_help a
-{
+.button_help, .button_help a {
     background-color: grey;
 }
 
-.ui-state-highlight
-{
+.ui-state-highlight {
     background-color: #a09c1a;
 }
-span.path_array
-{
-	display: block;
-	float: right;
-	border : 5px dotted gray;
-	padding: 5px;
-        margin: 5px;
-        background-color: gray;
-	color: white;
+
+span.path_array {
+    display: block;
+    float: right;
+    border: 5px dotted gray;
+    padding: 5px;
+    margin: 5px;
+    background-color: gray;
+    color: white;
 }
-.doc_container
-{
+
+.doc_container {
     width: 700px;
+}
+
+#top_container {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+
 }

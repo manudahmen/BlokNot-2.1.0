@@ -2,7 +2,9 @@
 @section('title', 'Note viewer')
 
 @section('sidebar')
+
     @parent
+
 
     @include("note/menu", ["noteId", $noteId])
 
@@ -32,11 +34,11 @@
 
     }*/
     ?>
-    <div id="note_viewer_container" onclick="updateJoint();" style="padding: 20px; border: 3px groove #24a199">
+    <div id="note_viewer_container" onclick="updateNote();" style="padding: 20px; border: 3px groove #24a199">
 
     </div>
 
-    <div id="lien_liste" onclick="updateJoint();" style="padding: 20px; border: 3px groove #24a199">
+    <div id="lien_liste" style="padding: 20px; border: 3px groove #24a199">
 
     </div>
     <script type="application/javascript">
@@ -67,8 +69,8 @@
                         $("#note_viewer_container").html(type_html_start);
 
                     });
-            document.write("<h1>" + type_viewed + "</h1>");
-            if (type_viewed.equals("text")) {
+            // document.write("<h1>" + type_viewed + "</h1>");
+            if (type_viewed == "text") {
                 $("#note_viewer_container").html("Load text ...");
                 $.get(type_html_start,
                         function (server_response) {
@@ -78,7 +80,6 @@
         }
 
         updateNote();
-        updateJoint();
 
     </script>
     <a href="{{asset("note/joint/list/$noteId")}}">Liens </a>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Liens OK sauf visualisation avec note et delete">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/note/menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/edit.blade.php" />
+    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Modification de mise en page">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LienController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LienController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/joint/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/joint/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/new.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/new.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/view.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/view.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,21 +37,31 @@
       <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/joint/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
+            <state vertical-scroll-proportion="-9.807693">
               <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding>
-                <element signature="e#72#191#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32185885">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LienController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LienController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3461537">
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding>
+                <marker date="1440683449395" expanded="false" signature="40:146" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +69,7 @@
       <file leaf-file-name="new.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/new.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
@@ -69,18 +79,28 @@
       <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="5" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+            <state vertical-scroll-proportion="-7.9615383">
+              <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.423077">
-              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.5107527">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,12 +109,9 @@
       <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/joint/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <marker date="1440644295051" expanded="true" signature="1502:1591" placeholder="..." />
-                <marker date="1440644295051" expanded="true" signature="1533:1582" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,77 +119,9 @@
       <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listesItem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5384614">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="159" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/note/menu.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/event/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.615385">
-              <caret line="244" column="9" selection-start-line="244" selection-start-column="9" selection-end-line="244" selection-end-column="9" />
-              <folding>
-                <element signature="e#77#115#0#PHP" expanded="true" />
-                <marker date="1440637493971" expanded="true" signature="282:339" placeholder="select serid..." />
-                <marker date="1440637493971" expanded="true" signature="588:775" placeholder="select serid..." />
-                <marker date="1440637493971" expanded="true" signature="1814:2254" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="2659:3046" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="3322:3645" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="3977:4365" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="4628:4789" placeholder="select user,..blocnotes_items..." />
-                <marker date="1440637493971" expanded="true" signature="5267:5397" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440637493971" expanded="true" signature="5711:5832" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440637493971" expanded="true" signature="6012:6140" placeholder="select momen..blocnotes_items..." />
-                <marker date="1440637493971" expanded="true" signature="7518:7656" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="7931:8359" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="8567:8704" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="9486:9557" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="9857:9994" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="10271:10402" placeholder="SELECT * FRO..blocnotes_items..." />
-                <marker date="1440637493971" expanded="true" signature="10849:11038" placeholder="update blocn..." />
-                <marker date="1440637493971" expanded="true" signature="11051:11244" placeholder="update blocn..." />
-                <marker date="1440637493971" expanded="true" signature="11439:11699" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="12638:12697" placeholder="select isDir..." />
-                <marker date="1440637493971" expanded="true" signature="13095:13206" placeholder="select * fro..." />
-                <marker date="1440637493971" expanded="true" signature="13487:13599" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="14847:15157" placeholder="select d2.* ..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="15339:15624" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="15908:16028" placeholder="delete from ..." />
-                <marker date="1440637493971" expanded="true" signature="16229:16366" placeholder="select id fr..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="16743:16839" placeholder="insert into ..." />
-                <marker date="1440637493971" expanded="true" signature="17017:17188" placeholder="update bn2_f..." />
-                <marker date="1440637493971" expanded="true" signature="18827:18907" placeholder="select id_el..blocnotes_link..." />
-                <marker date="1440637493971" expanded="true" signature="19212:19292" placeholder="select id_el..blocnotes_link..." />
-                <marker date="1440637493971" expanded="true" signature="20512:20556" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1440637493971" expanded="true" signature="23176:23233" placeholder="update bn2_f..." />
-                <marker date="1440637493971" expanded="true" signature="23261:23318" placeholder="update bn2_f..." />
-                <marker date="1440637493971" expanded="true" signature="24392:24451" placeholder="update bn2_f..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +131,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="aa" />
         <option value="Manuel Dahmen" />
       </list>
     </option>
@@ -222,7 +172,6 @@
         <option value="$PROJECT_DIR$/resources/views/file/download.php" />
         <option value="$PROJECT_DIR$/public/lib/bloc-notes/composant/create.db/contents.php" />
         <option value="&lt;5f278f35-0db7-4d6f-bcd0-3fa4e23b8ea6&gt;/storage/framework/views/aaacffd23facb28de6d15aa3992b6562" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/file/uploadform.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/fichiersjoints.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/joint.blade.php" />
@@ -237,15 +186,16 @@
         <option value="$PROJECT_DIR$/public/lib/bloc-notes/event/main.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/note/joint/new.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LienController.php" />
         <option value="$PROJECT_DIR$/app/Lien.php" />
-        <option value="$PROJECT_DIR$/resources/views/note/joint/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/joint/list.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/menu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/new.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LienController.php" />
+        <option value="$PROJECT_DIR$/resources/views/note/joint/edit.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
       </list>
     </option>
   </component>
@@ -372,7 +322,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,6 +393,64 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="joint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocnote2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -501,6 +508,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -626,12 +634,6 @@
       <created>1439221941713</created>
       <option name="number" value="Default" />
       <updated>1440271732656</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Reformat&#10;+Login Form layout">
-      <created>1440239621046</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1440239621046</updated>
     </task>
     <task id="LOCAL-00021" summary="Activate Accordian">
       <created>1440244665351</created>
@@ -923,7 +925,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440644298816</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Liens OK sauf visualisation avec note et delete">
+      <created>1440649792744</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1440649792744</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers>
       <GitHub shared="true" url="https://github.com">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -947,7 +955,7 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33865815" sideWeight="0.5649926" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33385828" sideWeight="0.4350074" order="7" side_tool="false" content_ui="tabs" />
@@ -957,7 +965,6 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32650074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18740158" sideWeight="0.48522896" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -966,6 +973,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18740158" sideWeight="0.48522896" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -982,7 +990,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Should add correct URLS;" />
     <MESSAGE value="Download : start &quot;download files&quot; script." />
     <MESSAGE value="Page re-format" />
     <MESSAGE value="Reste un problème: affichage des éléments ne se fait pas dans la vue." />
@@ -1007,7 +1014,8 @@
     <MESSAGE value="Updating Joint-Lien" />
     <MESSAGE value="Much errors to solve" />
     <MESSAGE value="Liens OK sauf visualisation avec note et delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Liens OK sauf visualisation avec note et delete" />
+    <MESSAGE value="Modification de mise en page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de mise en page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1018,13 +1026,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/note/noteContent.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/NoteViewer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
@@ -1158,13 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7927461">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Media.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
@@ -1204,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1241,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.307693">
           <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,9 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-39.884617">
           <caret line="61" column="87" selection-start-line="40" selection-start-column="7" selection-end-line="61" selection-end-column="87" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,17 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3461537">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LienController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.807693">
-          <caret line="115" column="45" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
-          <folding>
-            <marker date="1440642136489" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,9 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.576923">
           <caret line="218" column="8" selection-start-line="218" selection-start-column="8" selection-end-line="218" selection-end-column="8" />
-          <folding>
-            <element signature="e#2444#2527#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,75 +1292,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.923077">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/joint/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="e#72#191#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/event/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.615385">
+        <state vertical-scroll-proportion="0.0">
           <caret line="244" column="9" selection-start-line="244" selection-start-column="9" selection-end-line="244" selection-end-column="9" />
           <folding>
             <element signature="e#77#115#0#PHP" expanded="true" />
-            <marker date="1440637493971" expanded="true" signature="282:339" placeholder="select serid..." />
-            <marker date="1440637493971" expanded="true" signature="588:775" placeholder="select serid..." />
-            <marker date="1440637493971" expanded="true" signature="1814:2254" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="2659:3046" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="3322:3645" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="3977:4365" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="4628:4789" placeholder="select user,..blocnotes_items..." />
-            <marker date="1440637493971" expanded="true" signature="5267:5397" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440637493971" expanded="true" signature="5711:5832" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440637493971" expanded="true" signature="6012:6140" placeholder="select momen..blocnotes_items..." />
-            <marker date="1440637493971" expanded="true" signature="7518:7656" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="7931:8359" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="8567:8704" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="9486:9557" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="9857:9994" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="10271:10402" placeholder="SELECT * FRO..blocnotes_items..." />
-            <marker date="1440637493971" expanded="true" signature="10849:11038" placeholder="update blocn..." />
-            <marker date="1440637493971" expanded="true" signature="11051:11244" placeholder="update blocn..." />
-            <marker date="1440637493971" expanded="true" signature="11439:11699" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="12638:12697" placeholder="select isDir..." />
-            <marker date="1440637493971" expanded="true" signature="13095:13206" placeholder="select * fro..." />
-            <marker date="1440637493971" expanded="true" signature="13487:13599" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="14847:15157" placeholder="select d2.* ..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="15339:15624" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="15908:16028" placeholder="delete from ..." />
-            <marker date="1440637493971" expanded="true" signature="16229:16366" placeholder="select id fr..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="16743:16839" placeholder="insert into ..." />
-            <marker date="1440637493971" expanded="true" signature="17017:17188" placeholder="update bn2_f..." />
-            <marker date="1440637493971" expanded="true" signature="18827:18907" placeholder="select id_el..blocnotes_link..." />
-            <marker date="1440637493971" expanded="true" signature="19212:19292" placeholder="select id_el..blocnotes_link..." />
-            <marker date="1440637493971" expanded="true" signature="20512:20556" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1440637493971" expanded="true" signature="23176:23233" placeholder="update bn2_f..." />
-            <marker date="1440637493971" expanded="true" signature="23261:23318" placeholder="update bn2_f..." />
-            <marker date="1440637493971" expanded="true" signature="24392:24451" placeholder="update bn2_f..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select serid..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select serid..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select user,..blocnotes_items..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select momen..blocnotes_items..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select momen..blocnotes_items..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select momen..blocnotes_items..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..blocnotes_items..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update blocn..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update blocn..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select isDir..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select d2.* ..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select id fr..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update bn2_f..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select id_el..blocnotes_link..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select id_el..blocnotes_link..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update bn2_f..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update bn2_f..." />
+            <marker date="1440637493971" expanded="true" signature="-1:-1" placeholder="update bn2_f..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/bloc-notes/composant/browser/listesItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5384614">
+        <state vertical-scroll-proportion="0.0">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="159" selection-end-column="6" />
           <folding />
         </state>
@@ -1395,53 +1349,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/note/joint/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LienController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3461537">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <marker date="1440683449395" expanded="false" signature="40:146" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/note/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/joint/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <marker date="1440644295051" expanded="true" signature="1502:1591" placeholder="..." />
-            <marker date="1440644295051" expanded="true" signature="1533:1582" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="5" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+        <state vertical-scroll-proportion="-7.9615383">
+          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.043037973">
+          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/new.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32185885">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.5107527">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
           <folding />
         </state>
       </provider>
