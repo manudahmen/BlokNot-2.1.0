@@ -1,3 +1,6 @@
+@extends("master")
+
+@section("content")
 <?php
 /**
  * Created by PhpStorm.
@@ -47,3 +50,4 @@ print_r($directoryList);
 
     }
 </script>
+@stop

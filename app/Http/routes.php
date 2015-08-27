@@ -220,11 +220,11 @@ Route::get("note/joint/new/{noteId}", ["middleware" => "auth",
 
 Route::get("note/joint/edit/{jointId}", ["middleware" => "auth",
     "uses" => function ($jointId) {
-        return View::make("note/joint/edit")->with("jointId", $jointId);
+        return View::make("note/joint/edit", ["jointId" => $jointId]);
     }]);
 Route::get("note/joint/list/{noteId}", ["middleware" => "auth",
     "uses" => function ($noteId) {
-        return View::make("note/joint/list")->with("noteId", $noteId);
+        return View::make("note/joint/list", ["noteId" => $noteId]);
     }]);
 Route::post("note/joint/save/{jointId}", ["middleware" => "auth",
     "uses" => "LienController@save"]);
