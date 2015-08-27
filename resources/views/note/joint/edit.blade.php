@@ -1,6 +1,3 @@
-@extends("master")
-@section("title", "Edition de joints")
-@section("content")
 <?php
 /**
  * Created by PhpStorm.
@@ -8,13 +5,21 @@
  * Date: 25-08-15
  * Time: 23:01
  */
-$joint = \App\Lien::findOrNew($jointId);
-
+$joint = \App\Lien::findOrFail($jointId);
+$noteId = $joint->getAttribute("note_id");
 $user = Auth::user()->email;
 $directoryList = getFolderList(Auth::user()->email);
 
 $notesList = getDocumentsFiltered("", FALSE, 0, $user);
 ?>
+@extends("master")
+@section("title", "Edition de joints")
+@section("sidebar")
+    @parent
+    @include("note.joint.menu", ["jointId",  $jointId])
+@stop
+
+@section("content")
 <form action="{{asset("note/joint/save/0")}}" method="POST">
     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
     <input type="hidden" id="note_id" name="note_id" value="{{$joint->note_id}}">

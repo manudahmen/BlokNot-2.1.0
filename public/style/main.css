@@ -37,6 +37,8 @@ body {
 
 #sidebar {
     float: left;
-    width: 30%;
+    width: 400px;
     border: 1px solid red;
+    border-bottom: none;
+    border-top: none;
 }

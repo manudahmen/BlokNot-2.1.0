@@ -1,4 +1,9 @@
 @extends("master")
+@section("title", "Edition de joints")
+@section("sidebar")
+    @parent
+    @include("note.joint.menu", ["jointId",  $jointId])
+@stop
 
 @section("content")
     <?php

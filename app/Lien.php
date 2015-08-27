@@ -18,11 +18,11 @@ class Lien extends Model
      * @var string
      */
     protected $table = 'lien';
-    public $id;
-    public $note_id;
-    public $linked_note_id;
-    public $name;
-    protected $fillable = array('note_id', 'id', 'linked_note_id', 'name');
+    protected $id;
+    protected $note_id;
+    protected $linked_note_id;
+    protected $name;
+    protected $fillable = array('note_id', 'id', 'linked_note_id', 'name', 'user_id');
 
     function __construct()
     {
@@ -37,6 +37,7 @@ class Lien extends Model
         $this->user_id = $lien->user_id;
         $this->name = $lien->name;
 
+        return $this;
     }
 
 }

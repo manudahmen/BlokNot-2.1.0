@@ -1,18 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: manue
+ * Date: 25-08-15
+ * Time: 23:33
+ */
+
+$liens = \App\Lien::where("note_id", "=", $noteId)->get();
+
+?>
 @extends("master")
+@section("title", "Edition de joints")
+@section("sidebar")
+    @parent
+    @include("note/menu", ["noteId", $noteId])
+
+@stop
 
 @section("content")
     <ul>
 
-        <?php
-        /**
-         * Created by PhpStorm.
-         * User: manue
-         * Date: 25-08-15
-         * Time: 23:33
-         */
-
-        $liens = \App\Lien::where("note_id", "=", $noteId)->get();
-        foreach($liens as $lien)
+        <?php        foreach($liens as $lien)
         {
         ?>
         <li>{{ $lien->getAttribute("id") }} lie note {{$lien->getAttribute("note_id")}} à <a

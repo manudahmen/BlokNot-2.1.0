@@ -8,6 +8,7 @@
  * */
 ?>
 @section(("sidebar"))
+    @parent
     <div class="miniImgContainerBottom">
 
         <label>Actions</label>
