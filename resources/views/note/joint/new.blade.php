@@ -5,44 +5,45 @@
  * Date: 25-08-15
  * Time: 23:01
  */
-require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+$joint = new \App\Lien();
 
-$note = new \App\Note();
+$user = Auth::user()->email;
+$directoryList = getFolderList(Auth::user()->email);
 
-$note->findOrFail($noteId);
+$notesList = getDocumentsFiltered("", FALSE, 0, $user);
+print_r($directoryList);
 ?>
-<form action="{{asset("note/joint/save/$noteId")}}" method="POST">
-<label for="directory">Choisir un répertoire</label>
-<select id="directory" name="folder_id" ></select>
+<form action="{{asset("note/joint/save/0")}}" method="POST">
+    <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
+    <input type="hidden" id="note_id" name="note_id" value="{{$noteId}}">
+    <label for="directory">Choisir un répertoire</label>
+    <select id="directory" name="folder_id" id="folder_id" onchange="populateNotes()">
+        <?php
+        foreach ($directoryList as $folderId) {
+            echo "<option value='" . $folderId["folder_id"] . "'>" . $folderId["filename"] . "</option>";
+        }
 
-<label for="file">Choisir un fichier</label>
-<select id="file" name="note_id" ></select>
+        ?>
+    </select>
+    <label for="file">Choisir un fichier</label>
+    <select id="file" name="linked_note_id">
+        <?php
+        foreach ($notesList as $note) {
+            echo "<option value='" . $note["id"] . "'>" . $note["filename"] . "</option>";
+        }
+
+        ?>
+
+    </select>
     <textarea name="text">Entrer une description</textarea>
-<input type="submit" name="" value="Enregistrer"/>
+    <input type="text" name="name" value=""/>
+    <input type="hidden" name="user_id" value="{{$user}}"/>
+    <input type="submit" name="submit" value="Enregistrer"/>
 </form>
-<!-- place in header of your html document -->
 <script>
-    tinymce.init({
-        selector: "textarea#text_editor",
-        theme: "modern",
-        width: 600,
-        height: 500,
-        plugins: [
-            "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
-            "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-            "save table contextmenu directionality emoticons template paste textcolor"
-        ],
+    function populateNotes() {
+        $dirId = $("#folder_id").val();
 
-        //content_css: "js/tinymce/css/content.css",
-        toolbar: "addFile insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons",
-        style_formats: [
-            {title: 'Bold text', inline: 'b'},
-            {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
-            {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
-            {title: 'Example 1', inline: 'span', classes: 'example1'},
-            {title: 'Example 2', inline: 'span', classes: 'example2'},
-            {title: 'Table styles'},
-            {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
-        ]
-    });
+
+    }
 </script>

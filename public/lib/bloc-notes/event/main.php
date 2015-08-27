@@ -1,7 +1,6 @@
 <?php
 require_once(__DIR__ . "/../all-configured-and-secured-included.php");
-use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Facade;use Illuminate\Support\Facades\URL;
 
 connect();
 
@@ -425,7 +424,6 @@ function getDirectoryInfo($dbdoc) {
 }
 
 function getFolderList($user) {
-    global $config;
     global $mysqli;
     $sql = "select * from bn2_filesdata where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
     $res = simpleQ($sql, $mysqli);

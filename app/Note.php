@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Input;
+
 class Note extends Model
 {
     /**
@@ -11,7 +11,7 @@ class Note extends Model
      *
      * @var bool
      */
-    public $timestamps = false;
+    public $timestamps = true;
     /**
      * The table associated with the model.
      *

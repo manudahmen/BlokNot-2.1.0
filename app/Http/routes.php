@@ -212,3 +212,15 @@ Route::get("file/uploadform/{folderId}", ["middleware" => "auth",
 Route::post("file/upload/{folderId}", ['before' => 'csrf',
     "middleware" => "auth",
     "uses" => "NoteController@upload"]);
+
+Route::get("note/joint/new/{noteId}", ["middleware" => "auth",
+    "uses" => function ($noteId) {
+        return View::make("note/joint/new")->with("noteId", $noteId);
+    }]);
+
+Route::get("note/joint/edit/{jointId}", ["middleware" => "auth",
+    "uses" => function ($jointId) {
+        return View::make("note/joint/edit")->with("jointId", $jointId);
+    }]);
+Route::post("note/joint/save/{jointId}", ["middleware" => "auth",
+    "uses" => "LienController@save"]);
