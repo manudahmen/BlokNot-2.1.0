@@ -22,4 +22,5 @@ class Lien extends Model
     public $note_id;
     public $linked_note_id;
     public $name;
+
 }

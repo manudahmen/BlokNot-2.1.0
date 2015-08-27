@@ -82,5 +82,5 @@
         updateNote();
         updateJoint();
     </script>
-
+    <a href="{{asset("note/joint/list/$noteId")}}">Liens </a>
 @stop
