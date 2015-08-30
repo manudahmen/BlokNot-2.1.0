@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+
 class Lien extends Model
 {
     /**
@@ -40,6 +42,12 @@ class Lien extends Model
         return $this;
     }
 
+    public function search($text, $options = array())
+    {
+        $text = $text??"";
+
+        getDocumentsFiltered($text);
+    }
 }
 
 
