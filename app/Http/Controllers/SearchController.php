@@ -20,7 +20,7 @@ class SearchController extends Controller
 
         $response = new Response($result);
 
-        return $response;
+        return Redirect::to("search");
 
     }
 }
