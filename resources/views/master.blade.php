@@ -48,7 +48,7 @@
 
     <div class="container">
         <div id="top_container">
-            <h1>@yield("title"</h1>
+            <h1>@yield("title")</h1>
             @section("top")
             @show
         </div>
