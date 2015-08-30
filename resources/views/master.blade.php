@@ -60,6 +60,8 @@
         @show
     </div>
 @section("navbar")
+    @include("navigation.navbuttons")
+    @include("navigation.history")
     <a onclick="history().back()">&lt;&minus;</a><a onclick="history().next()">&minus;&gt;</a>
 @show
 </body>
