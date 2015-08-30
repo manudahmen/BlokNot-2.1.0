@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Note;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
@@ -142,6 +141,24 @@ class NoteController extends Controller
             return "Note saved and uploaded";
         }
     }
+
+    function delete(Request $request, $noteId)
+    {
+        echo "NoteId : " . $noteId . "<br/>";
+
+
+        $note = Note::findOrFail($noteId);
+
+
+        $note->delete();
+
+        echo "<p> Note deleted</p>";
+
+
+        return Redirect::to('note/list/0/1');
+    }
+
+
 }
 
 ?>
