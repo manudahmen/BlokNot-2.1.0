@@ -6,8 +6,8 @@
  * Time: 03:01
  */
 ?>
-<div id="searchBox">
-    <form action="search" method="get">
+<div id="searchBox" style="display: inline;">
+    <form action="search" method="get" style="display: inline;">
         <input type="text" name="search" class="text-uppercase"/>
         <input type="submit" name="submit" value="OK"/>
     </form>
