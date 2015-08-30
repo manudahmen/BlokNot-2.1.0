@@ -52,12 +52,13 @@
             @section("top")
             @show
         </div>
+        <div id="navbar">
         @section("navbar")
             @include("navigation.navbuttons")
             @include("navigation.history")
             <a onclick="history().back()">&lt;&minus;</a><a onclick="history().next()">&minus;&gt;</a>
         @show
-
+        </div>
         @section('content')
             <p>Applications web de Manuel Dahmen. Formation personnelle.</p>
         @show

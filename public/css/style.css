@@ -292,3 +292,14 @@ span.path_array {
     color: white;
 
 }
+
+#navbar {
+    border: 2px inset black;
+    background-color: darkgray;
+    color: white;
+    padding: 2px;
+}
+
+#top_container {
+    border: 2px inset black;
+}
