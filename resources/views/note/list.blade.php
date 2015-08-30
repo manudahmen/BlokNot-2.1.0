@@ -3,6 +3,7 @@
 
 @section('sidebar')
     @parent
+    @include("menu", ["noteId", $noteId])
 
 
 @stop

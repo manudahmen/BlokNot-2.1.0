@@ -10,7 +10,7 @@ $liens = \App\Lien::where("note_id", "=", $noteId)->get();
 
 ?>
 @extends("master")
-@section("title", "Edition de joints")
+@section("title", "Liste de joints")
 @section("sidebar")
     @parent
     @include("note/menu", ["noteId", $noteId])

@@ -671,7 +671,8 @@ function folder_field($folder_id, $field_name, $user) {
 
     function getFolder($dbdoc) {
         global $mysqli;
-        return mysqli_fetch_assoc(simpleQ("select * from bn2_filesdata where folder_id=" . ((int) $dbdoc), $mysqli));
+        $row = mysqli_fetch_assoc(simpleQ("select * from bn2_filesdata where folder_id=" . ((int) $dbdoc), $mysqli));
+        return $row ["folder_id"];
     }
 
     function displayNote($dbdoc) {

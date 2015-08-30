@@ -21,4 +21,5 @@
             <li>Déplacer</li>
         </ul>
     </div>
+    @include("menu", ["noteId", $noteId])
 @stop
