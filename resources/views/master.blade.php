@@ -48,10 +48,7 @@
 
     <div class="container">
         <div id="top_container">
-            <p><a href="http://github.com/mdahmen/mdahmen/blocnote2">Les sources sont disponibles sur
-                    http://github.com/mdahmen/blocnote2</a></p>
-
-            <h1>Applications et Gestion de fichiers</h1>
+            <h1>@yield("title"</h1>
             @section("top")
             @show
         </div>
