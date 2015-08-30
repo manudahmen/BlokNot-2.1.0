@@ -25,6 +25,7 @@ class ExtraRegisterOperations
         $note->setAttribute("folder_id", 0);
         $note->setAttribute("mime", "directory");
         $note->setAttribute("isFolder", 1);
+        $note->setAttribute("isRoot", 1);
 
         $note->save();
 
