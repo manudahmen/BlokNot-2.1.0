@@ -18,9 +18,10 @@ use App\Note;
  */
 class ExtraRegisterOperations
 {
-    public function createRootFolder()
+    public static function createRootFolder($email)
     {
         $note = new Note();
+        $note->setAttribute("user", $email);
         $note->setAttribute("filename", "Dossier racine");
         $note->setAttribute("folder_id", 0);
         $note->setAttribute("mime", "directory");
