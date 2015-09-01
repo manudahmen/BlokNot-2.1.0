@@ -204,6 +204,9 @@ Route::get("note/save/img/{noteId}", ['before' => 'csrf',
 Route::get("note/save/other/{noteId}", [
     "middleware" => "auth",
     "uses" => "NoteController@saveOther"]);
+Route::get("note/delete/{noteId}", ['before' => 'csrf',
+    "middleware" => "auth",
+    "uses" => "NoteController@delete"]);
 
 Route::get("file/uploadform/{folderId}", ["middleware" => "auth",
     "uses" => function ($folderId) {

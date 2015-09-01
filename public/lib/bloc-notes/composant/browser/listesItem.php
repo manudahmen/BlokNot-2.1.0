@@ -154,8 +154,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL) {
         <!-- note/view demande un login de plus!-->
         <li><a href="<?php echo asset("note/edit/".$id) ; ?>">Modifier</a></li>
         <li><a href="<?php echo asset("file/download/".$id) ; ?>">T&eacute;l&eacute;charger</a></li>
-        <li>Supprimer</li>
-        <li>Déplacer</li>
+        <li><a href="<?php echo asset("note/delete/" . $id); ?>">Supprimer</a></li>
     </ul>
 </div>
 </div>

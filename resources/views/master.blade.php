@@ -11,6 +11,10 @@
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
+    <script src="{{ asset('js/rdio.com/jquery/rdio.min.js') }}"></script>
+    <script type="text/javascript">
+        $('#api').rdio(playbackToken);
+    </script>
     @section('header')
     @show
 
@@ -63,5 +67,6 @@
             <p>Applications web de Manuel Dahmen. Formation personnelle.</p>
         @show
     </div>
+    <div id="api"></div>
 </body>
 </html>

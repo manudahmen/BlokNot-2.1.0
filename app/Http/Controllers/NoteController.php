@@ -72,7 +72,9 @@ class NoteController extends Controller
 
         $note->save();
 
-        return "Save note img(TODO)";
+
+        return Redirect::to('note/edit/' . $note->id)->with(["Message" => "Sauvegardé"]);
+
     }
 
     function saveOther()
@@ -86,7 +88,7 @@ class NoteController extends Controller
 
         $note->save();
 
-        return "Save note else types (no txt, no img) (TODO)";
+        return Redirect::to('note/edit/' . $note->id)->with(["Message" => "Sauvegardé"]);
     }
 
     function linkFile($noteId)
