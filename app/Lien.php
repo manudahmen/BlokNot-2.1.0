@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
 
 class Lien extends Model
 {

@@ -5,7 +5,7 @@ App::bind('path.public', function () {
 });
 
 
-require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
 
 Route::get('/auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -96,7 +96,7 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
  */
 Route::get("file/mime-type/{id}", ['middleware' => "auth",
         'uses' => function ($id) {
-            require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+            require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
             $user = Auth::user()->email;
             $result = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
             if ($result != NULL) {

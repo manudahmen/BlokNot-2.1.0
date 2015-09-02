@@ -18,7 +18,7 @@
  */
 
 
-require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
+require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
 
    listerNotesFromDB("%%", FALSE, $noteId, Auth::user()->email);
     ?>

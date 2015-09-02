@@ -1,4 +1,6 @@
-@extends('master')
+<?php
+$noteId = 0;
+?>@extends('master')
 @section('title', 'Note editor')
 
 @section('header')
@@ -30,7 +32,7 @@
         $folderId = getRootForUser($user);
     }
     ?>
-    @include("note/menu", ["noteId", $noteId])
+    @include("note/menu", ["noteId", 0])
     <form action="{{asset("note/save/txt/0") }}" method="GET">
         <table>
             <tr>

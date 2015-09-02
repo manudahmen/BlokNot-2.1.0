@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
-require_once(realpath(base_path("public/lib/bloc-notes/all-configured-and-secured-included.php")));
+require_once(realpath(base_path("lib/bloc-notes/all-configured-and-secured-included.php")));
 
 class NoteController extends Controller
 {
