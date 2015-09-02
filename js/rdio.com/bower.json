@@ -1,0 +1,12 @@
+{
+  "name": "jquery.rdio",
+  "version": "0.1.1",
+  "main": "jquery.rdio.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "example",
+    "Makefile"
+  ]
+}

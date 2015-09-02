@@ -1,5 +1,10 @@
 <?php
 
+App::bind('path.public', function () {
+    return base_path() . '/';
+});
+
+
 require_once(realpath(base_path("public/lib/bloc-notes/composant/browser/listesItem.php")));
 
 Route::get('/auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);

@@ -5,7 +5,7 @@
     <title>@yield('title')</title>
     <link href="//fonts.googleapis.com/css?family=Times New Roman:100" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="{{ asset('style/main.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css"/>
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
