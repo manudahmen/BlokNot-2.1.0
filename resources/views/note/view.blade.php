@@ -45,8 +45,8 @@
         function updateJoint() {
             $.get("{{asset("note/joint/list/$noteId") }}",
                     function (server_response) {
-                $("#lien_liste").html(server_response);
-            });
+                        $("#lien_liste").html(server_response);
+                    });
         }
         var type_html_start = "errors";
         var text_to_load = "";
@@ -67,16 +67,16 @@
 
                         }
                         $("#note_viewer_container").html(type_html_start);
-
+// document.write("<h1>" + type_viewed + "</h1>");
+                        if (type_viewed == "text") {
+                            $("#note_viewer_container").html("Load text ...");
+                            $.get(type_html_start,
+                                    function (server_response) {
+                                        $("#note_viewer_container").html(server_response);
+                                    });
+                        }
                     });
-            // document.write("<h1>" + type_viewed + "</h1>");
-            if (type_viewed == "text") {
-                $("#note_viewer_container").html("Load text ...");
-                $.get(type_html_start,
-                        function (server_response) {
-                            $("#note_viewer_container").html(server_response);
-                        });
-            }
+
         }
 
         updateNote();
