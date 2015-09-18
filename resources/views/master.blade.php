@@ -3,16 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>@yield('title')</title>
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width"/>
     <link href="//fonts.googleapis.com/css?family=Times New Roman:100" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('js\viewerJS\viewer.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="http://viewerjs.org/stylesheets/app.css" rel="stylesheet" type="text/css"/>
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script src="http://viewerjs.org/javascripts/sie.js"></script>
+    <script src="http://viewerjs.org/javascripts/foundation/modernizr.foundation.js"></script>
+    <script src="http://viewerjs.org/stylesheets/app.css"></script>
     <script type="text/javascript">
         $('#api').rdio(playbackToken);
     </script>
