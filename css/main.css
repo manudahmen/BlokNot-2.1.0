@@ -21,7 +21,7 @@ body {
     font-family: 'Lato', "Courier New", Courier, monospace;
 }
 
-.container {
+.containerBlocnoteBrowser {
     margin-left: 30%;
     text-align: justify;
     display: table-cell;

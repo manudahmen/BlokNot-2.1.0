@@ -5,7 +5,6 @@
     <title>@yield('title')</title>
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
-    <link href="//fonts.googleapis.com/css?family=Times New Roman:100" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
@@ -16,12 +15,6 @@
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
-    <script src="http://viewerjs.org/javascripts/sie.js"></script>
-    <script src="http://viewerjs.org/javascripts/foundation/modernizr.foundation.js"></script>
-    <script src="http://viewerjs.org/stylesheets/app.css"></script>
-    <script type="text/javascript">
-        $('#api').rdio(playbackToken);
-    </script>
     @section('header')
     @show
 
@@ -57,7 +50,7 @@
         @show
     </div>
 
-    <div class="container">
+    <div class="containerBlocnoteBrowser">
         <div id="top_container">
             <h1>@yield("title")</h1>
             @section("top")
