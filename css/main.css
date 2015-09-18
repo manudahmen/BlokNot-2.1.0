@@ -42,3 +42,20 @@ body {
     border-bottom: none;
     border-top: none;
 }
+
+/*
+@font-face {
+    font-family: '**The Font Name';
+    src: url("/js/viewerJS/fonts/filename-of-webfont.eot");
+    src: url("/js/viewerJS/fonts/filename-of-webfont.eot?#iefix")
+    format("embedded-opentype"),
+    url("/js/viewerJS/fonts/filename-of-webfont.woff")
+    format("woff"),
+    url("/js/viewerJS/fonts/filename-of-webfont.ttf")
+    format("truetype"),
+    url("/js/viewerJS/fonts/filename-of-webfont.svg#The%20Font%20Name")
+    format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+*/

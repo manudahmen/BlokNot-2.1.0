@@ -8,10 +8,11 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('js\viewerJS\viewer.css') }}" rel="stylesheet" type="text/css"/>
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
-    <script src="{{ asset('js/rdio.com/jquery/rdio.min.js') }}"></script>
+    <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script type="text/javascript">
         $('#api').rdio(playbackToken);
     </script>
