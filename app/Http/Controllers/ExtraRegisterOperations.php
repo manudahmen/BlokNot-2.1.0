@@ -35,7 +35,8 @@ class ExtraRegisterOperations
 
     public static function sendRegisteredUserEmail($email)
     {
-        Mail::send('emails.welcome', ['key' => 'value'], function ($message) {
+        Mail::send('emails.welcome', ['email' => $email, 'password' => Auth::user()->password], function ($message) {
+            $email = Auth::user()->email;
             $message->to($email, $email, $message)->subject("Welcome $email!");
         });
     }
