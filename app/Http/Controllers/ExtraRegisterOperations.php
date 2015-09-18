@@ -32,4 +32,11 @@ class ExtraRegisterOperations
 
 
     }
+
+    public static function sendRegisteredUserEmail($email)
+    {
+        Mail::send('emails.welcome', ['key' => 'value'], function ($message) {
+            $message->to($email, $email, $message)->subject("Welcome $email!");
+        });
+    }
 }
