@@ -191,7 +191,7 @@ function getExtension($filename)
 
 function isImage($ext, $mime = "")
 {
-    return in_array($ext, array("jpg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 0, 5) >= 0));
+    return in_array($ext, array("jpg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
 
 }
 
