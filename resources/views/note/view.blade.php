@@ -65,12 +65,13 @@
                         } else if (server_response.equals("directory")) {
                             type_html_start = "Repertoire";
 
-                        } else if (server_response.equals("application/pdf")) {
-                            type_html_start = "{{ asset("js/ViewerJS/pdf.js#file/view/".$noteId) }}";
+                        } else if (server_response.search("application/pdf") > -1) {
+                            type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><iframe src = '{{ asset("js/viewerJS/#".asset("file/view/".$noteId)) }}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
 
                         }
                         $("#note_viewer_container").html(type_html_start);
-// document.write("<h1>" + type_viewed + "</h1>");
+
+
                         if (type_viewed == "text") {
                             $("#note_viewer_container").html("Loading text ...");
                             $.get(type_html_start,
@@ -78,6 +79,7 @@
                                         $("#note_viewer_container").html(server_response);
                                     });
                         }
+
                     });
 
         }
