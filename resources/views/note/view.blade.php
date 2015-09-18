@@ -64,7 +64,7 @@
                         } else if (server_response.search("directory") > -1) {
                             type_html_start = "Repertoire";
                         } else if (server_response.search("application/pdf") > -1) {
-                            type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><br/><iframe src ='/js/viewerJS/#../../file/view/{{$noteId}}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
+                            type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><br/><iframe src ='{{asset("/js/viewerJS")."/#".asset("file/view/$noteId")}}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
                         }
 
                         $("#note_viewer_container").html(type_html_start);
