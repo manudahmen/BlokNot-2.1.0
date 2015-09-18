@@ -65,6 +65,9 @@
                         } else if (server_response.equals("directory")) {
                             type_html_start = "Repertoire";
 
+                        } else if (server_response.equals("application/pdf")) {
+                            type_html_start = "{{ asset("js/ViewerJS/pdf.js#file/view/".$noteId) }}";
+
                         }
                         $("#note_viewer_container").html(type_html_start);
 // document.write("<h1>" + type_viewed + "</h1>");
