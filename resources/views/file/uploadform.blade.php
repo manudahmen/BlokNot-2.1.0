@@ -19,7 +19,7 @@
           class="dropzone"
           id="my-awesome-dropzone" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_method" value="POST">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         <input id="file-select" name="file[]" type="file" multiple="multiple" value="Choisir le(s) fichier(s)">
         <input id="file" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
