@@ -64,7 +64,7 @@ class AuthController extends Controller
         ]);
         if ($res != NULL) {
             ExtraRegisterOperations::createRootFolder($data["email"]);
-
+            ExtraRegisterOperations::sendRegisteredUserEmail($data["email"]);
         }
         return $res;
 
