@@ -15,6 +15,7 @@
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
     @section('header')
     @show
 

@@ -58,7 +58,7 @@ class NoteController extends Controller
         echo "<p> Note saved</p>";
 
 
-        return Redirect::to('note/edit/'.$note->id)->with(["Message" => "Sauvegardé"]);
+        return Redirect::to('note/edit/' . $note->id)->with(["Message" => "Sauvegardé"]);
     }
 
     function saveImg()
@@ -110,38 +110,44 @@ class NoteController extends Controller
 
     function upload(Request $request)
     {
-        $files = $request->file('file');
-        foreach ($files as $file) {
+        $text = "<h1>Result</h1>";
+
+        /*$files =*/
+        $file = $request->file('file');
+        // foreach ($files as $file) {
             if ($file->isValid()) {
+                $mime = $file->getClientMimeType();
+                $filename = $file->getClientOriginalName();
+
+                $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
+
+                $fullPath = __DIR__ . "datafiles/";
+
+                $totalName = $fullPath . "/" . $dstName;
+
+                $file->move($fullPath, $dstName);
+
+                $content_file = file_get_contents($totalName);
+
+
+                $note = Note::findOrNew(0);
+                $note->setAttribute("mime", $mime);
+                $note->setAttribute("username", Auth::user()->email);
+                $note->setAttribute("content_file", $content_file);
+                $note->setAttribute("filename", $filename);
+                $note->setAttribute("folder_id", $request->get("folder_id"));
+
+                $note->save();
+
+
+                unlink($totalName);
+
+                $text .= $note->getAttribute("filename") . " (saved)<br/>";
+
             }
-            $mime = $file->getClientMimeType();
-            $filename = $file->getClientOriginalName();
 
-            $dstName ="FICHIER.DAT".rawurlencode(Auth::user()->email);
-
-            $fullPath = __DIR__."datafiles/";
-
-            $totalName  = $fullPath . "/" . $dstName;
-
-            $file->move($fullPath, $dstName);
-
-            $content_file = file_get_contents($totalName);
-
-
-            $note = Note::findOrNew(0);
-            $note->setAttribute("mime", $mime);
-            $note->setAttribute("username", Auth::user()->email);
-            $note->setAttribute("content_file", $content_file);
-            $note->setAttribute("filename", $filename);
-            $note->setAttribute("folder_id", $request->get("folder_id"));
-
-            $note->save();
-
-            print_r($note);
-
-
-            return "Note saved and uploaded";
-        }
+        //}
+        return "<h2>Notes saved and uploaded</h2>" . $text;
     }
 
     function delete(Request $request, $noteId)
