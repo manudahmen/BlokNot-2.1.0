@@ -20,7 +20,7 @@
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         <input type="hidden" name="_method" value="POST">
-        <input id="file" name="file" type="file" multiple="multiple" value="Choisir le(s) fichier(s)">
+        <input id="file" name="file" type="file" value="Choisir le fichier">
         <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
     </form>
@@ -55,13 +55,19 @@
 
                     return xhr;
                 },
-                type: 'post',
-                processData: false,
+                processData: false, type: 'post',
+
                 contentType: false,
                 data: fd,
                 success: function (data) {
                     // do something...
                     alert('uploaded');
+                }
+                fail: function (data) {
+                    alert("Fail");
+                }
+                always: function (data) {
+                    alert("Complete");
                 }
             });
         });
