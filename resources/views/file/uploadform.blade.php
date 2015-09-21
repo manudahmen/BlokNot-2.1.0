@@ -28,7 +28,7 @@
     <p id="progress"></p>
     <script language="JavaScript">
         $.ajaxSetup({
-            headers: {'X-XCSRF-TOKEN': $('meta[name=_token').attr('content')}
+            headers: {'X-CSRF-Token': $('meta[name=_token]').attr('content')}
         });
     </script>
     <script>
@@ -67,13 +67,13 @@
                 data: fd,
                 success: function (data) {
                     // do something...
-                    alert('uploaded');
-                }
+                    alert('uploaded' + data);
+                },
                 fail: function (data) {
                     alert("Fail");
-                }
+                },
                 always: function (data) {
-                    alert("Complete");
+                    alert("Complete" + data);
                 }
             });
         });
