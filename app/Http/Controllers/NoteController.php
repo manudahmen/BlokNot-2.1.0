@@ -61,7 +61,7 @@ class NoteController extends Controller
         return Redirect::to('note/edit/' . $note->id)->with(["Message" => "Sauvegardé"]);
     }
 
-    function saveImg()
+    function saveImg(Request $request)
     {
         $note = Note::findOrNew($request->get("noteId"));
 
@@ -77,7 +77,7 @@ class NoteController extends Controller
 
     }
 
-    function saveOther()
+    function saveOther(Request $request)
     {
         $note = Note::findOrNew($request->get("noteId"));
 
@@ -112,8 +112,7 @@ class NoteController extends Controller
     {
         $text = "<h1>Result</h1>";
 
-        $files = $request->files;
-        $file = $request->file('file');
+        $files = $request->get('file');
         foreach ($files as $file) {
             if ($file->isValid()) {
                 $mime = $file->getClientMimeType();

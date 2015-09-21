@@ -20,7 +20,7 @@
     <form action="{{asset("file/upload/$folderId")}}"
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-        {!! method_field('PUT') !!}
+        {!! method_field('POST') !!}
         <input id="file" name="file[]" type="file" value="Choisir le fichier" multiple>
         <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
