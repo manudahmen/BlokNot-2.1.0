@@ -11,7 +11,8 @@
     "php": ">=5.5.9",
     "laravel/framework": "5.1.*",
     "google/apiclient": "1.0.*@beta",
-    "google/client": "v1.0.0-alpha"
+    "google/client": "v1.0.0-alpha",
+    "illuminate/html": "5.*"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

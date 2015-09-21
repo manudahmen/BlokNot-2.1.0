@@ -3,6 +3,7 @@
 
 @section('header')
     @parent
+    <meta name="_token" content="{!! csrf_token() !!}"/>
 @stop
 
 @section('content')
@@ -20,11 +21,16 @@
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         <input type="hidden" name="_method" value="POST">
-        <input id="file" name="file" type="file" value="Choisir le fichier">
+        <input id="file" name="file[]" type="file" value="Choisir le fichier" multiple>
         <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
     </form>
     <p id="progress"></p>
+    <script language="JavaScript">
+        $.ajaxSetup({
+            headers: {'X-XCSRF-TOKEN': $('meta[name=_token').attr('content')}
+        });
+    </script>
     <script>
 
         $('#form').submit(function (e) { // capture submit

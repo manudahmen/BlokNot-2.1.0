@@ -112,9 +112,9 @@ class NoteController extends Controller
     {
         $text = "<h1>Result</h1>";
 
-        /*$files =*/
+        $files = $request->files;
         $file = $request->file('file');
-        // foreach ($files as $file) {
+        foreach ($files as $file) {
             if ($file->isValid()) {
                 $mime = $file->getClientMimeType();
                 $filename = $file->getClientOriginalName();
@@ -146,7 +146,7 @@ class NoteController extends Controller
 
             }
 
-        //}
+        }
         return "<h2>Notes saved and uploaded</h2>" . $text;
     }
 
