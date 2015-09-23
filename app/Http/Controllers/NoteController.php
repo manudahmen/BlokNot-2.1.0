@@ -108,11 +108,11 @@ class NoteController extends Controller
 
     }
 
-    function upload(Request $request)
+    function upload($folderId)
     {
         $text = "<h1>Result</h1>";
 
-        $files = $request->get('file');
+        $files = Input::file('file');
         foreach ($files as $file) {
             if ($file->isValid()) {
                 $mime = $file->getClientMimeType();
@@ -134,7 +134,7 @@ class NoteController extends Controller
                 $note->setAttribute("username", Auth::user()->email);
                 $note->setAttribute("content_file", $content_file);
                 $note->setAttribute("filename", $filename);
-                $note->setAttribute("folder_id", $request->get("folder_id"));
+                $note->setAttribute("folder_id", $folderId);
 
                 $note->save();
 

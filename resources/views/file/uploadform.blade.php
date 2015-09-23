@@ -13,9 +13,6 @@
     <p>
 
     </p>
-    <div id="mydrop" style="background-color: black; color: white; margin: 40px; height: 100px; width: 100px; background-color: #00ffff">
-
-    </div>
 
     <form action="{{asset("file/upload/$folderId")}}"
           id="form" method="POST" enctype="multipart/form-data">
@@ -70,7 +67,7 @@
                     alert('uploaded' + data);
                 },
                 fail: function (data) {
-                    alert("Fail");
+                    alert("Fail" + data);
                 },
                 always: function (data) {
                     alert("Complete" + data);

@@ -40,7 +40,7 @@ body {
 
 #sidebar {
     float: left;
-    width: 400px;
+    width: 30%;
     border: 1px solid red;
     border-bottom: none;
     border-top: none;
