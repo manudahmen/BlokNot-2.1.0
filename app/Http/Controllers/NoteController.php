@@ -108,44 +108,42 @@ class NoteController extends Controller
 
     }
 
-    function upload($folderId)
+    function uploadOnce(Request $request, $folderId)
     {
         $text = "<h1>Result</h1>";
 
-        $files = Input::file('file');
-        foreach ($files as $file) {
-            if ($file->isValid()) {
-                $mime = $file->getClientMimeType();
-                $filename = $file->getClientOriginalName();
+        $file = Input::file('file');
+        if ($file->isValid()) {
+            $mime = $file->getClientMimeType();
+            $filename = $file->getClientOriginalName();
 
-                $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
+            $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
 
-                $fullPath = __DIR__ . "datafiles/";
+            $fullPath = __DIR__ . "datafiles/";
 
-                $totalName = $fullPath . "/" . $dstName;
+            $totalName = $fullPath . "/" . $dstName;
 
-                $file->move($fullPath, $dstName);
+            $file->move($fullPath, $dstName);
 
-                $content_file = file_get_contents($totalName);
-
-
-                $note = Note::findOrNew(0);
-                $note->setAttribute("mime", $mime);
-                $note->setAttribute("username", Auth::user()->email);
-                $note->setAttribute("content_file", $content_file);
-                $note->setAttribute("filename", $filename);
-                $note->setAttribute("folder_id", $folderId);
-
-                $note->save();
+            $content_file = file_get_contents($totalName);
 
 
-                unlink($totalName);
+            $note = Note::findOrNew(0);
+            $note->setAttribute("mime", $mime);
+            $note->setAttribute("username", Auth::user()->email);
+            $note->setAttribute("content_file", $content_file);
+            $note->setAttribute("filename", $filename);
+            $note->setAttribute("folder_id", $folderId);
 
-                $text .= $note->getAttribute("filename") . " (saved)<br/>";
+            $note->save();
 
-            }
+
+            unlink($totalName);
+
+            $text .= $note->getAttribute("filename") . " (saved)<br/>";
 
         }
+
         return "<h2>Notes saved and uploaded</h2>" . $text;
     }
 

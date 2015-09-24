@@ -16,9 +16,9 @@
 
     <form action="{{asset("file/upload/$folderId")}}"
           id="form" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+        <!--<input type="hidden" name="_token" value="{{ csrf_token() }}"/>-->
         {!! method_field('POST') !!}
-        <input id="file" name="file[]" type="file" value="Choisir le fichier" multiple>
+        <input id="file" name="file" type="file" value="Choisir le fichier" multiple>
         <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
     </form>
@@ -27,8 +27,6 @@
         $.ajaxSetup({
             headers: {'X-CSRF-Token': $('meta[name=_token]').attr('content')}
         });
-    </script>
-    <script>
 
         $('#form').submit(function (e) { // capture submit
             e.preventDefault();
@@ -64,13 +62,13 @@
                 data: fd,
                 success: function (data) {
                     // do something...
-                    alert('uploaded' + data);
+                    document.write('uploaded' + data);
                 },
                 fail: function (data) {
-                    alert("Fail" + data);
+                    document.write("Fail" + data);
                 },
                 always: function (data) {
-                    alert("Complete" + data);
+                    document.write("Complete" + data);
                 }
             });
         });
