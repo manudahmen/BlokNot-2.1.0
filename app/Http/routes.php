@@ -144,7 +144,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
 
                 } else {
                     $response = Response::make($content, 200);
-                    $response->header('Content-Type', $doc["mime"]);
+                $response->header('Content-Type', $note->mime);
                     return $response;
 
                 }
