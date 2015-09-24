@@ -151,7 +151,7 @@ class NoteController extends Controller
 
             unlink($totalName);
 
-            $text .= $note->getAttribute("filename") . " (saved)<br/>";
+            $text .= "<a href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a> (saved)<br/>";
 
         }
 
@@ -196,7 +196,7 @@ class NoteController extends Controller
 
                 unlink($totalName);
 
-                $text .= $note->getAttribute("filename") . " (saved)<br/>";
+                $text .= "<a href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a> (saved)<br/>";
             }
     }
 
