@@ -57,7 +57,7 @@
 
                     function (server_response) {
                         if (server_response.search("image") > -1) {
-                            type_html_start = "<img src='{{ asset("file/view/".$noteId) }}''/>";
+                            type_html_start = "<images src='{{ asset("file/view/".$noteId) }}''/>";
                         } else if (server_response.search("text") > -1) {
                             type_html_start = "{{ asset("file/view/".$noteId) }}";
                             type_viewed = "text";

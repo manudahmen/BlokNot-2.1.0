@@ -133,7 +133,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
             } else if (isTexte($ext, $note->mime)) {
                     $content = str_replace("[[", "<a target='NEW' href='", $content);
                     $content = str_replace("]]", "'>Lien</a>", $content);
-                $content = str_replace("{{", "<img src='" . asset("file/view/"), $content);
+                $content = str_replace("{{", "<images src='" . asset("file/view/"), $content);
                     $content = str_replace("}}", "'/>", $content);
                 $content = str_replace("((", "<span class='included_doc'>include doc n0", $content);
                     $content = str_replace("))", "</span>", $content);
@@ -195,7 +195,7 @@ function ImgSelf($content, $filename)
 Route::get("note/save/txt/{noteId}", ['before' => 'csrf',
     "middleware" => "auth",
     "uses" => "NoteController@saveTxt"]);
-Route::get("note/save/img/{noteId}", ['before' => 'csrf',
+Route::get("note/save/images/{noteId}", ['before' => 'csrf',
     "middleware" => "auth",
     "uses" => "NoteController@saveImg"]);
 Route::get("note/save/other/{noteId}", [

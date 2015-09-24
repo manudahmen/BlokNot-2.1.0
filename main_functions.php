@@ -5,20 +5,25 @@
  * Date: 24-09-15
  * Time: 10:53
  */
-
+require_once("private");
+/**
+* ::
+ */
  $appDir = 'customers/c/d/8/ibiteria.com/httpd.www/';
+ /*
 Class Config
 {
-    public $hostname = 'ibiteria.com.mysql';
-    public $username = 'ibiteria_com';
-    public $password = "Qvxd86bq";
-    public $name = 'ibiteria_com';
-    public $tableUsers = 'bn2_users';
-    public $tableItem = 'bn2_items';
-    public $tablePrefix = "bn2";
+    public $hostname;
+    public $username;
+    public $password;
+    public $name;
+    public $tableUsers;
+    public $tableItem;
+    public $tablePrefix;
 }
-$config = new Config();
 
+$config = new Config();
+*/
 function getDBDocument($id)
 {
     $note = new \App\Note((int)$id);
@@ -144,7 +149,7 @@ function typeImg($cf)
 {
     global $userdataurl;
     global $dataDir;
-    $actionurl = "page.xhtml.php?composant=reader.img&document=$cf";
+    $actionurl = "page.xhtml.php?composant=reader.images&document=$cf";
     ?>
     <div class="miniImgContainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true"
          ondragstart="drag(event)">
@@ -230,7 +235,7 @@ function echoImgBase64($content, $filename)
     $src = 'data: image/' . getExtension($filename) . ';base64,' . $imgData;
 
 // Echo out a sample image($filename)
-    echo '<img src="' . $src . '">';
+    echo '<images src="' . $src . '">';
 
 }
 
