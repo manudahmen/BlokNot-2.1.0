@@ -31,7 +31,7 @@ class Note extends Model
     {
         global $mysqli;
         $this->id = $this->noteId = $noteId;
-        $res = simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
+        $res = getDocRow($noteId);
         if(($res!=NULL) && (($row=mysqli_fetch_assoc($res))!=NULL))
         {
             $this->folder_id = $row["folder_id"];

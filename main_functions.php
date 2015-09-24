@@ -27,8 +27,15 @@ function getDBDocument($id)
 
     return $note;
 }
-
-
+function getDocRow($noteId)
+{
+global $mysqli;
+    return simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
+}
+function getField($row, $fieldName)
+{
+    return $row[$fieldName];
+}
 function getFolderList($user) {
     global $mysqli;
     $sql = "select * from bn2_filesdata where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
@@ -39,7 +46,7 @@ function getFolderList($user) {
 function getMimeType($id) {
     global $mysqli;
     connect();
-    $result = getDBDocument($id);
+    $result = getDocRow($id);
     if ($result != NULL) {
         if (($doc = mysqli_fetch_assoc($result)) != NULL) {
             return $doc["mime"];

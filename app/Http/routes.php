@@ -95,7 +95,7 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
 Route::get("file/mime-type/{id}", ['middleware' => "auth",
         'uses' => function ($id) {
             $user = Auth::user()->email;
-            $result = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
+            $result = getDocRow(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
             if ($result != NULL) {
                 if (($doc = mysqli_fetch_assoc($result)) != NULL) {
                     $mime = $doc['mime'];
@@ -160,7 +160,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
 Route::get("file/download/{noteId}", [
     "middleware" => "auth",
     "uses" => function ($noteId) {
-        $result = getDBDocument($noteId);
+        $result = getDocRow($noteId);
         if ($result != NULL) {
             $doc = mysqli_fetch_assoc($result);
             $doc_content = getField($doc, "content_file");
