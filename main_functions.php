@@ -82,11 +82,11 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
     ?>
     <div class="browserContainer">
     <div class="miniImgExternalBox">
-        <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
+        <div class="miniImgContainerTop"><p><strong>Rï¿½pertoire parent (..)</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getDBDocument($path)->folder_id) . "/1"); ?>">
                 <img src='<?php echo asset("images/system-icone-4272-128.png") ?>'
-                     class="miniImg" alt="Icône dossier par défaut"/>
+                     class="miniImg" alt="Ic&ocirc;ne dossier par d&eacute;faut"/>
             </a>
         </div>
         <div class="miniImgContainerBottom">
@@ -99,7 +99,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             <ul>
                 <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>">Uploader un fichier ici
                     </a></li>
-                <li><a href="<?php echo asset("note/new/" . $path); ?>">Créer une note ici
+                <li><a href="<?php echo asset("note/new/" . $path); ?>">Cr&eacute;er une note ici
                     </a></li>
             </ul>
         </div>
@@ -118,7 +118,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             typeDB($filename, $content, $id, $row);
         }
     } else {
-        echo "Pas de résultat";
+        echo "Pas de rï¿½sultat";
     }
     ?></div><?php
 }
@@ -202,7 +202,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
                         src='<?php echo asset("images/system-icone-4272-128.png") ?>' class="miniImg"
-                        alt="Icône dossier par défaut"></a><?php
+                        alt="Icï¿½ne dossier par dï¿½faut"></a><?php
                 } else {
                     ?>
                     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
@@ -313,7 +313,7 @@ function connect() {
     }
 
 
-    //echo 'Succès... ' . $mysqli->host_info . "\n";
+    //echo 'Succï¿½s... ' . $mysqli->host_info . "\n";
 }
 
 function getRootForUser($user=NULL) {
@@ -346,7 +346,7 @@ function createRootForUser() {
     connect();
     $sql = "insert into bn2_filesdata (filename, folder_id, isDirectory) values ('Dossier racine', -1, TRUE)";
     if (mysqli_query($mysqli, $sql)) {
-        echo "Fichier racine créé";
+        echo "Fichier racine crï¿½ï¿½";
     }
 }
 
