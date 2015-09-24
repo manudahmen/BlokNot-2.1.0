@@ -82,7 +82,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
     ?>
     <div class="browserContainer">
     <div class="miniImgExternalBox">
-        <div class="miniImgContainerTop"><p><strong>R�pertoire parent (..)</p></div>
+        <div class="miniImgContainerTop"><p><strong>R&eacute;pertoire parent (..)</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getDBDocument($path)->folder_id) . "/1"); ?>">
                 <img src='<?php echo asset("images/system-icone-4272-128.png") ?>'
