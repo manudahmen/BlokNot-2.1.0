@@ -15,14 +15,14 @@ class NoteController extends Controller
 
     function display($noteId)
     {
-        $doc = mysqli_fetch_assoc(getDBDocument($noteId));
+        $doc = mysqli_fetch_assoc(getDocRow($noteId));
         return view("note/view")->with("note", $doc);
     }
 
     function edit($noteId)
     {
-        $doc = mysqli_fetch_assoc(getDBDocument($noteId));
-        return view("note/edit")->with("note", $doc);
+        $doc = mysqli_fetch_assoc(getDocRow($noteId));
+        return view("note/edit")->with("noteId", $doc);
     }
 
     function index()
