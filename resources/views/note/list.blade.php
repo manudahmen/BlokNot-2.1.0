@@ -17,10 +17,15 @@
  * Time: 13:42
  */
 
+/*
+require_once(realpath(base_path("lib/bloc-notes2/composant/browser/listesItem.php")));
+listerNotesFromDB("%%", FALSE, $noteId, Auth::user()->email);
+*/
 
-require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
+require_once(realpath(base_path("main_functions.php")));
 
-   listerNotesFromDB("%%", FALSE, $noteId, Auth::user()->email);
-    ?>
+listerNotesFromDB("%%", FALSE, $noteId, Auth::user()->email);
+
+?>
 
     @stop

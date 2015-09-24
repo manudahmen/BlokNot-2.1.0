@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
-require_once(realpath(base_path("lib/bloc-notes/all-configured-and-secured-included.php")));
+require_once(realpath(base_path("main_functions.php")));
 
 class NoteController extends Controller
 {
@@ -32,7 +32,7 @@ class NoteController extends Controller
 
     function newnote()
     {
-        return view("note/edit")->with("note", 0);
+        return view("note/new/0")->with("noteId", 0);
     }
 
     function saveTxt(Request $request)
@@ -53,8 +53,6 @@ class NoteController extends Controller
             "content_file" => $note->content_file,
             "mime" => $note->mime
         ]);
-
-        //print_r($note);
 
         $note->save();
         echo "<p> Note saved</p>";
@@ -114,7 +112,7 @@ class NoteController extends Controller
 
     }
 
-    function uploadOnce(Request $request, $folderId)
+    function uploadOnce($folderId)
     {
         $text = "<h1>Result</h1>";
 

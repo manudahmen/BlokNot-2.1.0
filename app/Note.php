@@ -29,8 +29,9 @@ class Note extends Model
     }
     function load($noteId)
     {
+        global $mysqli;
         $this->id = $this->noteId = $noteId;
-        $res = getDBDocument($noteId);
+        $res = simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
         if(($res!=NULL) && (($row=mysqli_fetch_assoc($res))!=NULL))
         {
             $this->folder_id = $row["folder_id"];

@@ -24,7 +24,7 @@
      * Time: 13:42
      */
 
-    require_once(realpath(base_path("lib/bloc-notes/composant/browser/listesItem.php")));
+    //require_once(realpath(base_path("lib/bloc-notes2/composant/browser/listesItem.php")));
     $note = \App\Note::findOrFail($noteId);
 
     $attributes = $note->getAttributes();

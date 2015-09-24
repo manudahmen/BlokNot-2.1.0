@@ -1,37 +1,80 @@
 <?php
-require_once(__DIR__ . "/../../all-configured-and-secured-included.php");
-function listerTout($classeur)
+/**
+ * Created by PhpStorm.
+ * User: manue
+ * Date: 24-09-15
+ * Time: 10:53
+ */
+
+ $appDir = 'customers/c/d/8/ibiteria.com/httpd.www/';
+Class Config
 {
-    global $dataDir;
-    $dirh = opendir($dataDir . "/" . $classeur);
-    while (($f = readdir($dirh)) != NULL) {
-        if ((strtolower(substr($f, 0, 5)) == "class") && is_dir($dataDir . "/" . $f)) {
-            if (substr($classeur, -1) == "/") {
-                $f = substr($f, -1);
-            }
-            typeCls(substr($f, 5), $f);
-        } else if (strtolower(substr($f, -4)) == ".png"
-            or strtolower(substr($f, -4) == ".jpg")
-        ) {
-            typeImg((($classeur == "") ? "" : $classeur . "/") . $f);
-        } else if (strtolower(substr($f, -4)) == ".txt") {
-            $filePath = $dataDir . "/" . $classeur . "/" . $f;
-            typeTxt((($classeur == "") ? "" : $classeur . "/") . $f, $filePath);
+    public $hostname = 'ibiteria.com.mysql';
+    public $username = 'ibiteria_com';
+    public $password = "Qvxd86bq";
+    public $name = 'ibiteria_com';
+    public $tableUsers = 'bn2_users';
+    public $tableItem = 'bn2_items';
+    public $tablePrefix = "bn2";
+}
+$config = new Config();
+
+function getDBDocument($id)
+{
+    $note = new \App\Note((int)$id);
+
+    $note->load($id);
+
+    return $note;
+}
+
+
+function getFolderList($user) {
+    global $mysqli;
+    $sql = "select * from bn2_filesdata where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
+    $res = simpleQ($sql, $mysqli);
+    return $res;
+}
+
+function getMimeType($id) {
+    global $mysqli;
+    connect();
+    $result = getDBDocument($id);
+    if ($result != NULL) {
+        if (($doc = mysqli_fetch_assoc($result)) != NULL) {
+            return $doc["mime"];
         }
     }
 }
+function folder_field($folder_id, $field_name, $user) {
+    ?>
+<fieldset> <select name="<?php echo $field_name; ?>" class="user-control">
+    <?php
+    $res = getFolderList($user);
+    while (($row = mysqli_fetch_assoc($res)) != NULL) {
+        if ($row["id"] == $folder_id) {
+            $optionSel = "selected='selected'";
+        } else {
+            $optionSel = "";
+        }
+        echo "<option value='" . $row['id'] . "' " . $optionSel . " >" . htmlspecialchars($row['filename']) . "</option>";
+    }
 
+    mysqli_free_result($res);
+    ?>
+    </select><fieldset><?php
+    }
 function listerNotesFromDB($filtre, $composed, $path, $user)
 {
     $results = getDocumentsFiltered($filtre, $composed, $path, $user);
     ?>
     <div class="browserContainer">
     <div class="miniImgExternalBox">
-        <div class="miniImgContainerTop"><p><strong>RÃ©pertoire parent (..)</p></div>
+        <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getParentNoteId($path)) . "/1"); ?>">
-                <img src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>'
-                     class="miniImg" alt="IcÃ´ne dossier par dÃ©faut"/>
+                <img src='<?php echo asset("lib/bloc-notes2/images/dossier-gris.png") ?>'
+                     class="miniImg" alt="Icône dossier par défaut"/>
             </a>
         </div>
         <div class="miniImgContainerBottom">
@@ -44,7 +87,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             <ul>
                 <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>">Uploader un fichier ici
                     </a></li>
-                <li><a href="<?php echo asset("note/new/" . $path); ?>">CrÃ©er une note ici
+                <li><a href="<?php echo asset("note/new/" . $path); ?>">Créer une note ici
                     </a></li>
             </ul>
         </div>
@@ -52,7 +95,8 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             &minus;&gt;
         </div>
     </div>
-    <?php
+
+<?php
     if ($results) {
         while (($row = mysqli_fetch_assoc($results))) {
             $filename = $row['filename'];
@@ -62,7 +106,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             typeDB($filename, $content, $id, $row);
         }
     } else {
-        echo "Pas de rÃ©sultat";
+        echo "Pas de résultat";
     }
     ?></div><?php
 }
@@ -145,8 +189,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
-                        src='<?php echo asset("lib/bloc-notes/images/dossier-gris.png") ?>' class="miniImg"
-                        alt="IcÃ´ne dossier par dÃ©faut"></a><?php
+                        src='<?php echo asset("lib/bloc-notes2/images/dossier-gris.png") ?>' class="miniImg"
+                        alt="Icône dossier par défaut"></a><?php
                 } else {
                     ?>
                     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
@@ -201,3 +245,116 @@ function isTexte($ext, $mime = "")
 
 }
 
+
+function getDocumentsFiltered($filtre, $composedOnly, $pathId, $user) {
+    global $mysqli;
+
+    if ($pathId == 0) {
+        $pathId = getRootForUser($user);
+    }
+
+    $q = "SELECT * FROM bn2_filesdata " .
+        "WHERE username='" . mysqli_real_escape_string($mysqli, $user) .
+        "' and ((filename like '%" . mysqli_real_escape_string($mysqli, $filtre) .
+        "%') or (content_file like'%" . mysqli_real_escape_string($mysqli, $filtre) .
+        "%') and (content_file like '%" .
+        ($composedOnly ? "{{" : "") . "%' )) and isDeleted=0 and "
+        . "folder_id=" . ( (int) $pathId);
+
+    $result = simpleQ($q, $mysqli);
+
+    return $result;
+}
+
+function simpleQ($q, $mysqli) {
+
+
+    global $mysqli;
+    global $date;
+    $date = date("Y-m-d-H-i-s");
+
+    if ($mysqli == NULL) {
+        connect();
+    }
+    return mysqli_query($mysqli, $q);
+}
+
+function connect() {
+    global $mysqli;
+    $config = new Config();
+    global $date;
+    if ($date == "") {
+        $date = date("Y-m-d-H-i-s");
+    }
+    $hostname = trim($config->hostname);
+    $username = trim($config->username);
+    $password = trim($config->password);
+    $dbname = trim($config->name);
+
+
+    //conection:
+    $mysqli = mysqli_connect($hostname, $username, $password, $dbname) or die("Error " . mysqli_error($mysqli));
+
+    if ($mysqli->connect_error) {
+        die('Erreur de connexion (' . $mysqli->connect_errno . ') '
+            . $mysqli->connect_error);
+    }
+
+
+    //echo 'Succès... ' . $mysqli->host_info . "\n";
+}
+
+function getRootForUser($user=NULL) {
+    global $mysqli;
+    if($user==NULL)
+    {
+        global $monutilisateur;
+
+    }
+    $sql = "select id from bn2_filesdata where username like '" .
+        mysqli_real_escape_string($mysqli, $user)
+        . "' and isRoot=1";
+
+    $result = simpleQ($sql, $mysqli);
+    if ($result) {
+        if (($arr = $result->fetch_assoc())!=NULL) {
+            $id = $arr['id'];
+        } else {
+            $id = 0;
+        }
+    } else {
+        $id = -1;
+        echo "No root for user";
+    }//echo "ID;; $id";
+    return $id;
+}
+
+function createRootForUser() {
+    global $mysqli;
+    connect();
+    $sql = "insert into bn2_filesdata (filename, folder_id, isDirectory) values ('Dossier racine', -1, TRUE)";
+    if (mysqli_query($mysqli, $sql)) {
+        echo "Fichier racine créé";
+    }
+}
+
+function deleteDBDoc($dbdoc) {
+    global $mysqli;
+    global $monutilisateur;
+    $sql = "update bn2_filesdata set isDeleted=1 where id=" . mysqli_real_escape_string($mysqli, $dbdoc) . " and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
+    return simpleQ($sql, $mysqli);
+}
+
+connect();
+
+function getParentNoteId($path)
+{
+    global $mysqli;
+
+    $sql = "select folder_id where id=".$path;
+    if (($result=simpleQ($sql, $mysqli))!=NULL) {
+
+        return mysqli_fetch_assoc($result)["folder_id"];
+    }
+
+}
