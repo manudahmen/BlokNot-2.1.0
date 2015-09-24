@@ -201,7 +201,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
-                        src='<?php echo asset("lib/bloc-notes2/images/dossier-gris.png") ?>' class="miniImg"
+                        src='<?php echo asset("images/system-icone-4272-128.png") ?>' class="miniImg"
                         alt="Icône dossier par défaut"></a><?php
                 } else {
                     ?>
