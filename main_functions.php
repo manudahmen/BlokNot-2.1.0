@@ -85,7 +85,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
         <div class="miniImgContainerTop"><p><strong>Répertoire parent (..)</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getParentNoteId($path)) . "/1"); ?>">
-                <img src='<?php echo asset("images/system-icone-4272-128") ?>'
+                <img src='<?php echo asset("images/system-icone-4272-128.png") ?>'
                      class="miniImg" alt="Icône dossier par défaut"/>
             </a>
         </div>
