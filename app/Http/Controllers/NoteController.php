@@ -122,6 +122,8 @@ class NoteController extends Controller
 
         $data = Input::all();
         $file = $data['file'];
+
+
         if ($file->isValid()) {
             $mime = $file->getClientMimeType();
             $filename = $file->getClientOriginalName();
@@ -152,6 +154,51 @@ class NoteController extends Controller
             $text .= $note->getAttribute("filename") . " (saved)<br/>";
 
         }
+
+        return "<h2>Notes saved and uploaded</h2>" . $text;
+    }
+
+    function uploadMultiple(Request $request, $folderId)
+    {
+        $text = "<h1>Result</h1>";
+
+
+        var_dump(Input::all());
+
+        $data = Input::all();
+        $files = $data['file'];
+
+        foreach ($files as $file) {
+            if ($file->isValid()) {
+                $mime = $file->getClientMimeType();
+                $filename = $file->getClientOriginalName();
+
+                $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
+
+                $fullPath = __DIR__ . "datafiles/";
+
+                $totalName = $fullPath . "/" . $dstName;
+
+                $file->move($fullPath, $dstName);
+
+                $content_file = file_get_contents($totalName);
+
+
+                $note = Note::findOrNew(0);
+                $note->setAttribute("mime", $mime);
+                $note->setAttribute("username", Auth::user()->email);
+                $note->setAttribute("content_file", $content_file);
+                $note->setAttribute("filename", $filename);
+                $note->setAttribute("folder_id", $folderId);
+
+                $note->save();
+
+
+                unlink($totalName);
+
+                $text .= $note->getAttribute("filename") . " (saved)<br/>";
+            }
+    }
 
         return "<h2>Notes saved and uploaded</h2>" . $text;
     }

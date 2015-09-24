@@ -211,7 +211,7 @@ Route::get("file/uploadform/{folderId}", ["middleware" => "auth",
     }]);
 Route::post("file/upload/{folderId}", ['before' => 'csrf',
     "middleware" => "auth",
-    "uses" => "NoteController@uploadOnce"]);
+    "uses" => "NoteController@uploadMultiple"]);
 
 Route::get("note/joint/new/{noteId}", ["middleware" => "auth",
     "uses" => function ($noteId) {
