@@ -133,7 +133,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
             } else if (isTexte($ext, $note->mime)) {
                     $content = str_replace("[[", "<a target='NEW' href='", $content);
                     $content = str_replace("]]", "'>Lien</a>", $content);
-                    $content = str_replace("{{", "<img src='composant/display/contents.php?id=", $content);
+                $content = str_replace("{{", "<img src='" . asset("file/view/"), $content);
                     $content = str_replace("}}", "'/>", $content);
                 $content = str_replace("((", "<span class='included_doc'>include doc n0", $content);
                     $content = str_replace("))", "</span>", $content);
