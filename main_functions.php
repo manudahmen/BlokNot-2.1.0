@@ -9,7 +9,7 @@ require_once("private");
 /**
 * ::
  */
- $appDir = 'customers/c/d/8/ibiteria.com/httpd.www/';
+ $appDir = realpath(base_path("/"));
  /*
 Class Config
 {
