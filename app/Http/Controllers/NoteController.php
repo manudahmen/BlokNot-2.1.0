@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Note;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
@@ -112,11 +113,15 @@ class NoteController extends Controller
 
     }
 
-    function uploadOnce($folderId)
+    function uploadOnce(Request $request, $folderId)
     {
         $text = "<h1>Result</h1>";
 
-        $file = Input::file('file');
+
+        var_dump(Input::all());
+
+        $data = Input::all();
+        $file = $data['file'];
         if ($file->isValid()) {
             $mime = $file->getClientMimeType();
             $filename = $file->getClientOriginalName();
