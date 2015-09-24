@@ -163,13 +163,14 @@ class NoteController extends Controller
 
         $note = Note::findOrFail($noteId);
 
+        $note->load($noteId);
 
         $note->delete();
 
         echo "<p> Note deleted</p>";
 
 
-        return Redirect::to('note/list/0/1');
+        return Redirect::to('note/list/' . $note->folder_id . '/1');
     }
 
 
