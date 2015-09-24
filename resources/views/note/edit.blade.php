@@ -92,8 +92,7 @@
     }
     else if(isImage($ext, $mime)) {?>
     <form action="{{asset("note/save/img/".$noteId) }}" method="GET">
-        <input type="hidden" name="composant" value="save.db"/>
-        <input type="hidden" name="dbdoc" value="<?php echo $noteId; ?>"/>
+        <input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
         <input type="text" name="filename" value="<?php echo $filename; ?>"/>
@@ -102,8 +101,7 @@
     }
     else {?>
     <form action="{{asset("note/save/other/".$noteId) }}" method="GET">
-        <input type="hidden" name="composant" value="save.db"/>
-        <input type="hidden" name="dbdoc" value="<?php echo $noteId; ?>"/>
+        <input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
         <input type="text" name="filename" value="<?php echo $filename; ?>"/>

@@ -38,6 +38,24 @@ class Note extends Model
             $this->content_file = $row["content_file"];
             $this->mime = $row["mime"];
 
+            $this->setAttribute("folder_id", $row["folder_id"]);
+            $this->setAttribute("filename", $row["filename"]);
+            $this->setAttribute("content_file", $row["content_file"]);
+            $this->setAttribute("mime", $row["mime"]);
+
+        } else {
+            $this->id = 0;
+            $this->folder_id = getRootForUser(Auth::user()->email);
+            $this->filename = "Nouveau fichier";
+            $this->content_file = "Nouvelle note";
+            $this->mime = "text/plain";
+
+            $this->setAttribute('id', 0);
+            $this->setAttribute("folder_id", $this->folder_id);
+            $this->setAttribute("filename", $this->filename);
+            $this->setAttribute("content_file", $this->content_file);
+            $this->setAttribute("mime", $this->mime);
+
         }
 
     }

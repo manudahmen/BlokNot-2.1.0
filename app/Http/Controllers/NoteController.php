@@ -39,6 +39,8 @@ class NoteController extends Controller
     {
         $note = Note::findOrNew($request->get("noteId"));
 
+        $note->load($request->get("noteId"));
+
         $note->setAttribute("id", $request->get("noteId"));
         $note->setAttribute("folder_id", $request->get("folder_id"));
         $note->setAttribute("filename", $request->get("filename"));
@@ -65,6 +67,8 @@ class NoteController extends Controller
     {
         $note = Note::findOrNew($request->get("noteId"));
 
+        $note->load($request->get("noteId"));
+
         $note->setAttribute("id", $request->get("noteId"));
         $note->setAttribute("folder_id", $request->get("folder_id"));
         $note->setAttribute("filename", $request->get("filename"));
@@ -80,6 +84,8 @@ class NoteController extends Controller
     function saveOther(Request $request)
     {
         $note = Note::findOrNew($request->get("noteId"));
+
+        $note->load($request->get("noteId"));
 
         $note->setAttribute("id", $request->get("noteId"));
         $note->setAttribute("folder_id", $request->get("folder_id"));
