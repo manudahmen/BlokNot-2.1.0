@@ -14,7 +14,7 @@
         <ul>
             <li><a href="{{asset ("note/list/0/1")}}">Retour au dossier racine</a></li>
             <?php
-            if(isset($noteId))
+            if(isset($noteId) && $noteId != 0)
             {
             $note = getDBDocument($noteId);
 
