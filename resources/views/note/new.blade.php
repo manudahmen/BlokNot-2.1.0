@@ -56,7 +56,7 @@ $noteId = 0;
                 <td><textarea rows="12" cols="40" name="content_file"
                               id="text_editor">
             <?php
-                        echo "<p>" . date(time()) . "</p>" . "<p>" . $user . "</p>";
+                        echo "<p>" . gmdate("d/m/Y H:i:s", time()) . "</p>" . "<p>" . $user . "</p>";
                         ?></textarea></td>
             </tr>
             <tr>
