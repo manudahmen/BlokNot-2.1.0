@@ -225,7 +225,15 @@ class NoteController extends Controller
 
     function createFolder($folderId)
     {
+        $note = Note::findOrNew(0);
+        $note->setAttribute("filename", Input::get("folderName"));
+        $note->setAttribute("folder_id", Input::get("folder_id"));
+        $note->setAttribute("mime", "directory");
+        $note->setAttribute("username", Auth::user()->email);
 
+        $note->save();
+
+        echo "<a href='" . asset("note/view" . $note->getAttribute('id')) . "'>Dossier</a>"
     }
 }
 
