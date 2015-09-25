@@ -163,8 +163,6 @@ class NoteController extends Controller
         $text = "<h1>Result</h1>";
 
 
-        var_dump(Input::all());
-
         $data = Input::all();
         $files = $data['file'];
 
