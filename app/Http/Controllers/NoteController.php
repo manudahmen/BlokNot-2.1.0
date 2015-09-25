@@ -164,6 +164,8 @@ class NoteController extends Controller
 
 
         $data = Input::all();
+
+
         $files = $data['file'];
 
         foreach ($files as $file) {
@@ -173,15 +175,15 @@ class NoteController extends Controller
                 if (Input::get("filesystem")) {
 
                 } else {
-                $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
+                    $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
 
-                $fullPath = __DIR__ . "datafiles/";
+                    $fullPath = __DIR__ . "datafiles/";
 
-                $totalName = $fullPath . "/" . $dstName;
+                    $totalName = $fullPath . "/" . $dstName;
 
-                $file->move($fullPath, $dstName);
+                    $file->move($fullPath, $dstName);
 
-                $content_file = file_get_contents($totalName);
+                    $content_file = file_get_contents($totalName);
 
                 }
 
@@ -199,7 +201,7 @@ class NoteController extends Controller
 
                 $text .= "<a href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a> (saved)<br/>";
             }
-    }
+        }
 
         return "<h2>Notes saved and uploaded</h2>" . $text;
     }

@@ -11,6 +11,13 @@
     <h1>Uploads</h1>
     <h3>Choose file(s)</h3>
     <p>
+        <?php
+
+        if (!isset($folderId) || $folderId == 0) {
+            $folderId = getRootForUser(\Illuminate\Support\Facades\Auth::user()->email);
+        }
+
+        ?>
 
     </p>
 
