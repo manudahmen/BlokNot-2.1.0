@@ -31,6 +31,7 @@ $noteId = 0;
     if ($folderId == 0) {
         $folderId = getRootForUser($user);
     }
+
     ?>
     @include("note/menu", ["noteId", 0])
     <form action="{{asset("note/save/txt/0") }}" method="GET">

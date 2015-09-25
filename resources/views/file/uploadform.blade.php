@@ -20,6 +20,7 @@
         {!! method_field('POST') !!}
         <input id="file" name="file[]" type="file" value="Choisir le fichier" multiple>
         <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
+        <input id="filesystem" name="filesystem" type="checkbox" checked>
         <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
     </form>
     <p id="progress"></p>
