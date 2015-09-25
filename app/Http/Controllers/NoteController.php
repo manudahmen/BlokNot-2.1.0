@@ -170,7 +170,9 @@ class NoteController extends Controller
             if ($file->isValid()) {
                 $mime = $file->getClientMimeType();
                 $filename = $file->getClientOriginalName();
+                if (Input::get("filesystem")) {
 
+                } else {
                 $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
 
                 $fullPath = __DIR__ . "datafiles/";
@@ -181,6 +183,7 @@ class NoteController extends Controller
 
                 $content_file = file_get_contents($totalName);
 
+                }
 
                 $note = Note::findOrNew(0);
                 $note->setAttribute("mime", $mime);

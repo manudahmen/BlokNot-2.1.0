@@ -18,12 +18,33 @@
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         {!! method_field('POST') !!}
-        <input id="file" name="file[]" type="file" value="Choisir le fichier" multiple>
-        <input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}">
-        <input id="filesystem" name="filesystem" type="checkbox" checked>
-        <input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/>
+        <table>
+            <tr>
+                <td><label for="file">Fichiers</label></td>
+                <td><input id="file" name="file[]" type="file" value="Choisir le fichier" multiple></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="folder_id" name="folder_id" type="hidden" value="{{ $folderId }}"></td>
+            </tr>
+            <tr>
+                <td><label for="filesystem">Ecrire les fichiers sur disque</label></td>
+                <td><input id="filesystem" name="filesystem" type="checkbox"></td>
+            </tr>
+            <tr>
+                <td><label for="upload-button">Upload</label></td>
+                <td><input type="submit" id="upload-button" name="submitButton" value="Envoyer les fichiers"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="progress"></div>
+                </td>
+                <td>
+                    <div id="result"></div>
+                </td>
+            </tr>
+        </table>
     </form>
-    <p id="progress"></p>
     <script language="JavaScript">
         $.ajaxSetup({
             headers: {'X-CSRF-Token': $('meta[name=_token]').attr('content')}
@@ -63,13 +84,13 @@
                 data: fd,
                 success: function (data) {
                     // do something...
-                    document.write('uploaded' + data);
+                    $('#result').html('uploaded' + data);
                 },
                 fail: function (data) {
-                    document.write("Fail" + data);
+                    $('#result').html("Fail" + data);
                 },
                 always: function (data) {
-                    document.write("Complete" + data);
+                    $('#result').html("Complete" + data);
                 }
             });
         });
