@@ -232,3 +232,7 @@ Route::get("search", [
     'middleware' => "auth",
     "uses" => "SearchController@search"
 ]);
+Route::get("folder/new/{folderId}", ["middleware" => "auth",
+    "uses" => function ($folderId) {
+        return View::make("folder/new", ["folderId" => $folderId]);
+    }]);
