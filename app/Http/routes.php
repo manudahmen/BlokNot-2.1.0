@@ -236,3 +236,5 @@ Route::get("folder/new/{folderId}", ["middleware" => "auth",
     "uses" => function ($folderId) {
         return View::make("folder/new", ["folderId" => $folderId]);
     }]);
+Route::post("folder/create/{folderId}", ["middleware" => "auth",
+    "uses" => "NoteController@createFolder"]);

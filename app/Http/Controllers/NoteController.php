@@ -223,7 +223,10 @@ class NoteController extends Controller
         return Redirect::to('note/list/' . $note->folder_id . '/1');
     }
 
+    function createFolder($folderId)
+    {
 
+    }
 }
 
 ?>
