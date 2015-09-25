@@ -233,7 +233,7 @@ class NoteController extends Controller
 
         $note->save();
 
-        echo "<a href='" . asset("note/view" . $note->getAttribute('id')) . "'>Dossier</a>"
+        echo "<a href='" . asset("note/view/" . $note->getAttribute('id')) . "'>Dossier</a>"
     }
 }
 
