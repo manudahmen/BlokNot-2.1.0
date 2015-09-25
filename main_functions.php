@@ -101,6 +101,8 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
                     </a></li>
                 <li><a href="<?php echo asset("note/new/" . $path); ?>">Cr&eacute;er une note ici
                     </a></li>
+                <li><a href="<?php echo asset("folder/new/" . $path); ?>">Cr&eacute;er un dossier ici
+                    </a></li>
             </ul>
         </div>
         <div class="miniImgContainerBottom">
