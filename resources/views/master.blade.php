@@ -55,9 +55,7 @@
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('js\viewerJS\viewer.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('js/viewerJS/viewer.css') }}" rel="stylesheet" type="text/css"/>
     <link href="http://viewerjs.org/stylesheets/app.css" rel="stylesheet" type="text/css"/>
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>

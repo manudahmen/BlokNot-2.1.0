@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Note browser')
+@section('title', 'Parcourir les notes')
 
 @section('sidebar')
     @parent
