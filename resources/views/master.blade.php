@@ -70,36 +70,41 @@
 </head>
 <body>
 <div id="sidebar">
-    <p><a href="{{ URL::to("/") }}" id="HOME_LINK" class="btn btn-large btn-primary openbutton">Accueil - Home</a>
-    </p>
+    <ul id="profile_info">
+        <li><a href="{{ URL::to("/") }}" id="HOME_LINK"><img src="/images/home.png"/><label class="onrolloverShow"/>Home</a>
+        </li>
     <?php
     if (Auth::check())
-    {?><p id="connected_user" class="btn btn-large btn-primary openbutton">L'utilisateur est connect&eacute; ....
-    </p>
+        {?>
+        <li id="connected_user" class="btn-large btn-primary openbutton">L'utilisateur est connect&eacute; ....
+        </li>
 
-    <p id="logout">
-        <a class="btn btn-large btn-primary openbutton"
-           href="{{URL::to("auth/logout")}}">Logout</a></p>
+        <li id="logout">
 
-    <p><a href="#"
+            <a
+                    href="{{URL::to("auth/logout")}}"><img src="/images/disconnect.jpg"/><label class="onrolloverShow">Logout</label></a>
+        </li>
+
+        <li><a href="#"
           class="btn-large btn-primary openbutton">
-            <?php echo Auth::user()->email; ?></a>
-    </p><?php
+                <img src="/images/root.png"/><?php echo Auth::user()->email; ?></a>
+        </li><?php
     }
     else
     {
-    ?><p id="login" class="">Non connect&eacute;</p>
+        ?>
+        <li id="login" class="">Non connect&eacute;</li>
 
-    <p><a href="{{URL::to("auth/login")}}" class="btn btn-large btn-primary openbutton">Login</a></p><?php
+        <li><a href="{{URL::to("auth/login")}}">Login</a></li><?php
 
     }
     ?>
     @section('sidebar')
-
     @show
+    </ul>
 </div>
 
-<div class="containerBlocnoteBrowser">
+<div class="containerBlocnoteBrowser" style="scrollbar-face-color">
     <div id="top_container">
         <h1>@yield("title")</h1>
         @section("top")

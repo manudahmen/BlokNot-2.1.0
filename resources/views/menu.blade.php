@@ -8,10 +8,6 @@
 ?>
 @section("sidebar")
     @parent
-    <div class="miniImgContainerBottom">
-
-        <label>Actions</label>
-        <ul>
             <li><a href="{{asset ("note/list/0/1")}}">Retour au dossier racine</a></li>
             <?php
             if(isset($noteId) && $noteId != 0)
@@ -21,10 +17,7 @@
             ?>
             <li><a href="{{asset ("note/list/".$note->folder_id."/1")}}">Dossier courant</a></li>
             <?php
-            }
-            ?>
-        </ul>
-    </div>
+            } ?>
 
 
 @stop

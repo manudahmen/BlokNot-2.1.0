@@ -60,7 +60,7 @@
     <div id="text_view">
         <?php
         require_once(realpath(base_path("lib/freezer/app/php-gracenote/Gracenote.class.php")));
-        require_once(realpath(base_path("lib/freezer/app/private.php")));
+        require_once(realpath(base_path("lib/freezer/app/private.php.php")));
         $api = new Gracenote\WebAPI\GracenoteWebAPI($clientID, $clientTag);
 
         $userID = $api->register();

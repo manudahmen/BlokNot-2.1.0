@@ -823,7 +823,7 @@ PDFJS.build = '3fd44fd';
     var PageViewport = PDFJS.PageViewport = (function PageViewportClosure() {
         /**
          * @constructor
-         * @private
+         * @private.php
          * @param viewBox {Array} xMin, yMin, xMax and yMax coordinates.
          * @param scale {number} scale of the viewport.
          * @param rotation {number} rotations of the viewport in degrees.
@@ -1615,7 +1615,7 @@ PDFJS.build = '3fd44fd';
         },
         /**
          * Sends raw message to the comObj.
-         * @private
+         * @private.php
          * @param message {Object} Raw message.
          * @param transfers List of transfers/ArrayBuffers, or undefined.
          */

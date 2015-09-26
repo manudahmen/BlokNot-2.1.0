@@ -11,17 +11,17 @@ function enableForm() {
     $('#playlist-button').attr('disabled', false);
 }
 
-// Create a private playlist.
+// Create a private.php playlist.
 function createPlaylist() {
     var request = gapi.client.youtube.playlists.insert({
         part: 'snippet,status',
         resource: {
             snippet: {
                 title: 'Test Playlist',
-                description: 'A private playlist created with the YouTube API'
+                description: 'A private.php playlist created with the YouTube API'
             },
             status: {
-                privacyStatus: 'private'
+                privacyStatus: 'private.php'
             }
         }
     });

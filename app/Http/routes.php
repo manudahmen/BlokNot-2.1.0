@@ -156,6 +156,54 @@ Route::get("file/view/{id}", ['middleware' => "auth",
 
 
     }]);
+/**
+ * Created by PhpStorm.
+ * User: manue_001
+ * Date: 20-08-15
+ * Time: 13:42
+ */
+Route::get("icone/{id}/{taille}", ['middleware' => "auth",
+    'uses' => function ($id, $taille) {
+        $user = Auth::user()->email;
+        $note = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id);
+        if ($note->id != 0) {
+            $filename = $note->filename;
+            $content = $note->content_file;
+            $ext = getExtension($filename);
+            $mime = $note->mime;
+
+
+            if (isImage($ext, $mime)) {
+                // Output and free from memory
+                header('Content-Type: ' . $mime);
+                $res = redimAndDisplay($content, $mime, $taille);
+            } else if (isTexte($ext, $mime)) {
+                // TODO
+                $content = str_replace("[[", "<a target='NEW' href='", $content);
+                $content = str_replace("]]", "'>Lien</a>", $content);
+                $content = str_replace("{{", "<images src='" . asset("file/view/"), $content);
+                $content = str_replace("}}", "'/>", $content);
+                $content = str_replace("((", "<span class='included_doc'>include doc n0", $content);
+                $content = str_replace("))", "</span>", $content);
+
+                $response = Response::make("<p><em>" . $filename . "</em></p>" . $content, 200);
+                $response->header('Content-Type', "text/plain");
+                return $response;
+
+            } else {
+                //TODO
+                $response = Response::make($content, 200);
+                $response->header('Content-Type', $mime);
+                return $response;
+
+            }
+        } else {
+            $response = Response::make("404 NOT FOUND ...", 404);
+            return $response;
+        }
+
+
+    }]);
 
 Route::get("file/download/{noteId}", [
     "middleware" => "auth",
@@ -168,7 +216,7 @@ Route::get("file/download/{noteId}", [
             $response->header('Content-Type', $doc["mime"]);
             $response->header("Content-Disposition", "attachment; filename=" . $doc["filename"] . "");
             $response->header("Content-length", strlen($doc_content));
-            $response->header("Cache-control", "private");
+            $response->header("Cache-control", "private.php");
             return $response;
         }
 

@@ -5,26 +5,13 @@
  * Date: 24-09-15
  * Time: 10:53
  */
-require_once("private");
+require_once("private.php");
 /**
 * ::
  */
  $appDir = realpath(base_path("/"));
- /*
-Class Config
-{
-    public $hostname;
-    public $username;
-    public $password;
-    public $name;
-    public $tableUsers;
-    public $tableItem;
-    public $tablePrefix;
-}
 
-$config = new Config();
-*/
-function getDBDocument($id)
+ function getDBDocument($id)
 {
     $note = new \App\Note((int)$id);
 
@@ -82,10 +69,10 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
     ?>
     <div class="browserContainer">
     <div class="miniImgExternalBox">
-        <div class="miniImgContainerTop"><p><strong>R&eacute;pertoire parent (..)</p></div>
+        <div class="miniImgContainerTop"><p><strong>What's up?</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getDBDocument($path)->folder_id) . "/1"); ?>">
-                <img src='<?php echo asset("images/system-icone-4272-128.png") ?>'
+                <img src='<?php echo asset("images/root.png") ?>'
                      class="miniImg" alt="Ic&ocirc;ne dossier par d&eacute;faut"/>
             </a>
         </div>
@@ -97,7 +84,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
         <div class="miniImgContainerTop"><p><strong>Nouveaux</p></div>
         <div class="miniImgContainer">
             <ul>
-                <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>">Uploader un fichier ici
+                <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>"><img alt="Upload here" src="{{ asset('images/download.jpg') }}" />
                     </a></li>
                 <li><a href="<?php echo asset("note/new/" . $path); ?>">Cr&eacute;er une note ici
                     </a></li>
@@ -120,7 +107,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
             typeDB($filename, $content, $id, $row);
         }
     } else {
-        echo "Pas de r�sultat";
+        echo "Pas de r&eacute;sultat";
     }
     ?></div><?php
 }
@@ -183,6 +170,7 @@ function typeCls($classeur, $f)
 
 function typeDB($filename, $content, $id, &$rowdoc = NULL)
 {
+    global $config;
     $urlaction = URL::to("note/list/$id/1");
     $mime = $rowdoc["mime"];
     ?>
@@ -194,8 +182,13 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
         </div>
         <div class="miniImgContainer">
             <?php
+            echo \Illuminate\Support\Facades\Config::get('plus_config')['thumb_size'];
             if (isImage(getExtension($filename), $mime)) { ?>
-                <img src ="<?php echo URL::to("file/view/$id"); ?>
+                <img src ="<?php echo URL::to(
+                asset("icone/$id/".
+                (\Illuminate\Support\Facades\Config::get('app.plus_config')['thumb_size'])
+)
+              ); ?>"
             alt="<?= $filename ?>"/>
                 <?php
             } else
@@ -203,8 +196,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
-                        src='<?php echo asset("images/system-icone-4272-128.png") ?>' class="miniImg"
-                        alt="Ic�ne dossier par d�faut"></a><?php
+                        src='<?php echo asset("images/folder.jpg") ?>' class="miniImg"
+                        alt="Icone dossier par d�faut"></a><?php
                 } else {
                     ?>
                     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
@@ -371,4 +364,47 @@ function getParentNoteId($path)
         return mysqli_fetch_assoc($result)["folder_id"];
     }
 
+}
+function redimAndDisplay($data, $mimeType, $max_dim=NULL)
+{
+
+if($max_dim==NULL)
+{
+    $max_dim = \Illuminate\Support\Facades\Config::get("app.plus_config")["thumb_size"];
+}
+//$doc = getDBDocument((int)$id);
+
+//$mime = $doc->mime;
+
+//$data = $doc->content_file;
+$image = imagecreatefromstring($data);
+
+$size = getimagesizefromstring ($data);
+$src_w = $size[0];
+$src_h = $size[1];
+$dst_h = floor($src_h*$max_dim/$src_w);
+$dst_im = imagecreatetruecolor($max_dim,$dst_h);
+imagecopyresampled($dst_im,$image,0,0,0,0,$max_dim,$dst_h,$src_w,$src_h);
+
+
+header("Content-Type: $mimeType");
+
+
+if($mimeType=="image/jpg")
+{
+    imagejpeg($dst_im);
+}
+else if($mimeType=="image/png")
+{
+    imagepng($dst_im);
+
+}
+else if($mimeType=="image/gif")
+{
+    imagegif($dst_im);
+}
+imagedestroy($dst_im);
+imagedestroy($image);
+
+return $dst_im;
 }

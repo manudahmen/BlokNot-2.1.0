@@ -823,7 +823,7 @@ PDFJS.build = '3fd44fd';
     var PageViewport = PDFJS.PageViewport = (function PageViewportClosure() {
         /**
          * @constructor
-         * @private
+         * @private.php
          * @param viewBox {Array} xMin, yMin, xMax and yMax coordinates.
          * @param scale {number} scale of the viewport.
          * @param rotation {number} rotations of the viewport in degrees.
@@ -1615,7 +1615,7 @@ PDFJS.build = '3fd44fd';
         },
         /**
          * Sends raw message to the comObj.
-         * @private
+         * @private.php
          * @param message {Object} Raw message.
          * @param transfers List of transfers/ArrayBuffers, or undefined.
          */
@@ -14875,7 +14875,7 @@ PDFJS.build = '3fd44fd';
         '3316': 578, '3379': 42785, '3393': 1159, '3416': 8377
     };
 
-// Some characters, e.g. copyrightserif, are mapped to the private use area and
+// Some characters, e.g. copyrightserif, are mapped to the private.php use area and
 // might not be displayed using standard fonts. Mapping/hacking well-known chars
 // to the similar equivalents in the normal characters range.
     var SpecialPUASymbols = {
@@ -17105,7 +17105,7 @@ PDFJS.build = '3fd44fd';
                     }
                 }
                 // Try to move control characters, special characters and already mapped
-                // characters to the private use area since they will not be drawn by
+                // characters to the private.php use area since they will not be drawn by
                 // canvas if left in their current position. Also, move characters if the
                 // font was symbolic and there is only an identity unicode map since the
                 // characters probably aren't in the correct position (fixes an issue
@@ -17114,7 +17114,7 @@ PDFJS.build = '3fd44fd';
                     isProblematicUnicodeLocation(fontCharCode) ||
                     (isSymbolic && isIdentityUnicode)) &&
                     nextAvailableFontCharCode <= PRIVATE_USE_OFFSET_END) { // Room left.
-                    // Loop to try and find a free spot in the private use area.
+                    // Loop to try and find a free spot in the private.php use area.
                     do {
                         fontCharCode = nextAvailableFontCharCode++;
 
@@ -20150,7 +20150,7 @@ PDFJS.build = '3fd44fd';
                 }
                 var value = properties.privateData[field];
                 if (isArray(value)) {
-                    // All of the private dictionary array data in CFF must be stored as
+                    // All of the private.php dictionary array data in CFF must be stored as
                     // "delta-encoded" numbers.
                     for (var j = value.length - 1; j > 0; j--) {
                         value[j] -= value[j - 1]; // ... difference from previous value
@@ -20711,7 +20711,7 @@ PDFJS.build = '3fd44fd';
                 parentDict.privateDict = privateDict;
             },
             parsePrivateDict: function CFFParser_parsePrivateDict(parentDict) {
-                // no private dict, do nothing
+                // no private.php dict, do nothing
                 if (!parentDict.hasName('Private')) {
                     this.emptyPrivateDictionary(parentDict);
                     return;
@@ -20737,7 +20737,7 @@ PDFJS.build = '3fd44fd';
                     parentDict.strings);
                 parentDict.privateDict = privateDict;
 
-                // Parse the Subrs index also since it's relative to the private dict.
+                // Parse the Subrs index also since it's relative to the private.php dict.
                 if (!privateDict.getByName('Subrs')) {
                     return;
                 }
@@ -21479,7 +21479,7 @@ PDFJS.build = '3fd44fd';
                 for (var i = 0, ii = dicts.length; i < ii; ++i) {
                     var fontDict = dicts[i];
                     assert(fontDict.privateDict && fontDict.hasName('Private'),
-                        'There must be an private dictionary.');
+                        'There must be an private.php dictionary.');
                     var privateDict = fontDict.privateDict;
                     var privateDictTracker = new CFFOffsetTracker();
                     var privateDictData = this.compileDict(privateDict, privateDictTracker);
@@ -21487,7 +21487,7 @@ PDFJS.build = '3fd44fd';
                     var outputLength = output.length;
                     privateDictTracker.offset(outputLength);
                     if (!privateDictData.length) {
-                        // The private dictionary was empty, set the output length to zero to
+                        // The private.php dictionary was empty, set the output length to zero to
                         // ensure the offset length isn't out of bounds in the eyes of the
                         // sanitizer.
                         outputLength = 0;
