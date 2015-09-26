@@ -67,6 +67,13 @@
         function showMenu(id) {
             $('#' + id).removeClass("invisible")
             $('#' + id).addClass("visible")
+            $('#' + id).addClass("row-3");
+
+        }
+        function hideMenu(id) {
+            $('#' + id).addClass("invisible")
+            $('#' + id).removeClass("visible")
+            $('#' + id).removeClass("row-3");
 
 
         }
@@ -77,15 +84,14 @@
     @show
 
 </head>
-<body><!--
+<body>
 <div id="tree">
     <blockquote>Naviguer ho hé ho hé</blockquote>
     @section("tree")
 
 @stop
-
         </div>
-        -->
+
 <div id="sidebar">
     <ul id="profile_info">
         <li><a href="{{ URL::to("/") }}" id="HOME_LINK"><img src="/images/home.png"/><label class="onrolloverShow"/>Home</a>

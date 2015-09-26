@@ -208,7 +208,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
         </div>
         <div id="<?php echo "data-$id"; ?>" class="miniImgContainerBottom">
 
-            <label onclick="showMenu('<?php echo "data_actions_$id"; ?>');">Actions</label>
+            <label onclick="showMenu('<?php echo "data_actions_$id"; ?>');">++++</label>
+            <label onclick="hideMenu('<?php echo "data_actions_$id"; ?>');">----</label>
             <ul class="onfile_actions invisible" id="<?php echo "data_actions_$id"; ?>">
                 <li><a href="<?php echo asset("note/view/" . $id) ?>">Voir</a></li>
                 <!-- note/view demande un login de plus!-->

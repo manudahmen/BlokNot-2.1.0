@@ -288,26 +288,26 @@ div#fg_membersite {
 }
 
 div.miniImg {
-    width: 300px;
+    width: 200px;
     height: 200px;
     display: block;
 }
 
 div.miniImgContainerTop {
-    width: 290px;
+    width: 190px;
     height: 40px;
     overflow: hidden;
 }
 
 div.miniImgContainerBottom {
-    width: 290px;
+    width: 190px;
     height: 40px;
     font-size: 70%;
 }
 
 div.miniImgContainer {
-    width: 290px;
-    height: 300px;
+    width: 190px;
+    height: 200px;
     overflow-x: hidden;
 }
 
@@ -316,7 +316,7 @@ div.browserContainer {
 }
 
 div.miniImgExternalBox {
-    width: 310px;
+    width: 210px;
     border: 2px solid #6298a0;
     display: block;
     float: left;
@@ -341,8 +341,8 @@ span.miniImg {
 }
 
 div.miniImgContainer img {
-    height: 280px;
-    width: 280px;
+    height: 180px;
+    width: 180px;
 }
 
 .onfile_actions {
@@ -468,11 +468,17 @@ nav select {
 ul.onfile_actions.invisible {
     display: none;
     visibility: hidden;
+
 }
 
 ul.onfile_actions.visible {
     display: block;
+    z-index: 999;
     visibility: visible;
+    height: 100pt;
+    width: 100pt;
+    background-color: #33AA00;
+    color: #000033;
 }
 
 span.onfile_actions :hover {
@@ -485,4 +491,10 @@ span.onfile_actions :hover {
 .miniImgExternalBox img.action {
     height: 100px;
     width: 100px;
+}
+
+.row-3 {
+    z-index: 999;
+    position: absolute;
+    overflow: visible;
 }
