@@ -67,19 +67,27 @@
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script language="JavaScript">
         function showMenu(id) {
-            $('#' + id).removeClass("invisible")
-            $('#' + id).addClass("visible")
+            $('#' + id).removeClass("invisible");
+            $('#' + id).addClass("visible");
             $('#' + id).addClass("row-3");
-
+            showMoins();
         }
         function hideMenu(id) {
-            $('#' + id).addClass("invisible")
-            $('#' + id).removeClass("visible")
+            $('#' + id).addClass("invisible");
+            $('#' + id).removeClass("visible");
             $('#' + id).removeClass("row-3");
-
+            showPlus();
+        }
+        function showPlus() {
+            $("#plus_button").removeClass('invisible').addClass('visible');
+            $("#moins_button").addClass('invisible').removeClass('visible');
 
         }
+        function showMoins() {
+            $("#plus_button").addClass('invisible').removeClass('visible');
+            $("#moins_button").addClass('visible').removeClass('invisible');
 
+        }
     </script>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     @section('header')

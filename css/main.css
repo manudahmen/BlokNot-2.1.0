@@ -443,19 +443,27 @@ ul.onfile_actions.invisible {
 
 }
 
-ul.onfile_actions.visible {
+.visible {
     display: block;
-    z-index: 999;
     visibility: visible;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+ul.onfile_actions.visible {
+    visibility: visible;
+    z-index: 999;
     height: 100pt;
     width: 100pt;
     background-color: #33AA00;
     color: #000033;
 }
 
-span.onfile_actions :hover {
+span.onfile_actions:hover {
     display: inline;
-    visibility: visible;
     z-index: 10;
     position: absolute;
 }
