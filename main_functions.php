@@ -61,7 +61,7 @@ function folder_field($folder_id, $field_name, $user) {
 
     mysqli_free_result($res);
     ?>
-    </select><fieldset><?php
+    </select></fieldset><?php
     }
 function listerNotesFromDB($filtre, $composed, $path, $user)
 {
@@ -74,7 +74,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getDBDocument($path)->folder_id) . "/1"); ?>">
                 <img src='<?php echo asset("images/root.png") ?>'
-                     class="miniImg" alt="Ic&ocirc;ne dossier par d&eacute;faut"/>
+                     class="miniImg" title="Aller à: Dossier supérieur"/>
             </a>
         </div>
         <div class="miniImgContainerBottom">
@@ -83,18 +83,24 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
     </div>
     <div class="miniImgExternalBox">
         <div class="miniImgContainerTop"><p><strong>News action</p></div>
-        <div class="miniImgContainer">
+        <div class="miniImgContainer action">
             <ul>
-                <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>"><img class="action" alt="Upload here" src="<?php echo  asset('images/download.jpg') ?>" />
-                    </a></li>
-                <li><a href="<?php echo asset("note/new/" . $path); ?>">Cr&eacute;er une note ici
-                    </a></li>
-                <li><a href="<?php echo asset("folder/new/" . $path); ?>">Cr&eacute;er un dossier ici
-                    </a></li>
+                <li>
+                    <a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>" title="Upload here">
+                        <div id="upload_files">&nbsp;</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo asset("note/new/" . $path); ?>" title="Cr&eacute;er une note ici">
+                        <div id="new_note">&nbsp;</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo asset("folder/new/" . $path); ?>" title="Cr&eacute;er un dossier ici">
+                        <div id="new_folder">&nbsp;</div>
+                    </a>
+                </li>
             </ul>
-        </div>
-        <div class="miniImgContainerBottom">
-            &minus;&gt;
         </div>
     </div>
 

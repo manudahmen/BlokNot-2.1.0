@@ -62,7 +62,6 @@ and open the template in the editor.
 #profile_info li a {
     display: inline;
     color: #fff;
-    color: #fff;
     font: 1em "Trebuchet MS", Arial, sans-serif;
     line-height: 1em;
     padding: 4px 0;
@@ -170,7 +169,7 @@ a {
     float: right;
     clear: both;
     height: 14px;
-    margin-top: 0px;
+    margin-top: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 
@@ -488,11 +487,18 @@ span.onfile_actions :hover {
     position: absolute;
 }
 
+.miniImg ul {
+    list-style: none;
+}
 .miniImgExternalBox img.action {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
+    display: inline;
 }
 
+.miniImgContainer.action {
+    height: 240px;
+}
 .row-3 {
     z-index: 999;
     position: absolute;
@@ -502,8 +508,47 @@ span.onfile_actions :hover {
 label.menu_icons {
     display: inline;
 }
+
 .menu_icons img {
     width: 24pt;
     height: 24pt;
-    display: inline;
+}
+
+#new_note, #new_folder, #upload_files {
+    width: 80px;
+    height: 80px;
+}
+
+#new_note {
+    background-image: url(/images/notenew.png);
+    background-size: 100% 100%;
+}
+
+#new_folder {
+    background-image: url(/images/dossiernew.png);
+    background-size: 100% 100%;
+}
+
+#upload_files {
+    background-image: url(/images/uploadfiles.png);
+    background-size: 100% 100%;
+}
+
+#new_note:hover {
+    background-image: url(/images/noteplus.png);
+    background-size: 100% 100%;
+}
+
+#new_folder:hover {
+    background-image: url(/images/dossierplus.png);
+    background-size: 100% 100%;
+}
+
+#upload_files:hover {
+    background-image: url(/images/uploadfiles_2.png);
+    background-size: 100% 100%;
+}
+
+.action ul, .action li {
+    list-style: none;
 }
