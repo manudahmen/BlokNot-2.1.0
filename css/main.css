@@ -514,7 +514,7 @@ label.menu_icons {
     height: 24pt;
 }
 
-#new_note, #new_folder, #upload_files {
+#new_note, #new_folder, #upload_files, #goto_root_folder {
     width: 80px;
     height: 80px;
 }
@@ -551,4 +551,15 @@ label.menu_icons {
 
 .action ul, .action li {
     list-style: none;
+}
+
+#goto_root_folder {
+    background-image: url(/images/root-folder.png);
+    background-size: 100% 100%;
+}
+
+#goto_root_folder:hover {
+    background-image: url(/images/root-folder-light.png);
+    background-size: 100% 100%;
+
 }

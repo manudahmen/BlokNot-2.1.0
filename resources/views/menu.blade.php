@@ -9,8 +9,11 @@
 
 @section("sidebar")
     @parent
-    <li><a href="{{asset ("note/list/0/1")}}"><img src="/images/root.png"/><label class="onrolloverShow">Retour au
-                            dossier racine<</label>/a></li>
+    <li>
+        <a href="{{asset ("note/list/0/1")}}" title="Retour au dossier racine">
+            <div id="goto_root_folder"></div>
+        </a>
+    </li>
             <?php
             if(isset($noteId) && $noteId != 0)
             {
