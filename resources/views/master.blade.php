@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
     <!-- start Mixpanel -->
     <script type="text/javascript">(function (e, b) {
             if (!b.__SV) {

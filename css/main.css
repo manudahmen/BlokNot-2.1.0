@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : manue_001
 */
 body {
-    font-family: "Verdana, Times, Arial";
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .containerBlocnoteBrowser {
     margin-left: 30%;
@@ -32,22 +32,6 @@ body {
     border-top: none;
 }
 
-/*
-@font-face {
-    font-family: '**The Font Name';
-    src: url("/js/viewerJS/fonts/filename-of-webfont.eot");
-    src: url("/js/viewerJS/fonts/filename-of-webfont.eot?#iefix")
-    format("embedded-opentype"),
-    url("/js/viewerJS/fonts/filename-of-webfont.woff")
-    format("woff"),
-    url("/js/viewerJS/fonts/filename-of-webfont.ttf")
-    format("truetype"),
-    url("/js/viewerJS/fonts/filename-of-webfont.svg#The%20Font%20Name")
-    format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 #profile_info {
     margin: 0;
     padding: 0;
@@ -344,11 +328,10 @@ div.miniImgContainer img {
 
 }
 
-
-div#document {
+#note_viewer_container {
     width: 100%;
     display: block;
-    font-family: serif Whitney, Comics Sans;
+    font-family: 'Indie Flower', cursive;
     border: 2px solid orange;
     word-wrap: normal;
     hyphens: auto;
