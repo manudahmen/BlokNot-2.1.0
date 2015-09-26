@@ -498,3 +498,8 @@ span.onfile_actions :hover {
     position: absolute;
     overflow: visible;
 }
+
+.menu_icons img {
+    width: 12pt;
+    height: 12pt;
+}
