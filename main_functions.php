@@ -67,6 +67,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
 {
     $results = getDocumentsFiltered($filtre, $composed, $path, $user);
     ?>
+
     <div class="browserContainer">
     <div class="miniImgExternalBox">
         <div class="miniImgContainerTop"><p><strong>What's up?</p></div>
@@ -81,10 +82,10 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
         </div>
     </div>
     <div class="miniImgExternalBox">
-        <div class="miniImgContainerTop"><p><strong>Nouveaux</p></div>
+        <div class="miniImgContainerTop"><p><strong>News action</p></div>
         <div class="miniImgContainer">
             <ul>
-                <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>"><img alt="Upload here" src="{{ asset('images/download.jpg') }}" />
+                <li><a href="<?php echo asset("file/uploadform/" . (int)($path)); ?>"><img class="action" alt="Upload here" src="<?php echo  asset('images/download.jpg') ?>" />
                     </a></li>
                 <li><a href="<?php echo asset("note/new/" . $path); ?>">Cr&eacute;er une note ici
                     </a></li>
@@ -197,7 +198,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
                         src='<?php echo asset("images/folder.jpg") ?>' class="miniImg"
-                        alt="Icone dossier par d�faut"></a><?php
+                        alt="Icone dossier par defaut"></a><?php
                 } else {
                     ?>
                     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
@@ -207,8 +208,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
         </div>
         <div id="<?php echo "data-$id"; ?>" class="miniImgContainerBottom">
 
-            <label>Actions</label>
-            <ul class="onfile_actions">
+            <label onclick="showMenu('<?php echo "data_actions_$id"; ?>');">Actions</label>
+            <ul class="onfile_actions invisible" id="<?php echo "data_actions_$id"; ?>">
                 <li><a href="<?php echo asset("note/view/" . $id) ?>">Voir</a></li>
                 <!-- note/view demande un login de plus!-->
                 <li><a href="<?php echo asset("note/edit/" . $id); ?>">Modifier</a></li>

@@ -47,11 +47,6 @@
     margin: 0;
 }
 
-html > body {
-    font-family: sans-serif;
-    overflow: hidden;
-}
-
 .titlebar > span,
 .toolbarLabel,
 input,

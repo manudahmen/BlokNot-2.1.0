@@ -6,6 +6,7 @@
  * Time: 17:02
  */
 ?>
+
 @section("sidebar")
     @parent
     <li><a href="{{asset ("note/list/0/1")}}"><img src="/images/root.png"/><label class="onrolloverShow">Retour au

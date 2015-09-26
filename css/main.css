@@ -61,7 +61,6 @@ and open the template in the editor.
 
 #profile_info li a {
     display: inline;
-    background: #c00 url(../images/lienNormal.png) left top no-repeat;
     color: #fff;
     color: #fff;
     font: 1em "Trebuchet MS", Arial, sans-serif;
@@ -297,7 +296,7 @@ div.miniImg {
 div.miniImgContainerTop {
     width: 290px;
     height: 40px;
-    o /*verflow: hidden;*/
+    overflow: hidden;
 }
 
 div.miniImgContainerBottom {
@@ -309,7 +308,7 @@ div.miniImgContainerBottom {
 div.miniImgContainer {
     width: 290px;
     height: 300px;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 div.browserContainer {
@@ -338,7 +337,7 @@ a.miniImg .typeTextBlock {
 }
 
 span.miniImg {
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 div.miniImgContainer img {
@@ -431,8 +430,8 @@ span.path_array {
 }
 
 #top_container {
-    width: 100%;
-    height: 100px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -443,9 +442,6 @@ span.path_array {
     padding: 2px;
 }
 
-#top_container {
-    border: 2px inset black;
-}
 
 .onrolloverShow {
     visibility: hidden
@@ -457,4 +453,36 @@ h1 {
     background-image: url(/images/fond_titre.png);
     margin: 0;
     padding: 0;
+}
+
+#tree {
+    float: left;
+    width: 20%;
+    height: 100%
+}
+
+nav select {
+    display: none;
+}
+
+ul.onfile_actions.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+ul.onfile_actions.visible {
+    display: block;
+    visibility: visible;
+}
+
+span.onfile_actions :hover {
+    display: inline;
+    visibility: visible;
+    z-index: 10;
+    position: absolute;
+}
+
+.miniImgExternalBox img.action {
+    height: 100px;
+    width: 100px;
 }

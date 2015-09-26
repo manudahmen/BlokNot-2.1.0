@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- start Mixpanel -->
     <script type="text/javascript">(function (e, b) {
@@ -63,12 +63,29 @@
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script language="JavaScript">
+        function showMenu(id) {
+            $('#' + id).removeClass("invisible")
+            $('#' + id).addClass("visible")
+
+
+        }
+
+    </script>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     @section('header')
     @show
 
 </head>
-<body>
+<body><!--
+<div id="tree">
+    <blockquote>Naviguer ho hé ho hé</blockquote>
+    @section("tree")
+
+@stop
+
+        </div>
+        -->
 <div id="sidebar">
     <ul id="profile_info">
         <li><a href="{{ URL::to("/") }}" id="HOME_LINK"><img src="/images/home.png"/><label class="onrolloverShow"/>Home</a>
