@@ -71,7 +71,7 @@ and open the template in the editor.
 }
 
 #profile_info li a:hover, #profile_info li a:focus, #profile_info li a:active {
-    background: #900 url(../images/lienHover.png) left top no-repeat;
+    /*background: #900 url(/images/lienHover.png) left top no-repeat;*/
 }
 
 #sidebar {
@@ -297,7 +297,7 @@ div.miniImg {
 div.miniImgContainerTop {
     width: 290px;
     height: 40px;
-    overflow: hidden;
+    o /*verflow: hidden;*/
 }
 
 div.miniImgContainerBottom {
@@ -309,7 +309,7 @@ div.miniImgContainerBottom {
 div.miniImgContainer {
     width: 290px;
     height: 300px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 div.browserContainer {
@@ -338,7 +338,7 @@ a.miniImg .typeTextBlock {
 }
 
 span.miniImg {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 div.miniImgContainer img {
@@ -356,32 +356,19 @@ div.miniImgContainer img {
 
 }
 
-/*#document pre
-{
-    display: block;
-    font-family: serif Whitney, Comics Sans;
-    margin: 2px solid green;
-}*/
+
 div#document {
     width: 100%;
     display: block;
     font-family: serif Whitney, Comics Sans;
     border: 2px solid orange;
-    overflow: auto;
     word-wrap: normal;
     hyphens: auto;
 
 }
 
-.miniature_txt {
-    width: 161px;
-    height: 141px;
-    border: 3px inset black;
-    overflow: hidden;
-}
-
 .filename {
-    overflow-x: hidden;
+    /* overflow-x: hidden;*/
 }
 
 a.miniImg {
@@ -394,7 +381,7 @@ a.miniImg {
     width: 50%;
     height: 50%;*/
     border: 3px inset black;
-    overflow: scroll;
+    /* overflow: auto;*/
 }
 
 #document img {
@@ -428,17 +415,6 @@ input.filecheckbox {
     display: block;
 }
 
-#disclisting {
-    display: none;
-}
-
-.button_help, .button_help a {
-    background-color: grey;
-}
-
-.ui-state-highlight {
-    background-color: #a09c1a;
-}
 
 span.path_array {
     display: block;

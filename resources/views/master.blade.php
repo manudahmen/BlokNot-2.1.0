@@ -87,7 +87,7 @@
 
         <li><a href="#"
           class="btn-large btn-primary openbutton">
-                <img src="/images/root.png"/><?php echo Auth::user()->email; ?></a>
+                <?php echo Auth::user()->email; ?></a>
         </li><?php
     }
     else
