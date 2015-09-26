@@ -7,7 +7,9 @@ and open the template in the editor.
     Created on : 9 août 2015, 14:59:58
     Author     : manue_001
 */
-
+body {
+    font-family: "Verdana, Times, Arial";
+}
 .containerBlocnoteBrowser {
     margin-left: 30%;
     text-align: justify;
@@ -77,10 +79,6 @@ and open the template in the editor.
     right: 10px;
 }
 
-body {
-    font-family: Whitney, sans-serif;
-}
-
 .album_view {
     border: 3px solid chartreuse;
 }
@@ -102,10 +100,6 @@ a {
     float: left;
     width: 50%;
 
-}
-
-body {
-    font-family: Whitney, sans-serif;
 }
 
 .album_view {
@@ -321,18 +315,14 @@ div.miniImgExternalBox {
     float: left;
 }
 
-a.miniImg span.filename {
-    text-decoration: none;
-    color: black;
-    text-transform: capitalize;
-    text-decoration-style: dashed;
-
+.filename {
 }
 
-a.miniImg .typeTextBlock {
+span.typeTextBlock {
     text-decoration: none;
     color: black;
-
+    background-image: url(/images/texte.png);
+    background-size: 100%;
 }
 
 span.miniImg {
@@ -561,5 +551,4 @@ label.menu_icons {
 #goto_root_folder:hover {
     background-image: url(/images/root-folder-light.png);
     background-size: 100% 100%;
-
 }

@@ -183,9 +183,9 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
     ?>
     <div class='miniImgExternalBox'>
         <div class="miniImgContainerTop">
-        <span class="filename"><em><?php
+        <span class="filename"><?php
                 echo $rowdoc["filename"] . "|" . $rowdoc["id"];
-                ?></em></span>
+            ?></span>
         </div>
         <div class="miniImgContainer">
             <?php
@@ -203,8 +203,8 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
                     ?><a href="<?= $urlaction ?>"><img
-                        src='<?php echo asset("images/folder.jpg") ?>' class="miniImg"
-                        alt="Icone dossier par defaut"></a><?php
+                        src='<?php echo asset("images/dossier.png") ?>' class="miniImg"
+                        title="Dossier: <?php echo $filename; ?>"></a><?php
                 } else {
                     ?>
                     <img src='http://www.stdicon.com/humility/<?= $mime ?>'/>
