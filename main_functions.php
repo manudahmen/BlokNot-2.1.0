@@ -431,5 +431,5 @@ else if($mimeType=="image/gif")
 imagedestroy($dst_im);
 imagedestroy($image);
 
-return $dst_im;
+
 }

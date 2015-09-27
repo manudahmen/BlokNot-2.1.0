@@ -155,5 +155,8 @@
     @show
 </div>
 <div id="api"></div>
+<!-- place in header of your html document -->
+<script language="JavaScript" type="text/javascript" src="/js/tinyMCE.init.js"></script>
+
 </body>
 </html>
