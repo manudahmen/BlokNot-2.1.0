@@ -332,6 +332,7 @@ div.mce-tinymce-inline {
 }
 
 .mce-panel {
+    border: 0 solid #cacaca;
     border: 0 solid rgba(0, 0, 0, 0.2);
     background-color: #f0f0f0
 }
@@ -1248,6 +1249,10 @@ i.mce-i-checkbox {
     filter: none
 }
 
+.mce-menubar .mce-menubtn button {
+    color: #333
+}
+
 .mce-menubar {
     border: 1px solid rgba(217, 217, 217, 0.52)
 }
@@ -1266,11 +1271,8 @@ i.mce-i-checkbox {
     filter: none
 }
 
-.mce-menubtn span {
-    color: #333;
-    margin-right: 2px;
-    line-height: 20px;
-    *line-height: 16px
+.mce-menubtn button {
+    color: #333
 }
 
 .mce-menubtn.mce-btn-small span {
@@ -1615,7 +1617,7 @@ i.mce-i-resize {
     *zoom: 1;
     border: 1px solid #c5c5c5;
     border-width: 0 1px 0 0;
-    background: #e3e3e3;
+    background: #fff;
     padding: 8px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     height: 13px;

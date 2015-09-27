@@ -25,6 +25,7 @@ class Note extends Model
     public $content_file;
     public $mime;
     public $LongData;
+    public $username;
 
     function __construct($noteId = 0)
     {
@@ -35,18 +36,20 @@ class Note extends Model
     {
         global $mysqli;
         $this->id = $this->noteId = $noteId;
-        $res = getDocRow($noteId);
-        if(($res!=NULL) && (($row=mysqli_fetch_assoc($res))!=NULL))
+        $row = getDocRow($noteId);
+        if ($row != FALSE)
         {
             $this->folder_id = $row["folder_id"];
             $this->filename = $row["filename"];
             $this->content_file = $row["content_file"];
             $this->mime = $row["mime"];
+            $this->username = $row["username"];
 
             $this->setAttribute("folder_id", $row["folder_id"]);
             $this->setAttribute("filename", $row["filename"]);
             $this->setAttribute("content_file", $row["content_file"]);
             $this->setAttribute("mime", $row["mime"]);
+            $this->setAttribute("username", $row["username"]);
 
         } else {
             $this->id = 0;
@@ -60,9 +63,7 @@ class Note extends Model
             $this->setAttribute("filename", $this->filename);
             $this->setAttribute("content_file", $this->content_file);
             $this->setAttribute("mime", $this->mime);
-
         }
-
     }
 
 

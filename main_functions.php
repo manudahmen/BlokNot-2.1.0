@@ -21,8 +21,13 @@ require_once("private.php");
 }
 function getDocRow($noteId)
 {
-global $mysqli;
-    return simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
+    global $mysqli;
+    $res = simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
+    if ($res != NULL) {
+        return mysqli_fetch_assoc($res);
+    } else {
+        return FALSE;
+    }
 }
 function getField($row, $fieldName)
 {

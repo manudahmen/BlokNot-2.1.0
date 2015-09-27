@@ -12,9 +12,41 @@ tinymce.init({
         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
         "save table contextmenu directionality emoticons template paste textcolor bloknot"
     ],
+    images_upload_url: "/post_images",
+    /*images_upload_base_path: "/so,me/basepath" *//*Could be tricky*/
+    images_upload_credentials: true,
+    images_upload_handler: function (blobInfo, success, failure) {
+        var xhr, formData;
 
+        xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+        xhr.open('POST', "/post_images");
+
+        xhr.onload = function () {
+            var json;
+
+            if (xhr.status != 200) {
+                failure("HTTP Error: " + xhr.status);
+                return;
+            }
+
+            json = JSON.parse(xhr.responseText);
+
+            if (!json || typeof json.location != "string") {
+                failure("Invalid JSON: " + xhr.responseText);
+                return;
+            }
+
+            success(json.location);
+        };
+
+        formData = new FormData();
+        formData.append('file', blobInfo.blob(), fileName(blobInfo));
+
+        xhr.send(formData);
+    },
     //content_css: "js/tinymce/css/content.css",
-    toolbar: "addFile insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons",
+    toolbar: "addFile insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | bloknot |print preview media fullpage | forecolor backcolor emoticons",
     style_formats: [
         {title: 'Bold text', inline: 'b'},
         {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},

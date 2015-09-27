@@ -96,7 +96,6 @@
 </head>
 <body>
 <div id="tree">
-    <blockquote>Naviguer ho hé ho hé</blockquote>
     @section("tree")
 
 @stop

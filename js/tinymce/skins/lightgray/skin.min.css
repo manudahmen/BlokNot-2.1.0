@@ -154,7 +154,7 @@ div.mce-edit-area {
 }
 
 .mce-grid-border {
-    margin: 0 4px
+    margin: 0 4px 0 4px
 }
 
 .mce-grid-border a {
@@ -332,6 +332,7 @@ div.mce-tinymce-inline {
 }
 
 .mce-panel {
+    border: 0 solid #cacaca;
     border: 0 solid rgba(0, 0, 0, .2);
     background-color: #f0f0f0
 }
@@ -374,7 +375,6 @@ div.mce-tinymce-inline {
 
 .mce-floatpanel.mce-popover.mce-bottom {
     margin-top: 10px;
-    *margin-top: 0
 }
 
 .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow {
@@ -567,7 +567,7 @@ body .mce-abs-layout-item, .mce-abs-end {
     background-color: #000;
     color: #fff;
     max-width: 200px;
-    padding: 5px 8px 4px;
+    padding: 5px 8px 4px 8px;
     text-align: center;
     white-space: normal
 }
@@ -678,12 +678,10 @@ body .mce-abs-layout-item, .mce-abs-end {
 
 .mce-btn {
     border: 1px solid #b1b1b1;
-    border-color: transparent;
+    border-color: transparent transparent transparent transparent;
     position: relative;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     background-color: #f0f0f0
 }
 
@@ -713,8 +711,7 @@ body .mce-abs-layout-item, .mce-abs-end {
 .mce-btn button {
     padding: 4px 8px;
     font-size: 14px;
-    line-height: 20px;
-    *line-height: 16px;
+    line-height: 20px;;
     cursor: pointer;
     color: #333;
     text-align: center;
@@ -773,13 +770,11 @@ body .mce-abs-layout-item, .mce-abs-end {
 .mce-btn-small button {
     padding: 1px 5px;
     font-size: 12px;
-    *padding-bottom: 2px
 }
 
 .mce-btn-small i {
     line-height: 20px;
     vertical-align: top;
-    *line-height: 18px
 }
 
 .mce-btn .mce-caret {
@@ -793,9 +788,7 @@ body .mce-abs-layout-item, .mce-abs-end {
 }
 
 .mce-caret {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     width: 0;
     height: 0;
     vertical-align: top;
@@ -878,10 +871,7 @@ i.mce-i-checkbox {
     margin: 0 3px 0 0;
     border: 1px solid #c5c5c5;
     background-color: #f0f0f0;
-    text-indent: -10em;
-    *font-size: 0;
-    *line-height: 0;
-    *text-indent: 0;
+    text-indent: -10em;;;;
     overflow: hidden
 }
 
@@ -914,10 +904,7 @@ i.mce-i-checkbox {
 }
 
 .mce-combobox {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    *height: 32px
+    display: inline-block;;;
 }
 
 .mce-combobox input {
@@ -997,7 +984,7 @@ i.mce-i-checkbox {
 }
 
 .mce-colorbutton.mce-btn-small .mce-open {
-    padding: 0 3px
+    padding: 0 3px 0 3px
 }
 
 .mce-rtl .mce-colorbutton {
@@ -1104,9 +1091,7 @@ i.mce-i-checkbox {
 }
 
 .mce-path {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     padding: 8px;
     white-space: normal
 }
@@ -1121,9 +1106,7 @@ i.mce-i-checkbox {
 }
 
 .mce-path-item {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     cursor: pointer;
     color: #333
 }
@@ -1159,13 +1142,11 @@ i.mce-i-checkbox {
 
 .mce-fieldset-title {
     margin-left: 5px;
-    padding: 0 5px
+    padding: 0 5px 0 5px
 }
 
 .mce-fit-layout {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1
+    display: inline-block;;
 }
 
 .mce-fit-layout-item {
@@ -1173,9 +1154,7 @@ i.mce-i-checkbox {
 }
 
 .mce-flow-layout-item {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1
+    display: inline-block;;
 }
 
 .mce-flow-layout-item {
@@ -1214,9 +1193,7 @@ i.mce-i-checkbox {
 }
 
 .mce-label {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
     overflow: hidden
 }
@@ -1248,6 +1225,10 @@ i.mce-i-checkbox {
     filter: none
 }
 
+.mce-menubar .mce-menubtn button {
+    color: #333
+}
+
 .mce-menubar {
     border: 1px solid rgba(217, 217, 217, .52)
 }
@@ -1266,11 +1247,8 @@ i.mce-i-checkbox {
     filter: none
 }
 
-.mce-menubtn span {
-    color: #333;
-    margin-right: 2px;
-    line-height: 20px;
-    *line-height: 16px
+.mce-menubtn button {
+    color: #333
 }
 
 .mce-menubtn.mce-btn-small span {
@@ -1286,10 +1264,6 @@ i.mce-i-checkbox {
 
 .mce-menubtn.mce-fixed-width.mce-btn-small span {
     width: 70px
-}
-
-.mce-menubtn .mce-caret {
-    *margin-top: 6px
 }
 
 .mce-rtl .mce-menubtn button {
@@ -1337,9 +1311,7 @@ i.mce-i-checkbox {
 }
 
 .mce-menu-shortcut {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     padding: 0 15px 0 20px
 }
 
@@ -1348,8 +1320,7 @@ i.mce-i-checkbox {
 }
 
 .mce-menu-item .mce-caret {
-    margin-top: 4px;
-    *margin-top: 3px;
+    margin-top: 4px;;
     margin-right: 6px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
@@ -1358,10 +1329,6 @@ i.mce-i-checkbox {
 
 .mce-menu-item.mce-selected .mce-caret, .mce-menu-item:focus .mce-caret, .mce-menu-item:hover .mce-caret {
     border-left-color: #fff
-}
-
-.mce-menu-align .mce-menu-shortcut {
-    *margin-top: -2px
 }
 
 .mce-menu-align .mce-menu-shortcut, .mce-menu-align .mce-caret {
@@ -1445,7 +1412,7 @@ div.mce-menu .mce-menu-item-sep, .mce-menu-item-sep:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
     background: 0 0;
     z-index: 1000;
-    padding: 5px 0;
+    padding: 5px 0 5px 0;
     margin: -1px 0 0;
     min-width: 160px;
     background: #fff;
@@ -1463,7 +1430,6 @@ div.mce-menu .mce-menu-item-sep, .mce-menu-item-sep:hover {
 
 .mce-menu-has-icons i {
     display: inline-block;
-    *display: inline
 }
 
 .mce-menu-sub-tr-tl {
@@ -1579,7 +1545,7 @@ i.mce-i-resize {
 }
 
 .mce-splitbtn.mce-btn-small .mce-open {
-    padding: 0 3px
+    padding: 0 3px 0 3px
 }
 
 .mce-rtl .mce-splitbtn {
@@ -1610,12 +1576,10 @@ i.mce-i-resize {
 }
 
 .mce-tab {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline-block;;;
     border: 1px solid #c5c5c5;
     border-width: 0 1px 0 0;
-    background: #e3e3e3;
+    background: #fff;
     padding: 8px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
     height: 13px;
@@ -1650,9 +1614,8 @@ i.mce-i-resize {
     transition: border linear .2s, box-shadow linear .2s;
     height: 28px;
     resize: none;
-    padding: 0 4px;
-    white-space: pre-wrap;
-    *white-space: pre;
+    padding: 0 4px 0 4px;
+    white-space: pre-wrap;;
     color: #333
 }
 

@@ -5,9 +5,12 @@ App::bind('path.public', function () {
     return base_path() . '/';
 });
 
-Route::get('/auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
+Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
+Route::post('post_images', function () {
+    require_once("app_tinymce_file_acceptor.php");
+});
 
 // Using A Controller...
 
@@ -35,8 +38,8 @@ Route::get('note/joint/new/{noteId}', ['middleware' => "auth", "uses" => functio
 }])->where('id', '[0-9]+');
 Route::get('note/new/{folderId}', ['middleware' => "auth",
     "uses" => function ($folderId) {
-    return view('note/new', ["folderId" => $folderId]);
-}])->where('id', '[0-9]+');
+        return view('note/new', ["folderId" => $folderId]);
+    }])->where('id', '[0-9]+');
 
 Route::post("note/save", [
         'middleware' => "auth",
@@ -95,16 +98,14 @@ Route::get("notes", ["as" => "notes", "uses" => function () {
 Route::get("file/mime-type/{id}", ['middleware' => "auth",
         'uses' => function ($id) {
             $user = Auth::user()->email;
-            $result = getDocRow(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
-            if ($result != NULL) {
-                if (($doc = mysqli_fetch_assoc($result)) != NULL) {
-                    $mime = $doc['mime'];
+            $doc = getDocRow(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id, $user);
+            if ($doc != FALSE) {
+                $mime = $doc['mime'];
 
 
-                    $response = Response::make($mime, 200);
-                    $response->header('Content-Type', "text/plain");
-                    return $response;
-                }
+                $response = Response::make($mime, 200);
+                $response->header('Content-Type', "text/plain");
+                return $response;
             }
         }
     ]
@@ -123,35 +124,35 @@ Route::get("file/view/{id}", ['middleware' => "auth",
         if ($note->id != 0) {
             $filename = $note->filename;
             $content = $note->content_file;
-                $ext = getExtension($filename);
+            $ext = getExtension($filename);
 
 
             if (isImage($ext, $note->mime)) {
-                    $response = Response::make($content, 200);
-                    $response->header('Content-Type', imgSelf($content, $filename));
-                    return $response;
+                $response = Response::make($content, 200);
+                $response->header('Content-Type', imgSelf($content, $filename));
+                return $response;
             } else if (isTexte($ext, $note->mime)) {
-                    $content = str_replace("[[", "<a target='NEW' href='", $content);
-                    $content = str_replace("]]", "'>Lien</a>", $content);
+                $content = str_replace("[[", "<a target='NEW' href='", $content);
+                $content = str_replace("]]", "'>Lien</a>", $content);
                 $content = str_replace("{{", "<images src='" . asset("file/view/"), $content);
-                    $content = str_replace("}}", "'/>", $content);
+                $content = str_replace("}}", "'/>", $content);
                 $content = str_replace("((", "<span class='included_doc'>include doc n0", $content);
-                    $content = str_replace("))", "</span>", $content);
+                $content = str_replace("))", "</span>", $content);
 
-                    $response = Response::make("<p><em>" . $filename . "</em></p>" . $content, 200);
-                    $response->header('Content-Type', "text/plain");
-                    return $response;
+                $response = Response::make("<p><em>" . $filename . "</em></p>" . $content, 200);
+                $response->header('Content-Type', "text/plain");
+                return $response;
 
-                } else {
-                    $response = Response::make($content, 200);
+            } else {
+                $response = Response::make($content, 200);
                 $response->header('Content-Type', $note->mime);
-                    return $response;
+                return $response;
 
-                }
             }
+        }
         //} else {
-            $response = Response::make("404 NOT FOUND ...", 404);
-            return $response;
+        $response = Response::make("404 NOT FOUND ...", 404);
+        return $response;
         //}
 
 
@@ -208,9 +209,8 @@ Route::get("icone/{id}/{taille}", ['middleware' => "auth",
 Route::get("file/download/{noteId}", [
     "middleware" => "auth",
     "uses" => function ($noteId) {
-        $result = getDocRow($noteId);
-        if ($result != NULL) {
-            $doc = mysqli_fetch_assoc($result);
+        $doc = getDocRow($noteId);
+        if ($doc != FALSE) {
             $doc_content = getField($doc, "content_file");
             $response = Response::make($doc_content, 200);
             $response->header('Content-Type', $doc["mime"]);

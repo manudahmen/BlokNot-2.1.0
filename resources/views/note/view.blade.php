@@ -1,3 +1,14 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: manue_001
+ * Date: 20-08-15
+ * Time: 13:42
+ */
+
+$note = getDBDocument($noteId);
+
+?>
 @extends('master')
 @section('title', 'Note viewer')
 
@@ -11,33 +22,16 @@
 @stop
 
 @section('content')
-    <?php
-    /**
-     * Created by PhpStorm.
-     * User: manue_001
-     * Date: 20-08-15
-     * Time: 13:42
-     */
-    /*
-        require_once(realpath(base_path("lib/bloc-notes2/composant/browser/listesItem.php")));
-
-        $mime = getMimeType($noteId);
-        if(strpos($mime, "image") === 0)
-        {
-        ?><img src="{{ asset("file/view/".$noteId) }}"/><?php
-    }
-    else if(strchr($mime, "text") >= 0)
-    {
-    ?>{{ file_get_contents(asset("file/view/".$noteId)) }}<?php
-    } else if ($mime == "directory") {
-        echo "Répertoire";
-
-    }*/
-    ?>
     <div id="note_viewer_container" onclick="updateNote();" style="padding: 20px; border: 3px groove #24a199">
 
     </div>
-
+    <div id="signature">
+        <?php
+        echo $note->getAttribute('username');
+        ?><?php
+        echo $note->getAttribute('updated_at');
+        ?>
+    </div>
     <div id="lien_liste" style="padding: 20px; border: 3px groove #24a199">
 
     </div>
