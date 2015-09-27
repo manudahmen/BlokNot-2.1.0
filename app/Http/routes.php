@@ -175,13 +175,13 @@ Route::get("icone/{id}/{taille}", ['middleware' => "auth",
 
             if (isImage($ext, $mime)) {
                 // Output and free from memory
-                header('Content-Type: ' . $mime);
+                header('Content-Type: ' . $mime . "\n");
                 $res = redimAndDisplay($content, $mime, $taille);
             } else if (isTexte($ext, $mime)) {
                 // TODO
                 $content = str_replace("[[", "<a target='NEW' href='", $content);
                 $content = str_replace("]]", "'>Lien</a>", $content);
-                $content = str_replace("{{", "<images src='" . asset("file/view/"), $content);
+                $content = str_replace("{{", "<img src='" . asset("file/view/"), $content);
                 $content = str_replace("}}", "'/>", $content);
                 $content = str_replace("((", "<span class='included_doc'>include doc n0", $content);
                 $content = str_replace("))", "</span>", $content);

@@ -246,13 +246,13 @@ function echoImgBase64($content, $filename)
 
 function getExtension($filename)
 {
-    return $ext = strtolower(substr($filename, -3));
+    return $ext = strtolower(substr($filename, strpos($filename, '.', 0)));
 
 }
 
 function isImage($ext, $mime = "")
 {
-    return in_array($ext, array("jpg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
+    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
 
 }
 
@@ -404,10 +404,10 @@ $src_h = $size[1];
     imagefill($dst_im, 0, 0, $blanc);
     if ($R >= 1) {
         $blank_top = $T - $T / $R;
-        imagecopyresampled($dst_im, $image, 0, $blank_top, 0, 0, $T, $T - $blank_top, $src_w, $src_h);
+        imagecopyresampled($dst_im, $image, 0, $blank_top / 2, 0, 0, $T, $T - $blank_top / 2, $src_w, $src_h);
     } else {
         $blank_left = $T - $T * $R;
-        imagecopyresampled($dst_im, $image, $blank_left, 0, 0, 0, $T - $blank_left, $T, $src_w, $src_h);
+        imagecopyresampled($dst_im, $image, $blank_left / 2, 0, 0, 0, $T - $blank_left / 2, $T, $src_w, $src_h);
     }
 
 
@@ -415,7 +415,7 @@ $src_h = $size[1];
 header("Content-Type: $mimeType");
     $mimeType = strtolower($mimeType);
 
-if($mimeType=="image/jpg")
+    if ($mimeType == "image/jpg" || $mimeType == "image/jpeg")
 {
     imagejpeg($dst_im);
 }

@@ -87,7 +87,7 @@
                 },
                 processData: false, type: 'post',
 
-                contentType: false,
+                contentType: true,
                 data: fd,
                 success: function (data) {
                     // do something...
