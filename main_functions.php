@@ -413,7 +413,7 @@ $src_h = $size[1];
 
 
 header("Content-Type: $mimeType");
-
+    $mimeType = strtolower($mimeType);
 
 if($mimeType=="image/jpg")
 {
