@@ -13,7 +13,7 @@ tinymce.init({
         "save table contextmenu directionality emoticons template paste textcolor bloknot"
     ],
     images_upload_url: "/post_images",
-    /*images_upload_base_path: "/so,me/basepath" *//*Could be tricky*/
+    images_upload_base_path: "/datafiles", /*Could be tricky*/
     images_upload_credentials: true,
     images_upload_handler: function (blobInfo, success, failure) {
         var xhr, formData;

@@ -80,12 +80,15 @@
         }
         function showPlus() {
             $("#plus_button").removeClass('invisible').addClass('visible');
+            $("#plus_button").addClass('visible').addClass('visible');
             $("#moins_button").addClass('invisible').removeClass('visible');
-
+            $("#moins_button").removeClass('visible').removeClass('visible');
         }
         function showMoins() {
-            $("#plus_button").addClass('invisible').removeClass('visible');
             $("#moins_button").addClass('visible').removeClass('invisible');
+            $("#moins_button").removeClass('invisible').removeClass('visible');
+            $("#plus_button").addClass('invisible').removeClass('visible');
+            $("#plus_button").removeClass('visible').removeClass('visible');
 
         }
     </script>
