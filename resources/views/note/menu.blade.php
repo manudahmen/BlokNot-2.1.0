@@ -7,13 +7,13 @@
  *
  * */
 ?>
-@section("sidebar")
-    @parent
-            <li><a href="<?php echo asset("note/view/" . $noteId) ?>">Voir</a></li>
+<ul id="note_actions" xmlns="http://www.w3.org/1999/html">
+    <li><a href="<?php echo asset("note/view/" . $noteId) ?>"><img src="/images/see.png"/>Voir</a></li>
             <!-- note/view demande un login de plus!-->
-            <li><a href="<?php echo asset("note/edit/" . $noteId); ?>">Modifier</a></li>
-            <li><a href="<?php echo asset("file/download/" . $noteId); ?>">T&eacute;l&eacute;charger</a></li>
-    <li><a href="<?php echo asset("note/delete/" . $noteId); ?>">Supprimer</a></li>
-    <li><a href="<?php echo asset("note/edit/" . $noteId); ?>">">Déplacer</a></li>
-    @include("menu", ["noteId", $noteId])
-@stop
+    <li><a href="<?php echo asset("note/edit/" . $noteId); ?>"><img src="/images/edit.png"/>Modifier</a></li>
+    <li><a href="<?php echo asset("file/download/" . $noteId); ?>"><img src="/images/download.png"/>T&eacute;l&eacute;charger</a>
+    </li>
+    <li><a href="<?php echo asset("note/delete/" . $noteId); ?>" style="color: red; background: #000;"><img
+                    src="/images/delete.png"/>Supprimer</a></li>
+    <li><a href="<?php echo asset("note/edit/" . $noteId); ?>"><img src="/images/move.png"/>D&eacute;placer</a></li>
+</ul>

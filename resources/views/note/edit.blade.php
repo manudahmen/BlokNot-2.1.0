@@ -11,10 +11,10 @@
 @section('sidebar')
     @parent
 
-    @include("note/menu", ["noteId", $noteId])
 
 @stop
 @section('content')
+    @include("note.menu", ["noteId", $noteId])
 
     <?php
     /**

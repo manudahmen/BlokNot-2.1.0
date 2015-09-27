@@ -132,6 +132,7 @@
     }
     ?>
     @section('sidebar')
+            @include("menu")
     @show
     </ul>
 </div>

@@ -17,11 +17,10 @@ $note = getDBDocument($noteId);
     @parent
 
 
-    @include("note/menu", ["noteId", $noteId])
-
 @stop
 
 @section('content')
+    @include("note.menu", ["noteId", $noteId])
     <div id="note_viewer_container" onclick="updateNote();" style="padding: 20px; border: 3px groove #24a199">
 
     </div>

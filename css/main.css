@@ -543,3 +543,13 @@ label.menu_icons {
     background-image: url(/images/root-folder-light.png);
     background-size: 100% 100%;
 }
+
+#note_actions {
+    display: inline;
+}
+
+#note_actions li {
+    display: inline;
+    list-style-type: none;
+
+}

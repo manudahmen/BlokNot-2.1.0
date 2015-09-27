@@ -14,7 +14,6 @@ $noteId = 0;
 @@section('sidebar')
     @parent
 
-    @include("note/menu", ["noteId", $noteId])
 
 @stop
 @section('content')
