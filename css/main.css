@@ -328,7 +328,7 @@ div.miniImgContainer img {
 
 }
 
-#note_viewer_container {
+#note_viewer_container, #note_viewer_container p, #note_viewer_container ul {
     width: 100%;
     display: block;
     font-family: 'Indie Flower', cursive;

@@ -392,9 +392,24 @@ $image = imagecreatefromstring($data);
 $size = getimagesizefromstring ($data);
 $src_w = $size[0];
 $src_h = $size[1];
-$dst_h = floor($src_h*$max_dim/$src_w);
-$dst_im = imagecreatetruecolor($max_dim,$dst_h);
-imagecopyresampled($dst_im,$image,0,0,0,0,$max_dim,$dst_h,$src_w,$src_h);
+
+    $R = $src_w / $src_h;
+
+
+    $T = $max_dim;
+
+
+    $dst_im = imagecreatetruecolor($T, $T);
+    $blanc = imagecolorallocate($image, 255, 255, 255);
+    imagefill($dst_im, 0, 0, $blanc);
+    if ($R >= 1) {
+        $blank_top = $T - $T / $R;
+        imagecopyresampled($dst_im, $image, 0, $blank_top, 0, 0, $T, $T - $blank_top, $src_w, $src_h);
+    } else {
+        $blank_left = $T - $T * $R;
+        imagecopyresampled($dst_im, $image, $blank_left, 0, 0, 0, $T - $blank_left, $T, $src_w, $src_h);
+    }
+
 
 
 header("Content-Type: $mimeType");
