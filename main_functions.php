@@ -217,13 +217,13 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
                 }
             ?>
         </div>
-        <div id="<?php echo "data-$id"; ?>" class="miniImgContainerBottom">
+        <div id="<?php echo "data$id"; ?>" class="miniImgContainerBottom">
 
-            <label class="menu_icons"><img id="plus_button" onclick="showMenu('<?php echo "data_actions_$id"; ?>');"
-                                           src="/images/plus.png" class="visible"/></label>
-            <label class="menu_icons"><img id="moins_button" onclick="hideMenu('<?php echo "data_actions_$id"; ?>');"
-                                           src="/images/moins.png" class="invisible"/></label>
-            <ul class="onfile_actions invisible" id="<?php echo "data_actions_$id"; ?>">
+            <img id="plus_button_<?php echo $id; ?>" onclick="showMenu('<?php echo "$id"; ?>');"
+                 src="/images/plus.png" class="visible"/>
+            <img id="moins_button_<?php echo $id; ?>" onclick="hideMenu('<?php echo "$id"; ?>');"
+                 src="/images/moins.png" class="invisible"/>
+            <ul class="onfile_actions invisible" id="ul<?php echo "$id"; ?>">
                 <li><a href="<?php echo asset("note/view/" . $id) ?>">Voir</a></li>
                 <!-- note/view demande un login de plus!-->
                 <li><a href="<?php echo asset("note/edit/" . $id); ?>">Modifier</a></li>
@@ -380,41 +380,35 @@ function getParentNoteId($path)
     }
 
 }
-function redimAndDisplay($data, $mimeType, $max_dim=NULL)
+
+function redimAndDisplay($data, $mimeType, $T = NULL)
 {
 
-if($max_dim==NULL)
+    if ($T == NULL)
 {
-    $max_dim = \Illuminate\Support\Facades\Config::get("app.plus_config")["thumb_size"];
+    $T = \Illuminate\Support\Facades\Config::get("app.plus_config")["thumb_size"];
 }
-//$doc = getDBDocument((int)$id);
-
-//$mime = $doc->mime;
-
-//$data = $doc->content_file;
 $image = imagecreatefromstring($data);
 
 $size = getimagesizefromstring ($data);
-$src_w = $size[0];
-$src_h = $size[1];
-
-    $R = $src_w / $src_h;
-
-
-    $T = $max_dim;
-
 
     $dst_im = imagecreatetruecolor($T, $T);
-    $blanc = imagecolorallocate($image, 255, 255, 255);
-    imagefill($dst_im, 0, 0, $blanc);
-    if ($R >= 1) {
-        $blank_top = $T - $T / $R;
-        imagecopyresampled($dst_im, $image, 0, $blank_top / 2, 0, 0, $T, $T - $blank_top / 2, $src_w, $src_h);
-    } else {
-        $blank_left = $T - $T * $R;
-        imagecopyresampled($dst_im, $image, $blank_left / 2, 0, 0, 0, $T - $blank_left / 2, $T, $src_w, $src_h);
-    }
 
+
+    $X1 = $size[0];
+    $Y1 = $size[1];
+
+    if ($X1 >= $Y1) {
+        $X2 = $T;
+        $Y2 = $T * $Y1 / $X1;
+        $blank_top = ($T - $Y2) / 2;
+        imagecopyresampled($dst_im, $image, 0, $blank_top, 0, 0, $T, $T - $blank_top, $X1, $Y1);
+    } else {
+        $X2 = $T * $X1 / $Y1;
+        $Y2 = $T;
+        $blank_left = ($T - $X2) / 2;
+        imagecopyresampled($dst_im, $image, $blank_left, 0, 0, 0, $T - $blank_left, $T, $X1, $Y1);
+    }
 
 
 header("Content-Type: $mimeType");

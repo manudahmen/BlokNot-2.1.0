@@ -15,6 +15,22 @@ tinymce.init({
     images_upload_url: "/post_images",
     images_upload_base_path: "/datafiles", /*Could be tricky*/
     images_upload_credentials: true,
+    file_browser_callback: function (field_name, url, type, win) {
+
+        alert("Upload begin");
+        w = window.open("/file/uploadform/" + noteId, "Mettre un fichier", "menubar=yes, status=yes, scrollbars=yes, menubar=no, width=300, height=200");
+        w.onload =
+            function () {
+                doc = w.document;
+
+                elements = doc.getElementByClass("uploaded");
+
+                alert(elements);
+            }
+
+        win.document.getElementById(field_name).value = 'my browser value';
+
+    },
     images_upload_handler: function (blobInfo, success, failure) {
         var xhr, formData;
 

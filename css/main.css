@@ -282,6 +282,10 @@ div.miniImgContainerBottom {
     font-size: 70%;
 }
 
+div.miniImgContainerBottom img {
+    width: 24pt;
+    height: 24pt;
+}
 div.miniImgContainer {
     width: 190px;
     height: 200px;
@@ -444,17 +448,14 @@ ul.onfile_actions.invisible {
 }
 
 .visible {
-    display: block;
-    visibility: visible;
+    display: inline;
 }
 
 .invisible {
     display: none;
-    visibility: hidden;
 }
 
-ul.onfile_actions.visible {
-    visibility: visible;
+ul.onfile_actions {
     z-index: 999;
     height: 100pt;
     width: 100pt;
@@ -462,6 +463,10 @@ ul.onfile_actions.visible {
     color: #000033;
 }
 
+ul.onfile_actions.visible {
+    visibility: visible;
+
+}
 span.onfile_actions:hover {
     display: inline;
     z-index: 10;

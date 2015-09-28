@@ -16,6 +16,12 @@ class Node extends Model
     private $nodeId;
     private $children = array();
 
+    public function __construct($tree, $noteId)
+    {
+        $this->tree = $tree;
+        $this->nodeId = $noteId;
+    }
+
     public function chargerChemin($noteId)
     {
 
@@ -23,7 +29,13 @@ class Node extends Model
 
     public function chargerEnfants()
     {
-        $this->children = Note::find()->xhere(['folder_id', $this->nodeId])->get();
+        $res = getDocumentsFiltered('%', FALSE, $this->nodeId, $this->tree->owner);
+
+        while (($doc = mysqli_fetch_assoc($res)) != NULL) {
+            $noteId = $doc['id'];
+            $this->children[sizeof($this->children)] = new Node($this->tree, $noteId);
+        }
+
     }
 
     public function chercherDansChemin($expression, $title = "", $withMedia = FALSE)

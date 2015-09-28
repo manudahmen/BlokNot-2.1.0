@@ -5,7 +5,9 @@
     @parent
     <script type="text/javascript" src="{{asset("js/tinymce/jquery.tinymce.min.js")}}"></script>
     <script type="text/javascript" src="{{asset("js/tinymce/tinymce.min.js") }}"></script>
-
+    <script type="text/javascript">
+        var noteId = {{$noteId}};
+    </script>
 
 @stop
 @section('sidebar')
@@ -80,7 +82,8 @@
             <tr>
                 <td><label for="text_editor">Editer la note</label></td>
                 <td><textarea rows="12" cols="40" name="content_file"
-                              id="text_editor"><?php echo $content_file; ?></textarea></td>
+                              id="text_editor"><?php echo $content_file;
+                        ?></textarea><input type="file" name="uploadMedia" id="uploadMedias" value="Upload media"/></td>
             </tr>
             <tr>
                 <td></td>

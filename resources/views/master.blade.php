@@ -66,30 +66,30 @@
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script language="JavaScript">
+        function showPlus(id) {
+            $("#plus_button_" + id).removeClass('invisible').addClass('visible');
+            //$("#plus_button")
+            $("#moins_button_" + id).addClass('invisible').removeClass('visible');
+            //$("#moins_button").removeClass('visible');
+        }
+        function showMoins(id) {
+            $("#moins_button_" + id).addClass('visible').removeClass('invisible');
+            //$("#moins_button").removeClass('invisible');
+            $("#plus_button_" + id).addClass('invisible').removeClass('visible');
+            //$("#plus_button").removeClass('visible');
+        }
         function showMenu(id) {
-            $('#' + id).removeClass("invisible");
-            $('#' + id).addClass("visible");
-            $('#' + id).addClass("row-3");
-            showMoins();
+            $('#ul' + id).removeClass("invisible").addClass("visible").addClass("row-3");
+            ;
+            //$('#' + id).addClass("visible");
+            //$('#' + id).addClass("row-3");
+            showMoins(id);
         }
         function hideMenu(id) {
-            $('#' + id).addClass("invisible");
-            $('#' + id).removeClass("visible");
-            $('#' + id).removeClass("row-3");
-            showPlus();
-        }
-        function showPlus() {
-            $("#plus_button").removeClass('invisible').addClass('visible');
-            $("#plus_button").addClass('visible').addClass('visible');
-            $("#moins_button").addClass('invisible').removeClass('visible');
-            $("#moins_button").removeClass('visible').removeClass('visible');
-        }
-        function showMoins() {
-            $("#moins_button").addClass('visible').removeClass('invisible');
-            $("#moins_button").removeClass('invisible').removeClass('visible');
-            $("#plus_button").addClass('invisible').removeClass('visible');
-            $("#plus_button").removeClass('visible').removeClass('visible');
-
+            $('#ul' + id).addClass("invisible").removeClass("visible").removeClass("row-3");
+            //$('#' + id).removeClass("visible");
+            //$('#' + id).removeClass("row-3");
+            showPlus(id);
         }
     </script>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>

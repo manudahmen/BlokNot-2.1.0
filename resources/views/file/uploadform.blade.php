@@ -20,7 +20,7 @@
         ?>
 
     </p>
-
+    <ul id="uploaded"></ul>
     <form action="{{asset("file/upload/$folderId")}}"
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
@@ -90,8 +90,8 @@
                 contentType: true,
                 data: fd,
                 success: function (data) {
-                    // do something...
                     $('#result').html('uploaded' + data);
+                    $("#uploaded").html(data);
                 },
                 fail: function (data) {
                     $('#result').html("Fail" + data);

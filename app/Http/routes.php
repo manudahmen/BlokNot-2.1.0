@@ -9,7 +9,7 @@ Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@g
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::post('post_images', function () {
-    require_once("app_tinymce_file_acceptor.php");
+    require_once("<../app_tinymce_file_acceptor.php");
 });
 
 // Using A Controller...

@@ -199,7 +199,7 @@ class NoteController extends Controller
 
                 unlink($totalName);
 
-                $text .= "<a href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a> (saved)<br/>";
+                $text .= "<li><a class='uploaded ' id='" . ($note->getAtribute("id")) . "' href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a></li>";
             }
         }
 
