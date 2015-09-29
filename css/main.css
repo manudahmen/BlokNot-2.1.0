@@ -558,3 +558,8 @@ label.menu_icons {
     list-style-type: none;
 
 }
+
+#note_actions img {
+    width: 24pt;
+    height: 24pt;
+}
