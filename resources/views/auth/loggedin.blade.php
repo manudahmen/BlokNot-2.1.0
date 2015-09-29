@@ -7,7 +7,7 @@
  */
 <!-- resources/views/auth/loggedin.blade.php -->
 @extends('master')
-@section('head')
+@section('header')
     <script language="JavaScript">
         mixpanel.track("Logged in");
     </script>

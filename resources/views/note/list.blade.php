@@ -1,5 +1,5 @@
 @extends('master')
-@section('head')
+@section('header')
     <script language="JavaScript">
         mixpanel.track("Directory listing");
     </script>
