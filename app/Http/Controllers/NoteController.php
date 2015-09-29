@@ -160,13 +160,14 @@ class NoteController extends Controller
 
     function uploadMultiple(Request $request, $folderId)
     {
-        $text = "<h1>Result</h1>";
 
 
         $data = Input::all();
 
 
         $files = $data['file'];
+
+        $text = array("count" => sizeof($data["file"]));
 
         foreach ($files as $file) {
             if ($file->isValid()) {
@@ -185,6 +186,7 @@ class NoteController extends Controller
 
                     $content_file = file_get_contents($totalName);
 
+                    unlink($totalName);
                 }
 
                 $note = Note::findOrNew(0);
@@ -196,14 +198,13 @@ class NoteController extends Controller
 
                 $note->save();
 
+                $text["notes"][$note->getAttribute('id')] = $note->toArray();
+                $text["urls"][$note->getAttribute('id')] = asset("note/view/" . $note->getAttribute("id"));
 
-                unlink($totalName);
-
-                $text .= "<li><a class='uploaded ' id='" . ($note->getAtribute("id")) . "' href='" . asset("note/view/" . $note->getAttribute("id")) . "'>" . $note->getAttribute("filename") . "</a></li>";
             }
         }
 
-        return "<h2>Notes saved and uploaded</h2>" . $text;
+        return json_encode($text);
     }
 
     function delete(Request $request, $noteId)

@@ -7,6 +7,7 @@
     <script type="text/javascript" src="{{asset("js/tinymce/tinymce.min.js") }}"></script>
     <script type="text/javascript">
         var noteId = {{$noteId}};
+        mixpanel.track("Note edition");
     </script>
 
 @stop

@@ -49,9 +49,7 @@
     <!-- end Mixpanel -->
 
     <script type="text/javascript">
-        mixpanel.track("a", "App Click", {
-            "referrer": document.referrer
-        });
+        mixpanel.track("App Navigation");
     </script>
     <meta charset="windows-1250">
     <title>@yield('title')</title>

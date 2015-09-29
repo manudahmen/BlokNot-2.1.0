@@ -1,4 +1,10 @@
 @extends('master')
+@section('head')
+    <script language="JavaScript">
+        mixpanel.track("Directory listing");
+    </script>
+@stop
+
 @section('title', 'Parcourir les notes')
 
 @section('sidebar')
