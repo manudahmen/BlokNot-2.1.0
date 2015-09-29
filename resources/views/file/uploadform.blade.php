@@ -20,7 +20,10 @@
         ?>
 
     </p>
+    <p>Uploaded</p>
     <ul id="uploaded"></ul>
+    <p>Result</p>
+    <ul id="result"></ul>
     <form action="{{asset("file/upload/$folderId")}}"
           id="form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
@@ -64,7 +67,7 @@
             // You could show a loading image for example...
 
             $.ajax({
-                url: $(this).attr('action'),
+                url: "{{asset("file/upload/$folderId")}}",
                 xhr: function () { // custom xhr (is the best)
 
                     var xhr = new XMLHttpRequest();
@@ -87,17 +90,17 @@
                 },
                 processData: false, type: 'post',
 
-                contentType: true,
+                contentType: false,
                 data: fd,
                 success: function (data) {
-                    $('#result').html('uploaded' + data);
-                    $("#uploaded").html(data);
+                    $('#result').text('uploaded' + data);
+                    $("#uploaded").text(data);
                 },
                 fail: function (data) {
-                    $('#result').html("Fail" + data);
+                    $('#result').text("Fail" + data);
                 },
                 always: function (data) {
-                    $('#result').html("Complete" + data);
+                    $('#result').text("Complete" + data);
                 }
             });
         });

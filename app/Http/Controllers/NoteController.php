@@ -178,7 +178,7 @@ class NoteController extends Controller
                 } else {
                     $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
 
-                    $fullPath = __DIR__ . "datafiles/";
+                    $fullPath = base_path('') . "/datafiles/";
 
                     $totalName = $fullPath . "/" . $dstName;
 
@@ -187,19 +187,20 @@ class NoteController extends Controller
                     $content_file = file_get_contents($totalName);
 
                     unlink($totalName);
+
+                    $note = Note::findOrNew(0);
+                    $note->setAttribute("mime", $mime);
+                    $note->setAttribute("username", Auth::user()->email);
+                    $note->setAttribute("content_file", $content_file);
+                    $note->setAttribute("filename", $filename);
+                    $note->setAttribute("folder_id", $folderId);
+
+                    $note->save();
+
+                    $text["notes"][$note->getAttribute('id')] = $note->toArray();
+                    $text["urls"][$note->getAttribute('id')] = asset("note/view/" . $note->getAttribute("id"));
                 }
 
-                $note = Note::findOrNew(0);
-                $note->setAttribute("mime", $mime);
-                $note->setAttribute("username", Auth::user()->email);
-                $note->setAttribute("content_file", $content_file);
-                $note->setAttribute("filename", $filename);
-                $note->setAttribute("folder_id", $folderId);
-
-                $note->save();
-
-                $text["notes"][$note->getAttribute('id')] = $note->toArray();
-                $text["urls"][$note->getAttribute('id')] = asset("note/view/" . $note->getAttribute("id"));
 
             }
         }
