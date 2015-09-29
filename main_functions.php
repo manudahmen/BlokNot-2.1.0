@@ -78,7 +78,7 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
         <div class="miniImgContainerTop"><p><strong>What's up?</p></div>
         <div class="miniImgContainer">
             <a href="<?php echo asset("note/list/" . (int)(getDBDocument($path)->folder_id) . "/1"); ?>">
-                <img src='<?php echo asset("images/root.png") ?>'
+                <img src='<?php echo asset("images/root-folder2.png") ?>'
                      class="miniImg" title="Aller à: Dossier supérieur"/>
             </a>
         </div>
