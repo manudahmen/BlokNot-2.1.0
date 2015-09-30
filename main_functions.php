@@ -124,6 +124,20 @@ function listerNotesFromDB($filtre, $composed, $path, $user)
     ?></div><?php
 }
 
+function listerNotes_browser($user)
+{
+    global $mysqli;
+    $results = mysqli_query($mysqli, "select * from bn2_filesdata where isDeleted=0 and username='" . mysqli_real_escape_string($mysqli, Auth::user()->email) . "';");
+
+    while (($doc = mysqli_fetch_assoc($results)) != NULL) {
+        $filename = $doc['filename'];
+        $content = $doc['content_file'];
+        $id = $doc['id'];
+        $folder_id = $doc["folder_id"];
+        typeDB_type_image($filename, $content, $id, $doc);
+    }
+}
+
 function typeTxt($cf, $filePath)
 {
     global $FILE_THUMB_MAXLEN;
@@ -234,6 +248,16 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
     </div>
 <?php }
 
+function typeDB_type_image($filename, $content, $id, &$rowdoc = NULL)
+{
+    $mime = $rowdoc["mime"];
+    if (isImage(getExtension($filename), $mime)) { ?>
+
+        <img src="<?php echo asset("icone/$id/30") ?>"
+             alt="<?= $filename ?>" style="width; 30px; height: 30px;" onclick="insertIntoEditor(<?php echo $id ?>);"/>
+        <?php
+    }
+}
 function echoImgBase64($content, $filename)
 {
     // A few settings

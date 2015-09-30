@@ -63,6 +63,10 @@
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('js/rdio.com/jquery.rdio.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+    <script src="/js/tinyMCE.init.js"></script>
+    <script src="/js/BlokNotTInyMCEBrowser.js"></script>
+    <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script language="JavaScript">
         function showPlus(id) {
             $("#plus_button_" + id).removeClass('invisible').addClass('visible');

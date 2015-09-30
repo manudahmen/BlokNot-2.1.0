@@ -85,6 +85,12 @@ Route::get("note/list/{noteId}/{page}", [
         return View::make("note/list", ["noteId" => $noteId, "page" => $page]);
     }
 ]);
+Route::get("note/ed_browser", [
+    'middleware' => "auth",
+    'uses' => function () {
+        return View::make("note/ed_browser");
+    }
+]);
 Route::get("notes", ["as" => "notes", "uses" => function () {
     return View::make("notes");
 }

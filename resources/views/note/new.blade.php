@@ -33,7 +33,7 @@ $noteId = 0;
 
     ?>
     @include("note/menu", ["noteId", 0])
-    <form action="{{asset("note/save/txt/0") }}" method="GET">
+    <form action="{{asset("note/save/txt/0") }}" method="GET" name="editor_form">
         <table>
             <tr>
                 <td></td>
