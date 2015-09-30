@@ -1,4 +1,31 @@
 /**
+ * Created by manue on 30-09-15.
+ */
+function BlokNotTInyMCEBrowser(field_name, url, type, win) {
+
+    // alert("Field_Name: " + field_name + "nURL: " + url + "nType: " + type + "nWin: " + win); // debug/testing
+
+    /* If you work with sessions in PHP and your client doesn't accept cookies you might need to carry
+     the session name and session ID in the request string (can look like this: "?PHPSESSID=88p0n70s9dsknra96qhuk6etm5").
+     These lines of code extract the necessary parameters and add them back to the filebrowser URL again. */
+
+    var cmsURL = "/note/ed_browser";    // script URL - use an absolute path!
+
+    tinyMCE.activeEditor.windowManager.open({
+        file: cmsURL,
+        title: 'My File Browser',
+        width: 420,  // Your dimensions may differ - toy around with them!
+        height: 400,
+        resizable: "yes",
+        inline: "yes",  // This parameter only has an effect if you use the inlinepopups plugin!
+        close_previous: "no"
+    }, {
+        window: win,
+        input: field_name
+    });
+    return false;
+}
+/**
  * Created by manue on 27-09-15.
  */
 
@@ -12,11 +39,8 @@ tinymce.init({
         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
         "save table contextmenu directionality emoticons template paste textcolor bloknot"
     ],
-    images_upload_url: "/post_images",
-    images_upload_base_path: "/datafiles", /*Could be tricky*/
-    images_upload_credentials: true,
     file_browser_callback: BlokNotTInyMCEBrowser,
-    images_upload_handler: function (blobInfo, success, failure) {
+    /*images_upload_handler: function (blobInfo, success, failure) {
         var xhr, formData;
 
         xhr = new XMLHttpRequest();
@@ -45,7 +69,7 @@ tinymce.init({
         formData.append('file', blobInfo.blob(), fileName(blobInfo));
 
         xhr.send(formData);
-    },
+     },*/
     //content_css: "js/tinymce/css/content.css",
     toolbar: "addFile insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | bloknot |print preview media fullpage | forecolor backcolor emoticons",
     style_formats: [
@@ -59,6 +83,14 @@ tinymce.init({
     ]
     /*images_upload_url: "/file/upload"*/
 });
+
 function insertIntoEditor(id) {
-    tinymce.execCommand('mceInsertContent', false, "<img src='/file/view/" + id + "'>");
+    var src = "http://ibiteria.com/file/view/" + id;
+    this.file_select.url.value = src;
+    var ed = tinymce.get("text_editor");
+    if (ed == null) alert("Cannot find text editor");
+    var range = ed.selection.getRng();                  // get range
+    var newNode = ed.getDoc().createElement("img");  // create img node
+    newNode.src = "/file/view/" + src;                           // add src attribute
+    range.insertNode(newNode);
 }
