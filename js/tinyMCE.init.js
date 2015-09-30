@@ -91,6 +91,6 @@ function insertIntoEditor(id) {
     if (ed == null) alert("Cannot find text editor");
     var range = ed.selection.getRng();                  // get range
     var newNode = ed.getDoc().createElement("img");  // create img node
-    newNode.src = "/file/view/" + src;                           // add src attribute
+    newNode.src = src;                           // add src attribute
     range.insertNode(newNode);
 }
