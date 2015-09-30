@@ -8,6 +8,7 @@
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script src="/js/tinyMCE.init.js"></script>
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+    <script type="text/javascript" src="/js/tinymce/tiny_mce_popup.js"></script>
 </head>
 <body>
 <form name="file_select">
