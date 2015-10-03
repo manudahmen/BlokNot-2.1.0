@@ -349,7 +349,10 @@ function connect() {
 
     //echo 'Succ�s... ' . $mysqli->host_info . "\n";
 }
+function deleteNote($noteId)
+{
 
+}
 function getRootForUser($user=NULL) {
     global $mysqli;
     if($user==NULL)
@@ -418,7 +421,7 @@ $size = getimagesizefromstring ($data);
 
     $dst_im = imagecreatetruecolor($T, $T);
 
-    imagecolortransparent($dst_im, imagecolorallocate($dst_im, 0, 0, 0));
+    //imagecolortransparent($dst_im, imagecolorallocate($dst_im, 0, 0, 0));
     $X1 = $size[0];
     $Y1 = $size[1];
 

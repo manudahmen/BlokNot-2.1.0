@@ -219,7 +219,9 @@ class NoteController extends Controller
 
         $note->load($noteId);
 
-        $note->delete();
+        //$note->delete();
+
+        deleteDBDoc($noteId);
 
         echo "<p> Note deleted</p>";
 

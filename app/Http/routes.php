@@ -22,6 +22,9 @@ Route::get('profile', [
 Route::get('auth/register', ["as" => "register", "uses" => 'Auth\AuthController@getRegister']);
 Route::post('auth/register', ['as' => 'register_submit', 'uses' => 'Auth\AuthController@postRegister']);
 
+Route::get('radio', ['middleware' => "auth", "uses" => function () {
+    return view('radio.index');
+}]);
 
 Route::get("note/view/{noteId}", [
     'middleware' => "auth",
