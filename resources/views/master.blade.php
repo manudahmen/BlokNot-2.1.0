@@ -122,7 +122,7 @@
                     href="{{URL::to("auth/logout")}}"><img src="/images/disconnect.jpg"/><label class="onrolloverShow">Logout</label></a>
         </li>
 
-        <li><a href="#"
+        <li><a href="{{asset("profile")}}"
           class="btn-large btn-primary openbutton">
                 <?php echo Auth::user()->email; ?></a>
         </li><?php
