@@ -1,23 +1,29 @@
 <?php
+use Illuminate\Support\Facades\Route;
+
 require_once(realpath(base_path("main_functions.php")));
 
 App::bind('path.public', function () {
     return base_path() . '/';
 });
 
+Route::get('profile', ["middleware" => "auth", "uses" => function ()
+{
+
+    return view("profile");
+}]);
+
 Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+
 Route::post('post_images', function () {
     require_once("<../app_tinymce_file_acceptor.php");
 });
 
-// Using A Controller...
 
-Route::get('profile', [
-    'middleware' => 'auth',
-    'uses' => 'ProfileController@show'
-]);
+
 // Registration routes...
 Route::get('auth/register', ["as" => "register", "uses" => 'Auth\AuthController@getRegister']);
 Route::post('auth/register', ['as' => 'register_submit', 'uses' => 'Auth\AuthController@postRegister']);
