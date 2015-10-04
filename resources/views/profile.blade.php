@@ -5,8 +5,8 @@
  * Date: 04-10-15
  * Time: 08:04
  */
-        ?>
-@extends('master)
+?>
+@extends('master')
 @section('title', 'My settings')
 
 @section('content')
