@@ -32,7 +32,7 @@
             <td><input name="rdio_username" value="Not defined"/></td></tr>
         <tr>
             <td>Enregistrer</td>
-            <td><input type="submit" name="Envoyer" /></td>
+            <td><input type="submit" name="Envoyer" class="btn-large btn-primary openbutton"/></td>
         </tr>
     </table>
     </form>
