@@ -29,6 +29,17 @@ function getDocRow($noteId)
         return FALSE;
     }
 }
+
+function getShareRow($noteId)
+{
+    global $mysqli;
+    $res = simpleQ("select * from bn2_share where id=" . ((int)$noteId), $mysqli);
+    if ($res != NULL) {
+        return mysqli_fetch_assoc($res);
+    } else {
+        return FALSE;
+    }
+}
 function getField($row, $fieldName)
 {
     return $row[$fieldName];
