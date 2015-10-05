@@ -6,8 +6,8 @@
     <script type="text/javascript" src="{{asset("js/tinymce/jquery.tinymce.min.js")}}"></script>
     <script type="text/javascript" src="{{asset("js/tinymce/tinymce.min.js") }}"></script>
     <script type="text/javascript">
-        var noteId = {{$noteId}};
-        mixpanel.track("Note edition");
+        var noteId = "{{$noteId}}";
+        mixpanel.track("Edition de note", {"User": "{{  Auth::user()->email; }}", "note" : noteId });
     </script>
     <meta name="_token" content="{!! csrf_token() !!}"/>
 @stop

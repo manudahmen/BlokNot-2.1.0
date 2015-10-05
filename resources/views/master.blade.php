@@ -49,7 +49,7 @@
     <!-- end Mixpanel -->
 
     <script type="text/javascript">
-        mixpanel.track("App Navigation");
+        mixpanel.track("Navigation dans l'Application", {"User": "", "note" : noteId });
     </script>
     <meta charset="windows-1250">
     <title>@yield('title')</title>
@@ -142,7 +142,7 @@
     </ul>
 </div>
 
-<div class="containerBlocnoteBrowser" style="scrollbar-face-color">
+<div class="containerBlocnoteBrowser">
     <div id="top_container">
         <h1>@yield("title")</h1>
         @section("top")
