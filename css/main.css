@@ -11,7 +11,7 @@ and open the template in the editor.
     font-family: 'Roboto Condensed', sans-serif;
 }
 .containerBlocnoteBrowser {
-    margin-left: 30%;
+    margin-right: 30%/
     text-align: justify;
     display: table-cell;
     width: 100%;
@@ -372,7 +372,9 @@ a.nav_buttons {
     border: 3px solid gray;
 }
 
-textarea, input {
+textarea#text_editor {
+    width: 100%;
+    height: 100%;
 }
 
 input.filecheckbox {
