@@ -10,6 +10,10 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/app_tinymce_file_acceptor.php" />
+    <file url="file://$PROJECT_DIR$/private.php" />
+  </component>
   <component name="ProjectRootManager" version="2" />
   <component name="TaskProjectConfiguration">
     <server type="GitHub" url="https://github.com" />

@@ -264,7 +264,7 @@ function typeDB_type_image($filename, $content, $id, &$rowdoc = NULL)
     $mime = $rowdoc["mime"];
     if (isImage(getExtension($filename), $mime)) { ?>
 
-        <img src="<?php echo asset("icone/$id/30") ?>"
+        <img src="<?php echo asset("icone/$id/60") ?>"
              alt="<?= $filename ?>" style="width; 30px; height: 30px;" onclick="insertIntoEditor(<?php echo $id ?>);"/>
         <?php
     }

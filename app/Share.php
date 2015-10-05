@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\BlocNotes;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -30,8 +30,7 @@ class Share extends Model
 
     public function load($shareId)
     {
-        global $mysqli;
-        $this->shareId = $this->shareId = $shareId;
+        $this->setAttribute('id', $this->id = $shareId);
         $row = getShareRow($shareId);
         if ($row != FALSE)
         {

@@ -11,5 +11,8 @@ namespace App\Http\Controllers;
 
 class ShareController
 {
+    function index($noteId)
+    {
 
+    }
 }
