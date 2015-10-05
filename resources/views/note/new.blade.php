@@ -48,10 +48,6 @@ $noteId = 0;
                     folder_field($folderId, "folder_id", $user);  ?></td>
             </tr>
             <tr>
-                <td><label for="filename">Nom de fichier</label></td>
-                <td><input id="filename" type="text" name="filename" value="My new file"/></td>
-            </tr>
-            <tr>
                 <td><label for="text_editor">Editer la note</label></td>
                 <td><textarea rows="12" cols="40" name="content_file"
                               id="text_editor">
@@ -61,7 +57,7 @@ $noteId = 0;
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="sauvegarder" value="Sauvergarder"/></td>
+                <td><input type="submit" name="sauvegarder" value="Sauvergarder" class="btn btn-success bg-success" /></td>
             </tr>
         </table>
     </form>

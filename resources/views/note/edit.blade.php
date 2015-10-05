@@ -77,10 +77,6 @@
                     folder_field($folder_id, "folder_id", $user);  ?></td>
             </tr>
             <tr>
-                <td><label for="filename">Nom de fichier</label></td>
-                <td><input id="filename" type="text" name="filename" value="<?php echo $filename; ?>"/></td>
-            </tr>
-            <tr>
                 <td><label for="text_editor">Editer la note</label></td>
                 <td><textarea rows="12" cols="40" name="content_file"
                               id="text_editor"><?php echo $content_file;
@@ -109,7 +105,7 @@
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
         <input type="text" name="filename" value="<?php echo $filename; ?>"/>
-        <input type="submit" name="sauvegarder" value="Sauvergarder"/>
+        <input type="submit" name="sauvegarder" value="Sauvergarder" class="btn btn-success bg-success"/>
     </form>
     <?php
     }
