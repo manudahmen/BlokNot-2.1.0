@@ -32,8 +32,8 @@ function BlokNotTInyMCEBrowser(field_name, url, type, win) {
 tinymce.init({
     selector: "textarea#text_editor",
     theme: "modern",
-    width: 600,
-    height: 500,
+    width: 900,
+    height: 600,
     plugins: [
         "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
