@@ -205,9 +205,8 @@ class NoteController extends Controller
             }
         }
 
-        echo json_encode($text);
 
-        return true;
+        return $text;
     }
 
     function delete(Request $request, $noteId)

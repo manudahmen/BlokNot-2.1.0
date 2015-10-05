@@ -65,6 +65,6 @@ $noteId = 0;
             </tr>
         </table>
     </form>
-
+    @include('file/uploadform_frag', ["folderId" => $folder_id])
 
 @stop

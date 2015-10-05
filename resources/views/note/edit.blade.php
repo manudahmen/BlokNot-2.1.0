@@ -9,7 +9,7 @@
         var noteId = {{$noteId}};
         mixpanel.track("Note edition");
     </script>
-
+    <meta name="_token" content="{!! csrf_token() !!}"/>
 @stop
 @section('sidebar')
     @parent
@@ -113,7 +113,12 @@
     </form>
     <?php
     }
+
+
     ?>
+
+@include('file/uploadform_frag', ["folderId" => $folder_id])
+
     <a href="{{asset("note/joint/new/$noteId")}}" target="NEW">Ajouter
         un fichier</a>
 
