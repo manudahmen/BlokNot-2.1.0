@@ -49,7 +49,7 @@ $noteId = 0;
             </tr>
             <tr>
                 <td><label for="text_editor">Editer la note</label></td>
-                <td><textarea rows="12" cols="40" name="content_file"
+                <td><textarea rows="24" cols="80" name="content_file"
                               id="text_editor">
             <?php
                         echo "<p>" . gmdate("d/m/Y H:i:s", time()) . "</p>" . "<p>" . $user . "</p>";
@@ -57,7 +57,7 @@ $noteId = 0;
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="sauvegarder" value="Sauvergarder" class="btn btn-success bg-success" /></td>
+                <td><input type="submit" name="sauvegarder" value="Sauvergarder" class="button btn btn-primary btn-success bg-success"/></td>
             </tr>
         </table>
     </form>

@@ -78,13 +78,13 @@
             </tr>
             <tr>
                 <td><label for="text_editor">Editer la note</label></td>
-                <td><textarea rows="12" cols="40" name="content_file"
+                <td><textarea rows="24" cols="80" name="content_file"
                               id="text_editor"><?php echo $content_file;
                         ?></textarea><input type="file" name="uploadMedia" id="uploadMedias" value="Upload media"/></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="sauvegarder" value="Sauvergarder"/></td>
+                <td><input type="submit" name="sauvegarder" value="Sauvergarder" class="button btn btn-primary btn-success bg-success"/></td>
             </tr>
         </table>
     </form>
@@ -96,7 +96,7 @@
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
         <input type="text" name="filename" value="<?php echo $filename; ?>"/>
-        <input type="submit" name="sauvegarder" value="Sauvergarder"/>
+        <input type="submit" name="sauvegarder" value="Sauvergarder" class="button btn btn-primary btn-success bg-success"/>
     </form><?php
     }
     else {?>
@@ -105,7 +105,7 @@
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>
         <input type="text" name="filename" value="<?php echo $filename; ?>"/>
-        <input type="submit" name="sauvegarder" value="Sauvergarder" class="btn btn-success bg-success"/>
+        <input type="submit" name="sauvegarder" value="Sauvergarder" class="button btn btn-primary btn-success bg-success"/>
     </form>
     <?php
     }
