@@ -27,7 +27,7 @@ $noteId = 0;
 
     $user = Auth::user()->email;
 
-    if ($folderId == 0) {
+    if (!isset($folderId) || $folderId == 0) {
         $folderId = getRootForUser($user);
     }
 
@@ -61,6 +61,6 @@ $noteId = 0;
             </tr>
         </table>
     </form>
-    @include('file/uploadform_frag', ["folderId" => $folder_id])
+    @include('file/uploadform_frag', ["folderId" => $folderId])
 
 @stop

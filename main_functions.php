@@ -407,16 +407,13 @@ function deleteDBDoc($dbdoc) {
 
 connect();
 
-function getParentNoteId($path)
+function getParentNoteId($noteId)
 {
     global $mysqli;
 
-    $sql = "select folder_id where id=".$path;
-    if (($result=simpleQ($sql, $mysqli))!=NULL) {
+    $doc = getDocRow($noteId);
 
-        return mysqli_fetch_assoc($result)["folder_id"];
-    }
-
+    return $doc['folder_id'];
 }
 
 function redimAndDisplay($data, $mimeType, $T = NULL)

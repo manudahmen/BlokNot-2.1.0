@@ -53,7 +53,7 @@ class Note extends Model
 
         } else {
             $this->id = 0;
-            $this->folder_id = getRootForUser(Auth::user()->email);
+            $this->folder_id = Auth::check() ? getRootForUser(Auth::user()->email) : 0;
             $this->filename = "Nouveau fichier";
             $this->content_file = "Nouvelle note";
             $this->mime = "text/plain";

@@ -94,17 +94,29 @@
             showPlus(id);
         }
     </script>
+
+    <script language="JavaScript">
+        <?php if(Auth::check())
+        { ?>
+        var noteId = "{{$noteId = isset($noteId) ? $noteId :  getRootForUser(Auth::user()->email) }}";
+        <?php }
+        else
+        {
+            $noteId = -1;
+        }?>
+
+    </script>
+
+    <script src="/js/jquery-tree.js" type="application/javascript"></script>
+
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     @section('header')
     @show
 
 </head>
 <body>
-<div id="tree">
-    @section("tree")
 
-@stop
-        </div>
+@include("note.tree", ["noteId" => $noteId])
 
 <div id="sidebar">
     <ul id="profile_info">
