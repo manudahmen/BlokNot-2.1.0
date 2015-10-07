@@ -1,6 +1,6 @@
 Modifications depuis Blocnotes.
 
-Je souhaite appeler mon application BLokNot . Mais vu qu'on m'a déjà volé pas mal de titre sur Google (hmmm sa 
+Je souhaite appeler mon application BlokNot . Mais vu qu'on m'a déjà volé pas mal de titre sur Google (hmmm sa 
 réputation dans mon coeur c'est UN INFINI NEGTIF).
 
 Blok Not 1.1
@@ -16,5 +16,6 @@ Améliorations :
 - Correction de bogues, et je n'utile plus que partiellement l'ancienne bibliothèque.
 
 Manquent:
-- Installateur web (avec créations de tables)
+---------
+- Installateur web (avec créations de tables, configuration des fichiers privés et informations sensibles)
 - Quelques méthodes, comme la récupération du mot de passe;
