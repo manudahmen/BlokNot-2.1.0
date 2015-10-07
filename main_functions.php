@@ -400,8 +400,7 @@ function createRootForUser() {
 
 function deleteDBDoc($dbdoc) {
     global $mysqli;
-    global $monutilisateur;
-    $sql = "update bn2_filesdata set isDeleted=1 where id=" . mysqli_real_escape_string($mysqli, $dbdoc) . " and username='" . mysqli_real_escape_string($mysqli, $monutilisateur) . "'";
+    $sql = "update bn2_filesdata set isDeleted=1 where id=" . mysqli_real_escape_string($mysqli, $dbdoc) . " and username='" . mysqli_real_escape_string($mysqli, Auth::user()->email) . "'";
     return simpleQ($sql, $mysqli);
 }
 
