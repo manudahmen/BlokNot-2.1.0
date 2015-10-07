@@ -16,7 +16,7 @@
        <li><a class="btn btn-large btn-primary openbutton app" href="{{route("freezer") }}">Freezer</a></li>
    </ul>
 
-<div style="height: 40%; overflow: scroll;;">    <p>
+<div style="height: 100%; overflow: scroll;">    <p>
         <p>Vous &ecirc;tes tomb&eacute;s sur mon site web...</p>
 
         <p>Qui &ecirc;tes-vous ? Un pirate, un hackeur? Dehors.</p>
