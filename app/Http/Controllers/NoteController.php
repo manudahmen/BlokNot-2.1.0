@@ -230,10 +230,19 @@ class NoteController extends Controller
 
     function createFolder($folderId)
     {
+        if($folderId<=0)
+        {
+            $folderId = Input::get("folder_id");
+            if($folderId<=0)
+            {
+                $folderId = getRootForUser(Auth::user()->email);
+            }
+        }
         $note = Note::findOrNew(0);
         $note->setAttribute("filename", Input::get("folderName"));
-        $note->setAttribute("folder_id", Input::get("folder_id"));
+        $note->setAttribute("folder_id", $folderId);
         $note->setAttribute("mime", "directory");
+        $note->setAttribute("isDirectory", "1");
         $note->setAttribute("username", Auth::user()->email);
 
         $note->save();

@@ -22,7 +22,7 @@ require_once("private.php");
 function getDocRow($noteId)
 {
     global $mysqli;
-    $res = simpleQ("select * from bn2_filesdata where id=" . ((int)$noteId), $mysqli);
+    $res = simpleQ("select * from bn2_filesdata where isDeleted=0 and id=" . ((int)$noteId), $mysqli);
     if ($res != NULL) {
         return mysqli_fetch_assoc($res);
     } else {
@@ -46,7 +46,7 @@ function getField($row, $fieldName)
 }
 function getFolderList($user) {
     global $mysqli;
-    $sql = "select * from bn2_filesdata where isDirectory=1 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
+    $sql = "select * from bn2_filesdata where isDirectory=1 and isDeleted=0 and username='" . mysqli_real_escape_string($mysqli, $user) . "'";
     $res = simpleQ($sql, $mysqli);
     return $res;
 }

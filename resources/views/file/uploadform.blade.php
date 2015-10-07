@@ -81,7 +81,7 @@
                     // Called when upload progress changes. xhr2
                     xhr.upload.addEventListener("progress", function (evt) {
                         // show progress like example
-                        var loaded = (int)((evt.loaded / total).toFixed(2) * 100); // percent
+                        var loaded = (evt.loaded / total).toFixed(2) * 100; // percent
 
                         $('#progress').text('Uploading... ' + loaded + '%');
                     }, false);
