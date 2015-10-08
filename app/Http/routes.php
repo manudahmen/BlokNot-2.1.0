@@ -293,7 +293,7 @@ Route::post("note/joint/save/{jointId}", ["middleware" => "auth",
     "uses" => "LienController@save"]);
 Route::get("search", [
     'middleware' => "auth",
-    "uses" => "SearchController@search"
+    "uses" => "NoteController@search"
 ]);
 Route::get("folder/new/{folderId}", ["middleware" => "auth",
     "uses" => function ($folderId) {

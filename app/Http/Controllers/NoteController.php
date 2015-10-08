@@ -251,6 +251,26 @@ class NoteController extends Controller
 
 
     }
+
+    function search(Request $request)
+    {
+        $expression = Input::get('search');
+        $dbresult = NULL;
+
+
+        $dbresult = search($expression, NULL, Auth::user()->email, NULL);
+
+        echo $dbresult == NULL;
+        $data = array();
+        if ($dbresult != NULL) {
+            while (($row = mysqli_fetch_assoc($dbresult)) != NULL) {
+                $data[$row['id']] = $row;
+            }
+        }
+
+        return $data;
+
+    }
 }
 
 ?>

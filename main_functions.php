@@ -333,7 +333,11 @@ function simpleQ($q, $mysqli) {
     if ($mysqli == NULL) {
         connect();
     }
-    return mysqli_query($mysqli, $q);
+
+
+    $result = mysqli_query($mysqli, $q);
+    return $result;
+
 }
 
 function connect() {
@@ -465,4 +469,27 @@ imagedestroy($dst_im);
 imagedestroy($image);
 
 
+}
+
+function search($expresion, $user = NULL, $folderId = NULL)
+{
+    global $mysqli;
+    $terms = explode(' ', $expresion);
+    $sql =
+        "select * from bn2_filesdata where";
+    $first = true;
+    foreach ($terms as $term) {
+        if (!$first) {
+            $add = " and ";
+        } else {
+            $add = " ";
+        }
+        $sql .= $add . "content_file like '%" . $term . "%'";
+
+        $sql .= " and username like '" . (Auth::user()->email) . "';'";
+
+        $result = simpleQ($sql, $mysqli);
+        echo $sql;
+        return $result;
+    }
 }

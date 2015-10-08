@@ -168,7 +168,7 @@
         @show
     </div>
     @section('content')
-        <p>Applications web de Manuel Dahmen. Formation personnelle.</p>
+        <p>Applications web de Manuel Dahmen.</p>
     @show
 </div>
 <div id="api"></div>
