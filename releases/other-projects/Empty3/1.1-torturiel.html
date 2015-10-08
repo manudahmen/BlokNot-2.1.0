@@ -106,7 +106,27 @@
 
     }
 </code>
-
+<div class="comment">
+    <p>Tout d'abord le langage: Java. Empty3 est développé dans ce langage. C'est dans ce
+    langage que nous allons apprendre à créer nos premières vidéos.</p>
+    <p>La déclaration "package" : vous pouvez placer vos classes où bon vous semble dans
+    la hiérarchie des classes de votre projet.</p>
+    <p>Plusieurs classes dans le package info.emptycanvas.library.objects, tribase qui contient
+    les surfaces paramétriques prédéfinies, testing qui contient la classe TestObjetStub, classe
+        canevas utilisée pour la génération de vidéos..</p>
+    <p>La lecture du script est assez facile.</p>
+        <ul>
+            <li>Les méthodes surchargées, testScene() qui contient
+            les instructions de modification de scène.</li>
+            <li>finit() initialisation de chaque frame.</li>
+            <li>ginit() initialisation "globale", appelée avant le premier appel à finit()
+            puis testObjet()</li>
+            <li>La méthode main() qui est le point d'entrée de l'"application"</li>
+            <li>Les méthodes de TestObjet telles que scene() qui renvoie l'objet (de type Scene)
+                contenant les éléments à dessiner (primitives)</li>
+        </ul>
+    <p></p>
+</div>
 <p>Output (sortie fichier):
     <iframe width="420" height="315" src="https://www.youtube.com/embed/rmOhcxEErDY" frameborder="0"
             allowfullscreen></iframe>
