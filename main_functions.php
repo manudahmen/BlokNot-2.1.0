@@ -475,8 +475,7 @@ function search($expresion, $user = NULL, $folderId = NULL)
 {
     global $mysqli;
     $terms = explode(' ', $expresion);
-    $sql =
-        "select * from bn2_filesdata where";
+    $sql = 'select * from bn2_filesdata where ';
     $first = true;
     foreach ($terms as $term) {
         if (!$first) {
