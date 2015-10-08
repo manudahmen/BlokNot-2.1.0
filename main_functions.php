@@ -398,7 +398,7 @@ function createRootForUser() {
     connect();
     $sql = "insert into bn2_filesdata (filename, folder_id, isDirectory) values ('Dossier racine', -1, TRUE)";
     if (mysqli_query($mysqli, $sql)) {
-        echo "Fichier racine cr��";
+        echo "Root file created";
     }
 }
 
@@ -488,8 +488,8 @@ function search($expresion, $user = NULL, $folderId = NULL)
 
         $sql .= " and username like '" . (Auth::user()->email) . "';'";
 
-        $result = simpleQ($sql, $mysqli);
-        echo $sql;
-        return $result;
     }
+    echo $sql;
+    $result = simpleQ($sql, $mysqli);
+    return $result;
 }
