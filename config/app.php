@@ -27,7 +27,7 @@ return [
     |
     */
 
-    'url' => 'http://ibiteria.com',
+    'url' => '/',
 
     /*
     |--------------------------------------------------------------------------
@@ -190,7 +190,22 @@ return [
         'Storage'   => Illuminate\Support\Facades\Storage::class,
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View'      => Illuminate\Support\Facades\View::class,
-    ],
+        'View' => Illuminate\Support\Facades\View::class],
+
+
+    'plus_config' =>
+        [
+            'hostname' => 'ibiteria.com.mysql',
+            'username' => 'ibiteria_com',
+            'password' => "Qvxd86bq",
+            'name' => 'ibiteria_com',
+            'tableUsers' => 'bn2_users',
+            'tableItem' => 'bn2_items',
+            'tablePrefix' => "bn2",
+            'thumb_size' => 280
+        ]
+
+
+
 
 ];

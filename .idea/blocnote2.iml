@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/danielstjules/stringy" />
@@ -182,5 +183,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="sie" level="application" />
+    <orderEntry type="library" name="modernizr.foundation" level="application" />
   </component>
 </module>
