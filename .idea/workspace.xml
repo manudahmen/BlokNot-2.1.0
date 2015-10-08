@@ -5,9 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_functions.php" afterPath="$PROJECT_DIR$/main_functions.php" />
     </list>
     <list default="true" id="6105604c-eec5-491b-962d-eb1c3f3b818d" name="Private" comment="Private">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blocnote2.iml" afterPath="$PROJECT_DIR$/.idea/blocnote2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/private_config_app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" afterPath="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="e6c4c7aa-da9c-4484-8ff1-478da6dce1cd" name="Failed commit: Default" comment="Beginning files incusion in tinyMCE editor" />
@@ -119,17 +118,37 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7692308">
-              <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+            <state vertical-scroll-proportion="-128.8077">
+              <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="private_config_app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/private_config_app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.1-torturiel.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9011628">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44476745">
+            <state vertical-scroll-proportion="42.346153">
               <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
@@ -153,6 +172,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -177,9 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/viewerJS/viewer.css" />
-        <option value="$PROJECT_DIR$/resources/views/note/nav.blade.php" />
         <option value="$PROJECT_DIR$/js/tinymce/plugins/image/plugin.min.js" />
         <option value="$PROJECT_DIR$/js/tinymce/plugins/bloknot/plugin.min.js" />
         <option value="$PROJECT_DIR$/resources/views/menu.blade.php" />
@@ -228,6 +245,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
         <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/config/private_config_app.php" />
+        <option value="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-toturiel.html" />
+        <option value="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" />
       </list>
     </option>
   </component>
@@ -569,6 +589,28 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="releases">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="other-projects">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Empty3">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="config">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -627,6 +669,7 @@
     <property name="SearchEverywhereHistoryKey" value="ftp show&#9;null&#9;null&#10;show window&#9;null&#9;null" />
     <property name="dynamic.classpath" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -644,9 +687,12 @@
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\resources\views\note\joint" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Built-in Web Server.Localhost php">
+  <component name="RunManager" selected="JavaScript Debug.1.1-torturiel.html">
     <configuration default="false" name="public" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/public" />
+      <method />
+    </configuration>
+    <configuration default="false" name="1.1-torturiel.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://ftp.ibiteria.com/releases/other-projects/Empty3/1.1-torturiel.html">
       <method />
     </configuration>
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -690,13 +736,15 @@
     <configuration default="false" name="Localhost php" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.Localhost php" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.public" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.1.1-torturiel.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.public" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1.1-torturiel.html" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.public" />
       </list>
     </recent_temporary>
   </component>
@@ -712,18 +760,6 @@
       <created>1439221941713</created>
       <option name="number" value="Default" />
       <updated>1443474263010</updated>
-    </task>
-    <task id="LOCAL-00169" summary="Browser: afficher images: ratio respecté, fond blanc">
-      <created>1443372181669</created>
-      <option name="number" value="00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1443372181670</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Browser: afficher images: ratio respecté, fond blanc">
-      <created>1443372499991</created>
-      <option name="number" value="00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1443372499991</updated>
     </task>
     <task id="LOCAL-00171" summary="Browser: afficher images: ratio respecté, fond blanc">
       <created>1443377408997</created>
@@ -1007,7 +1043,19 @@
       <option name="project" value="LOCAL" />
       <updated>1444283767548</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="Private">
+      <created>1444284091957</created>
+      <option name="number" value="00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1444284091957</updated>
+    </task>
+    <task id="LOCAL-00219" summary="Private">
+      <created>1444291292247</created>
+      <option name="number" value="00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1444291292247</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="trackContextForNewChangelist" value="true" />
@@ -1052,7 +1100,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31554878" sideWeight="0.51522845" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25377643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21148036" sideWeight="0.47727272" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21148036" sideWeight="0.47727272" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17966102" sideWeight="0.44637462" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1102,7 +1150,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BlokNot progresse!" />
     <MESSAGE value="Problèmes avec les menus" />
     <MESSAGE value="Icones développer/réduire" />
     <MESSAGE value="J'ai l'impression de faire du bon travail... simple mais bien!" />
@@ -1127,7 +1174,8 @@
     <MESSAGE value="Presentaiton sur site" />
     <MESSAGE value="Delete docs OK" />
     <MESSAGE value="Error correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Error correction" />
+    <MESSAGE value="Private" />
+    <option name="LAST_COMMIT_MESSAGE" value="Private" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1138,20 +1186,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datafiles/.htaccess.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/tinymce/tinymce.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69572955">
@@ -1529,18 +1563,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7692308">
-          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+        <state vertical-scroll-proportion="42.346153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44476745">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state vertical-scroll-proportion="-128.8077">
+          <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/private_config_app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9011628">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>
