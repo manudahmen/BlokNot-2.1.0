@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Error correction">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_functions.php" afterPath="$PROJECT_DIR$/main_functions.php" />
-    </list>
-    <list default="true" id="6105604c-eec5-491b-962d-eb1c3f3b818d" name="Private" comment="User should browse into Release folder">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" afterPath="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" />
+    <list default="true" id="6105604c-eec5-491b-962d-eb1c3f3b818d" name="Private" comment="add php lib for rdio">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/rdio/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/rdio/example.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/rdio/om.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/rdio/rdio-consumer-credentials.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/rdio/rdio.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="e6c4c7aa-da9c-4484-8ff1-478da6dce1cd" name="Failed commit: Default" comment="Beginning files incusion in tinyMCE editor" />
+    <list id="6ae72523-5d45-49ce-b811-a66652f796e3" name="Failed commit: Private" comment="Was: CRLF">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_functions.php" afterPath="$PROJECT_DIR$/main_functions.php" />
+    </list>
     <ignored path="blocnote2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -54,30 +58,19 @@
       <file leaf-file-name="main_functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.3846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
-                <marker date="1444283884746" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
-                <marker date="1444283884746" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="4041:4165" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="10222:10626" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="11751:11880" placeholder="select id fr..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="12257:12353" placeholder="insert into ..." />
-                <marker date="1444283884746" expanded="true" signature="12501:12681" placeholder="update bn2_f..." />
-                <marker date="1444283884746" expanded="true" signature="14177:14210" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1444283884746" expanded="true" signature="14177:14408" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+                <marker date="1444300502067" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="4041:4165" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="10222:10626" placeholder="SELECT * FRO..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="11751:11880" placeholder="select id fr..bn2_filesdata..." />
+                <marker date="1444300502067" expanded="true" signature="12257:12353" placeholder="insert into ..." />
+                <marker date="1444300502067" expanded="true" signature="12501:12681" placeholder="update bn2_f..." />
+                <marker date="1444300502067" expanded="true" signature="14177:14210" placeholder="select * fro..bn2_filesdata..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-128.8077">
-              <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,18 +78,72 @@
       <file leaf-file-name="private_config_app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/private_config_app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.1-torturiel.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.1-torturiel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8517442">
-              <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+            <state vertical-scroll-proportion="2.6153846">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="om.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rdio/om.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.384615">
+              <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rdio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rdio/rdio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-43.153847">
+              <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
+              <folding>
+                <element signature="e#6#25#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rdio/example.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="43" />
+              <folding>
+                <element signature="e#6#25#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/rdio/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09042553">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rdio-consumer-credentials.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/rdio/rdio-consumer-credentials.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -105,7 +152,7 @@
       <file leaf-file-name="prism.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/prism.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -117,16 +164,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="42.346153">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -164,10 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/tinymce/plugins/image/plugin.min.js" />
-        <option value="$PROJECT_DIR$/js/tinymce/plugins/bloknot/plugin.min.js" />
-        <option value="$PROJECT_DIR$/resources/views/menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/app_tinymce_file_acceptor.php" />
         <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/app/Node.php" />
         <option value="$PROJECT_DIR$/app/Http/json/Structure.php" />
@@ -210,11 +243,15 @@
         <option value="$PROJECT_DIR$/resources/views/navigation/navbuttons.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
-        <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/private_config_app.php" />
         <option value="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-toturiel.html" />
+        <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html" />
+        <option value="$PROJECT_DIR$/lib/rdio/om.php" />
+        <option value="$PROJECT_DIR$/lib/rdio/rdio.php" />
+        <option value="$PROJECT_DIR$/lib/rdio/example.php" />
+        <option value="$PROJECT_DIR$/lib/rdio/dza.php" />
       </list>
     </option>
   </component>
@@ -344,6 +381,107 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="releases">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="releases">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="other-projects">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="releases">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="other-projects">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Empty3">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lib">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rdio">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="blocnote2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lib">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -488,24 +626,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/dictionaries" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -540,11 +667,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\lib\rdio" />
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\js" />
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\releases\other-projects\Empty3" />
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\releases\other-projects" />
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\releases\1.1" />
-      <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\releases" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2\css" />
@@ -621,42 +748,11 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <branch name="master" repository="C:\Users\manue\Google Drive\ProjetsStart-2015\blocnote2" />
-      <changelist id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="" />
       <created>1439221941713</created>
       <option name="number" value="Default" />
       <updated>1443474263010</updated>
-    </task>
-    <task active="true" id="LOCAL-00177">
-      <created>1443474249436</created>
-      <option name="number" value="00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1443474263105</updated>
-    </task>
-    <task id="LOCAL-00178" summary="MixPanel: create some events">
-      <created>1443492941054</created>
-      <option name="number" value="00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1443492941054</updated>
-    </task>
-    <task id="LOCAL-00179" summary="MixPanel: create some events">
-      <created>1443493062022</created>
-      <option name="number" value="00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1443493062025</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Upload OK">
-      <created>1443521609709</created>
-      <option name="number" value="00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1443521609709</updated>
-    </task>
-    <task id="LOCAL-00181" summary="Note Actions icons">
-      <created>1443525513425</created>
-      <option name="number" value="00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1443525513425</updated>
     </task>
     <task id="LOCAL-00182" summary="Note Actions icons">
       <created>1443538573968</created>
@@ -922,7 +1018,37 @@
       <option name="project" value="LOCAL" />
       <updated>1444299084273</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="Torturiel">
+      <created>1444299382948</created>
+      <option name="number" value="00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1444299382948</updated>
+    </task>
+    <task id="LOCAL-00227" summary="?">
+      <created>1444300376247</created>
+      <option name="number" value="00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1444300376247</updated>
+    </task>
+    <task id="LOCAL-00228" summary="Change lang to fr">
+      <created>1444313414147</created>
+      <option name="number" value="00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1444313414148</updated>
+    </task>
+    <task id="LOCAL-00229" summary="Torturiel">
+      <created>1444314658148</created>
+      <option name="number" value="00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1444314658148</updated>
+    </task>
+    <task id="LOCAL-00230" summary="Torturiel">
+      <created>1444315420458</created>
+      <option name="number" value="00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1444315420458</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="trackContextForNewChangelist" value="true" />
@@ -955,30 +1081,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5755287" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.4244713" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265306" sideWeight="0.46148035" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.4939577" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31554878" sideWeight="0.51522845" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25377643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21148036" sideWeight="0.47727272" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2205438" sideWeight="0.47727272" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5755287" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17966102" sideWeight="0.44637462" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.46148035" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31193355" sideWeight="0.52272725" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265306" sideWeight="0.4244713" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.4939577" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17966102" sideWeight="0.44637462" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1017,11 +1144,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="J'ai l'impression de faire du bon travail... simple mais bien!" />
-    <MESSAGE value="Boutons + et  moins : OK" />
-    <MESSAGE value="Browser: afficher images: ratio respecté, fond blanc" />
-    <MESSAGE value="Beginning files incusion in tinyMCE editor" />
-    <MESSAGE value="Plus moins buttons OK" />
     <MESSAGE value="MixPanel: create some events" />
     <MESSAGE value="Upload OK" />
     <MESSAGE value="Note Actions icons" />
@@ -1042,7 +1164,12 @@
     <MESSAGE value="Private" />
     <MESSAGE value="Empty3 info and Javadocs" />
     <MESSAGE value="User should browse into Release folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="User should browse into Release folder" />
+    <MESSAGE value="?" />
+    <MESSAGE value="Was: CRLF" />
+    <MESSAGE value="Change lang to fr" />
+    <MESSAGE value="Torturiel" />
+    <MESSAGE value="add php lib for rdio" />
+    <option name="LAST_COMMIT_MESSAGE" value="add php lib for rdio" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1052,48 +1179,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/freezer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/rdio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blocnotes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/BlokNotTInyMCEBrowser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tinyMCE.init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Event.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1196,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,7 +1323,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
@@ -1256,7 +1339,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="MarkdownPreviewEditor">
@@ -1273,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3586006">
           <caret line="1735" column="9" selection-start-line="1735" selection-start-column="9" selection-end-line="1735" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,7 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33153638">
           <caret line="1957" column="15" selection-start-line="1957" selection-start-column="15" selection-end-line="1957" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,9 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33153638">
           <caret line="11613" column="96" selection-start-line="11613" selection-start-column="96" selection-end-line="11613" selection-end-column="96" />
-          <folding>
-            <marker date="1443578877611" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1323,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33153638">
           <caret line="137" column="15" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,7 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="196" column="19" selection-start-line="196" selection-start-column="19" selection-end-line="196" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,7 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.1923077">
           <caret line="164" column="36" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,9 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="168.5">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1444282317005" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,32 +1425,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3846154">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <marker date="1444283884746" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
-            <marker date="1444283884746" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="4041:4165" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="10222:10626" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="11751:11880" placeholder="select id fr..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="12257:12353" placeholder="insert into ..." />
-            <marker date="1444283884746" expanded="true" signature="12501:12681" placeholder="update bn2_f..." />
-            <marker date="1444283884746" expanded="true" signature="14177:14210" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1444283884746" expanded="true" signature="14177:14408" placeholder="select * fro..bn2_filesdata..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="42.346153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
@@ -1390,7 +1438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-128.8077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
           <folding />
         </state>
@@ -1398,7 +1446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/private_config_app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
@@ -1408,7 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13783784">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,7 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,7 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1432,7 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,7 +1484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="45" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,10 +1503,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <marker date="1444300502067" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1444300502067" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+            <marker date="1444300502067" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1444300502067" expanded="true" signature="4041:4165" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1444300502067" expanded="true" signature="10222:10626" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1444300502067" expanded="true" signature="11751:11880" placeholder="select id fr..bn2_filesdata..." />
+            <marker date="1444300502067" expanded="true" signature="12257:12353" placeholder="insert into ..." />
+            <marker date="1444300502067" expanded="true" signature="12501:12681" placeholder="update bn2_f..." />
+            <marker date="1444300502067" expanded="true" signature="14177:14210" placeholder="select * fro..bn2_filesdata..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55135137">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/releases/other-projects/Empty3/1.1-torturiel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8517442">
-          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+        <state vertical-scroll-proportion="2.6153846">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rdio/om.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.384615">
+          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rdio/rdio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-43.153847">
+          <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#25#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rdio/rdio-consumer-credentials.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rdio/example.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#6#25#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rdio/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09042553">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
