@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ibiteria.com" uploadOnCheckin="5f278f35-0db7-4d6f-bcd0-3fa4e23b8ea6">
+  <component name="PublishConfigData" serverName="ibiteria.com" createEmptyFolders="true" uploadOnCheckin="5f278f35-0db7-4d6f-bcd0-3fa4e23b8ea6">
     <serverData>
       <paths name="ibiteria.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$USER_HOME$/Google Drive/ProjetsStart-2015/BlokNot2.1.0" web="/" />
           </mappings>
         </serverdata>
       </paths>

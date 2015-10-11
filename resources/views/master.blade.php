@@ -55,6 +55,12 @@
     <title>@yield('title')</title>
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
+    <script src="{{ asset("/js/audio/audio.min.js")}}"></script>
+    <script>
+        audiojs.events.ready(function() {
+            var as = audiojs.createAll();
+        });
+    </script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('js/viewerJS/viewer.css') }}" rel="stylesheet" type="text/css"/>
