@@ -12,6 +12,7 @@ Route::get('profile', ["middleware" => "auth", "uses" => function ()
 
     return view("profile");
 }]);
+Route::get('profile', ["middleware" => "auth", "uses" => 'ProfileController@save']);
 
 Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -250,8 +251,7 @@ function ImgSelf($content, $filename)
 {
     return 'image/' . getExtension($filename);
 
-
-    echo $content;
+//    echo $content;
 
 }
 
