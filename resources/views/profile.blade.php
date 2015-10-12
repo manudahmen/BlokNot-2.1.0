@@ -15,8 +15,8 @@
     <form action="profile/save" method="POST">
     <table>
         <tr>
-            <td><label for="password2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
-            <td><input class="required"name="password2" value=""/></td>
+            <td><label for=currentPpassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
+            <td><input class="required"name="currentPpassword2" value=""/></td>
         </tr>
         <tr>
             <td><label for="username">Nom d'utilisateur</label></td>
@@ -24,7 +24,11 @@
         </tr>0
         <tr>
             <td><label for="password">Mot de passe</label></td>
-            <td><input name="password" value="{{ Auth::user()->email }}"/></td>
+            <td><input name="password" value=""/></td>
+        </tr>
+        <tr>
+            <td><label for="password2">Mot de passe</label></td>
+            <td><input name="password2" value=""/></td>
         </tr>
         <tr><td><label for="fullname">Nom complet</label></td>
         <td><input name="fullname" value="Not defined"/></td></tr>
