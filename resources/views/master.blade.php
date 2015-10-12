@@ -2,7 +2,7 @@
 <html lang="fr" xmlns="http://www.w3.org/1999/html" content="">
 <head>
     <meta name="description" content="Free web application: file management and notes">
-    <meta name="keywords" content="Image, Audio, Video">
+    <meta name="keywords" content="Text, Image, Audio, Video">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower&subset=latin,latin-ext' rel='stylesheet'
           type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet'

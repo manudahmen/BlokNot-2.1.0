@@ -15,8 +15,8 @@
     <form action="profile/save" method="POST">
     <table>
         <tr>
-            <td><label for=currentPpassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
-            <td><input class="required"name="currentPpassword2" value=""/></td>
+            <td><label for=currentPassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
+            <td><input class="required"name="currentPassword2" value=""/></td>
         </tr>
         <tr>
             <td><label for="username">Nom d'utilisateur</label></td>

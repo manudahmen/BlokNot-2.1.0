@@ -9,14 +9,13 @@
 namespace App\Http\Controllers;
 
 
-
 class ProfileController extends Controller
 {
     public function save(Request $request)
     {
 
         $currentPassword = Input::get('email');
-        $newPassword Input::get('password');
+        $newPassword = Input::get('password');
         $newPasswordCoofirm = Input::get('password2');
         $username = Input::get('email');
         $fullName = Input::get('fullname');
@@ -25,14 +24,12 @@ class ProfileController extends Controller
 
         //if (Hash::check(Auth::user()->password, Hash::make(Input::get('currentPassword2'))))
         //{
-            // The passwords match...
-            if (Auth::attempt(array('email' => $username, 'password' => $currentPassword)))
-            {
+        // The passwords match...
+        if (Auth::attempt(array('email' => $username, 'password' => $currentPassword))) {
 
-                $user = Auth::user();
+            $user = Auth::user();
 
-                echo "Non enregistréé!!";
-            }
+            echo "Non enregistréé!!";
         }
     }
 }
