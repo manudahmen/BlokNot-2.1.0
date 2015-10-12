@@ -12,7 +12,7 @@
 @section('content')
     <h2>Editer les informations de profil</h2>
     @parent
-    <form action="profile/save" method="POST">
+    <form action="{{asset('profile/save')}}" method="POST">
     <table>
         <tr>
             <td><label for=currentPassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
