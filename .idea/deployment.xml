@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ibiteria.com" createEmptyFolders="true" uploadOnCheckin="5f278f35-0db7-4d6f-bcd0-3fa4e23b8ea6">
-    <serverData>
-      <paths name="ibiteria.com">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$USER_HOME$/Google Drive/ProjetsStart-2015/BlokNot2.1.0" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
-    <option name="myUploadOnCheckinName" value="ibiteria.com" />
+  <component name="PublishConfigData" createEmptyFolders="true" uploadOnCheckin="01497fcf-5e5a-4a02-9a46-ee166ed44a57">
+    <option name="myUploadOnCheckinName" value="ibiteria" />
   </component>
 </project>
