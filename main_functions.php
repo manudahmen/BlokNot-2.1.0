@@ -301,7 +301,7 @@ function getExtension($filename)
 
 function isImage($ext, $mime = "")
 {
-    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
+    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp", "ico", "tif", "tiff")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
 
 }
 
