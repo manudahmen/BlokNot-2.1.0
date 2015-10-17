@@ -26,7 +26,7 @@ class Note extends Model
     public $mime;
     public $LongData;
     public $username;
-
+    public $isDirectory = 0;
     function __construct($noteId = 0)
     {
         parent::__construct();
