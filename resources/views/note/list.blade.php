@@ -1,7 +1,7 @@
 @extends('master')
 @section('header')
     <script language="JavaScript">
-        mixpanel.track("Edition de note", {"User": "{{  Auth::user()->email }}", "note" : noteId });
+        mixpanel.track("Note browsing", {"User": "{{  Auth::user()->email }}", "note" : noteId });
     </script>
 @stop
 
