@@ -5,7 +5,7 @@
     </script>
 @stop
 
-@section('title', 'Parcourir les notes')
+@section('title', 'Parcourir les notes dans' . getField(getDocRow(getField(getDocRow($noteId), 'folder_id')), 'filename'))
 
 @section('sidebar')
     @parent

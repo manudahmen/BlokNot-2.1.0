@@ -267,7 +267,7 @@ class NoteController extends Controller
                 $data[$row['id']] = $row;
             }
         }
-
+        print_r($data);
         return $data;
 
     }
