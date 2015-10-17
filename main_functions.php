@@ -57,7 +57,7 @@ function getFolderName($noteId)
     {
         $noteId = getRootForUser(Auth::user()->email);
     }
-    $folderName = getField($row, 'isDirectory')==1?$row['filename']:getField(getDocRow(getField($row, 'folder_id')), 'filename');
+    $folderName = getField($row, 'isDirectory') == 1 ? getField($row, 'filename') : getField(getDocRow(getField($row, 'folder_id')), 'filename');
     return $folderName;
 }
 function getMimeType($id) {
@@ -301,7 +301,7 @@ function getExtension($filename)
 
 function isImage($ext, $mime = "")
 {
-    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
+    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp", "ico", "tif", "tiff")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
 
 }
 
