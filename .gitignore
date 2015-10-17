@@ -3,5 +3,7 @@
 /node_modules
 Homestead.yaml
 .env
-
+production.env
+local.env
+/.gitignore
 .idea/*
