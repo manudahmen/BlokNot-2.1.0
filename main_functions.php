@@ -52,13 +52,13 @@ function getFolderList($user) {
 }
 function getFolderName($noteId)
 {
-    $row = getDocRow($noteId);
     if ($noteId <= 0 && Auth::check())
     {
 
         $noteId = getRootForUser(Auth::user()->email);
     }
     if (Auth::check()) {
+        $row = getDocRow($noteId);
         $folderName = getField($row, 'isDirectory') == 1 ? getField($row, 'filename') : getField(getDocRow(getField($row, 'folder_id')), 'filename');
         return $folderName;
     } else {
