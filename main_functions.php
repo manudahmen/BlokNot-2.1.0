@@ -53,12 +53,17 @@ function getFolderList($user) {
 function getFolderName($noteId)
 {
     $row = getDocRow($noteId);
-    if($noteId<=0)
+    if ($noteId <= 0 && Auth::check())
     {
+
         $noteId = getRootForUser(Auth::user()->email);
     }
-    $folderName = getField($row, 'isDirectory') == 1 ? getField($row, 'filename') : getField(getDocRow(getField($row, 'folder_id')), 'filename');
-    return $folderName;
+    if (Auth::check()) {
+        $folderName = getField($row, 'isDirectory') == 1 ? getField($row, 'filename') : getField(getDocRow(getField($row, 'folder_id')), 'filename');
+        return $folderName;
+    } else {
+        return "";
+    }
 }
 function getMimeType($id) {
     global $mysqli;
