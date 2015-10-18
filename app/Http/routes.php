@@ -258,7 +258,7 @@ function ImgSelf($content, $filename)
 Route::get("note/save/txt/{noteId}", ['before' => 'csrf',
     "middleware" => "auth",
     "uses" => "NoteController@saveTxt"]);
-Route::get("note/save/images/{noteId}", ['before' => 'csrf',
+Route::get("note/save/img/{noteId}", ['before' => 'csrf',
     "middleware" => "auth",
     "uses" => "NoteController@saveImg"]);
 Route::get("note/save/other/{noteId}", [
