@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-    <form action="{{asset('password/reset') }}" method="POST">
+    <form action="{{asset('email/reset') }}" method="POST">
         <label for="email">Email de connexion:</label>
     <input type="email" name="email" value=""/>
         <input type="hidden" name="_token" value="{{csrf_token()}}"/>

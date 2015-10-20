@@ -16,4 +16,4 @@
         <input type="submit" name="sauvegarder" value="Sauvergarder"
                class="button btn btn-primary btn-success bg-success"/>
     </form>
-    @end
+@stop

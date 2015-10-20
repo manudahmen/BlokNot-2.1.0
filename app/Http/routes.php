@@ -302,11 +302,13 @@ Route::get("folder/new/{folderId}", ["middleware" => "auth",
 Route::post("folder/create/{folderId}", ["middleware" => "auth",
     "uses" => "NoteController@createFolder"]);
 
-Route::get("email/password/reset", function ()
+Route::get("email/lost", ['uses' => function ()
 {
-
-});
-Route::get("email/password", ['before' => 'csrf', 'uses' => function () {
     return View::make("auth/lost");
+}]);
+Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $request) {
+    $user = \App\User::where('email', 'like', Input::get('email'))->firstOrFail();
+
+    $user->sendEmailReminder($user->getAttribute('id'));
 }]);
 ?>

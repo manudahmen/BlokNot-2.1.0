@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td><a href="{{ route("register") }}">Register</a></td>
-                <td><a href="{{ asset('email/password') }}">Oubli? Mot de passe?</td>
+                <td><a href="{{ asset('email/lost') }}">Oubli? Mot de passe?</td>
             </tr>
 </table>
         </form>
