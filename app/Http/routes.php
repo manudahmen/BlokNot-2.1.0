@@ -301,3 +301,8 @@ Route::get("folder/new/{folderId}", ["middleware" => "auth",
     }]);
 Route::post("folder/create/{folderId}", ["middleware" => "auth",
     "uses" => "NoteController@createFolder"]);
+
+Route::get("email/password", function ()
+{
+    return View::make("email/password");
+});
