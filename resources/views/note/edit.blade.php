@@ -91,7 +91,7 @@
     <?php
     }
     else if(isImage($ext, $mime)) {?>
-    <form action="{{asset("images".$noteId) }}" method="GET">
+    <form action="{{asset("note/save/img/".$noteId) }}" method="GET">
         <input type="hidden" name="noteId" value="<?php echo $noteId; ?>"/>
         <?php
         folder_field($folder_id, "folder_id", $user);  ?>

@@ -50,7 +50,21 @@ function getFolderList($user) {
     $res = simpleQ($sql, $mysqli);
     return $res;
 }
+function getFolderName($noteId)
+{
+    if ($noteId <= 0 && Auth::check())
+    {
 
+        $noteId = getRootForUser(Auth::user()->email);
+    }
+    if (Auth::check()) {
+        $row = getDocRow($noteId);
+        $folderName = getField($row, 'isDirectory') == 1 ? getField($row, 'filename') : getField(getDocRow(getField($row, 'folder_id')), 'filename');
+        return $folderName;
+    } else {
+        return "";
+    }
+}
 function getMimeType($id) {
     global $mysqli;
     connect();
@@ -292,7 +306,7 @@ function getExtension($filename)
 
 function isImage($ext, $mime = "")
 {
-    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
+    return in_array($ext, array("jpg", "jpeg", "png", "gif", "bmp", "ico", "tif", "tiff")) or (($mime != "") && (strpos($mime, 'image') !== FALSE));
 
 }
 
