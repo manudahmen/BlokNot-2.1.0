@@ -2,6 +2,7 @@
 
 return [
     'app.path' => "/customers/c/d/8/ibiteria.com/httpd.www",
+    'hostname' => 'localhost',
 
     /*
     |--------------------------------------------------------------------------

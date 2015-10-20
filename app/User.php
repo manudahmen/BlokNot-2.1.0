@@ -2,16 +2,16 @@
 
 namespace App;
 
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Model implements AuthenticatableContract, CanResetPasswordContract
+class User extends Model implements AuthenticatableContract, CanResetPasswordContractimplements, RemindableInterface
+{
+
+}
 {
     use Authenticatable, CanResetPassword;
-
+    use RemindableTrait;
     /**
      * The database table used by the model.
      *

@@ -302,7 +302,7 @@ Route::get("folder/new/{folderId}", ["middleware" => "auth",
 Route::post("folder/create/{folderId}", ["middleware" => "auth",
     "uses" => "NoteController@createFolder"]);
 
-Route::get("email/password", function ()
+Route::get("email/password/reset", function ()
 {
-    return View::make("email/password");
+
 });

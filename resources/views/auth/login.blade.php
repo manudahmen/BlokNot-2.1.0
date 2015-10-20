@@ -4,7 +4,7 @@
 
     <div id="login_form">
         <?php if (Auth::check()) {
-            echo "L'utilisateur/l'utilisatrice " . (Auth::user()->email) . " est connecté(e).";
+            echo "Vous &ecirc; - " . (Auth::user()->email) . " -  connect&eacute;(e)s.";
         }
         ?>
         <form method="POST" action="{{ route("login_form") }}">
@@ -33,15 +33,9 @@
             </tr>
             <tr>
                 <td><a href="{{ route("register") }}">Register</a></td>
-                <td></td>
+                <td><a href="{{ asset('email/password') }}">Oubli? Mot de passe?</td>
             </tr>
 </table>
         </form>
-        <div id="errors"><?php
-            if (isset($errors)) {
-                print_r($errors);
-            }
-            ?>
-        </div>
     </div>
 @stop
