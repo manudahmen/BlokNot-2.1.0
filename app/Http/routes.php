@@ -306,3 +306,7 @@ Route::get("email/password/reset", function ()
 {
 
 });
+Route::get("email/password", ['before' => 'csrf', 'uses' => function () {
+    return View::make("auth/lost");
+}]);
+?>
