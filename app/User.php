@@ -5,13 +5,14 @@ namespace App;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model implements AuthenticatableContract, CanResetPasswordContractimplements, RemindableInterface
+class User extends Model implements AuthenticatableContract, CanResetPasswordContractimplements
 {
 
 }
 {
     use Authenticatable, CanResetPassword;
-    use RemindableTrait;
+
+    //use RemindableTrait;
     /**
      * The database table used by the model.
      *
