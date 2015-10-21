@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Reminder;
+use App\User;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Input;
@@ -35,16 +36,16 @@ class PasswordController extends Controller
 
     public function postReset()
     {
-        $password = Input::only('pass1');
-        $user = Input::only('email');
+        $password = Input::get('pass1');
+        $user = User::find(Input::get('id'));
 
-            $user->password = Hash::make($password);
+        $user->password = Hash::make($password);
 
-            $user->save();
+        $user->save();
 
-            $reminder = Reminder::findByUserId($user->id)->get()->first();
-            $reminder->setAttribute('hasBeenUsed', 1);
-        });
+        $reminder = Reminder::findByUserId($user->id)->get()->first();
+        $reminder->setAttribute('hasBeenUsed', 1);
+    });
 
-    }
+}
 }
