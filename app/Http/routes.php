@@ -317,15 +317,16 @@ Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $req
 Route::get('password/newpassword/{hache}', function ($hache) {
     $reminder = \App\Reminder::findByHache($hache);
     if ($reminder->isValidToken()) {
-        return View::make("password/newpassword");
+        $user = \App\User::find('id', '=', $reminder->getUserFromLink($reminder->hache));
+        return View::make("password/newpassword")->with('user', $user);
     } else {
         return View::make('password/invalidtoken');
     }
 });
 
-Route::get('password/reset',
+Route::post('password/reset',
     ['before' => 'csrf',
-        "uses" => "Auth/PasswordController@postReset"]
+        "uses" => "\\App\\Http\\Controllers\\Auth\\PasswordController@postReset"]
 
 
 );

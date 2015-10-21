@@ -62,6 +62,6 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
     function getUserFromLink($hache)
     {
 
-        return Reminder::where("hache", "like", $hache)->get()->username;
+        return Reminder::where("hache", "like", $hache)->get()->first();
     }
 }
