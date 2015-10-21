@@ -8,7 +8,7 @@
  */
 ?>
 @section('content')
-    <form action="{{asset("password/reset') }}" method="POST" onsubmit="checkPass12();" id="pass12">
+    <form action="{{asset('password/reset') }}" method="POST" onsubmit="checkPass12();" id="pass12">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         <input type="password" name="password1" value="" id="pass1"/>
         <input type="password" name="password2" value="" id="pass2"/>
@@ -37,7 +37,7 @@
             }
 
             event.preventDefault();
-        })
+        });
         function check_pass12() {
 
         }
