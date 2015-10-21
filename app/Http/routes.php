@@ -311,4 +311,12 @@ Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $req
 
     $user->sendEmailReminder($user->getAttribute('id'));
 }]);
+
+Route::get('password/newpassword/{hache}', function ($hache) {
+    $reminder = \App\Reminder::findByHache($hache);
+
+    if ($reminder->isValid()) {
+        return View::make("password/newpassword");
+    }
+})
 ?>
