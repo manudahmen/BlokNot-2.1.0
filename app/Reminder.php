@@ -16,13 +16,20 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
     private $hasBeenUsed;
     private $hache;
 
-
-    function __construct__($username)
+    /**
+     * @param array $username
+     */
+    function __construct($username = NULL)
     {
-        $this->hache = md5(date(time()) . "" . pi() . "Manuel Dahmen est très intelligent, beau, fort, et ... inquiet!");
-        $this->username = $username;
-
-
+        parent::__construct();
+        if ($username == NULL) {
+        } else {
+            $this->hache = md5(date(time()) . "" . pi() . "Manuel Dahmen est très intelligent, beau, fort, et ... inquiet!");
+            $this->username = $username;
+            $this->setAttribute('username', $username);
+            $this->setAttribute('hache', $this->hache);
+            $this->save();
+        }
     }
 
     function isValid()
@@ -40,7 +47,7 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
 
     function getLink()
     {
-        return url() . '/' . asset('password/newpassword/' . $this->hache);
+        return asset('password/newpassword/' . $this->hache);
     }
 
     function getUserFromLink($hache)

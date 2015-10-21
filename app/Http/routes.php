@@ -310,13 +310,17 @@ Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $req
     $user = \App\User::where('email', 'like', Input::get('email'))->firstOrFail();
 
     $user->sendEmailReminder($user->getAttribute('id'));
+
+    return View::make('email/resetlinksent')->with('email', $user->email);
 }]);
 
 Route::get('password/newpassword/{hache}', function ($hache) {
-    $reminder = \App\Reminder::findByHache($hache);
+    $reminder = \App\Reminder::findByHache($hache)->first();
 
     if ($reminder->isValid()) {
         return View::make("password/newpassword");
+    } else {
+        return View::make('password/invalidtoken');
     }
 });
 

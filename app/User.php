@@ -1,12 +1,12 @@
 <?php
 
 namespace App;
-
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Input;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
@@ -36,7 +36,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function sendEmailReminder($id)
     {
         // Préparation du lien de rappel (reminder link)
-        $reminder = new \App\Reminder();
+        $reminder = new \App\Reminder(Input::get('email'));
         $reminder->save(); // Save directly to track masssive attacks (on false email), has a cons: database recording.
 
 
