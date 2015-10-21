@@ -9,8 +9,8 @@ namespace App;
 
 class Reminder extends \Illuminate\Database\Eloquent\Model
 {
-    private $table = 'reminderpwd';
-    private $timestamps = true;
+    protected $table = 'reminderpwd';
+    public $timestamps = true;
     private $id;
     private $username;
     private $hasBeenUsed;
