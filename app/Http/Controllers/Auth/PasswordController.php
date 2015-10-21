@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Reminder;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
 
 class PasswordController extends Controller
 {
@@ -33,11 +35,9 @@ class PasswordController extends Controller
 
     public function postReset()
     {
-        $credentials = Input::only(
-            'email', 'pass1', 'pass2', 'token'
-        );
+        $password = Input::only('pass1');
+        $user = Input::only('email');
 
-        $response = Password::reset($credentials, function ($user, $password) {
             $user->password = Hash::make($password);
 
             $user->save();
