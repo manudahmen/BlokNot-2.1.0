@@ -53,11 +53,17 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 //=====Déclaration des messages au format texte et au format HTML.
         $message_txt = "<p>Bonjour,</p>
  <p>voici votre lien pour renouveller votre mot de passe</p>
-        <p>Si vous ne l'avez pas demandé inquiétez-vous. Sinon utilisez le lien suivant qui vous permettra de créer un nouveau mot de passe.</p>
+        <p>Si vous ne l'avez pas demandé ne vous inquiétez pas, ingorez-le.</p>
+        <p>Sinon utilisez le lien suivant qui vous permettra
+        de créer un nouveau mot de passe.</p>";
+        $message_txt_link = $reminder->getLink() . '  >>>' . "  Lien de réinitialisation de mot de passe";
+        $message_html_link = "<p><a href='" . ($reminder->getLink()) . "'>Lien de réinitialisation de mot de passe</a></p>";
 
-        <p><a href='" . ($reminder->getLink()) . "'>Lien de réinitialisation de mot de passe</a></p>
-        ";
-        $message_html = "<html><head></head><body>" . $message_txt . "</body></html>";
+
+        $message_html = "<html><head></head><body>" . $message_txt . $message_html_link . "</body></html>";
+        $message_txt = str_replace('<p>', '', $message_txt);
+        $message_txt = str_replace('</p>', '', $message_txt);
+        $message_txt .= $message_txt_link;
 //==========
 
 //=====Création de la boundary
@@ -91,7 +97,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $message .= $passage_ligne . "--" . $boundary . "--" . $passage_ligne;
         $message .= $passage_ligne . "--" . $boundary . "--" . $passage_ligne;
 //==========
-
+        echo '<textarea>' . $message . '</textarea>';
 //=====Envoi de l'e-mail.
         if (mail($mail, $sujet, $message, $header)) {
             $message_err = "OK";

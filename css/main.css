@@ -566,3 +566,8 @@ label.menu_icons {
     height: 24pt;
 
 }
+
+.specialActionsContainer {
+    width: 1000px;
+    height: 600px;
+}
