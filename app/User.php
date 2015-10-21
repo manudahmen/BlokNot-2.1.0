@@ -93,8 +93,16 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 //==========
 
 //=====Envoi de l'e-mail.
-        mail($mail, $sujet, $message, $header);
+        if (mail($mail, $sujet, $message, $header)) {
+            $message_err = "OK";
+            $ret = true;
+
+        } else {
+            $message_err = "Erreur lors de l'envoi du mail";
+            $ret = false;
+        }
 //==========
+        return $ret;
     }
 
 

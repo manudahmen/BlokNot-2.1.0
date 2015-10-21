@@ -309,9 +309,9 @@ Route::get("email/lost", ['uses' => function ()
 Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $request) {
     $user = \App\User::where('email', 'like', Input::get('email'))->firstOrFail();
 
-    $user->sendEmailReminder($user->getAttribute('id'));
+    $ret = $user->sendEmailReminder($user->getAttribute('id'));
 
-    return View::make('email/resetlinksent')->with('email', $user->email);
+    return View::make('email/resetlinksent')->with('email', $user->email)->with('msg_res', $ret);
 }]);
 
 Route::get('password/newpassword/{hache}', function ($hache) {
