@@ -96,4 +96,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         mail($mail, $sujet, $message, $header);
 //==========
     }
+
+
 }

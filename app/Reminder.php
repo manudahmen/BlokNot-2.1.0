@@ -43,5 +43,9 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
         return url() . '/' . asset('password/newpassword/' . $this->hache);
     }
 
+    function getUserFromLink($hache)
+    {
 
+        return Reminder::where("hache", "like", $hache)->get()->username;
+    }
 }

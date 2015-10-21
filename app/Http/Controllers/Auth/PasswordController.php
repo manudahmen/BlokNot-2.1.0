@@ -29,4 +29,18 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function postReset()
+    {
+        $credentials = Input::only(
+            'email', 'pass1', 'pass2', 'token'
+        );
+
+        $response = Password::reset($credentials, function ($user, $password) {
+            $user->password = Hash::make($password);
+
+            $user->save();
+        });
+
+    }
 }

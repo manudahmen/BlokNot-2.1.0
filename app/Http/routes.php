@@ -318,5 +318,14 @@ Route::get('password/newpassword/{hache}', function ($hache) {
     if ($reminder->isValid()) {
         return View::make("password/newpassword");
     }
-})
+});
+
+Route::get('password/reset',
+    ['before' => 'csrf',
+        "uses" => "Auth/PasswordController@postReset"]
+
+
+);
+
+
 ?>
