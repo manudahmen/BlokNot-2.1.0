@@ -35,8 +35,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public function sendEmailReminder($id)
     {
+        $user = User::where('email', 'like', Input::get("email"))->get()->first();
+
         // Préparation du lien de rappel (reminder link)
-        $reminder = new \App\Reminder(Input::get('email'));
+        $reminder = new \App\Reminder($user->id);
         $reminder->save(); // Save directly to track masssive attacks (on false email), has a cons: database recording.
 
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Reminder;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller
@@ -40,6 +41,9 @@ class PasswordController extends Controller
             $user->password = Hash::make($password);
 
             $user->save();
+
+            $reminder = Reminder::findByUserId($user->id)->get()->first();
+            $reminder->setAttribute('hasBeenUsed', 1);
         });
 
     }

@@ -315,9 +315,9 @@ Route::post("email/reset", ['before' => 'csrf', 'uses' => function (Request $req
 }]);
 
 Route::get('password/newpassword/{hache}', function ($hache) {
-    $reminder = \App\Reminder::findByHache($hache)->first();
-
-    if ($reminder->isValid()) {
+    $reminder = \App\Reminder::findByHache($hache);
+    echo $reminder->isValidToken() == true ? "TRUE" : "FALSE";
+    if ($reminder->isValidToken()) {
         return View::make("password/newpassword");
     } else {
         return View::make('password/invalidtoken');

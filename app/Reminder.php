@@ -12,37 +12,46 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
     protected $table = 'reminderpwd';
     public $timestamps = true;
     private $id;
-    private $username;
+    private $userId;
     private $hasBeenUsed;
     private $hache;
 
     /**
      * @param array $username
      */
-    function __construct($username = NULL)
+    function __construct($userId = NULL)
     {
         parent::__construct();
-        if ($username == NULL) {
+        if ($userId == NULL) {
         } else {
             $this->hache = md5(date(time()) . "" . pi() . "Manuel Dahmen est très intelligent, beau, fort, et ... inquiet!");
-            $this->username = $username;
-            $this->setAttribute('username', $username);
+            $this->userId = $userId;
+            $this->setAttribute('user_id', $userId);
             $this->setAttribute('hache', $this->hache);
             $this->save();
         }
     }
 
-    function isValid()
+    function isValidToken()
     {
-        if ($this->id > 0 && !$this->hasBeenUsed) {
+        if (($this->id > 0) and ($this->hasBeenUsed == 0)) {
 
+            return true;
+        } else {
+            return false;
         }
     }
 
     static function findByHache($hache)
 
     {
-        return Reminder::where('hache', 'like', $hache)->get();
+        return Reminder::where('hache', 'like', $hache)->get()->first();
+    }
+
+    static function findByUserId($uid)
+
+    {
+        return Reminder::where('user_id', 'like', $uid)->get();
     }
 
     function getLink()
