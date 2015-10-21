@@ -34,7 +34,7 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
 
     function isValidToken()
     {
-        if (($this->id > 0) and ($this->hasBeenUsed == 0)) {
+        if (($this->getAttribute('id') > 0) and ($this->getAttribute('hasBeenUsed') == 0)) {
 
             return true;
         } else {
