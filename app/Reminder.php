@@ -12,7 +12,7 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
     protected $table = 'reminderpwd';
     public $timestamps = true;
     private $id;
-    private $userId;
+    private $user_id;
     private $hasBeenUsed;
     private $hache;
 
@@ -25,7 +25,6 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
         if ($userId == NULL) {
         } else {
             $this->hache = md5(date(time()) . "" . pi() . "Manuel Dahmen est très intelligent, beau, fort, et ... inquiet!");
-            $this->userId = $userId;
             $this->setAttribute('user_id', $userId);
             $this->setAttribute('hache', $this->hache);
             $this->save();
@@ -59,9 +58,11 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
         return asset('password/newpassword/' . $this->hache);
     }
 
-    function getUserFromLink($hache)
+    function findUserByHache($hache)
     {
 
-        return Reminder::where("hache", "like", $hache)->get()->first();
+        $userId = Reminder::where("hache", "like", $hache)->get()->first()->getAttribute('user_id');
+        return $userId;
+
     }
 }

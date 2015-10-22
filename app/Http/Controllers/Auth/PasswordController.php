@@ -39,13 +39,14 @@ class PasswordController extends Controller
         $password = Input::get('pass1');
         $user = User::find(Input::get('id'));
 
-        $user->password = Hash::make($password);
+        $user->setAttribute('password', Hash::make($password));
 
         $user->save();
 
-        $reminder = Reminder::findByUserId($user->id)->get()->first();
-        $reminder->setAttribute('hasBeenUsed', 1);
-    });
+        Reminder::findByUserId($user->id)->each(function ($reminder) {
+            $reminder->setAttribute('hasBeenUsed', 1);
+            $reminder->save();
+        });
 
-}
+    }
 }

@@ -10,7 +10,8 @@
 @section('content')
     <form action="{{asset('password/reset') }}" method="POST" onsubmit="checkPass12();" id="pass12">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-        <input type="text" name="id" value="{{ $user->getAttribute('id') }}" id="userId"/>
+        <input type="text" name="email" value="{{ $user->getAttribute('email') }}" id="email"/>
+        <input type="hidden" name="id" value="{{ $user->getAttribute('id') }}" id="userId"/>
         <input type="password" name="password1" value="" id="pass1"/>
         <input type="password" name="password2" value="" id="pass2"/>
 
