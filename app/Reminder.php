@@ -51,7 +51,7 @@ class Reminder extends \Illuminate\Database\Eloquent\Model
     static function findByUserId($uid)
 
     {
-        return Reminder::where('user_id', 'like', $uid)->get();
+        return Reminder::where('user_id', '=', $uid)->get();
     }
 
     function getLink()
