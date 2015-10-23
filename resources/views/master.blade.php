@@ -182,6 +182,7 @@
 <div id="api"></div>
 <!-- place in header of your html document -->
 <script language="JavaScript" type="text/javascript" src="/js/tinyMCE.init.js"></script>
-
+<a href="https://mixpanel.com/f/partner" rel="nofollow"><img
+            src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics"/></a>
 </body>
 </html>
