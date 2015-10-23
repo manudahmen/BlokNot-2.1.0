@@ -12,6 +12,8 @@ Route::get('profile', ["middleware" => "auth", "uses" => function ()
 
     return view("profile");
 }]);
+
+Route::controller('filesystem', 'FileSystemController');
 Route::get('profile/save', ["middleware" => "auth", "uses" => 'ProfileController@save']);
 
 Route::get('auth/login', ["as" => "login_form", "uses" => 'Auth\AuthController@getLogin']);

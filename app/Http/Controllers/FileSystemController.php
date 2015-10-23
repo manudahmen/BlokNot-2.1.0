@@ -1,9 +1,11 @@
 <?php
 
-namespace App\BlokNot;
+namespace App\Http\Controllers;
 
 
-Class FileSystem
+use Illuminate\Routing\Controller;
+
+Class FileSystemController extends Controller
 {
     private $rootPath = "datafiles";
     private $user_id;
@@ -16,18 +18,18 @@ Class FileSystem
     /**méthodes:
      * En cas d'upload
      */
-    public function addFile($filename, $mime, $tempFile, $folderId, $forceContentToDatabase = FALSE)
+    public function postAddFile($filename, $mime, $tempFile, $folderId, $forceContentToDatabase = FALSE)
     {
 
     }
 
-    public function addFolder($filename, /* $mime='directory', isDirectory*/
+    public function postAddFolder($filename, /* $mime='directory', isDirectory*/
                               $folderId)
     {
 
     }
 
-    public function createRoot($filename)
+    public function postCreateRoot($filename)
     {
 
     }
@@ -43,12 +45,12 @@ Class FileSystem
      * /*
      * Actions multi-utilisateurs
      **/
-    public function copyTo($fileOrDirectory_id, $user_id)
+    public function postCopyTo($fileOrDirectory_id, $user_id)
     {
 
     }
 
-    public function delete($fileOrDirectory_id)
+    public function postDelete($fileOrDirectory_id)
     {
 
     }
