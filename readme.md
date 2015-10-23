@@ -22,15 +22,20 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 ## Official Documentation
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Modifications depuis Blocnotes.
 
-## Contributing
+Je souhaite appeler mon application BLokNot . Mais vu qu'on m'a déjà volé pas mal de titre sur Google (hmmm sa réputation dans mon coeur c'est UN INFINI NEGTIF).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Blok Not 1.1
 
-## Security Vulnerabilities
+Améliorations :
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Utilisation du Framework Laraval 5.1 (branche master de juillet 2015, sans les Form et Html Facades)
+Stabilité accrue.
+Upload de note sous forme de texte, images, vidéo, pdf. Pas tous visionnables dans l'interface
+Web design augmenté et plus joli.
+Correction de bogues, et je n'utile plus que partiellement l'ancienne bibliothèque.
+Manquent:
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Installateur web (avec créations de tables)
+Quelques méthodes, comme la récupération du mot de passe;
