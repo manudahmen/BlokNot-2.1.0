@@ -227,7 +227,7 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
     ?>
     <div class='miniImgExternalBox'>
         <div class="miniImgContainerTop">
-        <span class="filename"><?php
+        <span class="filename"><input type="checkbox" id="<?php echo $rowdoc['id']; ?>" title="Select for action"/><?php
                 echo $rowdoc["filename"] . "|" . $rowdoc["id"];
             ?></span>
         </div>
