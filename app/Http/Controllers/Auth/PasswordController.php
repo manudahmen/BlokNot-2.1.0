@@ -36,9 +36,12 @@ class PasswordController extends Controller
 
     public function postReset()
     {
-        $password = Input::get('pass1');
+        $password = Input::get('password1');
+        //echo $password;
         $user = User::find(Input::get('id'));
-
+        if (Hash::check('secret', $password)) {
+            // The passwords match...
+        }
         $user->setAttribute('password', Hash::make($password));
 
         $user->save();
@@ -47,6 +50,6 @@ class PasswordController extends Controller
             $reminder->setAttribute('hasBeenUsed', 1);
             $reminder->save();
         });
-
+        echo "Mot de passe mis à jour. <a href='http://www.ibiteria.com/auth/login'>Me reconnecter</a>";
     }
 }
