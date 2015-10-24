@@ -140,9 +140,15 @@ Route::get("file/view/{id}", ['middleware' => "auth",
         $note = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id);
         //if ($result != NULL) {
         if ($note->id != 0) {
-            $filename = $note->filename;
-            $content = $note->content_file;
-            $ext = getExtension($filename);
+            if ($note->filename_on_disk != "") {
+                $filename = $note->filename_on_disk;
+                $content = file_get_contents(asset("datafiles/" . $note->folder_id . "/" . $note->filename_on_disk));
+                $ext = getExtension($filename);
+            } else {
+                $filename = $note->filename;
+                $content = $note->content_file;
+                $ext = getExtension($filename);
+            }
 
 
             if (isImage($ext, $note->mime)) {

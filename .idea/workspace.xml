@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Essayer d'ajouter le type video... Voyons voir.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
+    <list default="true" id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Try upload option: to filesystem">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Note.php" afterPath="$PROJECT_DIR$/app/Note.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blocnote2.iws" />
@@ -33,9 +34,22 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9807692">
-              <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+            <state vertical-scroll-proportion="-2.4038463">
+              <caret line="145" column="108" selection-start-line="145" selection-start-column="108" selection-end-line="145" selection-end-column="108" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Note.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Note.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3816568">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <marker date="1445663426787" expanded="true" signature="2319:2367" placeholder="select conte..bn2_filesdata..." />
+                <marker date="1445663426787" expanded="true" signature="3267:3308" placeholder="update bn2_f..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,12 +74,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoteController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NoteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0544872">
-              <caret line="193" column="68" selection-start-line="193" selection-start-column="68" selection-end-line="193" selection-end-column="68" />
-              <folding />
+            <state vertical-scroll-proportion="-3.3846154">
+              <caret line="194" column="57" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="57" />
+              <folding>
+                <element signature="e#40#53#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,19 +148,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <marker date="1445502397741" expanded="false" signature="22:334" placeholder="..." />
-                <marker date="1445502397741" expanded="true" signature="1888:1983" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -176,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/note/joint/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/notes.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/note/menu.blade.php" />
@@ -223,10 +225,11 @@
         <option value="$PROJECT_DIR$/js/selectForAction.js" />
         <option value="$PROJECT_DIR$/app/FileSystem.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FileSystemController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Note.php" />
       </list>
     </option>
   </component>
@@ -639,18 +642,6 @@
       <option name="number" value="Default" />
       <updated>1440271732656</updated>
     </task>
-    <task id="LOCAL-00075" summary="Start navigation and history script">
-      <created>1440928989768</created>
-      <option name="number" value="00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1440928989768</updated>
-    </task>
-    <task id="LOCAL-00076" summary="New method for user creation one time operation">
-      <created>1440929409265</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1440929409265</updated>
-    </task>
     <task id="LOCAL-00077" summary="Modification de mise en page - I18N">
       <created>1440929481058</created>
       <option name="number" value="00077" />
@@ -933,7 +924,19 @@
       <option name="project" value="LOCAL" />
       <updated>1445661231518</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Try upload option: to filesystem">
+      <created>1445662421134</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1445662421134</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Try upload option: to filesystem">
+      <created>1445662897338</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1445662897338</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers>
       <GitHub shared="true" url="https://github.com">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -1029,7 +1032,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor changes" />
     <MESSAGE value="Changing main directory" />
     <MESSAGE value="New changelist" />
     <MESSAGE value="Text viewer" />
@@ -1054,7 +1056,8 @@
     <MESSAGE value="SlectBoxes" />
     <MESSAGE value="Filesystem controller =&gt; routes" />
     <MESSAGE value="Essayer d'ajouter le type video... Voyons voir." />
-    <option name="LAST_COMMIT_MESSAGE" value="Essayer d'ajouter le type video... Voyons voir." />
+    <MESSAGE value="Try upload option: to filesystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try upload option: to filesystem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1111,13 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Note.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47857141">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1301,8 +1297,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <marker date="1445502397741" expanded="false" signature="22:334" placeholder="..." />
-            <marker date="1445502397741" expanded="true" signature="1888:1983" placeholder="..." />
+            <marker date="1445502397741" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445502397741" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1410,14 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9807692">
-          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7115386">
@@ -1436,14 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/file/uploadform_frag.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.8846154">
@@ -1454,9 +1434,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0544872">
-          <caret line="193" column="68" selection-start-line="193" selection-start-column="68" selection-end-line="193" selection-end-column="68" />
+        <state vertical-scroll-proportion="-3.3846154">
+          <caret line="194" column="57" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="57" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4038463">
+          <caret line="145" column="108" selection-start-line="145" selection-start-column="108" selection-end-line="145" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Note.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3816568">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1445663426787" expanded="true" signature="2319:2367" placeholder="select conte..bn2_filesdata..." />
+            <marker date="1445663426787" expanded="true" signature="3267:3308" placeholder="update bn2_f..." />
+          </folding>
         </state>
       </provider>
     </entry>

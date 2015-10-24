@@ -22,6 +22,7 @@ class Note extends Model
     public $noteId;
     public $folder_id ;
     public $filename;
+    public $filename_on_disk = null;
     public $content_file;
     public $mime;
     public $LongData;
@@ -44,12 +45,14 @@ class Note extends Model
             $this->content_file = $row["content_file"];
             $this->mime = $row["mime"];
             $this->username = $row["username"];
+            $this->filename_on_disk = $row["filename_on_disk"];
 
             $this->setAttribute("folder_id", $row["folder_id"]);
             $this->setAttribute("filename", $row["filename"]);
             $this->setAttribute("content_file", $row["content_file"]);
             $this->setAttribute("mime", $row["mime"]);
             $this->setAttribute("username", $row["username"]);
+            $this->setAttribute("filename_on_disk", $row["filename_on_disk"]);
 
         } else {
             $this->id = 0;
@@ -57,12 +60,15 @@ class Note extends Model
             $this->filename = "Nouveau fichier";
             $this->content_file = "Nouvelle note";
             $this->mime = "text/plain";
+            $this->filename_on_disk = null;
 
             $this->setAttribute('id', 0);
             $this->setAttribute("folder_id", $this->folder_id);
             $this->setAttribute("filename", $this->filename);
             $this->setAttribute("content_file", $this->content_file);
             $this->setAttribute("mime", $this->mime);
+            $this->setAttribute("filename_on_disk", null);
+
         }
     }
 
@@ -109,14 +115,14 @@ Zero for success. Nonzero if an error occurred.
 
     Description
 
-    Enables an application to send parameter data to the server in pieces (or “chunks”). Call this function after mysql_stmt_bind_param() and before mysql_stmt_execute(). It can be called multiple times to send the parts of a character or binary data value for a column, which must be one of the TEXT or BLOB data types.
+    Enables an application to send parameter data to the server in pieces (or ï¿½chunksï¿½). Call this function after mysql_stmt_bind_param() and before mysql_stmt_execute(). It can be called multiple times to send the parts of a character or binary data value for a column, which must be one of the TEXT or BLOB data types.
 
     parameter_number indicates which parameter to associate the data with. Parameters are numbered beginning with 0. data is a pointer to a buffer containing data to be sent, and length indicates the number of bytes in the buffer.
 
     Note
     The next mysql_stmt_execute() call ignores the bind buffer for all parameters that have been used with mysql_stmt_send_long_data() since last mysql_stmt_execute() or mysql_stmt_reset().
 
-    If you want to reset/forget the sent data, you can do it with mysql_stmt_reset(). See Section 20.6.11.21, “mysql_stmt_reset()”.
+    If you want to reset/forget the sent data, you can do it with mysql_stmt_reset(). See Section 20.6.11.21, ï¿½mysql_stmt_reset()ï¿½.
 
     Return Values
 
