@@ -149,6 +149,10 @@ Route::get("file/view/{id}", ['middleware' => "auth",
                 $response = Response::make($content, 200);
                 $response->header('Content-Type', imgSelf($content, $filename));
                 return $response;
+            } else if (isVideo($ext, $note->mime)) {
+                $response = Response::make($content, 200);
+                $response->header('Content-Type', imgSelf($content, $filename));
+                return $response;
             } else if (isTexte($ext, $note->mime)) {
                 $content = str_replace("[[", "<a target='NEW' href='", $content);
                 $content = str_replace("]]", "'>Lien</a>", $content);

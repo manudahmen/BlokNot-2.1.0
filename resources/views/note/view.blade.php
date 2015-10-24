@@ -58,6 +58,21 @@ $note = getDBDocument($noteId);
                             type_html_start = "Repertoire";
                         } else if (server_response.search("application/pdf") > -1) {
                             type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><br/><iframe src ='{{asset("js/viewerJS")."/#".asset("file/view/$noteId")}}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
+                        } else if (server_response.search("video") > -1) {
+                            type_html_start = '.swf' +
+                                    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0″ WIDTH="320" HEIGHT="240" id="Yourfilename" ALIGN="">' +
+
+                                    '<PARAM NAME=movie VALUE="video.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#333399> <EMBED src="video.swf" quality=high bgcolor=#333399 WIDTH="320" HEIGHT="240" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED> </OBJECT>' +
+
+                                    'Note: Remplacez video.swf par le lien de votre fichier vidéo.' +
+                                    '.mp4' +
+                                    '<video width="320" height="240" controls>' +
+
+                                    '<source src="{{asset("file/view/".$noteId)}}" type="' + server_response + '">' +
+
+                                    'Votre navigateur ne supporte pas cet extension de video.' +
+
+                                    '</video>';
                         }
 
                         $("#note_viewer_container").html(type_html_start);

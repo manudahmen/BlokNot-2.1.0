@@ -236,13 +236,19 @@ function typeDB($filename, $content, $id, &$rowdoc = NULL)
             echo \Illuminate\Support\Facades\Config::get('plus_config')['thumb_size'];
             if (isImage(getExtension($filename), $mime)) { ?>
                 <img src ="<?php echo URL::to(
-                asset("icone/$id/".
-                (\Illuminate\Support\Facades\Config::get('app.plus_config')['thumb_size'])
-)
-              ); ?>"
-            alt="<?= $filename ?>"/>
+                    asset("icone/$id/" .
+                        (\Illuminate\Support\Facades\Config::get('app.plus_config')['thumb_size'])
+                    )
+                ); ?>"
+                     alt="<?= $filename ?>"/>
                 <?php
             } else
+                if (isVideo(getExtension($filename), $mime)) { ?>
+                    <img src="<?php echo URL::to(
+                        asset("images/mime-types/video.png")); ?>"
+                         alt="<?= $filename ?>"/>
+                    <?php
+                } else
                 if (isTexte(getExtension($filename), $mime)) {
                     ?><span class='typeTextBlock'><?= htmlspecialchars(substr($content, 0, 500)) ?></span> <?php
                 } else if ($rowdoc['isDirectory'] == 1 || $mime == "directory") {
@@ -316,6 +322,11 @@ function isTexte($ext, $mime = "")
 
 }
 
+function isVideo($ext, $mime = "")
+{
+    return in_array($ext, array("mp3", "avi", "ogg", "ogv", "mp4", "aac")) or (($mime != "") && (strpos($mime, 'video') !== FALSE));
+
+}
 
 function getDocumentsFiltered($filtre, $composedOnly, $pathId, $user) {
     global $mysqli;

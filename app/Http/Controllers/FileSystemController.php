@@ -15,16 +15,16 @@ Class FileSystemController extends Controller
         $this->user_id = Auth::user()->id;
     }
 
-    /**méthodes:
+    /**methods:
      * En cas d'upload
      */
-    public function postAddFile($filename, $mime, $tempFile, $folderId, $forceContentToDatabase = FALSE)
+    public function postAddFile($filename, $folderId, $mime, $tempFile = null, $forceContentToDatabase = FALSE)
     {
 
     }
 
     public function postAddFolder($filename, /* $mime='directory', isDirectory*/
-                              $folderId)
+                                  $folderId)
     {
 
     }
@@ -35,16 +35,26 @@ Class FileSystemController extends Controller
     }
 
     /**
-     * En cas d'utilisation du navigateur Vérifier qu'on ne déplace ou copie le fichier /
-     * A priori: move, copy: on déplace de db à db et de fs à fs.
+     * En cas d'utilisation du navigation Verify qu'on ne déplace ou copie le fichier /
+     * A priority: move, copy: on move de db à db et de fs à fs.
      *
      * /**
      * //getId(???)
      * copy($fileOrDirectory_id, $directory_id)
      * move($fileOrDirectory_id, $directory_id)
      * /*
-     * Actions multi-utilisateurs
+     * Actions multi-users
      **/
+
+    public function getCopy($fileOrDirectory_id, $directory_id)
+    {
+
+    }
+
+    public function getMove($fileOrDirectory_id, $directory_id)
+    {
+
+    }
     public function postCopyTo($fileOrDirectory_id, $user_id)
     {
 
