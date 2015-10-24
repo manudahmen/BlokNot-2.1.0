@@ -19,7 +19,7 @@
 <div style="height: 100%; overflow: scroll;">    <p>
         <p>Vous &ecirc;tes tomb&eacute;s sur mon site web...</p>
 
-        <p>Qui &ecirc;tes-vous ? Un pirate, un hackeur? Dehors.</p>
+    <p>Qui &ecirc;tes-vous ? Un pirate, un hackeur? (1) Dehors.</p>
         <p>Une charognard &agrave; la recherche d'informations juteuses? Dehors et ne lisez m&ecirc;me
         pas.</p>
 
@@ -45,8 +45,7 @@
         sais rien.</p>
 
 
-
-
+    <p><em>(2) Ou alors Hacker Free Beer from Münschen, ja ja mein General!</em></p>
     
     <h2>BlokNot 1.1</h2>
 <p>Modifications depuis Blocnotes.</p>
