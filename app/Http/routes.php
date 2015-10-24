@@ -141,9 +141,9 @@ Route::get("file/view/{id}", ['middleware' => "auth",
         //if ($result != NULL) {
         if ($note->id != 0) {
             if ($note->filename_on_disk != "") {
-                $filename = $note->filename_on_disk;
-                $content = file_get_contents(asset("datafiles/" . $note->folder_id . "/" . $note->filename_on_disk));
-                $ext = getExtension($filename);
+                $filenameOnDisk = $note->filename_on_disk;
+                $content = file_get_contents(asset("datafiles/" . $note->folder_id . "/" . $filenameOnDisk));
+                $ext = getExtension($note->filename);
             } else {
                 $filename = $note->filename;
                 $content = $note->content_file;
@@ -157,7 +157,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
                 return $response;
             } else if (isVideo($ext, $note->mime)) {
                 $response = Response::make($content, 200);
-                $response->header('Content-Type', imgSelf($content, $filename));
+                $response->header('Content-Type', vidSelf($content, $filename));
                 return $response;
             } else if (isTexte($ext, $note->mime)) {
                 $content = str_replace("[[", "<a target='NEW' href='", $content);
@@ -262,6 +262,14 @@ function echoImgSelf($content, $filename)
 function ImgSelf($content, $filename)
 {
     return 'image/' . getExtension($filename);
+
+//    echo $content;
+
+}
+
+function vidSelf($content, $filename)
+{
+    return 'video/' . getExtension($filename);
 
 //    echo $content;
 
