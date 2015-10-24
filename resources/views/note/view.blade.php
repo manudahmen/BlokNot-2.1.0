@@ -59,16 +59,18 @@ $note = getDBDocument($noteId);
                         } else if (server_response.search("application/pdf") > -1) {
                             type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><br/><iframe src ='{{asset("js/viewerJS")."/#".asset("file/view/$noteId")}}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
                         } else if (server_response.search("video") > -1) {
+                            var file_name = "{{asset("file/view/".$noteId)}}"
+                            ";
                             type_html_start = '.swf' +
-                                    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0″ WIDTH="320" HEIGHT="240" id="Yourfilename" ALIGN="">' +
+                                    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0″ WIDTH="320" HEIGHT="240" id="' + file_name + '" ALIGN="">' +
 
-                                    '<PARAM NAME=movie VALUE="video.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#333399> <EMBED src="video.swf" quality=high bgcolor=#333399 WIDTH="320" HEIGHT="240" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED> </OBJECT>' +
+                                    '<PARAM NAME=movie VALUE="' + file_name + '"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#333399> <EMBED src="video.swf" quality=high bgcolor=#333399 WIDTH="320" HEIGHT="240" NAME="' + file_name + '" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED> </OBJECT>' +
 
                                     'Note: Remplacez video.swf par le lien de votre fichier vidéo.' +
                                     '.mp4' +
                                     '<video width="320" height="240" controls>' +
 
-                                    '<source src="{{asset("file/view/".$noteId)}}" type="' + server_response + '">' +
+                                    '<source src="' + file_name + '" type="' + server_response + '">' +
 
                                     'Votre navigateur ne supporte pas cet extension de video.' +
 
