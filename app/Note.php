@@ -60,14 +60,14 @@ class Note extends Model
             $this->filename = "Nouveau fichier";
             $this->content_file = "Nouvelle note";
             $this->mime = "text/plain";
-            $this->filename_on_disk = null;
+            $this->filename_on_disk = "";
 
             $this->setAttribute('id', 0);
             $this->setAttribute("folder_id", $this->folder_id);
             $this->setAttribute("filename", $this->filename);
             $this->setAttribute("content_file", $this->content_file);
             $this->setAttribute("mime", $this->mime);
-            $this->setAttribute("filename_on_disk", null);
+            $this->setAttribute("filename_on_disk", "");
 
         }
     }

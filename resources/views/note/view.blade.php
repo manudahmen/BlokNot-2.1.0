@@ -59,8 +59,8 @@ $note = getDBDocument($noteId);
                         } else if (server_response.search("application/pdf") > -1) {
                             type_html_start = "<a href='{{asset("file/view/".$noteId)}}' target='_NEW'>Visualiser sur une nouvelle page</a><br/><iframe src ='{{asset("js/viewerJS")."/#".asset("file/view/$noteId")}}' width='400' height='300' allowfullscreen webkitallowfullscreen></iframe>";
                         } else if (server_response.search("video") > -1) {
-                            var file_name = "{{asset("file/view/".$noteId)}}"
-                            ";
+                            var file_name = "{{asset("file/view/".$noteId)}}";
+
                             type_html_start = '.swf' +
                                     '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0″ WIDTH="320" HEIGHT="240" id="' + file_name + '" ALIGN="">' +
 
