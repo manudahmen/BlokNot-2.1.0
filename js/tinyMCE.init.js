@@ -80,7 +80,8 @@ tinymce.init({
         {title: 'Example 2', inline: 'span', classes: 'example2'},
         {title: 'Table styles'},
         {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
-    ]
+    ],
+    extended_valid_elements: "iframe[src|width|height|name|align|frameborder|allowfullscreen]"
     /*images_upload_url: "/file/upload"*/
 });
 
