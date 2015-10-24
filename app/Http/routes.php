@@ -169,7 +169,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
                 $content = str_replace("))", "</span>", $content);
 
                 $response = Response::make("<p><em>" . $filename . "</em></p>" . $content, 200);
-                $response->header('Content-Type', "text/plain");
+                $response->header('Content-Type', "text/html");
                 return $response;
 
             } else {

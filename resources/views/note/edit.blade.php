@@ -71,6 +71,12 @@
                 <td></td>
                 <td><input type="hidden" name="mime" value="<?php echo $mime; ?>"/>
             <tr>
+                <td><label for="filename">Nom de fichier</label></td>
+                <td>
+                    <input type="text" id="filename" name="filename" value="<?php echo $filename; ?>"/>
+                </td>
+            </tr>
+            <tr>
                 <td><label for="folder_id">Dossier</label></td>
                 <td>
                     <?php
