@@ -33,8 +33,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.830128">
-              <caret line="270" column="17" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.4551282">
+              <caret line="157" column="52" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -642,12 +642,6 @@
       <option name="number" value="Default" />
       <updated>1440271732656</updated>
     </task>
-    <task id="LOCAL-00078" summary="Create root folder for user when user_created">
-      <created>1440930865546</created>
-      <option name="number" value="00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1440930865546</updated>
-    </task>
     <task id="LOCAL-00079" summary="Style adapted">
       <created>1440930996766</created>
       <option name="number" value="00079" />
@@ -936,7 +930,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445663437682</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Try upload option: to filesystem">
+      <created>1445663747004</created>
+      <option name="number" value="00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1445663747004</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers>
       <GitHub shared="true" url="https://github.com">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -1464,8 +1464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.830128">
-          <caret line="270" column="17" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.4551282">
+          <caret line="157" column="52" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
           <folding />
         </state>
       </provider>

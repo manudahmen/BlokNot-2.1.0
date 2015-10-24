@@ -140,12 +140,12 @@ Route::get("file/view/{id}", ['middleware' => "auth",
         $note = getDBDocument(Input::get("id", 0) != "" ? Input::get("id", 0) != "" : $id);
         //if ($result != NULL) {
         if ($note->id != 0) {
+            $filename = $note->filename;
             if ($note->filename_on_disk != "") {
                 $filenameOnDisk = $note->filename_on_disk;
                 $content = file_get_contents(asset("datafiles/" . $note->folder_id . "/" . $filenameOnDisk));
                 $ext = getExtension($note->filename);
             } else {
-                $filename = $note->filename;
                 $content = $note->content_file;
                 $ext = getExtension($filename);
             }
@@ -158,6 +158,7 @@ Route::get("file/view/{id}", ['middleware' => "auth",
             } else if (isVideo($ext, $note->mime)) {
                 $response = Response::make($content, 200);
                 $response->header('Content-Type', vidSelf($content, $filename));
+                $response->header('Content-Disposition', 'attachment; filename="' . $filename . '"');
                 return $response;
             } else if (isTexte($ext, $note->mime)) {
                 $content = str_replace("[[", "<a target='NEW' href='", $content);
