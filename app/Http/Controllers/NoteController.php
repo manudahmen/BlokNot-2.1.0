@@ -171,19 +171,21 @@ class NoteController extends Controller
 
         foreach ($files as $file) {
             if ($file->isValid()) {
+                $note = Note::findOrNew(0);
+                $note->save();
+
                 $mime = $file->getClientMimeType();
                 $filename = $file->getClientOriginalName();
 
 
-                    $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email);
+                $dstName = "FICHIER.DAT" . rawurlencode(Auth::user()->email . "/" . $folderId + "/" . $note->getAttribute('id'));
 
                 $fullPath = base_path('') . "/datafiles/$folderId/";
 
-                    $totalName = $fullPath . "/" . $dstName;
+                $totalName = $fullPath . "/" . $dstName;
 
-                    $file->move($fullPath, $dstName);
+                $file->move($fullPath, $dstName);
 
-                $note = Note::findOrNew(0);
                 if (!Input::get("filesystem")) {
                     $content_file = file_get_contents($totalName);
                     $note->setAttribute("content_file", $content_file);
@@ -193,15 +195,15 @@ class NoteController extends Controller
                     $note->setAttribute("filename_on_disk", $dstName);
                 }
 
-                    $note->setAttribute("mime", $mime);
-                    $note->setAttribute("username", Auth::user()->email);
-                    $note->setAttribute("filename", $filename);
-                    $note->setAttribute("folder_id", $folderId);
+                $note->setAttribute("mime", $mime);
+                $note->setAttribute("username", Auth::user()->email);
+                $note->setAttribute("filename", $filename);
+                $note->setAttribute("folder_id", $folderId);
 
-                    $note->save();
+                $note->save();
 
-                    $text["notes"][$note->getAttribute('id')] = $note->toArray();
-                    $text["urls"][$note->getAttribute('id')] = asset("note/view/" . $note->getAttribute("id"));
+                $text["notes"][$note->getAttribute('id')] = $note->toArray();
+                $text["urls"][$note->getAttribute('id')] = asset("note/view/" . $note->getAttribute("id"));
 
 
             }
@@ -232,11 +234,9 @@ class NoteController extends Controller
 
     function createFolder($folderId)
     {
-        if($folderId<=0)
-        {
+        if ($folderId <= 0) {
             $folderId = Input::get("folder_id");
-            if($folderId<=0)
-            {
+            if ($folderId <= 0) {
                 $folderId = getRootForUser(Auth::user()->email);
             }
         }
