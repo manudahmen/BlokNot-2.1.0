@@ -38,13 +38,13 @@ $note = getDBDocument($noteId);
 
     <!-- configure SM2 for your use -->
     <script type="text/javascript">
-        /*
+
 
          soundManager.setup({
 
          // location: path to SWF files, as needed (SWF file name is appended later.)
 
-         url: '{{asset("js/soundmanagerv2/swf/}}',
+             url: '{{asset("js/soundmanagerv2/swf/") }}',
 
          // optional: version of SM2 flash audio API to use (8 or 9; default is 8 if omitted, OK for most use cases.)
          // flashVersion: 9,
@@ -79,7 +79,7 @@ $note = getDBDocument($noteId);
          }
 
          });
-         */
+
 
     </script>
     <script type="application/javascript">

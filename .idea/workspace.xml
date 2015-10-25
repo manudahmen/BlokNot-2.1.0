@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Try upload option: to filesystem" />
     <list default="true" id="29391e79-6cf0-43e2-9cb8-1fe6cd3a4fa3" name="Private or project" comment="Soundmanager v2">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_functions.php" afterPath="$PROJECT_DIR$/main_functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/view.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/view.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.692307">
-              <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.37861916">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a4d815d7a41ffff05acf02cac3304016" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;01497fcf-5e5a-4a02-9a46-ee166ed44a57&gt;/storage/framework/views/a4d815d7a41ffff05acf02cac3304016">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.8730159">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,27 +65,27 @@
         <entry file="file://$PROJECT_DIR$/main_functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.7636366">
-              <caret line="331" column="104" selection-start-line="331" selection-start-column="104" selection-end-line="331" selection-end-column="104" />
+              <caret line="332" column="104" selection-start-line="332" selection-start-column="104" selection-end-line="332" selection-end-column="104" />
               <folding>
-                <marker date="1445800871345" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1445800871345" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
-                <marker date="1445800871345" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1445800871345" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
-                <marker date="1445800871345" expanded="true" signature="11384:11788" placeholder="SELECT * FRO..bn2_filesdata..." />
-                <marker date="1445800871345" expanded="true" signature="12913:13042" placeholder="select id fr..bn2_filesdata..." />
-                <marker date="1445800871345" expanded="true" signature="13419:13515" placeholder="insert into ..." />
-                <marker date="1445800871345" expanded="true" signature="13663:13843" placeholder="update bn2_f..." />
-                <marker date="1445800871345" expanded="true" signature="15339:15372" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+                <marker date="1445800984486" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="11385:11789" placeholder="SELECT * FRO..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="12914:13043" placeholder="select id fr..bn2_filesdata..." />
+                <marker date="1445800984486" expanded="true" signature="13420:13516" placeholder="insert into ..." />
+                <marker date="1445800984486" expanded="true" signature="13664:13844" placeholder="update bn2_f..." />
+                <marker date="1445800984486" expanded="true" signature="15340:15373" placeholder="select * fro..bn2_filesdata..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6340326">
-              <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
+            <state vertical-scroll-proportion="-4.9454546">
+              <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -172,9 +180,9 @@
         <option value="$PROJECT_DIR$/resources/views/note/menu.blade.php" />
         <option value="$PROJECT_DIR$/app/Note.php" />
         <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
       </list>
     </option>
   </component>
@@ -487,7 +495,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -605,12 +613,6 @@
       <created>1439221941713</created>
       <option name="number" value="Default" />
       <updated>1445664896710</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Delete &quot;styles&quot;  folder : &quot;css&quot;&#10;">
-      <created>1440939319662</created>
-      <option name="number" value="00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1440939319662</updated>
     </task>
     <task id="LOCAL-00085" summary="+Title&#10;infos-&gt;about">
       <created>1440939411082</created>
@@ -901,7 +903,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445800566927</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Soundmanager v2">
+      <created>1445800995678</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1445800995684</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers>
       <GitHub shared="true" url="https://github.com">
@@ -939,11 +947,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29820052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32364598" sideWeight="0.5224936" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33553502" sideWeight="0.5796915" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33553502" sideWeight="0.4222365" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32364598" sideWeight="0.47750643" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33553502" sideWeight="0.42030847" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32364598" sideWeight="0.47750643" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1320,36 +1328,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.692307">
-          <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.7636366">
-          <caret line="331" column="104" selection-start-line="331" selection-start-column="104" selection-end-line="331" selection-end-column="104" />
+          <caret line="332" column="104" selection-start-line="332" selection-start-column="104" selection-end-line="332" selection-end-column="104" />
           <folding>
-            <marker date="1445800871345" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1445800871345" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
-            <marker date="1445800871345" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1445800871345" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
-            <marker date="1445800871345" expanded="true" signature="11384:11788" placeholder="SELECT * FRO..bn2_filesdata..." />
-            <marker date="1445800871345" expanded="true" signature="12913:13042" placeholder="select id fr..bn2_filesdata..." />
-            <marker date="1445800871345" expanded="true" signature="13419:13515" placeholder="insert into ..." />
-            <marker date="1445800871345" expanded="true" signature="13663:13843" placeholder="update bn2_f..." />
-            <marker date="1445800871345" expanded="true" signature="15339:15372" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+            <marker date="1445800984486" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="11385:11789" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="12914:13043" placeholder="select id fr..bn2_filesdata..." />
+            <marker date="1445800984486" expanded="true" signature="13420:13516" placeholder="insert into ..." />
+            <marker date="1445800984486" expanded="true" signature="13664:13844" placeholder="update bn2_f..." />
+            <marker date="1445800984486" expanded="true" signature="15340:15373" placeholder="select * fro..bn2_filesdata..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6340326">
-          <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
+        <state vertical-scroll-proportion="-4.9454546">
+          <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37861916">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
           <folding />
         </state>
       </provider>
