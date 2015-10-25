@@ -7,6 +7,7 @@
           type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet'
           type='text/css'>
+    <script src="{{asset("js/soundmanagerv2/script/soundmanager2.js") }}"></script>
     <!-- start Mixpanel -->
     <script type="text/javascript">(function (e, b) {
             if (!b.__SV) {
