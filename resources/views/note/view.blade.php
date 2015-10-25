@@ -34,6 +34,54 @@ $note = getDBDocument($noteId);
     <div id="lien_liste" style="padding: 20px; border: 3px groove #24a199">
 
     </div>
+    <!-- Insert in object page here is the code to play file -->
+
+    <!-- configure SM2 for your use -->
+    <script type="text/javascript">
+        /*
+
+         soundManager.setup({
+
+         // location: path to SWF files, as needed (SWF file name is appended later.)
+
+         url: '{{asset("js/soundmanagerv2/swf/}}',
+
+         // optional: version of SM2 flash audio API to use (8 or 9; default is 8 if omitted, OK for most use cases.)
+         // flashVersion: 9,
+
+         // use soundmanager2-nodebug-jsmin.js, or disable debug mode (enabled by default) after development/testing
+         // debugMode: false,
+
+         // good to go: the onready() callback
+
+         onready: function() {
+
+         // SM2 has started - now you can create and play sounds!
+
+         var mySound = soundManager.createSound({
+         id: 'aSound'+noteId, // optional: provide your own unique id
+         url: '{{ asset('file/view/'.$noteId) }}'
+         // onload: function() { console.log('sound loaded!', this); }
+         // other options here..
+         });
+
+         mySound.play();
+
+         },
+
+         // optional: ontimeout() callback for handling start-up failure
+
+         ontimeout: function() {
+
+         // Hrmm, SM2 could not start. Missing SWF? Flash blocked? No HTML5 audio support? Show an error, etc.?
+         // See the flashblock demo when you want to start getting fancy.
+
+         }
+
+         });
+         */
+
+    </script>
     <script type="application/javascript">
         function updateJoint() {
             $.get("{{asset("note/joint/list/$noteId") }}",
@@ -75,6 +123,8 @@ $note = getDBDocument($noteId);
                                     'Votre navigateur ne supporte pas cet extension de video.' +
 
                                     '</video>';
+                        } else if (server_response.search('audio') > -1) {
+                            // Traitement du fichier audio
                         }
 
                         $("#note_viewer_container").html(type_html_start);

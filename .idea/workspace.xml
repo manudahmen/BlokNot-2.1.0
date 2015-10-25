@@ -3,435 +3,9 @@
   <component name="ChangeListManager">
     <list id="4073d12e-8de0-49ad-b390-23a5b8c548b4" name="Default" comment="Try upload option: to filesystem" />
     <list default="true" id="29391e79-6cf0-43e2-9cb8-1fe6cd3a4fa3" name="Private or project" comment="Soundmanager v2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/1hz-10khz-sweep.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360 button (retina - not playing).psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360 button (retina - playing).psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360 button - large.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360 button.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause-light-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause-light.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play-light-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play-light.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-pause-light.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-pause-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-pause.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-play-light.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-play-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-play.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360-button-vis-play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/360ui-screenshot1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/360ui-screenshot2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/360ui-screenshot3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/360ui-screenshot4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/440hz.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/880hz.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_BD_1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_FTM2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_HHCL.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_HHOP.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_HHPD.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_HTM.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_LTM2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_MTM.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_RIM1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_SN13.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/AMB_SN_5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/CHINA_1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/CRASH_1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/CRASH_5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/CRASH_6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/MA-R90 metal pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/RIDE_1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/RIDE_3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/audio/SPLASH_1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/TDK MA-R90 body.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/Tape Mask.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/aller-light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/armor-alley-screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-black-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-black.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-white-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-white.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/image/arrow-right-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/background0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/background1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/background2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-1/image/ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/image/ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/bass.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/bg-land.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/bg-sky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bg-strip-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/black-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/black-25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/black-33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/black-micro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/blank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/body-texture-strips.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/audio/bonk.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation/audio/bonk.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-32x32-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-32x32-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-32x32-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-32x32-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50-fragments.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-50x50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-64x64-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-64x64-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-64x64-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-64x64-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-72x72-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-72x72-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-72x72-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-72x72-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-96x96-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-96x96-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-96x96-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/bulbs-96x96-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/button-0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/button-1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/cassette-tape-ui-screenshot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/cassette-tape-ui-screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/christmas-lights.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/christmas-lights.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/chunk-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/chunk-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/click-high.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/click-low.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/coins.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-10.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-11.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-3.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-4.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-5.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-6.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-7.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-8.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-9.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/cursor-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/dejavusansmono-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/dejavusansmono-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/image/divot-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/image/divot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/fancy-beer-bottle-pop.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/audio/fingerplop.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation/audio/fingerplop.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/audio/fingerplop2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation/audio/fingerplop2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/first.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/first.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/fitter-happier-waveform.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/fitter-happier-waveform.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/flash9-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/flash9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/troubleshoot/fpgss-add-location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/troubleshoot/fpgss-added-location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/getsatisfaction-icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/sound/glass5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/glyphish-dot-com-icons-and-android-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/going_outside.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/hue_thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/icon_loading_dots.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/icon_loading_spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/icon_loading_spinner_bigger.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/image/icon_pause.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/image/icon_pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/image/icon_play.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/image/icon_play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/justanotherhand-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/justanotherhand-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/justanotherhand-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/last.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/last.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/list2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/list2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/logo-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/loop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/loop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/ma-r90-body-skin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/ma-r90-mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/ma-r90-metal-pattern-v2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/mak.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/metalspool.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/metalspoolblack.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/mouseover.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/mouseover2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/mouseover3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/mpc-screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/muxtape-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/new-bw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/new-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/noise-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/image/noise-pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/noise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/novecento-bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/novecento-bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/fonts/novecento-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/office_lobby.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/ostrich-rounded-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/ostrich-rounded-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/ostrich-rounded-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/picker_thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/pinstriped_suit_vertical.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/textures/pinstriped_suit_vertical.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/platter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/image/point.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/pool_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/power-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/image/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/rail-middle-outline-edited.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/rail-middle-outline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/rain.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/record-grooves-1440x1440-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/audio/record-noise-1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/audio/record-noise-2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/rubber_grip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/select.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/demo_backgrounds/sfatnight_1600.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/sine, square, sawtooth, rando.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/slider-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/slider-bar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/slider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/slipmat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/soundmanager2-speaker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/swf/soundmanager2.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/swf/soundmanager2_debug.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/swf/soundmanager2_flash9.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/swf/soundmanager2_flash9_debug.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/swf/soundmanager2_flash_xdomain.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/speaker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/free-25px-000000/PNG/spinner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/free-25px-ffffff/PNG/spinner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/spool-metal-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/spool-metal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/spool-spokes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/survivor-screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/tape-guide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/tape-screw-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/tape-screw-dark.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/tape-screw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/_src/tape-screw.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/image/tape-texture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/tasky_pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/image/test.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/textured_paper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/textures/textured_paper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/tiny_grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/image/top-highlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_33_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_45.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_45_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_arm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_case_and_lighting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_lightoff.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_lighton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_powerdial.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_speedon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_startstop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/tt_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-1920x500-bw.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-1920x500-h264-512kbps-bw.mov" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-1920x500-h264-512kbps-h264.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-960-22f-32c-03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-960-27f.apng" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/turntable-loop-poster.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/tweed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/PNG/volume.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/PNG/volume.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_mp3/walking.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/wedge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/wheelsofsteel-full-ui.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/wheelsofsteel-single-deck-256.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/wood_pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/wood_pattern_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/textures/wood_pattern_dark_color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/woven.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360player-visualization.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/360player.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/script/360player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/JustAnotherHand_ttf_font_LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/README.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/SoundManager2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/SoundManager2_AS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/SoundManager2_AS3.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/SoundManager2_AS3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/SoundManager2_SMSound_AS3.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/SoundManager2_SMSound_AS3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/acoustic-drumkit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-1/css/animation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/css/animation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-1/script/animation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/script/animation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/download/archive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/arrow.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/arrow.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/image/background-pattern-credits.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/css/bar-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/script/bar-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/script/berniecode-animator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/canvas-visualization-basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/canvas-visualization.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/css/cassette-tape-ui-blur-nojs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/css/cassette-tape-ui-blur.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/css/cassette-tape-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/script/cassette-tape-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/christmaslights.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/christmaslights.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/_image/chunk-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/credits.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/patterns/credits.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/debug.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/troubleshoot/debug.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/troubleshoot/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/deferred-example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/demo-slider-controls.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/demo-slider-controls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/script/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/script/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/script/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/first.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/first.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/flashblock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/method1/flashblock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/method1/flashblock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/html5-dtd-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/index-rollup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/index-rollup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/360-player/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2a/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/animation-2b/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/api/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/christmas-lights/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/flashblock/method1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/download/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/getstarted/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/resources/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/technotes/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/troubleshoot/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/css/inlineplayer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/play-mp3-links/script/inlineplayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/last.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/last.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/list2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/list2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/loop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/loop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/make-flash8.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/make-flash8.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/make-flash9.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/src/make-flash9.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/more.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/css/mp3-player-button.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mp3-player-button/script/mp3-player-button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/css/mpc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/mpc/script/mpc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/music.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/music.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/public/stylesheets/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/css/optional-annotations.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/script/optional-page-player-metadata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/css/optional-themes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/cassette-tape/font/ostrich-rounded-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/css/page-player.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/script/page-player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/pause.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/pause.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/play.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/play.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/shuffle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/shuffle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/sm2_defer-example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/script/soundmanager2-jsmin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/script/soundmanager2-nodebug-jsmin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/script/soundmanager2-nodebug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/doc/generated/soundmanager2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/script/soundmanager2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/free-25px-000000/SVG/spinner.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/free-25px-ffffff/SVG/spinner.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/template.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/script/turntable-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/css/turntable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/turntable/script/turntable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-000000/SVG/volume.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/bar-ui/image/icomoon/entypo-25px-ffffff/SVG/volume.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/page-player/xbm-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soundmanagerv2/demo/template/xhtml-test.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_functions.php" afterPath="$PROJECT_DIR$/main_functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/note/view.blade.php" afterPath="$PROJECT_DIR$/resources/views/note/view.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blocnote2.iws" />
@@ -472,17 +46,47 @@
       <file leaf-file-name="view.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.192307">
-              <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+            <state vertical-scroll-proportion="-13.692307">
+              <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.7636366">
+              <caret line="331" column="104" selection-start-line="331" selection-start-column="104" selection-end-line="331" selection-end-column="104" />
+              <folding>
+                <marker date="1445800871345" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800871345" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+                <marker date="1445800871345" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800871345" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
+                <marker date="1445800871345" expanded="true" signature="11384:11788" placeholder="SELECT * FRO..bn2_filesdata..." />
+                <marker date="1445800871345" expanded="true" signature="12913:13042" placeholder="select id fr..bn2_filesdata..." />
+                <marker date="1445800871345" expanded="true" signature="13419:13515" placeholder="insert into ..." />
+                <marker date="1445800871345" expanded="true" signature="13663:13843" placeholder="update bn2_f..." />
+                <marker date="1445800871345" expanded="true" signature="15339:15372" placeholder="select * fro..bn2_filesdata..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6340326">
+              <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34075725">
+            <state vertical-scroll-proportion="-5.8846154">
               <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
               <folding />
             </state>
@@ -564,13 +168,13 @@
         <option value="$PROJECT_DIR$/js/selectForAction.js" />
         <option value="$PROJECT_DIR$/app/FileSystem.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FileSystemController.php" />
-        <option value="$PROJECT_DIR$/main_functions.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/note/menu.blade.php" />
         <option value="$PROJECT_DIR$/app/Note.php" />
-        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/note/view.blade.php" />
+        <option value="$PROJECT_DIR$/main_functions.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -742,6 +346,28 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLokNot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlokNot-2.1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -808,6 +434,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLokNot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlokNot-2.1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLokNot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlokNot-2.1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -947,12 +605,6 @@
       <created>1439221941713</created>
       <option name="number" value="Default" />
       <updated>1445664896710</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Delete &quot;styles&quot;  folder : &quot;css&quot;&#10;">
-      <created>1440939203245</created>
-      <option name="number" value="00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1440939203246</updated>
     </task>
     <task id="LOCAL-00084" summary="Delete &quot;styles&quot;  folder : &quot;css&quot;&#10;">
       <created>1440939319662</created>
@@ -1243,7 +895,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445780236783</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Soundmanager v2">
+      <created>1445800566927</created>
+      <option name="number" value="00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1445800566927</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers>
       <GitHub shared="true" url="https://github.com">
@@ -1275,16 +933,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3348329" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29820052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33553502" sideWeight="0.5755287" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32364598" sideWeight="0.5224936" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32482994" sideWeight="0.48" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33553502" sideWeight="0.4222365" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32364598" sideWeight="0.47750643" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1292,7 +951,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33673468" sideWeight="0.4244713" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.4652568" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1638,17 +1296,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3653846">
-          <caret line="195" column="14" selection-start-line="195" selection-start-column="14" selection-end-line="195" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/note/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45266274">
           <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1660,18 +1312,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.192307">
-          <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/note/view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34075725">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+        <state vertical-scroll-proportion="-13.692307">
+          <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7636366">
+          <caret line="331" column="104" selection-start-line="331" selection-start-column="104" selection-end-line="331" selection-end-column="104" />
+          <folding>
+            <marker date="1445800871345" expanded="true" signature="348:401" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800871345" expanded="true" signature="612:645" placeholder="select * fro..bn2_share..." />
+            <marker date="1445800871345" expanded="true" signature="916:1044" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800871345" expanded="true" signature="4459:4583" placeholder="select * fro..bn2_filesdata..." />
+            <marker date="1445800871345" expanded="true" signature="11384:11788" placeholder="SELECT * FRO..bn2_filesdata..." />
+            <marker date="1445800871345" expanded="true" signature="12913:13042" placeholder="select id fr..bn2_filesdata..." />
+            <marker date="1445800871345" expanded="true" signature="13419:13515" placeholder="insert into ..." />
+            <marker date="1445800871345" expanded="true" signature="13663:13843" placeholder="update bn2_f..." />
+            <marker date="1445800871345" expanded="true" signature="15339:15372" placeholder="select * fro..bn2_filesdata..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6340326">
+          <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
           <folding />
         </state>
       </provider>

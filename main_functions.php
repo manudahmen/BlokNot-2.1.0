@@ -324,7 +324,13 @@ function isTexte($ext, $mime = "")
 
 function isVideo($ext, $mime = "")
 {
-    return in_array($ext, array("mp3", "avi", "ogg", "ogv", "mp4", "aac")) or (($mime != "") && (strpos($mime, 'video') !== FALSE));
+    return in_array($ext, array("avi", "ogv", "mp4")) or (($mime != "") && (strpos($mime, 'video') !== FALSE));
+
+}
+
+function isAudio($ext, $mime = "")
+{
+    return in_array($ext, array("mp3", "ogg", "aac", "flac")) or (($mime != "") && (strpos($mime, 'audio') !== FALSE));
 
 }
 

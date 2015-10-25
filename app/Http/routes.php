@@ -160,6 +160,11 @@ Route::get("file/view/{id}", ['middleware' => "auth",
                 $response->header('Content-Type', vidSelf($content, $filename));
                 $response->header('Content-Disposition', 'attachment; filename="' . $filename . '"');
                 return $response;
+            } else if (isAudio($ext, $note->mime)) {
+                $response = Response::make($content, 200);
+                $response->header('Content-Type', audioSelf($content, $filename));
+                $response->header('Content-Disposition', 'attachment; filename="' . $filename . '"');
+                return $response;
             } else if (isTexte($ext, $note->mime)) {
                 $content = str_replace("[[", "<a target='NEW' href='", $content);
                 $content = str_replace("]]", "'>Lien</a>", $content);
@@ -271,6 +276,14 @@ function ImgSelf($content, $filename)
 function vidSelf($content, $filename)
 {
     return 'video/' . getExtension($filename);
+
+//    echo $content;
+
+}
+
+function audioSelf($content, $filename)
+{
+    return 'audio/' . getExtension($filename);
 
 //    echo $content;
 
