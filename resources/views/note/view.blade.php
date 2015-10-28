@@ -82,6 +82,23 @@ $note = getDBDocument($noteId);
 
 
     </script>
+    .<script type="text/javascript" src="http://www.supportduweb.com/page/js/flashobject.js"></script>
+    <div id="player_6568" style="display:inline-block;">
+        <a href="http://get.adobe.com/flashplayer/">You need to install the Flash plugin</a> - <a href="http://www.supportduweb.com/">http://www.supportduweb.com/</a>
+    </div>
+    <script type="text/javascript">
+        var flashvars_6568 = {};
+        var params_6568 = {
+            quality: "high",
+            wmode: "transparent",
+            bgcolor: "#ffffff",
+            allowScriptAccess: "always",
+            allowFullScreen: "true",
+            flashvars: "url={{ asset("file/view/$noteId") }}&autostart=no"
+        };
+        var attributes_6568 = {};
+        flashObject("http://flash.supportduweb.com/mp3_player/s_1.swf", "player_6568", "600", "35", "8", false, flashvars_6568, params_6568, attributes_6568);
+    </script>
     <script type="application/javascript">
         function updateJoint() {
             $.get("{{asset("note/joint/list/$noteId") }}",
