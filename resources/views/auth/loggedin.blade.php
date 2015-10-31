@@ -5,6 +5,7 @@
  * Date: 11/08/2015
  * Time: 13:53
  */
+?>
 <!-- resources/views/auth/loggedin.blade.php -->
 @extends('master')
 @section('header')
