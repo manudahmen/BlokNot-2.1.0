@@ -15,7 +15,7 @@
 @stop
 @section('content')
 
-<div id="success">
+<div class="btn-success success" id="success">
     <h1>Login success.</h1>
     <a href="{{ route("notes") }}">Vers l'application</a>
 </div>
