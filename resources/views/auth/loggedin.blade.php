@@ -9,7 +9,7 @@
 @extends('master')
 @section('header')
     <script language="JavaScript">
-        mixpanel.track("Logged in");
+        mixpanel.track("Connecté");
     </script>
 @stop
 @section('content')
