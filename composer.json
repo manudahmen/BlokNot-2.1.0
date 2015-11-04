@@ -13,7 +13,9 @@
     "google/apiclient": "1.0.*@beta",
     "google/client": "v1.0.0-alpha",
     "illuminate/html": "5.*",
-    "fasterimage/fasterimage": "1.0.2"
+    "fasterimage/fasterimage": "1.0.2",
+    "ingenious/jquery-validator": "dev-master",
+    "arillo/silverstripe-jqueryformvalidator": "dev-master"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",
