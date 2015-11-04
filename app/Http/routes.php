@@ -365,6 +365,8 @@ Route::post('password/reset',
 
 
 );
-
-
+/*
+Route::controller("wppost");
+Route::controller("wordpressInstallation");
+*/
 ?>
