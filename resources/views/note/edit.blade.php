@@ -90,7 +90,9 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="sauvegarder" value="Sauvergarder" class="button btn btn-primary btn-success bg-success"/></td>
+                <td><input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+                    <input type="submit" name="sauvegarder" value="Sauvergarder"
+                           class="button btn btn-primary btn-success bg-success"/></td>
             </tr>
         </table>
     </form>
