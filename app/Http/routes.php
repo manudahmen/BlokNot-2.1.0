@@ -53,9 +53,9 @@ Route::get('note/new/{folderId}', ['middleware' => "auth",
         return view('note/new', ["folderId" => $folderId]);
     }])->where('id', '[0-9]+');
 
-Route::post("note/save", [
+Route::post("note/save/txt/{noteId}", [
         'middleware' => "auth",
-        'uses' => "NoteController@save",
+        'uses' => "NoteController@postSaveTxt",
         "before", "csrf"
     ]
 );

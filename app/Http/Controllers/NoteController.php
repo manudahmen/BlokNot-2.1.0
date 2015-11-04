@@ -36,7 +36,7 @@ class NoteController extends Controller
         return view("note/new/0")->with("noteId", 0);
     }
 
-    function saveTxt(Request $request)
+    function postSaveTxt(Request $request)
     {
         $note = Note::findOrNew($request->get("noteId"));
 
