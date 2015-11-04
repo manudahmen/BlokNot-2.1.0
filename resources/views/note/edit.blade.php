@@ -54,7 +54,7 @@
     {
 
     ?>
-    <form action="{{asset("note/save/txt/".$noteId) }}" method="GET" name="editor_form">
+    <form action="{{asset("note/save/txt/".$noteId) }}" method="POST" name="editor_form">
         <table>
             <tr>
                 <td></td>

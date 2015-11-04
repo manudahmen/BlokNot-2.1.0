@@ -55,7 +55,8 @@ Route::get('note/new/{folderId}', ['middleware' => "auth",
 
 Route::post("note/save", [
         'middleware' => "auth",
-        'uses' => "NoteController@save"
+        'uses' => "NoteController@save",
+        "before", "csrf"
     ]
 );
 Route::post("note/media", [
