@@ -13,13 +13,10 @@ use App\Http\Controllers\Controller;
 
 class WordPressController extends Controller
 {
-    public function display($noteId = 0)
-    {
-        if ($noteId > 0) {
-            $noteRow = getDocRow($noteId);
-            display($noteId, $noteRow['mime']);
-        }
-    }
+    private $rawData = "";
+
+    private $folderId = 0;
+
 
     public function getUrl($url = NULL)
     {
@@ -32,14 +29,26 @@ class WordPressController extends Controller
 
     public function insert($data, $folderId)
     {
+        $this->rawData = $data;
+        $this->folderId = $folderId;
         $this->parseAndInsert($data);
     }
 
     private function parseAndInsert()
     {
-        $blog = new SimpleXMLElement();
-        echo $blog->posts[0]->title;
+        $blog = new SimpleXMLElement($this->rawData);
+
+        print_r($blog);
+
+
     }
 
+    public function display($noteId = 0)
+    {
+        if ($noteId > 0) {
+            $noteRow = getDocRow($noteId);
+            display($noteId, $noteRow['mime']);
+        }
+    }
 
 }
