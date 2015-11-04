@@ -10,13 +10,14 @@
 @extends('master')
 @section('header')
     <script language="JavaScript">
-        mixpanel.track("Connecté");
+        mixpanel.track("Connect&eacute;");
     </script>
 @stop
 @section('content')
 
 <div class="btn-success success" id="success">
-    <h1>Login success.</h1>
+    <h1>Login success.
+    </h1>
     <a href="{{ route("notes") }}">Vers l'application</a>
 </div>
 @stop

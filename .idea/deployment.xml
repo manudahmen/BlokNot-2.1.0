@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< Temporary merge branch 1
   <component name="PublishConfigData" serverName="ibiteria">
     <serverData>
       <paths name="ibiteria">
@@ -12,7 +11,4 @@
       </paths>
     </serverData>
   </component>
-=======
-  <component name="PublishConfigData" createEmptyFolders="true" />
->>>>>>> Temporary merge branch 2
 </project>
