@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Support\Facades\Route;
 
 require_once(realpath(base_path("main_functions.php")));
 
