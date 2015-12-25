@@ -365,6 +365,28 @@ Route::post('password/reset',
 
 
 );
+Route::get("guests/offer_place", [
+        "middleware" => "auth",
+        'uses' => function () {
+            View::make("guests/offer_place.blade.php");
+        }
+    ]
+);
+Route::get("guest_offer_pieces", []
+);
+
+Route::get("guest_offer_place_submitting", [
+        "middleware" => "auth", 'before' => 'csrf',
+        //'uses' => "\\App\\Http\\Controllers\\Guests\\GuestController"
+        "uses" => function () {
+            return View::make(
+                "Undev/notimplementedyet.blade.php");
+        }
+
+    ]
+);
+
+
 /*
 Route::controller("wppost");
 Route::controller("wordpressInstallation");
