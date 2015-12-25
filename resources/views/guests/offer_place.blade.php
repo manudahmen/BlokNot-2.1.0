@@ -1,7 +1,7 @@
 @extends('master')
 @section('header')
 <script language="JavaScript">
-    mixpanel.track("Inviter une personne", {"User": "{{  Auth::user()->email }}", "note" : noteId });
+    mixpanel.track("Inviter une personne", {"User": "{{ Auth::user()->email }}"});
 </script>
 @stop
 
@@ -22,6 +22,9 @@
 @stop
 
 @section('content')
+
+@parent
+
 <?php
 /**
  * Created by PhpStorm.
@@ -32,8 +35,8 @@
 
 
 ?>
-<h1>Votre email: <input type="text" value="<?php echo Aht:user->email(); ?>" >
-<script language=javascript>
+<h1>Votre email:<td><input type="text" value="{{ Auth::user()->email }}"/>
+<script language="javascript">
     $( "#form_invit_1" ).submit(function( event ) {
 
       event.preventDefault();
@@ -43,28 +46,33 @@
 
 </script>
 <div class="formulaire_invitation">
-<form id="form_invit_1" class="formulaire" onsubmit="validate()">
-    <fieldset class="identity">
-        <label for="lastname"/>
-        <input type="text" name="lastname"/>
-    </fieldset>
-    <fieldset class="identity">
-        <label for="firstname"/>
-        <input type="text" name="firstname"/>
-    </fieldset>
-    <fieldset class="identity">
-        <label for="email"/>
-            <input type="text name="email"/>
-    </fieldset>
-    <fieldset class="identity">
-        <label for="phonenumber"/>
-        <input type="text name="phonenumber"/>NOT AVAILABLE
-    </fieldset>
-    <fieldset class="identity">
-        <label for="Quota"/>
-        <input type="text name="phonenumber"/>k kilobyte, m megabyte, g gygabyte, t terabyte
-    </fieldset>
-
+<form id="form_invit_1" class="formulaire" onsubmit="validate()" action="{{ asset("guests/offer_place_submitting") }}">
+<table>
+    <tr class="identity">
+        <td><label for="lastname">Nom de famille</label></td>
+       <td><input type="text" name="lastname"/>
+    </td></tr>
+    <tr class="identity">
+        <td><label for="firstname">Prénom</label></td>
+       <td><input type="text" name="firstname"/>
+    </td></tr>
+    <tr class="identity">
+        <td><label for="email">Adresse e-mail</label></td>
+           <td><input type="text name="email"/>
+    </td></tr>
+    <tr class="identity">
+        <td><label for="phonenumber">Numéro de téléphone</label></td>
+       <td><input type="text name="phonenumber"/>NOT AVAILABLE
+    </td></tr>
+    <tr class="identity">
+        <td><label for="quota">requested Space or Ratio of user's space</label></td>
+       <td><input type="text name="quota"/>k kilobyte, m megabyte, g gygabyte, t terabyte
+    </td></tr>
+    <tr class="submit">
+        <td><label for="submit">Soumettre la requête</label></td>
+       <td><input type="submit" name="query_for_guest"/></td>
+    </td></tr>
+<table>
 </form>
 </div>
 
