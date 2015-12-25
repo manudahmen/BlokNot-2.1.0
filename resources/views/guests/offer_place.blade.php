@@ -46,7 +46,7 @@
 
 </script>
 <div class="formulaire_invitation">
-<form id="form_invit_1" class="formulaire" onsubmit="validate()" action="{{ asset("guests/offer_place_submitting") }}">
+<form id="form_invit_1" class="formulaire" action="{{ asset("guests/offer_place_submitting") }}">
 <table>
     <tr class="identity">
         <td><label for="lastname">Nom de famille</label></td>

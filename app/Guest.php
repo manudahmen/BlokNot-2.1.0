@@ -22,7 +22,7 @@
  * 4
  * confirmed_email
  */
-namespace App\BlocNotes;
+namespace App\BlokNot;
 
 
 use Illuminate\Database\Eloquent\Model;

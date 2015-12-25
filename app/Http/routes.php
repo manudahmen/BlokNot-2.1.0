@@ -378,13 +378,9 @@ Route::get("guest_offer_pieces", []
 */
 
 Route::get("guests/offer_place_submitting", [
-        "middleware" => "auth", 'before' => 'csrf',
-        //'uses' => "\\App\\Http\\Controllers\\Guests\\GuestController"
-        "uses" => function () {
-            return View::make(
-                "Undev/notimplementedyet.blade.php");
-        }
-
+        "middleware" => "auth",
+        'before' => 'csrf',
+        "uses" => "\\App\\Http\\Controllers\\GuestController@requestGuest"
     ]
 );
 

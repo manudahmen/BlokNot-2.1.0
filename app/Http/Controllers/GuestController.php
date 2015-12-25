@@ -9,7 +9,15 @@
 namespace App\Http\Controllers;
 
 
-class GuestController
+use App\BlokNot\Guest;
+
+class GuestController extends Controller
+
 {
+    function requestGuest()
+    {
+        print_r(new Guest(Input::all()));
+    }
+
 
 }
