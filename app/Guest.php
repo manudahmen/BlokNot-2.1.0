@@ -47,6 +47,15 @@ class Guest extends Model
 
     public function __construct($input)
     {
+    }
 
+    public function sendRequest()
+    {
+
+        $userGuest = User::findOrFail($input::get("email"));
+        $user_owner_id = Auth::user()->email;
+        $user_guest_id = $userGuest->getAttr("id");
+
+        $confirmedEmail = $userGuest->email;
     }
 }

@@ -17,7 +17,7 @@ class GuestController extends Controller
 {
     function requestGuest()
     {
-        print_r(new Guest(Input::all()));
+        new Guest(Input::all())->sendRequest();
     }
 
 
