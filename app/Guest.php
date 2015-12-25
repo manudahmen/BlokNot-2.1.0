@@ -22,7 +22,7 @@
  * 4
  * confirmed_email
  */
-namespace App\BlokNot;
+namespace App;
 
 
 use Illuminate\Database\Eloquent\Model;
@@ -31,17 +31,22 @@ class Guest extends Model
 {
 
     public $incrementing = true;
-    protected $table = "guests";
-    protected $primaryKey = 'id';
-    protected $timestamps = true;
-    private $id;
-    private $user_owner_id;
-    private $user_guest_id;
-    private $confirmed_email;
+    public $table = "guests";
+    public $primaryKey = 'id';
+    public $timestamps = true;
+    public $id;
+    public $user_owner_id;
+    public $user_guest_id;
+    public $confirmed_email;
 
-    private $fillable = ["id",
+    public $fillable = ["id",
         "user_owner_id",
         "user_guest_id",
         "confirmed_email"
     ];
+
+    public function __construct($input)
+    {
+
+    }
 }

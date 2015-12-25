@@ -9,7 +9,8 @@
 namespace App\Http\Controllers;
 
 
-use App\BlokNot\Guest;
+use App\Guest;
+use Illuminate\Support\Facades\Input;
 
 class GuestController extends Controller
 
