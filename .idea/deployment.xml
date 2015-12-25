@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ibiteria" uploadOnCheckin="bd3ff593-97cd-4174-955d-f4f421085c87">
+  <component name="PublishConfigData" serverName="ibiteria">
     <serverData>
       <paths name="ibiteria">
         <serverdata>
@@ -10,6 +10,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="ibiteria" />
   </component>
 </project>
