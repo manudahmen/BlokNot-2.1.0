@@ -523,3 +523,24 @@ function search($expresion, $user = NULL, $folderId = NULL)
     $result = simpleQ($sql, $mysqli);
     return $result;
 }
+
+function getSharedwithMe()
+{
+    return DB::statement("select from " . $prefix . "_guests as g inner join " . $prefix . "_filesdata as d on g.user_owner_id where g.user_guest_id=" . Auth::user()->email);
+}
+
+function getSharedFromMe()
+{
+    return DB::statement("select from " . $prefix . "_guests as g inner join " . $prefix . "_filesdata as d on g.user_owner_id where g.user_owner_id=" . Auth::user()->email);
+}
+
+id
+* int(11)   No None AUTO_INCREMENT Change Change  Drop Drop  Browse distinct values Browse distinct values  Show more actions More
+* 2
+* user_owner_id
+* int(11)   No None  Change Change  Drop Drop  Browse distinct values Browse distinct values  Show more actions More
+* 3
+* user_guest_id
+* int(11)   No None  Change Change  Drop Drop  Browse distinct values Browse distinct values  Show more actions More
+* 4
+* confirmed_email
