@@ -1,3 +1,10 @@
+@extends('master')
+@section('header')
+<script language="JavaScript">
+    mixpanel.track("Inviter une personne", {"User": "{{  Auth::user()->email }}", "note" : noteId });
+</script>
+@stop
+
 <?php
 /**
  * Created by PhpStorm.
@@ -6,13 +13,6 @@
  * Time: 04:27
  */
 ?>
-@extends('master')
-@section('header')
-<script language="JavaScript">
-    mixpanel.track("Inviter une personne", {"User": "{{  Auth::user()->email }}", "note" : noteId });
-</script>
-@stop
-
 @section('title', 'Inviter une personne')
 
 @section('sidebar')

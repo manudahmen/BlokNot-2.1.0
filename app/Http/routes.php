@@ -368,7 +368,7 @@ Route::post('password/reset',
 Route::get("guests/offer_place", [
         "middleware" => "auth",
         'uses' => function () {
-            View::make("guests/offer_place.blade.php");
+            View::make("guests/offer_place");
         }
     ]
 );
