@@ -526,12 +526,12 @@ function search($expresion, $user = NULL, $folderId = NULL)
 
 function getSharedwithMe()
 {
-    return DB::statement("select from guests as g inner join filesdata as d on g.user_owner_id where g.user_guest_id=" . Auth::user()->email);
+    return DB::select("select from guests as g inner join filesdata as d on g.user_owner_id where g.user_guest_id=" . Auth::user()->email);
 }
 
 function getSharedFromMe()
 {
-    return DB::statement("select from guests as g inner join filesdata as d on g.user_owner_id where g.user_owner_id=" . Auth::user()->email);
+    return DB::select("select from guests as g inner join filesdata as d on g.user_owner_id where g.user_owner_id=" . Auth::user()->email);
 }
 
 id
