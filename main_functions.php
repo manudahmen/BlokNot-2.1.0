@@ -533,7 +533,7 @@ function getSharedFromMe()
 {
     return DB::select("select from guests as g inner join filesdata as d on g.user_owner_id where g.user_owner_id=" . Auth::user()->email);
 }
-
+/*
 id
 * int(11)   No None AUTO_INCREMENT Change Change  Drop Drop  Browse distinct values Browse distinct values  Show more actions More
 * 2
@@ -544,3 +544,4 @@ id
 * int(11)   No None  Change Change  Drop Drop  Browse distinct values Browse distinct values  Show more actions More
 * 4
 * confirmed_email
+*/
