@@ -1,3 +1,4 @@
+<-- resources/guests/offer_place.blade.php -->
 @extends('master')
 @section('header')
 @parent

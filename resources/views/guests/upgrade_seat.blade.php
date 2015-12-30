@@ -1,3 +1,4 @@
+<-- resources/guests/upgrade_seat.blade.php -->
 <?php
 /**
  * Created by PhpStorm.

@@ -1,3 +1,4 @@
+<-- resources/guests/negociate_removal_or_move.blade.php -->
 <?php
 /**
  * Created by PhpStorm.
