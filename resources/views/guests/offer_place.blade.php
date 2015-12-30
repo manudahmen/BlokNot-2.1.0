@@ -1,5 +1,6 @@
 @extends('master')
 @section('header')
+@parent
 <script language="JavaScript">
     mixpanel.track("Inviter une personne", {"User": "{{ Auth::user()->email }}"});
 </script>
