@@ -11,9 +11,10 @@
     $user = \App\User::where("email", Auth::user()->email);
     $guests = \App\Guest::where("user_owner_id", $user->get('id'))->get();
 
-    ?>
+    if($guests->first != null)
+    {
 
-    <?php foreach($guests as $guest)
+    foreach($guests as $guest)
     ?>
     <tr>
         <td>{{ Auth::user()->email }}</td>
@@ -25,3 +26,5 @@
         <td>Action</td>
     </tr>
 </table>
+<?php   }
+?>
