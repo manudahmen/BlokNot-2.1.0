@@ -372,7 +372,7 @@ Route::get("guests/offer_place", [
         }
     ]
 );
-Route::get("guests/view_offered_seat.blade.php", [
+Route::get("guests/view_offered_seat", [
         "middleware" => "auth",
         'uses' => function () {
             return View::make("guests/view_offered_seat");

@@ -7,8 +7,9 @@
     <td>Actions</td>
     </th>
     <?php
-    $user = \App\User::findByEmail(Auth::user()->email);
-    $guests = \App\BlokNot\Guest::where("user_owner_id", "like", $user->getAttr('id'))->get();
+
+    $user = \App\User::where("email", "like", Auth::user()->email);
+    $guests = \App\Guest::where("user_owner_id", "like", $user->getAttr('id'))->get();
 
     ?>
 
@@ -18,8 +19,7 @@
         <td>{{ Auth::user()->email }}</td>
         <td></td>
         <td><?php
-            $userG = \App\User::findByEmail($guest);
-            \App\BlokNot\Guest::where("user_guest_id", "like", $guest)->get()->first() ?>
+            \App\Guest::where("user_guest_id", "like", $guest->getAttr("id"))->get()->first() ?>
         </td>
         <td>Files</td>
         <td>Action</td>
