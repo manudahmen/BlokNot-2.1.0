@@ -9,7 +9,7 @@
     <?php
 
     $user = \App\User::where("email", "like", Auth::user()->email);
-    $guests = \App\Guest::where("user_owner_id", "like", $user->getAttr('id'))->get();
+    $guests = \App\Guest::where("user_owner_id", "like", $user->get('id'))->get();
 
     ?>
 
@@ -19,7 +19,7 @@
         <td>{{ Auth::user()->email }}</td>
         <td></td>
         <td><?php
-            \App\Guest::where("user_guest_id", "like", $guest->getAttr("id"))->get()->first() ?>
+            \App\Guest::where("user_guest_id", "like", $guest->get("id"))->get()->first() ?>
         </td>
         <td>Files</td>
         <td>Action</td>
