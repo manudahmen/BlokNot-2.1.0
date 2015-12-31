@@ -49,10 +49,10 @@ class Guest extends Model
     {
     }
 
-    public function sendRequest()
+    public function sendRequest($inputs)
     {
 
-        $userGuest = User::findOrFail($input::get("email"));
+        $userGuest = User::findOrFail($inputs::get("email"));
         $user_owner_id = Auth::user()->email;
         $user_guest_id = $userGuest->getAttr("id");
 
