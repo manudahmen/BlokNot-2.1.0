@@ -10,23 +10,24 @@ namespace App\Http\Controllers;
 
 
 use App\Guest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class GuestController extends Controller
 
 {
-    function requestGuest($request)
+    public function __construct()
     {
-        $v = Validator::make($request->all(), [
-            'title' => 'required|unique|max:255',
-            'body' => 'required',
-        ]);
+        $this->request = Input::all();
+        print_r($this->request);
+    }
 
-        if ($v->fails()) {
-            return redirect()->back()->withErrors($v->errors());
-        }
+    public function postGuest()
+    {
+        $request = $this->request;
 
-        new Guest($request->all())->sendRequest();
+        $guest = new Guest($request);
+        $guest->sendRequest($request);
     }
 
 

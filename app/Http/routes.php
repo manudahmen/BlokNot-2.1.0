@@ -377,10 +377,10 @@ Route::get("guest_offer_pieces", []
 );
 */
 
-Route::get("guests/offer_place_submitting", [
+Route::post("guests/offer_place_submitting", [
         "middleware" => "auth",
         'before' => 'csrf',
-        "uses" => "\\App\\Http\\Controllers\\GuestController@requestGuest"
+        "uses" => "\\App\\Http\\Controllers\\GuestController@postGuest"
     ]
 );
 

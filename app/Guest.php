@@ -37,12 +37,12 @@ class Guest extends Model
     public $id;
     public $user_owner_id;
     public $user_guest_id;
-    public $confirmed_email;
+    public $confirmed_email_guest_ref;
 
     public $fillable = ["id",
         "user_owner_id",
         "user_guest_id",
-        "confirmed_email"
+        "confirmed_email_guest_ref"
     ];
 
     public function __construct($input)
@@ -52,10 +52,14 @@ class Guest extends Model
     public function sendRequest($inputs)
     {
 
-        $userGuest = User::findOrFail($inputs::get("email"));
-        $user_owner_id = Auth::user()->email;
-        $user_guest_id = $userGuest->getAttr("id");
+        $userGuest = User::where('email', $inputs["email"])->get()->first();
+        $this->user_owner_id = \Auth::user()->email;
+        $this->user_guest_id = $userGuest->getAttribute('id');
 
-        $confirmedEmail = $userGuest->email;
+        $this->confirmed_email_guest_ref
+            = $userGuest->getAttribute('email');
+
+        $this->save();
+
     }
 }

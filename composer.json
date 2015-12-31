@@ -15,7 +15,9 @@
     "illuminate/html": "5.*",
     "fasterimage/fasterimage": "1.0.2",
     "ingenious/jquery-validator": "dev-master",
-    "arillo/silverstripe-jqueryformvalidator": "dev-master"
+    "arillo/silverstripe-jqueryformvalidator": "dev-master",
+    "nicolaslopezj/searchable": "1.*"
+
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",
