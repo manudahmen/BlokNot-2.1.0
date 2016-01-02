@@ -53,6 +53,11 @@ class Guest extends Model
     {
 
         $userGuest = User::where('email', $inputs["email"])->get()->first();
+        if ($userGuest == null) {
+            $userGuest = new User();
+        } else {
+
+        }
         $this->user_owner_id = \Auth::user()->email;
         $this->user_guest_id = $userGuest->getAttribute('id');
 
@@ -60,6 +65,18 @@ class Guest extends Model
             = $userGuest->getAttribute('email');
 
         $this->save();
+
+        $this->sendInvitation($userGuest, $inputs);
+
+    }
+
+    public function sendInvitation($userGuest, $inputs)
+    {
+        $firstname = $inputs["firstname"];
+        $lastname = $inputs["lastname"];
+        $phonenumber = $inputs["phonenumber"];
+        $email = $inputs["email"];
+
 
     }
 }
