@@ -22,11 +22,11 @@ class GuestController extends Controller
 
     public function postGuest(Request $request)
     {
-        $persona = new Persona($request->input("firstname"),
-            $request->input("lastname"),
-            $request->input("email"),
-            $request->input("phonenumber"),
-            $request->input("quota"));
+        $persona = new Persona(["firstname" => $request->input("firstname"),
+            "lastname" => $request->input("lastname"),
+            "email" => $request->input("email"),
+            "phonenumber" => $request->input("phonenumber"),
+            "quota" => $request->input("quota")]);
 
         $inviteur = User::where("email", Auth::user()->email)->get()->first();
 

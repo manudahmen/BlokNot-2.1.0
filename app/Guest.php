@@ -66,7 +66,7 @@ class Guest extends Model
         $email = Input::get("email");
 
 
-        $persona = new Persona(["firstname"=>$firstname, "lastname"=>$lastname, "phonebumber"=>$phonenumber, "email"=>$email]);
+        $persona = new Persona(["firstname"=>$firstname, "lastname"=>$lastname, "phonenumber"=>$phonenumber, "email"=>$email]);
 */
         return View::make("emails//invite_persona", $persona);
 
