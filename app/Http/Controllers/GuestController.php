@@ -18,16 +18,16 @@ class GuestController extends Controller
 {
     public function __construct()
     {
-        $this->request = Input::all();
-        print_r($this->request);
     }
 
-    public function postGuest()
+    public function postGuest(Request $request)
     {
-        $request = $this->request;
-
-        $guest = new Guest($request);
-        $guest->sendRequest($request);
+        $guest = new Guest($request->input("firstname"),
+            $request->input("lastname"),
+            $request->input("email"),
+            $request->input("phonenumber"),
+            $request->input("quota"));
+        $guest->getInvitationFrom(Auth::user()->email);
     }
 
 

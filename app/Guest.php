@@ -45,7 +45,7 @@ class Guest extends Model
         "confirmed_email_guest_ref"
     ];
 
-    public function __construct($input)
+    public function __construct()
     {
     }
 
@@ -53,8 +53,11 @@ class Guest extends Model
     {
 
         $userGuest = User::where('email', $inputs["email"])->get()->first();
+        $newUser = false;
         if ($userGuest == null) {
             $userGuest = new User();
+            $newUser =
+                true;
         } else {
 
         }
@@ -65,9 +68,9 @@ class Guest extends Model
             = $userGuest->getAttribute('email');
 
         $this->save();
-
-        $this->sendInvitation($userGuest, $inputs);
-
+        if ($newUser) {
+            $userGuest->sendEmailReminder($userGuest->getAttribute("id"));
+        }
     }
 
     public function sendInvitation($userGuest, $inputs)
