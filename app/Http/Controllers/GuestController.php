@@ -22,11 +22,16 @@ class GuestController extends Controller
 
     public function postGuest(Request $request)
     {
-        $guest = new Guest($request->input("firstname"),
+        $persona = new Persona($request->input("firstname"),
             $request->input("lastname"),
             $request->input("email"),
             $request->input("phonenumber"),
             $request->input("quota"));
+
+        $inviteur = User::where("email", Auth::user()->email)->get()->first();
+
+        $guest = new Guest($request->input("email"), $persona);
+
         $guest->getInvitationFrom(Auth::user()->email);
     }
 

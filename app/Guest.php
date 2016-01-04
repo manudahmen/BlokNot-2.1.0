@@ -45,41 +45,30 @@ class Guest extends Model
         "confirmed_email_guest_ref"
     ];
 
-    public function __construct()
+    public function __construct($email, $persona)
     {
-    }
-
-    public function sendRequest($inputs)
-    {
-
-        $userGuest = User::where('email', $inputs["email"])->get()->first();
-        $newUser = false;
-        if ($userGuest == null) {
-            $userGuest = new User();
-            $newUser =
-                true;
+        $this->persona = $persona;
+        if ($user = User::where("email", $email)->get()->first() != null) {
+            $this->user_guest_id = $user->id;
+            $this->getInvitationFor($user->id, $persona);
         } else {
-
-        }
-        $this->user_owner_id = \Auth::user()->email;
-        $this->user_guest_id = $userGuest->getAttribute('id');
-
-        $this->confirmed_email_guest_ref
-            = $userGuest->getAttribute('email');
-
-        $this->save();
-        if ($newUser) {
-            $userGuest->sendEmailReminder($userGuest->getAttribute("id"));
+            $this->getInvitationFor(0, $persona);
         }
     }
 
-    public function sendInvitation($userGuest, $inputs)
-    {
-        $firstname = $inputs["firstname"];
-        $lastname = $inputs["lastname"];
-        $phonenumber = $inputs["phonenumber"];
-        $email = $inputs["email"];
 
+    public function getInvitationFor($userGuestId)
+    {
+        /*
+        $firstname = Input::get("firstname");
+        $lastname = Input::get("lastname");
+        $phonenumber = Input::get("phonenumber");
+        $email = Input::get("email");
+
+
+        $persona = new Persona(["firstname"=>$firstname, "lastname"=>$lastname, "phonebumber"=>$phonenumber, "email"=>$email]);
+*/
+        return View::make("emails//invite_persona", $persona);
 
     }
 }
