@@ -9,9 +9,9 @@
 namespace App\Http\Controllers;
 
 
-use App\Guest;
+use App\BlokNot\Guest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Auth;
 
 class GuestController extends Controller
 
@@ -22,17 +22,17 @@ class GuestController extends Controller
 
     public function postGuest(Request $request)
     {
-        $persona = new Persona(["firstname" => $request->input("firstname"),
+        $persona = new \App\BlokNot\Persona(["firstname" => $request->input("firstname"),
             "lastname" => $request->input("lastname"),
             "email" => $request->input("email"),
             "phonenumber" => $request->input("phonenumber"),
             "quota" => $request->input("quota")]);
 
-        $inviteur = User::where("email", Auth::user()->email)->get()->first();
+        $inviteur = \App\User::where("email", Auth::user()->email)->get()->first();
 
         $guest = new Guest($request->input("email"), $persona);
 
-        $guest->getInvitationFrom(Auth::user()->email);
+        $guest->getInvitationFor($persona);
     }
 
 

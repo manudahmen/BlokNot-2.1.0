@@ -23,15 +23,19 @@ class Persona extends Model
     public $lastname;
     public $phonebumber;
     public $email;
+    public $quota = PHP_INT_MAX;
 
     public $fillable = ["id", "firstname", "lastname", "phonenumber", "email", "quota"
     ];
 
-    /*public function __construct($dataArray)
+    public function __construct($dataArray)
     {
-        $firstname = $dataArray["firstname"];
-        $lastname = $dataArray["lastname"];
-        $phonenumber = $dataArray["phonenumber"];
-        $email = $dataArray["email"];
-        $quota = $dataArray["quota"];
-    }*/
+        $this->firstname = $dataArray["firstname"];
+        $this->lastname = $dataArray["lastname"];
+        $this->phonenumber = $dataArray["phonenumber"];
+        $this->email = $dataArray["email"];
+        if (isset($dataArray["quota"])) {
+            $this->quota = $dataArray["quota"];
+        }
+    }
+}
