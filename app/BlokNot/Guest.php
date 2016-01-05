@@ -29,7 +29,7 @@ use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Mail;
 
 class Guest extends Model
 {
@@ -71,8 +71,29 @@ class Guest extends Model
 
         $persona = new Persona(["firstname"=>$firstname, "lastname"=>$lastname, "phonenumber"=>$phonenumber, "email"=>$email]);
         }
-        return View::make("emails/invite_persona", ["guestPersona" => $persona, "hostId" => Auth::user()->email]);
 
 
+        $persona->loadsIfExists();
+        $persona->save();
+
+
+        global $data;
+
+        $data = ["guestPersona" => $persona, "hostId" => Auth::user()->email];
+
+        Mail::send("emails/invite_persona", $data, function (\Illuminate\Mail\Message $message) {
+            global $data;
+            /* "Required" (It's self explaining ;)) */
+            $message->to($data["guestPersona"]["email"],
+                $data["guestPersona"]["firstname"] . " " .
+                $data["guestPersona"]["lastname"]
+            );
+
+            /* Optional */
+            $message->from(Auth::user()->email, 'ibiteria User');
+            $message->sender('no-reply@ibiteria.com', 'Ibiteria Company');
+            $message->replyTo('noreply@ibiteria.com');
+            $message->subject('Invitation to your workspace');
+        });
     }
 }
