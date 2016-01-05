@@ -29,7 +29,6 @@ use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\View;
 
 class Guest extends Model
 {
@@ -38,25 +37,25 @@ class Guest extends Model
     public $table = "guests";
     public $primaryKey = 'id';
     public $timestamps = true;
-    public $id;
-    public $user_owner_id;
-    public $user_guest_id;
-    public $confirmed_email_guest_ref;
-
-    public $fillable = ["id",
+    //public $id;
+    //public $user_owner_id;
+    //public $user_guest_id;
+    //public $confirmed_email_guest_ref;
+    protected $guarded = array('id', 'persona');
+    protected $fillable = ["id",
         "user_owner_id",
         "user_guest_id",
         "confirmed_email_guest_ref"
     ];
 
-    public function __construct($email, $persona)
+    public function __construct($email, $persona, $state)
     {
-        $this->persona = $persona;
+
+
+        $this->user_owner_id = Auth::user()->email;
         if (($user = User::where("email", $email)->get()->first()) != null) {
             $this->user_guest_id = $user->id;
-            $this->getInvitationFor();
         } else {
-            $this->getInvitationFor();
         }
     }
 
@@ -71,8 +70,28 @@ class Guest extends Model
 
         $persona = new Persona(["firstname"=>$firstname, "lastname"=>$lastname, "phonenumber"=>$phonenumber, "email"=>$email]);
         }
-        return View::make("emails/invite_persona", ["guestPersona" => $persona, "hostId" => Auth::user()->email]);
 
 
+        $persona->loadsIfExists();
+        $persona->save();
+
+
+        global $data;
+
+        $data = ["guestPersona" => $persona, "hostId" => Auth::user()->email];
+
+        $mail = \Illuminate\Support\Facades\View::make("emails/invite_persona", $data);
+
+        if (mail($data["guestPersona"]["email"], "Invitation from", $mail)) {
+            $message_err = "OK";
+            $ret = true;
+
+        } else {
+            $message_err = "Erreur lors de l'envoi du mail";
+            $ret = false;
+        }
+
+        echo $message_err;
+        return $ret;
     }
 }

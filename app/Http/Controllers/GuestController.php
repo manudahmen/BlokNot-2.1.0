@@ -30,7 +30,9 @@ class GuestController extends Controller
 
         $inviteur = \App\User::where("email", Auth::user()->email)->get()->first();
 
-        $guest = new Guest($request->input("email"), $persona);
+        $guest = new Guest($request->input("email"), $persona, "OPEN");
+
+        $guest->save();
 
         $guest->getInvitationFor($persona);
     }

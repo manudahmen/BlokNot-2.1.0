@@ -18,13 +18,13 @@ class Persona extends Model
     public $table = "persona";
     public $primaryKey = 'id';
     public $timestamps = true;
-    public $id;
-    public $firstname;
-    public $lastname;
-    public $phonebumber;
-    public $email;
-    public $quota = PHP_INT_MAX;
-
+    /* protected $id;
+     protected $firstname;
+     protected $lastname;
+     protected $phonenumber;
+     protected $email;
+     protected $quota = PHP_INT_MAX;
+ */
     public $fillable = ["id", "firstname", "lastname", "phonenumber", "email", "quota"
     ];
 
@@ -37,5 +37,12 @@ class Persona extends Model
         if (isset($dataArray["quota"])) {
             $this->quota = $dataArray["quota"];
         }
+    }
+
+    public function loadsIfExists()
+    {
+        // Checking email unique and if present from user, load ??? user
+        // Checking phone number is the same or exception "User unknown (from you! :-)"
+
     }
 }
