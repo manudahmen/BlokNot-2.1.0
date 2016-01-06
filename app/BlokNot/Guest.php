@@ -48,7 +48,7 @@ class Guest extends Model
         "confirmed_email_guest_ref"
     ];
 
-    public function __construct($email, $persona, $state)
+    public function __construct($email = null, $persona = null, $state = null)
     {
 
 

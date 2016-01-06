@@ -8,11 +8,8 @@
     </th>
     <?php
 
-    $user = \App\User::where("email", Auth::user()->email);
+    $user = \App\User::where("email", Auth::user()->email)->get()->first();
     $guests = \App\BlokNot\Guest::where("user_owner_id", $user->get('id'))->get();
-
-    if($guests->first != null)
-    {
 
     $guest = $guests->each(function ($item, $key) {
     ?>
@@ -27,5 +24,4 @@
     </tr>
     <?php }); ?>
 </table>
-<?php   }
 ?>
