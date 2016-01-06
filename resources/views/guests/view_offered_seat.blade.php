@@ -9,22 +9,23 @@
     <?php
 
     $user = \App\User::where("email", Auth::user()->email);
-    $guests = \App\Guest::where("user_owner_id", $user->get('id'))->get();
+    $guests = \App\BlokNot\Guest::where("user_owner_id", $user->get('id'))->get();
 
     if($guests->first != null)
     {
 
-    foreach($guests as $guest)
+    $guest = $guests->each(function ($item, $key) {
     ?>
     <tr>
         <td>{{ Auth::user()->email }}</td>
         <td></td>
         <td><?php
-            \App\Guest::where("user_guest_id", $guest->get("id"))->get()->first() ?>
+            \App\User::where("id", $item->get("user_guest_id"))->get()->first()->get('email'); ?>
         </td>
         <td>Files</td>
         <td>Action</td>
     </tr>
+    <?php }); ?>
 </table>
 <?php   }
 ?>
