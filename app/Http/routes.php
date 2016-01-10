@@ -391,9 +391,32 @@ Route::post("guests/offer_place_submitting", [
     ]
 );
 
-
+/**
+ * Should return JS code : var instanceId and an JS object with class definition
+ * to manage from JS : 1) L'apparence, le dossier courant, la navigation entre
+ * les fichiers partagé et l'espace personnel, la copie de fichier partagés, le déplacement
+ * de fichiers, la suppression de fichier personnel.
+ */
+Route::get("browser/folder/html/{folderId}/{typeOf}", [
+        "middleware" => "auth",
+        'before' => 'csrf',
+        "uses" => "\\App\\Http\\Controllers\\BrowserController@getHTMLOfView"
+    ]
+);
+Route::get("browser/guest/html/{guestId}/{typeOf}", [
+        "middleware" => "auth",
+        'before' => 'csrf',
+        "uses" => "\\App\\Http\\Controllers\\BrowserController@getHTMLOfView"
+    ]
+);
+Route::get("browser/guest/selection/", [
+        "middleware" => "auth",
+        'before' => 'csrf',
+        "uses" => "\\App\\Http\\Controllers\\BrowserController@getHTMLOfView"
+    ]
+);
 /*
-Route::controller("wppost");
+ * Route::controller("wppost");
 Route::controller("wordpressInstallation");
 */
 ?>

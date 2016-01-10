@@ -36,4 +36,19 @@ class BrowserController extends Controller
     {
 
     }
+
+    public function init()
+    {
+
+    }
+
+    public function saveState(Request $request)
+    {
+
+    }
+
+    public function getHTMLOfView()
+    {
+
+    }
 }
