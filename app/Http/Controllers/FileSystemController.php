@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 
-use Illuminate\Routing\Controller;
-
 Class FileSystemController extends Controller
 {
     private $rootPath = "datafiles";

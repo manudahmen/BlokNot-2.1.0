@@ -9,7 +9,9 @@
 namespace App\Http\Browser;
 
 
-class BrowserController
+use App\Http\Controllers\Controller;
+
+class BrowserController extends Controller
 {
     /***
      * @var int Affichage du navigateur de fichier à partir d'un fichier déterminé ou

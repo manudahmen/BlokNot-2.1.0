@@ -11,3 +11,5 @@
 
 <h2>Partager des fichiers avec</h2>
 <p><a href="{{ asset("guests/offer_place")  }}">Quelqu'un</a></p>
+
+<?php $browser->show(); ?>
