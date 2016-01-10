@@ -21,28 +21,31 @@ try {
     $table2 = DB::table('users')
             ->leftJoin('guests', function ($join) {
                 $join->on('guests.user_owner_id', '=', 'users.id')
-                        ->where('guests.user_owner_id', '=', Auth::user()->id);
+                        ->where('users.id', '=', Auth::user()->id);
             })
             ->groupBy('users.id')
-            ->select('users.*');
+            ->select(array('users.id', 'guests.user_guest_id'));
     $guestsList = $table2->get();
     //$guestsList = \App\BlokNot\Guest::where("user_owner_id", '=', $user->getAttribute('id'));
     //$guests = $guestsList->get();
 
-    $guest = $guests->each(function ($item, $key) {
+    //$guest = $guestsList->each(function ($item, $key) {
+    foreach($guestsList as $guest)
+    {
     ?>
 
     <tr>
         <td>{{ $user->email }}</td>
         <td></td>
         <td><?php
-            $invite = \App\User::find($item->get("user_guest_id"))->get()->first();
+            $invite = \App\User::findOrNew($guest->user_guest_id);
             echo $invite->email; ?>
         </td>
-        <td>Files</td>
+        <td><a href="{{ URL::to("guests/files/to/".$user->id."/from/".$guest->user_guest_id)  }}">Fichiers
+                disponibles</a></td>
         <td>Action</td>
     </tr>
-    <?php });
+    <?php }//);
 
     //print_r($errors);
     ?>
