@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script language="JavaScript" type="text/javascript" src="/js/prism.js"></script>
+    <title>Empty3: The Original Torturial</title>
+</head>
+<body>
+<h2>Introduction</h2>
+
+<p>Bonjour et bienvenue</p>
+
+<p>Empty3 est destiné à la création d'images de synthèse en perspective 3D.</p>
+
+<p>Empty3 est une bibliothèque de classes. Il y a néamoins un point d'entrée applicatif
+    qui fait qu'elle n'est pas véritablement une bibliothèque de classe. En fait,
+    elle devrait être séparée en 2 parties: la partie classe, et la partie "cliente"
+    ou "créative"</p>
+
+<p>La partie cliente est représentée par un ensemble de classe dont une classe
+    implémentée par l'utilisateur de la bibliothèque dérivée de la classe
+    TestObjet peut être pourvu d'une méthode main() par exemple pour générer,
+    qui des modèles STL, qui une séquence d'images, qui une vidéo</p>
+
+<h2>Où trouver Empty3?</h2>
+<p>Sur le site de développement <a href="https://github.com/Graphics3D/emptycanvas-3">Github.com</a></p>
+<p>Projets liés (et nécessaires à la compilation et exécution):</p>
+<ul>
+    <li><a href="https://github.com/mdahmen/montemedia">Montemedia.ch</a></li>
+    <li><a href="https://github.com/Graphics3D/ect">Empty Canvas Test Package</a></li>
+</ul>
+<h2>La classe TestObjet</h2>
+
+<p>Exemple à commenter</p>
+<code class="language-java">/***
+    Global license :
+
+
+    author Manuel Dahmen
+
+    Creation time 06-nov.-2014
+
+    Updated 08/09/2015
+
+    ***/
+
+
+    package spheres;
+
+    import SPhere.TestSphere.Trajectoires;
+    import info.emptycanvas.library.object.*;
+    import info.emptycanvas.library.testing.TestObjetStub;
+    import info.emptycanvas.library.tribase.TRISphere;
+    import java.awt.Color;
+
+    /**
+    *
+    * @author Manuel Dahmen manuel DOT dahmen AT gmail DOT com
+    */
+    public class TestSphereRotation extends TestObjetStub
+
+    {
+    TRISphere ts;
+    @Override
+    public void ginit() {
+    ts = new TRISphere(Point3D.O0, 1);
+    Cube c = new Cube(0.7, Point3D.O0);
+
+    ts.texture(new ColorTexture(Color.RED));
+    c.texture(new ColorTexture(Color.BLUE));
+
+
+    scene().add(ts);
+    scene().add(c);
+    }
+
+    @Override
+    public void testScene() throws Exception {
+    Point3D sphere = Trajectoires.sphere(1.0*frame()/getMaxFrames(),
+    0, 5);
+    scene().cameras().clear();
+    scene().cameraActive(new Camera(sphere, Point3D.O0));
+
+    }
+
+    public static void main(String [] args)
+    {
+    TestSphereRotation tsr = new TestSphereRotation();
+
+    tsr.loop(true);
+    tsr.setMaxFrames(300);
+    //tsr.setResx(100);
+    //tsr.setResy(100);
+    tsr.setGenerate(GENERATE_IMAGE|GENERATE_MOVIE);
+    new Thread(tsr).start();
+
+
+    }
+
+    @Override
+    public void finit() {
+
+    }
+
+
+    }
+</code>
+<div class="comment">
+    <p>Tout d'abord le langage: Java. Empty3 est développé dans ce langage. C'est dans ce
+        langage que nous allons apprendre à créer nos premières vidéos.</p>
+    <p>La déclaration "package" : vous pouvez placer vos classes où bon vous semble dans
+        la hiérarchie des classes de votre projet.</p>
+    <p>Plusieurs classes dans le package info.emptycanvas.library.objects, tribase qui contient
+        les surfaces paramétriques prédéfinies, testing qui contient la classe TestObjetStub, classe
+        canevas utilisée pour la génération de vidéos..</p>
+    <p>La lecture du script est assez facile.</p>
+    <ul>
+        <li>Les méthodes surchargées, testScene() qui contient
+            les instructions de modification de scène.
+        </li>
+        <li>finit() initialisation de chaque frame.</li>
+        <li>ginit() initialisation "globale", appelée avant le premier appel à finit()
+            puis testObjet()
+        </li>
+        <li>La méthode main() qui est le point d'entrée de l'"application"</li>
+        <li>Les méthodes de TestObjet telles que scene() qui renvoie l'objet (de type Scene)
+            contenant les éléments à dessiner (primitives)
+        </li>
+    </ul>
+    <p></p>
+</div>
+<p>Output (sortie fichier):
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/rmOhcxEErDY" frameborder="0"
+            allowfullscreen></iframe>
+    <a href="https://youtu.be/5MEWwNzGMtE">Vidéo 1</a></p>
+<p>Voir "Bogue featuré"</p>
+
+<p>Output 2 (sortie fichier) corrigée:
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/rmOhcxEErDY" frameborder="0"
+            allowfullscreen></iframe>
+    <a href="https://youtu.be/rmOhcxEErDY">Vidéo 2 (corrigée)</a></p>
+<h2>Plus de classes</h2>
+<ul>
+    <li></li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>Au revoir et malpartie.</p>
+
+<p><a href="mailto:manuel.dahmen@gmail.com">Manuel DAHMEN</a></p>
+</body>
+</html>
